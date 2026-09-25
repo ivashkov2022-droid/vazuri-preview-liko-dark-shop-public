@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 
 const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -36,6 +36,32 @@ export default function Home() {
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "error">("idle");
   const [selectedSize, setSelectedSize] = useState("42");
   const [menuOpen, setMenuOpen] = useState(false);
+  const dropRef = useRef<HTMLElement>(null);
+  const prompted = useRef(false);
+
+  useEffect(() => {
+    const node = dropRef.current;
+    if (!node) return;
+
+    let timer = 0;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting || prompted.current) return;
+        prompted.current = true;
+        timer = window.setTimeout(() => {
+          setSent(false);
+          setFormStatus("idle");
+          setBriefOpen(true);
+        }, 700);
+      },
+      { threshold: 0.12 },
+    );
+    observer.observe(node);
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(timer);
+    };
+  }, []);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -50,14 +76,42 @@ export default function Home() {
 
   useEffect(() => {
     if (!briefOpen) return;
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
+    const root = document.documentElement;
+    const body = document.body;
+    const scrollY = window.scrollY;
+    const scrollbarWidth = Math.max(0, window.innerWidth - root.clientWidth);
+    const previousRootOverflow = root.style.overflow;
+    const previousBodyStyles = {
+      position: body.style.position,
+      top: body.style.top,
+      left: body.style.left,
+      right: body.style.right,
+      width: body.style.width,
+      overflow: body.style.overflow,
+      paddingRight: body.style.paddingRight,
+    };
+
+    root.style.overflow = "hidden";
+    body.style.position = "fixed";
+    body.style.top = `-${scrollY}px`;
+    body.style.left = "0";
+    body.style.right = "0";
+    body.style.width = "100%";
+    body.style.overflow = "hidden";
+    if (scrollbarWidth > 0) body.style.paddingRight = `${scrollbarWidth}px`;
+
     return () => {
-      document.body.style.overflow = previousOverflow;
+      const previousScrollBehavior = root.style.scrollBehavior;
+      root.style.scrollBehavior = "auto";
+      root.style.overflow = previousRootOverflow;
+      Object.assign(body.style, previousBodyStyles);
+      window.scrollTo(0, scrollY);
+      root.style.scrollBehavior = previousScrollBehavior;
     };
   }, [briefOpen]);
 
   function openBrief() {
+    prompted.current = true;
     setSent(false);
     setFormStatus("idle");
     setBriefOpen(true);
@@ -105,7 +159,7 @@ export default function Home() {
         <nav className={menuOpen ? "nav-links open" : "nav-links"} aria-label="Main navigation">
           <a href="#shop" onClick={() => setMenuOpen(false)}>Shop</a>
           <a href="#drop" onClick={() => setMenuOpen(false)}>Drop 02</a>
-          <a href="#project-cta" onClick={() => setMenuOpen(false)}>Project notes</a>
+          <button onClick={() => { openBrief(); setMenuOpen(false); }}>Case notes</button>
         </nav>
         <div className="header-actions">
           <button className="bag-button" type="button">
@@ -200,7 +254,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="drop-section" id="drop">
+      <section className="drop-section" id="drop" ref={dropRef}>
         <div className="drop-visual">
           <Image
             src={`${assetBase}/images/shop-banner-1.jpg`}
@@ -251,12 +305,11 @@ export default function Home() {
         </div>
       </section>
 
-      <footer id="project-cta">
+      <footer>
         <div>
           <span>Nightshift®</span>
           <span>Independent running systems</span>
         </div>
-        <button onClick={openBrief}>Получить разбор решения ↗</button>
       </footer>
 
       {briefOpen && (
