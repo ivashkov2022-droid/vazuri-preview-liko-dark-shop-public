@@ -1,50 +1,50 @@
 {
-  "../../../../../Documents/ChatGPT/сайт/vazuri-preview-netzon-security/node_modules/.pnpm/vinext@1.0.0-beta.2_@vitejs_93f6fd6c708956198cb05a5cfe3fd3ab/node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "_next/static/chunks/layout-segment-context-C09JrSWO.js",
-    "name": "layout-segment-context",
-    "src": "../../../../../Documents/ChatGPT/сайт/vazuri-preview-netzon-security/node_modules/.pnpm/vinext@1.0.0-beta.2_@vitejs_93f6fd6c708956198cb05a5cfe3fd3ab/node_modules/vinext/dist/shims/layout-segment-context.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_rolldown-runtime-C60lm6uB.js",
-      "virtual:vinext-app-browser-entry",
-      "_framework-BgSIrAUN.js"
-    ]
-  },
-  "_framework-BgSIrAUN.js": {
-    "file": "_next/static/chunks/framework-BgSIrAUN.js",
+  "_framework-b_Vdhe8k.js": {
+    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/framework-b_Vdhe8k.js",
     "name": "framework",
     "imports": [
-      "_rolldown-runtime-C60lm6uB.js"
+      "_rolldown-runtime-Dd0rqF-p.js"
     ]
   },
-  "_rolldown-runtime-C60lm6uB.js": {
-    "file": "_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+  "_rolldown-runtime-Dd0rqF-p.js": {
+    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/rolldown-runtime-Dd0rqF-p.js",
     "name": "rolldown-runtime"
   },
   "app/page.tsx": {
-    "file": "_next/static/chunks/page-dOICRoaB.js",
+    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-CepC1UXl.js",
     "name": "page",
     "src": "app/page.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_rolldown-runtime-C60lm6uB.js",
+      "_rolldown-runtime-Dd0rqF-p.js",
       "virtual:vinext-app-browser-entry",
-      "_framework-BgSIrAUN.js"
+      "_framework-b_Vdhe8k.js"
+    ]
+  },
+  "node_modules/.pnpm/vinext@1.0.0-beta.2_@vitejs_4e4921fe45004b12d6f90febb3bf1b22/node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-CCVdGMqg.js",
+    "name": "layout-segment-context",
+    "src": "node_modules/.pnpm/vinext@1.0.0-beta.2_@vitejs_4e4921fe45004b12d6f90febb3bf1b22/node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-Dd0rqF-p.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-b_Vdhe8k.js"
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "_next/static/chunks/index-C-L1NHji.js",
+    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-XeC4NvQD.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
     "imports": [
-      "_rolldown-runtime-C60lm6uB.js",
-      "_framework-BgSIrAUN.js"
+      "_rolldown-runtime-Dd0rqF-p.js",
+      "_framework-b_Vdhe8k.js"
     ],
     "dynamicImports": [
-      "../../../../../Documents/ChatGPT/сайт/vazuri-preview-netzon-security/node_modules/.pnpm/vinext@1.0.0-beta.2_@vitejs_93f6fd6c708956198cb05a5cfe3fd3ab/node_modules/vinext/dist/shims/layout-segment-context.js",
+      "virtual:vinext-app-browser-entry",
       "app/page.tsx",
-      "virtual:vinext-app-browser-entry"
+      "node_modules/.pnpm/vinext@1.0.0-beta.2_@vitejs_4e4921fe45004b12d6f90febb3bf1b22/node_modules/vinext/dist/shims/layout-segment-context.js"
     ]
   }
 }
