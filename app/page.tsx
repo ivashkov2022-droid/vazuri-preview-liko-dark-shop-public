@@ -3,27 +3,29 @@
 import Image from "next/image";
 import { FormEvent, useEffect, useState } from "react";
 
+const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const products = [
   {
     code: "01",
     name: "VECTOR 01",
     kind: "Trail sneaker",
     price: "$240",
-    image: "/images/shop-category-1.jpg",
+    image: `${assetBase}/images/shop-category-1.jpg`,
   },
   {
     code: "02",
     name: "STATIC PINK",
     kind: "Oversized jersey",
     price: "$110",
-    image: "/images/shop-category-2.jpg",
+    image: `${assetBase}/images/shop-category-2.jpg`,
   },
   {
     code: "03",
     name: "PHASE SET",
     kind: "Movement system",
     price: "$185",
-    image: "/images/shop-category-3.jpg",
+    image: `${assetBase}/images/shop-category-3.jpg`,
   },
 ];
 
@@ -124,7 +126,7 @@ export default function Home() {
       <section className="hero" id="top">
         <Image
           className="hero-image"
-          src="/images/shop-slider-1.jpg"
+          src={`${assetBase}/images/shop-slider-1.jpg`}
           alt="Runner wearing bright red technical footwear"
           fill
           priority
@@ -202,7 +204,7 @@ export default function Home() {
       <section className="drop-section" id="drop">
         <div className="drop-visual">
           <Image
-            src="/images/shop-banner-1.jpg"
+            src={`${assetBase}/images/shop-banner-1.jpg`}
             alt="Grey technical sneaker floating in a dark studio"
             fill
             sizes="(max-width: 900px) 100vw, 55vw"
