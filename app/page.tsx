@@ -74,9 +74,9 @@ export default function Home() {
     setFormStatus("sending");
 
     try {
-      await fetch("https://vazuri.ru/lead.php", {
+      const response = await fetch("https://vazuri.ru/lead.php", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        mode: "no-cors",
         body: JSON.stringify({
           source: "behance",
           website: data.get("website") || "",
@@ -86,9 +86,8 @@ export default function Home() {
           message: `Материалы по кейсу NIGHTSHIFT. Интерес: ${data.get("project") || "визуальное решение"}.`,
           consent: data.get("consent") || "",
         }),
-      }).then((response) => {
-        if (!response.ok) throw new Error("send_failed");
       });
+      if (response.type !== "opaque" && !response.ok) throw new Error("send_failed");
       form.reset();
       setSent(true);
       setFormStatus("idle");
