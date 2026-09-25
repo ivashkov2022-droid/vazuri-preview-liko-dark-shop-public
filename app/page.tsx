@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FormEvent, useEffect, useRef, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 
 const products = [
   {
@@ -31,27 +31,9 @@ export default function Home() {
   const [bagCount, setBagCount] = useState(0);
   const [briefOpen, setBriefOpen] = useState(false);
   const [sent, setSent] = useState(false);
+  const [formStatus, setFormStatus] = useState<"idle" | "sending" | "error">("idle");
   const [selectedSize, setSelectedSize] = useState("42");
   const [menuOpen, setMenuOpen] = useState(false);
-  const dropRef = useRef<HTMLElement>(null);
-  const prompted = useRef(false);
-
-  useEffect(() => {
-    const node = dropRef.current;
-    if (!node) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !prompted.current) {
-          prompted.current = true;
-          window.setTimeout(() => setBriefOpen(true), 700);
-        }
-      },
-      { threshold: 0.45 },
-    );
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, []);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -64,13 +46,53 @@ export default function Home() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  useEffect(() => {
+    if (!briefOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [briefOpen]);
+
+  function openBrief() {
+    setSent(false);
+    setFormStatus("idle");
+    setBriefOpen(true);
+  }
+
   function addToBag() {
     setBagCount((count) => count + 1);
   }
 
-  function submitBrief(event: FormEvent<HTMLFormElement>) {
+  async function submitBrief(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setSent(true);
+    const form = event.currentTarget;
+    const data = new FormData(form);
+    setFormStatus("sending");
+
+    try {
+      await fetch("https://vazuri.ru/lead.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          source: "behance",
+          website: data.get("website") || "",
+          name: data.get("name") || "",
+          contact: data.get("contact") || "",
+          company: "",
+          message: `Материалы по кейсу NIGHTSHIFT. Интерес: ${data.get("project") || "визуальное решение"}.`,
+          consent: data.get("consent") || "",
+        }),
+      }).then((response) => {
+        if (!response.ok) throw new Error("send_failed");
+      });
+      form.reset();
+      setSent(true);
+      setFormStatus("idle");
+    } catch {
+      setFormStatus("error");
+    }
   }
 
   return (
@@ -82,10 +104,10 @@ export default function Home() {
         <nav className={menuOpen ? "nav-links open" : "nav-links"} aria-label="Main navigation">
           <a href="#shop" onClick={() => setMenuOpen(false)}>Shop</a>
           <a href="#drop" onClick={() => setMenuOpen(false)}>Drop 02</a>
-          <button onClick={() => { setBriefOpen(true); setMenuOpen(false); }}>Build your store</button>
+          <a href="#project-cta" onClick={() => setMenuOpen(false)}>Project notes</a>
         </nav>
         <div className="header-actions">
-          <button className="bag-button" onClick={() => setBriefOpen(true)}>
+          <button className="bag-button" type="button">
             Bag <span>({String(bagCount).padStart(2, "0")})</span>
           </button>
           <button
@@ -177,7 +199,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="drop-section" id="drop" ref={dropRef}>
+      <section className="drop-section" id="drop">
         <div className="drop-visual">
           <Image
             src="/images/shop-banner-1.jpg"
@@ -228,12 +250,12 @@ export default function Home() {
         </div>
       </section>
 
-      <footer>
+      <footer id="project-cta">
         <div>
           <span>Nightshift®</span>
           <span>Independent running systems</span>
         </div>
-        <button onClick={() => setBriefOpen(true)}>Want a site like this? ↗</button>
+        <button onClick={openBrief}>Получить разбор решения ↗</button>
       </footer>
 
       {briefOpen && (
@@ -241,48 +263,56 @@ export default function Home() {
           <button className="modal-backdrop" onClick={() => setBriefOpen(false)} aria-label="Close form" />
           <div className="brief-modal">
             <div className="brief-poster">
-              <span>VZR / PREVIEW 05</span>
-              <h2>BUILD<br />THE NEXT<br /><em>CULT STORE.</em></h2>
-              <p>Strategy / Art direction / Development</p>
+              <span>VAZURI / КЕЙС 01</span>
+              <h2>СОЗДАДИМ<br />ВАШ ЦИФРОВОЙ<br /><em>ОБРАЗ.</em></h2>
+              <p>Стратегия / арт-дирекшн / разработка</p>
             </div>
             <div className="brief-form-wrap">
-              <button className="modal-close" onClick={() => setBriefOpen(false)}>Close ×</button>
+              <button className="modal-close" onClick={() => setBriefOpen(false)}>Закрыть ×</button>
               {sent ? (
                 <div className="sent-state">
-                  <span>Transmission received / 05</span>
-                  <h2>YOUR PROJECT<br />IS ON OUR RADAR.</h2>
-                  <p>We will send selected concepts and next steps shortly.</p>
-                  <button onClick={() => setBriefOpen(false)}>Back to the drop</button>
+                  <span>Запрос принят / 01</span>
+                  <h2>МАТЕРИАЛЫ<br />УЖЕ В ПУТИ.</h2>
+                  <p>Свяжемся с вами и предложим следующий логичный шаг.</p>
+                  <button onClick={() => setBriefOpen(false)}>Вернуться к проекту</button>
                 </div>
               ) : (
                 <form onSubmit={submitBrief}>
-                  <p className="form-index">Project access / 01—04</p>
-                  <h2 id="brief-title">WANT THE FULL<br />EXPERIENCE?</h2>
+                  <p className="form-index">Материалы по кейсу / NIGHTSHIFT</p>
+                  <h2 id="brief-title">ХОТИТЕ РАЗОБРАТЬ<br />ЭТО РЕШЕНИЕ?</h2>
                   <p className="form-lead">
-                    Leave your details. We will send more selected work and a
-                    direction for your project.
+                    Оставьте контакт — отправим краткий разбор визуальной системы
+                    и подскажем, как применить похожий подход в вашем проекте.
                   </p>
+                  <input className="website-field" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
                   <label>
-                    <span>01 / Your name</span>
-                    <input name="name" placeholder="Name or company" required />
+                    <span>01 / Ваше имя</span>
+                    <input name="name" autoComplete="name" placeholder="Имя или компания" required />
                   </label>
                   <label>
-                    <span>02 / Contact</span>
-                    <input name="contact" placeholder="Email or Telegram" required />
+                    <span>02 / Как с вами связаться?</span>
+                    <input name="contact" autoComplete="email" placeholder="Email или Telegram" required />
                   </label>
                   <label>
-                    <span>03 / What are we building?</span>
-                    <select name="project" defaultValue="E-commerce">
-                      <option>E-commerce</option>
-                      <option>Brand website</option>
-                      <option>Product launch</option>
-                      <option>Something new</option>
+                    <span>03 / Что вам интересно?</span>
+                    <select name="project" defaultValue="Разбор визуального решения">
+                      <option>Разбор визуального решения</option>
+                      <option>Сайт бренда</option>
+                      <option>Запуск продукта</option>
+                      <option>Другое</option>
                     </select>
                   </label>
+                  <label className="consent-row">
+                    <input name="consent" type="checkbox" required />
+                    <span>Соглашаюсь на обработку персональных данных</span>
+                  </label>
                   <button className="submit-button" type="submit">
-                    Send project <span>↗</span>
+                    {formStatus === "sending" ? "Отправляем…" : "Получить материалы"} <span>↗</span>
                   </button>
-                  <small>By sending, you agree to a very short, very human conversation.</small>
+                  {formStatus === "error" && (
+                    <small className="form-error">Не удалось отправить. Напишите нам: hello@vazuri.ru</small>
+                  )}
+                  <small>Никакой рассылки — только материалы по кейсу и ответ по вашему запросу.</small>
                 </form>
               )}
             </div>

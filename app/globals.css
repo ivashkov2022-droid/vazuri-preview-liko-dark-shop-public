@@ -356,9 +356,14 @@ footer button { background: var(--ink); border: 0; color: var(--paper); cursor: 
 .brief-form-wrap form label { border-top: 1px solid #c6c4bd; display: grid; grid-template-columns: 160px 1fr; padding: 16px 0; }
 .brief-form-wrap label > span { font-family: "DM Mono", monospace; font-size: 9px; padding-top: 7px; text-transform: uppercase; }
 .brief-form-wrap input, .brief-form-wrap select { background: transparent; border: 0; color: var(--ink); font-size: 15px; min-width: 0; outline: 0; padding: 3px; width: 100%; }
+.brief-form-wrap .website-field { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.brief-form-wrap form .consent-row { align-items: center; display: flex; gap: 10px; grid-template-columns: none; }
+.brief-form-wrap .consent-row input { accent-color: var(--signal); flex: 0 0 auto; height: 17px; width: 17px; }
+.brief-form-wrap .consent-row span { padding: 0; }
 .submit-button { align-items: center; background: var(--ink); border: 0; color: var(--paper); cursor: pointer; display: flex; justify-content: space-between; margin-top: 14px; padding: 19px; text-transform: uppercase; width: 100%; }
 .submit-button span { color: var(--acid); font-size: 20px; }
 .brief-form-wrap small { color: #777; display: block; font-family: "DM Mono", monospace; font-size: 8px; margin-top: 12px; }
+.brief-form-wrap .form-error { color: #b52911; font-size: 9px; }
 .sent-state { display: flex; flex-direction: column; height: 100%; justify-content: center; }
 .sent-state > span { color: var(--signal); font-family: "DM Mono", monospace; font-size: 9px; text-transform: uppercase; }
 .sent-state h2 { margin: 35px 0 22px; }

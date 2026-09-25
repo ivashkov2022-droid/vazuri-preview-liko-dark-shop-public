@@ -20,6 +20,7 @@ test("server-renders the complete NIGHTSHIFT preview", async () => {
   assert.match(html, /RUN/);
   assert.match(html, /AFTER/);
   assert.match(html, /DARK/);
-  assert.match(html, /Want a site like this/);
+  assert.match(html, /Получить разбор решения/);
+  assert.doesNotMatch(html, /Want a site like this/);
   assert.doesNotMatch(html, />\s*(Codex|ChatGPT|Your site is taking shape)\b/i);
 });
