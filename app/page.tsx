@@ -305,6 +305,22 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="case-study-note" aria-labelledby="case-study-title">
+        <p className="case-study-label">VAZURI / Concept case</p>
+        <div>
+          <h2 id="case-study-title">E-commerce design built around product character.</h2>
+          <p>
+            NIGHTSHIFT explores how art direction, a focused product hierarchy
+            and responsive interactions can turn a technical footwear catalogue
+            into a distinctive shopping experience.
+          </p>
+        </div>
+        <nav aria-label="VAZURI case study links">
+          <a href="https://vazuri.ru/en#projects">More VAZURI cases ↗</a>
+          <a href="https://vazuri.ru/en#contact">Discuss an e-commerce project ↗</a>
+        </nav>
+      </section>
+
       <footer>
         <div>
           <span>Nightshift®</span>

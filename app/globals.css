@@ -299,6 +299,20 @@ button { color: inherit; }
 .service-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; font-family: "DM Mono", monospace; font-size: 8px; text-transform: uppercase; }
 .service-row span::before { content: "●"; color: var(--acid); margin-right: 6px; }
 
+.case-study-note {
+  background: var(--paper);
+  color: var(--ink);
+  display: grid;
+  gap: 40px;
+  grid-template-columns: .55fr 1.45fr .8fr;
+  padding: 88px 28px;
+}
+.case-study-label { font-family: "DM Mono", monospace; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+.case-study-note h2 { font-size: clamp(42px, 5vw, 82px); line-height: .9; margin: 0; max-width: 790px; }
+.case-study-note div > p { color: #50524d; line-height: 1.6; margin: 28px 0 0; max-width: 660px; }
+.case-study-note nav { align-content: start; display: grid; gap: 14px; }
+.case-study-note a { border-bottom: 1px solid currentColor; color: inherit; font-family: "DM Mono", monospace; font-size: 10px; padding: 0 0 9px; text-decoration: none; text-transform: uppercase; }
+
 footer {
   align-items: center;
   background: var(--signal);
@@ -386,6 +400,8 @@ footer button { background: var(--ink); border: 0; color: var(--paper); cursor: 
   .drop-section { grid-template-columns: 1fr; }
   .drop-visual { min-height: 72svh; }
   .drop-panel { gap: 48px; padding: 70px 24px 34px; }
+  .case-study-note { grid-template-columns: 1fr 2fr; }
+  .case-study-note nav { grid-column: 2; }
   .brief-modal { grid-template-columns: 1fr; inset: 2vh 3vw; max-height: 96vh; }
   .brief-poster { min-height: 280px; }
   .brief-poster h2 { font-size: 54px; }
@@ -408,6 +424,8 @@ footer button { background: var(--ink); border: 0; color: var(--paper); cursor: 
   .drop-panel h2 { font-size: 54px; }
   .sizes { grid-template-columns: repeat(4, 1fr); }
   .service-row { grid-template-columns: 1fr; }
+  .case-study-note { grid-template-columns: 1fr; padding: 68px 18px; }
+  .case-study-note nav { grid-column: auto; }
   footer { align-items: flex-start; flex-direction: column; gap: 30px; }
   .brief-poster { display: none; }
   .brief-form-wrap { padding: 58px 20px 30px; }
