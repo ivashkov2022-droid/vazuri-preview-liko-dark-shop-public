@@ -11,7 +11,7 @@
     "name": "rolldown-runtime"
   },
   "app/page.tsx": {
-    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-W9EW5QNB.js",
+    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-BdJlAoKS.js",
     "name": "page",
     "src": "app/page.tsx",
     "isDynamicEntry": true,
@@ -22,7 +22,7 @@
     ]
   },
   "node_modules/.pnpm/vinext@1.0.0-beta.2_@vitejs_4e4921fe45004b12d6f90febb3bf1b22/node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-DTupJCTo.js",
+    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-CrywgHOn.js",
     "name": "layout-segment-context",
     "src": "node_modules/.pnpm/vinext@1.0.0-beta.2_@vitejs_4e4921fe45004b12d6f90febb3bf1b22/node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -33,7 +33,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-C3f7iofl.js",
+    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-B8OBuJmS.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
