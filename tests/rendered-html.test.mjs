@@ -5,7 +5,7 @@ async function render() {
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
   return worker.fetch(
-    new Request("http://localhost/vazuri-preview-liko-dark-shop-public/", { headers: { accept: "text/html" } }),
+    new Request("http://localhost/nightshift/", { headers: { accept: "text/html" } }),
     { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
     { waitUntil() {}, passThroughOnException() {} },
   );
@@ -22,8 +22,8 @@ test("server-renders the complete NIGHTSHIFT preview", async () => {
   assert.match(html, /DARK/);
   assert.match(html, /Case notes/);
   assert.match(html, /<title>NIGHTSHIFT — E-commerce Concept Case \| VAZURI<\/title>/i);
-  assert.match(html, /rel="canonical"[^>]+vazuri-preview-liko-dark-shop-public\//i);
-  assert.match(html, /rel="(?:shortcut )?icon"[^>]+vazuri-preview-liko-dark-shop-public\/favicon\.svg/i);
+  assert.match(html, /rel="canonical"[^>]+https:\/\/vazuri\.ru\/nightshift\//i);
+  assert.match(html, /rel="(?:shortcut )?icon"[^>]+nightshift\/favicon\.svg/i);
   assert.match(html, /<h1\b/i);
   assert.match(html, /application\/ld\+json/i);
   assert.match(html, /class="case-dock case-dock--night"/i);

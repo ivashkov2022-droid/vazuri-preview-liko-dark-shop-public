@@ -9,7 +9,7 @@ const workerUrl = pathToFileURL(resolve('dist/server/index.js'));
 workerUrl.searchParams.set('export', `${process.pid}-${Date.now()}`);
 const { default: worker } = await import(workerUrl.href);
 const response = await worker.fetch(
-  new Request('http://localhost/vazuri-preview-liko-dark-shop-public/', { headers: { accept: 'text/html' } }),
+  new Request('http://localhost/nightshift/', { headers: { accept: 'text/html' } }),
   { ASSETS: { fetch: async () => new Response('Not found', { status: 404 }) } },
   { waitUntil() {}, passThroughOnException() {} },
 );
@@ -20,7 +20,7 @@ if (!html.includes('class="case-dock case-dock--night"')) throw new Error('Rende
 
 await mkdir(target, { recursive: true });
 const clientRoot = resolve('dist/client');
-const publicBaseName = 'vazuri-preview-liko-dark-shop-public';
+const publicBaseName = 'nightshift';
 for (const entry of await readdir(clientRoot)) {
   if (entry === publicBaseName) continue;
   await cp(resolve(clientRoot, entry), resolve(target, entry), { recursive: true, force: true });
