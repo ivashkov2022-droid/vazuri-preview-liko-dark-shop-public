@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { FormEvent, useEffect, useRef, useState } from "react";
+import CaseDock from "./CaseDock";
 
 const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -305,28 +306,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="case-study-note" aria-labelledby="case-study-title">
-        <p className="case-study-label">VAZURI / Concept case</p>
-        <div>
-          <h2 id="case-study-title">E-commerce design built around product character.</h2>
-          <p>
-            NIGHTSHIFT explores how art direction, a focused product hierarchy
-            and responsive interactions can turn a technical footwear catalogue
-            into a distinctive shopping experience.
-          </p>
-        </div>
-        <nav aria-label="VAZURI case study links">
-          <a href="https://vazuri.ru/en#projects">More VAZURI cases ↗</a>
-          <a href="https://vazuri.ru/en#contact">Discuss an e-commerce project ↗</a>
-        </nav>
-      </section>
-
       <footer>
         <div>
           <span>Nightshift®</span>
           <span>Independent running systems</span>
         </div>
       </footer>
+
+      <CaseDock onBrief={openBrief} />
 
       {briefOpen && (
         <div className="modal-shell" role="dialog" aria-modal="true" aria-labelledby="brief-title">
@@ -338,7 +325,7 @@ export default function Home() {
               <p>Стратегия / арт-дирекшн / разработка</p>
             </div>
             <div className="brief-form-wrap">
-              <button className="modal-close" onClick={() => setBriefOpen(false)}>Закрыть ×</button>
+              <button className="modal-close" onClick={() => setBriefOpen(false)}>← Вернуться к кейсу</button>
               {sent ? (
                 <div className="sent-state">
                   <span>Запрос принят / 01</span>
@@ -363,15 +350,17 @@ export default function Home() {
                     <span>02 / Как с вами связаться?</span>
                     <input name="contact" autoComplete="email" placeholder="Email или Telegram" required />
                   </label>
-                  <label>
-                    <span>03 / Что вам интересно?</span>
-                    <select name="project" defaultValue="Разбор визуального решения">
-                      <option>Разбор визуального решения</option>
-                      <option>Сайт бренда</option>
-                      <option>Запуск продукта</option>
-                      <option>Другое</option>
-                    </select>
-                  </label>
+                  <fieldset className="brief-choices">
+                    <legend>03 / Что вам интересно?</legend>
+                    <div>
+                      {["Разбор визуального решения", "Сайт бренда", "Запуск продукта", "Другое"].map((option, index) => (
+                        <label key={option}>
+                          <input type="radio" name="project" value={option} defaultChecked={index === 0} />
+                          <span>{option}</span>
+                        </label>
+                      ))}
+                    </div>
+                  </fieldset>
                   <label className="consent-row">
                     <input name="consent" type="checkbox" required />
                     <span>Соглашаюсь на обработку персональных данных</span>
