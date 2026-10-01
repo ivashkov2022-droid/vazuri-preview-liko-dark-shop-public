@@ -1,45 +1,45 @@
 {
-  "_framework-BgSIrAUN.js": {
-    "file": "_next/static/chunks/framework-BgSIrAUN.js",
+  "_framework-b_Vdhe8k.js": {
+    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/framework-b_Vdhe8k.js",
     "name": "framework",
     "imports": [
-      "_rolldown-runtime-C60lm6uB.js"
+      "_rolldown-runtime-Dd0rqF-p.js"
     ]
   },
-  "_rolldown-runtime-C60lm6uB.js": {
-    "file": "_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+  "_rolldown-runtime-Dd0rqF-p.js": {
+    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/rolldown-runtime-Dd0rqF-p.js",
     "name": "rolldown-runtime"
   },
   "app/page.tsx": {
-    "file": "_next/static/chunks/page-DKZq5F7p.js",
+    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-DgalXqZM.js",
     "name": "page",
     "src": "app/page.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_rolldown-runtime-C60lm6uB.js",
+      "_rolldown-runtime-Dd0rqF-p.js",
       "virtual:vinext-app-browser-entry",
-      "_framework-BgSIrAUN.js"
+      "_framework-b_Vdhe8k.js"
     ]
   },
   "node_modules/.pnpm/vinext@1.0.0-beta.2_@vitejs_4e4921fe45004b12d6f90febb3bf1b22/node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "_next/static/chunks/layout-segment-context-Cl_15fKy.js",
+    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-BCZ8waLx.js",
     "name": "layout-segment-context",
     "src": "node_modules/.pnpm/vinext@1.0.0-beta.2_@vitejs_4e4921fe45004b12d6f90febb3bf1b22/node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
     "imports": [
-      "_rolldown-runtime-C60lm6uB.js",
+      "_rolldown-runtime-Dd0rqF-p.js",
       "virtual:vinext-app-browser-entry",
-      "_framework-BgSIrAUN.js"
+      "_framework-b_Vdhe8k.js"
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "_next/static/chunks/index-CjqMU6fL.js",
+    "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-BPLn34Ii.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
     "imports": [
-      "_rolldown-runtime-C60lm6uB.js",
-      "_framework-BgSIrAUN.js"
+      "_rolldown-runtime-Dd0rqF-p.js",
+      "_framework-b_Vdhe8k.js"
     ],
     "dynamicImports": [
       "virtual:vinext-app-browser-entry",
