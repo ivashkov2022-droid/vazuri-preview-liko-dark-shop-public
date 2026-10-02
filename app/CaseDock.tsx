@@ -12,12 +12,21 @@ type DockAction = "back" | "brief" | null;
 export default function CaseDock({ onBrief, theme = "night" }: CaseDockProps) {
   const [manualOpen, setManualOpen] = useState(false);
   const [autoAction, setAutoAction] = useState<DockAction>(null);
+  const [backHref, setBackHref] = useState("https://vazuri.ru/#projects");
   const rootRef = useRef<HTMLElement>(null);
   const manualOpenRef = useRef(false);
 
   useEffect(() => {
     manualOpenRef.current = manualOpen;
   }, [manualOpen]);
+
+  useEffect(() => {
+    const token = new URLSearchParams(window.location.search).get("return") || "";
+    if (!/^(ru|en)-(project|case)-(nightshift|hotel|urban|revive|slides|skyvilla|altera|scrollsync|relief)$/.test(token)) return;
+    const language = token.slice(0, 2);
+    const anchor = token.replace(/^(ru|en)-/, "");
+    setBackHref(`https://vazuri.ru${language === "en" ? "/en" : "/"}?fromCase=${encodeURIComponent(token)}#${anchor}`);
+  }, []);
 
   useEffect(() => {
     let frame = 0;
@@ -69,7 +78,7 @@ export default function CaseDock({ onBrief, theme = "night" }: CaseDockProps) {
   return (
     <aside ref={rootRef} className={`case-dock case-dock--${theme}${manualOpen ? " is-open" : ""}${visibleAction ? " has-peek" : ""}`} aria-label="Навигация VAZURI">
       <div className="case-dock__menu" hidden={!visibleAction}>
-        <a href="https://vazuri.ru/#projects" hidden={visibleAction !== "back"}>На сайт</a>
+        <a href={backHref} hidden={visibleAction !== "back"}>На сайт</a>
         <button type="button" hidden={visibleAction !== "brief"} onClick={openBrief}>Обсудить проект <span aria-hidden="true">↗</span></button>
       </div>
       <button className="case-dock__toggle" type="button" aria-expanded={manualOpen} aria-label="Открыть переход на сайт VAZURI" onClick={() => setManualOpen((value) => !value)}>
