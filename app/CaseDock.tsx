@@ -12,7 +12,7 @@ type DockAction = "back" | "brief" | null;
 export default function CaseDock({ onBrief, theme = "night" }: CaseDockProps) {
   const [manualOpen, setManualOpen] = useState(false);
   const [autoAction, setAutoAction] = useState<DockAction>(null);
-  const [backHref, setBackHref] = useState("https://vazuri.ru/#projects");
+  const [backHref, setBackHref] = useState("https://vazuri.io/#projects");
   const rootRef = useRef<HTMLElement>(null);
   const manualOpenRef = useRef(false);
 
@@ -25,7 +25,7 @@ export default function CaseDock({ onBrief, theme = "night" }: CaseDockProps) {
     if (!/^(ru|en)-(project|case)-(nightshift|hotel|urban|revive|slides|skyvilla|altera|scrollsync|relief)$/.test(token)) return;
     const language = token.slice(0, 2);
     const anchor = token.replace(/^(ru|en)-/, "");
-    setBackHref(`https://vazuri.ru${language === "en" ? "/en" : "/"}?fromCase=${encodeURIComponent(token)}#${anchor}`);
+    setBackHref(`${window.location.origin}${language === "en" ? "/en" : "/"}?fromCase=${encodeURIComponent(token)}#${anchor}`);
   }, []);
 
   useEffect(() => {

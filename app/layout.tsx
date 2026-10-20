@@ -3,10 +3,10 @@ import "./globals.css";
 
 const siteUrl = new URL(
   process.env.NEXT_PUBLIC_SITE_URL ??
-    "https://vazuri.ru/nightshift/",
+    "https://vazuri.io/nightshift/",
 );
 const ogImage = new URL("og.png", siteUrl).href;
-const favicon = new URL("favicon.svg", siteUrl).href;
+const favicon = "/nightshift/favicon.svg";
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
@@ -67,8 +67,8 @@ export default function RootLayout({
     url: siteUrl.href,
     image: ogImage,
     inLanguage: "en",
-    creator: { "@type": "Organization", name: "VAZURI", url: "https://vazuri.ru/" },
-    isPartOf: { "@type": "WebSite", name: "VAZURI", url: "https://vazuri.ru/" },
+    creator: { "@type": "Organization", name: "VAZURI", url: "https://vazuri.io/" },
+    isPartOf: { "@type": "WebSite", name: "VAZURI", url: "https://vazuri.io/" },
     keywords: "e-commerce web design, footwear website design, dark interface, interactive product experience",
   };
 

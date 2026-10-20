@@ -129,7 +129,7 @@ export default function Home() {
     setFormStatus("sending");
 
     try {
-      const response = await fetch("https://vazuri.ru/lead.php", {
+      const response = await fetch("/lead.php", {
         method: "POST",
         mode: "no-cors",
         body: JSON.stringify({

@@ -8,7 +8,7 @@ const cli = fileURLToPath(new URL("../node_modules/vinext/dist/cli.js", import.m
 const env = {
   ...process.env,
   NEXT_PUBLIC_BASE_PATH: process.env.NEXT_PUBLIC_BASE_PATH ?? "/nightshift",
-  NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL ?? "https://vazuri.ru/nightshift/",
+  NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL ?? "https://vazuri.io/nightshift/",
   WRANGLER_LOG_PATH: process.env.WRANGLER_LOG_PATH ?? ".wrangler/wrangler.log",
 };
 
