@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
+  other: { google: "notranslate" },
   openGraph: {
     title: "NIGHTSHIFT — E-commerce Concept Case | VAZURI",
     description:
@@ -74,8 +75,8 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" translate="no">
+      <body className="notranslate">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

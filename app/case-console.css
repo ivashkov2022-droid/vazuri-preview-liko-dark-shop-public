@@ -111,7 +111,8 @@
 .v2-console__outline path { fill: none; stroke: var(--v2-accent); stroke-width: 1; stroke-linecap: square; stroke-linejoin: miter; stroke-dasharray: 1; stroke-dashoffset: 1; vector-effect: non-scaling-stroke; will-change: stroke-dashoffset; }
 .v2-console__mark { display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; min-width: 0; }
 .v2-console__mark strong { font-family: "Archivo Black", sans-serif; font-size: 19px; font-weight: 400; line-height: .9; letter-spacing: -.08em; }
-.v2-console__mark small { font-size: 8px; line-height: 1; letter-spacing: .08em; white-space: nowrap; }
+.v2-console__mark small { display: inline-flex; align-items: baseline; gap: 2px; font-size: 7.5px; line-height: 1; letter-spacing: .06em; white-space: nowrap; }
+.v2-console__mark small i { font-style: normal; letter-spacing: 0; }
 .v2-console__meter { position: relative; width: 5px; height: 100%; background: rgba(241, 240, 234, .14); }
 .v2-console__meter i { position: absolute; inset: 0; height: 100%; background: var(--v2-accent); transform: scaleY(.1); transform-origin: center bottom; will-change: transform; }
 
@@ -194,11 +195,11 @@
 .v2-brief__success button { margin-top: 30px; }
 
 @media (max-width: 640px) {
-  .v2-console { right: 12px; bottom: calc(20dvh + env(safe-area-inset-bottom)); }
+  .v2-console { right: 12px; bottom: calc(35dvh + env(safe-area-inset-bottom)); }
   .v2-console__toggle { width: 76px; height: 58px; }
   .v2-console__toggle,
   .v2-console__panel { background: #090a09; backdrop-filter: none; }
-  .v2-console__panel { width: min(332px, calc(100vw - 24px)); }
+  .v2-console__panel { width: min(332px, calc(100vw - 40px)); }
   .v2-console__head { min-height: 68px; padding: 13px; }
   .v2-console__actions { grid-template-columns: 1fr; }
   .v2-console__action { min-height: 52px; border-right: 0; border-bottom: 1px solid var(--v2-line); }

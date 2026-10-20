@@ -21,14 +21,16 @@ test("server-renders the complete NIGHTSHIFT preview", async () => {
   assert.match(html, /RUN/);
   assert.match(html, /AFTER/);
   assert.match(html, /DARK/);
-  assert.match(html, /Case notes/);
+  assert.match(html, /Discuss project/);
   assert.match(html, /<title>NIGHTSHIFT — E-commerce Concept Case \| VAZURI<\/title>/i);
   assert.match(html, /rel="canonical"[^>]+https:\/\/vazuri\.io\/nightshift\//i);
   assert.match(html, /rel="(?:shortcut )?icon"[^>]+nightshift\/favicon\.svg/i);
   assert.match(html, /<h1\b/i);
   assert.match(html, /application\/ld\+json/i);
   assert.match(html, /class="v2-console v2-console--nightshift"/i);
-  assert.match(html, /CASE \/ 01/i);
+  assert.match(html, /CASE[\s\S]*\/[\s\S]*01/i);
+  assert.match(html, /<html[^>]+lang="en"[^>]+translate="no"/i);
+  assert.match(html, /<meta[^>]+name="google"[^>]+content="notranslate"/i);
   assert.match(html, /Все проекты/i);
   assert.match(html, /Обсудить проект/i);
   assert.match(html, /href="https:\/\/vazuri\.io\/#projects"/i);
@@ -55,6 +57,9 @@ test("uses the approved progress console and brief instead of the legacy popup",
   assert.match(page, /autoComplete="off"/);
   assert.doesNotMatch(page, /brief-poster|ХОТИТЕ РАЗОБРАТЬ|Материалы по кейсу/);
   assert.match(styles, /bottom: calc\(20dvh/);
+  assert.match(styles, /@media \(max-width: 640px\)[\s\S]*bottom: calc\(35dvh/);
+  assert.match(styles, /v2-console__panel \{ width: min\(332px, calc\(100vw - 40px\)\); \}/);
+  assert.match(styles, /v2-console__mark small[^}]+gap: 2px/);
 });
 
 test("self-hosts every display font without a render-blocking Google Fonts request", async () => {

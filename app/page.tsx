@@ -150,7 +150,7 @@ export default function Home() {
         <nav className={menuOpen ? "nav-links open" : "nav-links"} aria-label="Main navigation">
           <a href="#shop" onClick={() => setMenuOpen(false)}>Shop</a>
           <a href="#drop" onClick={() => setMenuOpen(false)}>Drop 02</a>
-          <button onClick={() => { openBrief(); setMenuOpen(false); }}>Case notes</button>
+          <button onClick={() => { openBrief(); setMenuOpen(false); }}>Discuss project</button>
         </nav>
         <div className="header-actions">
           <button className="bag-button" type="button">

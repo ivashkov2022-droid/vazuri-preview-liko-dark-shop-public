@@ -109,7 +109,10 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
         aria-label={open ? "Закрыть навигацию VAZURI" : "Открыть навигацию VAZURI"}
         onClick={() => setOpen((value) => !value)}
       >
-        <span className="v2-console__mark"><strong>VZ</strong><small>CASE / 01</small></span>
+        <span className="v2-console__mark">
+          <strong>VZ</strong>
+          <small><span>CASE</span><i aria-hidden="true">/</i><span>01</span></small>
+        </span>
         <span className="v2-console__meter" aria-hidden="true"><i ref={meterRef} /></span>
         <svg className="v2-console__outline" viewBox="0 0 76 64" preserveAspectRatio="none" aria-hidden="true" focusable="false">
           <path ref={outlineRef} pathLength="1" d="M75.5 63.5H.5V.5H75.5V63.5" />
