@@ -27,7 +27,9 @@ test("server-renders the complete NIGHTSHIFT preview", async () => {
   assert.match(html, /rel="(?:shortcut )?icon"[^>]+nightshift\/favicon\.svg/i);
   assert.match(html, /<h1\b/i);
   assert.match(html, /application\/ld\+json/i);
-  assert.match(html, /class="case-dock case-dock--night"/i);
+  assert.match(html, /class="v2-console v2-console--nightshift"/i);
+  assert.match(html, /CASE \/ 01/i);
+  assert.match(html, /Все проекты/i);
   assert.match(html, /Обсудить проект/i);
   assert.match(html, /href="https:\/\/vazuri\.io\/#projects"/i);
   assert.doesNotMatch(html, /E-commerce design built around product character/i);
@@ -35,6 +37,24 @@ test("server-renders the complete NIGHTSHIFT preview", async () => {
   assert.doesNotMatch(html, /Want a site like this/);
   assert.doesNotMatch(html, />\s*(Codex|ChatGPT|Your site is taking shape)\b/i);
   assert.doesNotMatch(html, /https:\/\/vazuri\.ru/i);
+});
+
+test("uses the approved progress console and brief instead of the legacy popup", async () => {
+  const [page, dock, styles] = await Promise.all([
+    readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/CaseDock.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/case-console.css", import.meta.url), "utf8"),
+  ]);
+  assert.match(dock, /v2-console__meter/);
+  assert.match(dock, /v2-console__outline/);
+  assert.match(dock, /remaining <= Math\.max\(32, viewportHeight \* 0\.04\)/);
+  assert.match(page, /v2-brief__drawer/);
+  assert.match(page, /Опишите/);
+  assert.match(page, /Ответим лично/);
+  assert.match(page, /Что нужно сделать\?/);
+  assert.match(page, /autoComplete="off"/);
+  assert.doesNotMatch(page, /brief-poster|ХОТИТЕ РАЗОБРАТЬ|Материалы по кейсу/);
+  assert.match(styles, /bottom: calc\(20dvh/);
 });
 
 test("self-hosts every display font without a render-blocking Google Fonts request", async () => {

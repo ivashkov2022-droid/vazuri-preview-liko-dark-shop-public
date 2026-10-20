@@ -4,86 +4,116 @@ import { useEffect, useRef, useState } from "react";
 
 type CaseDockProps = {
   onBrief: () => void;
-  theme?: "night" | "altera";
 };
 
-type DockAction = "back" | "brief" | null;
-
-export default function CaseDock({ onBrief, theme = "night" }: CaseDockProps) {
-  const [manualOpen, setManualOpen] = useState(false);
-  const [autoAction, setAutoAction] = useState<DockAction>(null);
-  const [backHref, setBackHref] = useState("https://vazuri.io/#projects");
+export default function CaseDock({ onBrief }: CaseDockProps) {
+  const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLElement>(null);
-  const manualOpenRef = useRef(false);
+  const backLinkRef = useRef<HTMLAnchorElement>(null);
+  const meterRef = useRef<HTMLElement>(null);
+  const outlineRef = useRef<SVGPathElement>(null);
+  const completionShown = useRef(false);
 
   useEffect(() => {
-    manualOpenRef.current = manualOpen;
-  }, [manualOpen]);
-
-  useEffect(() => {
-    const token = new URLSearchParams(window.location.search).get("return") || "";
+    const token = new URLSearchParams(window.location.search).get("return") || "ru-project-nightshift";
     if (!/^(ru|en)-(project|case)-(nightshift|hotel|urban|revive|slides|skyvilla|altera|scrollsync|relief)$/.test(token)) return;
     const language = token.slice(0, 2);
     const anchor = token.replace(/^(ru|en)-/, "");
-    setBackHref(`${window.location.origin}${language === "en" ? "/en" : "/"}?fromCase=${encodeURIComponent(token)}#${anchor}`);
+    backLinkRef.current?.setAttribute("href", `${window.location.origin}${language === "en" ? "/en" : "/"}?fromCase=${encodeURIComponent(token)}#${anchor}`);
   }, []);
 
   useEffect(() => {
     let frame = 0;
-    const update = () => {
+    const updateProgress = () => {
       frame = 0;
-      rootRef.current?.style.setProperty("--case-scroll-angle", `${Math.round(window.scrollY * 0.42)}deg`);
-      if (manualOpenRef.current) return;
-      if (window.scrollY <= 24) {
-        setAutoAction(null);
-        return;
+      const scrollingElement = document.scrollingElement || document.documentElement;
+      const viewportHeight = scrollingElement.clientHeight || window.innerHeight;
+      const available = Math.max(scrollingElement.scrollHeight - viewportHeight, 1);
+      const scrollTop = Math.max(window.scrollY, scrollingElement.scrollTop);
+      const remaining = Math.max(0, available - scrollTop);
+      const progress = Math.max(0, Math.min(1, scrollTop / available));
+      if (meterRef.current) meterRef.current.style.transform = `scaleY(${Math.max(0.1, progress).toFixed(4)})`;
+      if (outlineRef.current) outlineRef.current.style.strokeDashoffset = (1 - progress).toFixed(4);
+      if (scrollTop > 0 && remaining <= Math.max(32, viewportHeight * 0.04) && !completionShown.current) {
+        completionShown.current = true;
+        setOpen(true);
       }
-      const preferredBandSize = Math.max(window.innerHeight * 1.35, 720);
-      const maxScroll = Math.max(document.documentElement.scrollHeight - window.innerHeight, 0);
-      const bandSize = maxScroll > 80
-        ? Math.min(preferredBandSize, Math.max(120, (maxScroll - 24) / 2))
-        : preferredBandSize;
-      const band = Math.floor((window.scrollY - 24) / bandSize);
-      setAutoAction(band % 2 === 0 ? "back" : "brief");
     };
-    const requestUpdate = () => {
-      if (!frame) frame = window.requestAnimationFrame(update);
+    const scheduleProgress = () => {
+      if (!frame) frame = window.requestAnimationFrame(updateProgress);
     };
-    const closeOutside = (event: PointerEvent) => {
-      if (!rootRef.current?.contains(event.target as Node)) setManualOpen(false);
-    };
-    const closeWithEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setManualOpen(false);
-    };
-    update();
-    window.addEventListener("scroll", requestUpdate, { passive: true });
-    window.addEventListener("resize", requestUpdate);
-    document.addEventListener("pointerdown", closeOutside);
-    document.addEventListener("keydown", closeWithEscape);
+    updateProgress();
+    window.addEventListener("scroll", scheduleProgress, { passive: true });
+    window.addEventListener("resize", scheduleProgress);
+    window.addEventListener("scrollend", scheduleProgress);
+    window.addEventListener("touchend", scheduleProgress, { passive: true });
+    window.visualViewport?.addEventListener("resize", scheduleProgress);
     return () => {
       if (frame) window.cancelAnimationFrame(frame);
-      window.removeEventListener("scroll", requestUpdate);
-      window.removeEventListener("resize", requestUpdate);
-      document.removeEventListener("pointerdown", closeOutside);
-      document.removeEventListener("keydown", closeWithEscape);
+      window.removeEventListener("scroll", scheduleProgress);
+      window.removeEventListener("resize", scheduleProgress);
+      window.removeEventListener("scrollend", scheduleProgress);
+      window.removeEventListener("touchend", scheduleProgress);
+      window.visualViewport?.removeEventListener("resize", scheduleProgress);
     };
   }, []);
 
-  const visibleAction: DockAction = manualOpen ? "back" : autoAction;
-  const openBrief = () => {
-    setManualOpen(false);
-    onBrief();
-  };
+  useEffect(() => {
+    const closeOutside = (event: PointerEvent) => {
+      if (open && !rootRef.current?.contains(event.target as Node)) setOpen(false);
+    };
+    const closeWithEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("pointerdown", closeOutside);
+    document.addEventListener("keydown", closeWithEscape);
+    return () => {
+      document.removeEventListener("pointerdown", closeOutside);
+      document.removeEventListener("keydown", closeWithEscape);
+    };
+  }, [open]);
 
   return (
-    <aside ref={rootRef} className={`case-dock case-dock--${theme}${manualOpen ? " is-open" : ""}${visibleAction ? " has-peek" : ""}`} aria-label="Навигация VAZURI">
-      <div className="case-dock__menu" hidden={!visibleAction}>
-        <a href={backHref} hidden={visibleAction !== "back"}>На сайт</a>
-        <button type="button" hidden={visibleAction !== "brief"} onClick={openBrief}>Обсудить проект <span aria-hidden="true">↗</span></button>
+    <aside
+      ref={rootRef}
+      className={`v2-console v2-console--nightshift${open ? " is-open" : ""}`}
+      aria-label="Навигация VAZURI"
+      onPointerEnter={() => {
+        if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) setOpen(true);
+      }}
+      onPointerLeave={() => {
+        if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) setOpen(false);
+      }}
+    >
+      <div className="v2-console__panel" hidden={!open}>
+        <div className="v2-console__head">
+          <div>
+            <p>VAZURI / CASE CHANNEL</p>
+            <strong>NIGHTSHIFT</strong>
+          </div>
+          <span className="v2-console__status">Live case</span>
+        </div>
+        <nav className="v2-console__actions" aria-label="Действия с кейсом">
+          <a ref={backLinkRef} className="v2-console__action" href="https://vazuri.io/#projects">
+            <span>Все проекты</span><span aria-hidden="true">←</span>
+          </a>
+          <button className="v2-console__action" type="button" onClick={() => { setOpen(false); onBrief(); }}>
+            <span>Обсудить проект</span><span aria-hidden="true">↗</span>
+          </button>
+        </nav>
       </div>
-      <button className="case-dock__toggle" type="button" aria-expanded={manualOpen} aria-label="Открыть переход на сайт VAZURI" onClick={() => setManualOpen((value) => !value)}>
-        <span className="case-dock__signal" aria-hidden="true"><i /></span>
-        <span className="case-dock__sr-only">VAZURI</span>
+      <button
+        className="v2-console__toggle"
+        type="button"
+        aria-expanded={open}
+        aria-label={open ? "Закрыть навигацию VAZURI" : "Открыть навигацию VAZURI"}
+        onClick={() => setOpen((value) => !value)}
+      >
+        <span className="v2-console__mark"><strong>VZ</strong><small>CASE / 01</small></span>
+        <span className="v2-console__meter" aria-hidden="true"><i ref={meterRef} /></span>
+        <svg className="v2-console__outline" viewBox="0 0 76 64" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <path ref={outlineRef} pathLength="1" d="M75.5 63.5H.5V.5H75.5V63.5" />
+        </svg>
       </button>
     </aside>
   );

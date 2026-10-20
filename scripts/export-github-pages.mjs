@@ -16,7 +16,7 @@ const response = await worker.fetch(
 
 if (!response.ok) throw new Error(`Render failed with HTTP ${response.status}`);
 const html = await response.text();
-if (!html.includes('class="case-dock case-dock--night"')) throw new Error('Rendered dock is missing');
+if (!html.includes('class="v2-console v2-console--nightshift"')) throw new Error('Rendered progress console is missing');
 
 await mkdir(target, { recursive: true });
 const clientRoot = resolve('dist/client');

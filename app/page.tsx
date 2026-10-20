@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FormEvent, useEffect, useRef, useState } from "react";
+import { CSSProperties, FormEvent, useEffect, useRef, useState } from "react";
 import CaseDock from "./CaseDock";
 
 const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -35,34 +35,10 @@ export default function Home() {
   const [briefOpen, setBriefOpen] = useState(false);
   const [sent, setSent] = useState(false);
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "error">("idle");
+  const [formProgress, setFormProgress] = useState(0.06);
   const [selectedSize, setSelectedSize] = useState("42");
   const [menuOpen, setMenuOpen] = useState(false);
-  const dropRef = useRef<HTMLElement>(null);
-  const prompted = useRef(false);
-
-  useEffect(() => {
-    const node = dropRef.current;
-    if (!node) return;
-
-    let timer = 0;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting || prompted.current) return;
-        prompted.current = true;
-        timer = window.setTimeout(() => {
-          setSent(false);
-          setFormStatus("idle");
-          setBriefOpen(true);
-        }, 700);
-      },
-      { threshold: 0.12 },
-    );
-    observer.observe(node);
-    return () => {
-      observer.disconnect();
-      window.clearTimeout(timer);
-    };
-  }, []);
+  const briefCloseRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -100,6 +76,7 @@ export default function Home() {
     body.style.width = "100%";
     body.style.overflow = "hidden";
     if (scrollbarWidth > 0) body.style.paddingRight = `${scrollbarWidth}px`;
+    window.requestAnimationFrame(() => briefCloseRef.current?.focus({ preventScroll: true }));
 
     return () => {
       const previousScrollBehavior = root.style.scrollBehavior;
@@ -112,10 +89,17 @@ export default function Home() {
   }, [briefOpen]);
 
   function openBrief() {
-    prompted.current = true;
     setSent(false);
     setFormStatus("idle");
+    setFormProgress(0.06);
     setBriefOpen(true);
+  }
+
+  function updateFormProgress(event: FormEvent<HTMLFormElement>) {
+    const data = new FormData(event.currentTarget);
+    const completed = [data.get("name"), data.get("contact"), data.get("consent")]
+      .reduce((total, value) => total + Number(Boolean(String(value || "").trim())), 0);
+    setFormProgress(Math.max(0.06, completed / 3));
   }
 
   function addToBag() {
@@ -131,19 +115,25 @@ export default function Home() {
     try {
       const response = await fetch("/lead.php", {
         method: "POST",
-        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
         body: JSON.stringify({
-          source: "behance",
+          source: "nightshift",
+          language: "ru",
           website: data.get("website") || "",
           name: data.get("name") || "",
           contact: data.get("contact") || "",
           company: "",
-          message: `Материалы по кейсу NIGHTSHIFT. Интерес: ${data.get("project") || "визуальное решение"}.`,
+          message: `NIGHTSHIFT. Запрос: ${data.get("interest") || "Сайт или цифровой продукт"}.`,
           consent: data.get("consent") || "",
         }),
       });
-      if (response.type !== "opaque" && !response.ok) throw new Error("send_failed");
+      const payload = await response.json().catch(() => ({ ok: false }));
+      if (!response.ok || !payload.ok) throw new Error("send_failed");
       form.reset();
+      setFormProgress(0.06);
       setSent(true);
       setFormStatus("idle");
     } catch {
@@ -255,7 +245,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="drop-section" id="drop" ref={dropRef}>
+      <section className="drop-section" id="drop">
         <div className="drop-visual">
           <Image
             src={`${assetBase}/images/shop-banner-1.jpg`}
@@ -316,66 +306,70 @@ export default function Home() {
       <CaseDock onBrief={openBrief} />
 
       {briefOpen && (
-        <div className="modal-shell" role="dialog" aria-modal="true" aria-labelledby="brief-title">
-          <button className="modal-backdrop" onClick={() => setBriefOpen(false)} aria-label="Close form" />
-          <div className="brief-modal">
-            <div className="brief-poster">
-              <span>VAZURI / КЕЙС 01</span>
-              <h2>СОЗДАДИМ<br />ВАШ ЦИФРОВОЙ<br /><em>ОБРАЗ.</em></h2>
-              <p>Стратегия / арт-дирекшн / разработка</p>
-            </div>
-            <div className="brief-form-wrap">
-              <button className="modal-close" onClick={() => setBriefOpen(false)}>← Вернуться к кейсу</button>
+        <div className="v2-brief v2-brief--nightshift is-open">
+          <button className="v2-brief__backdrop" type="button" onClick={() => setBriefOpen(false)} aria-label="Закрыть форму" />
+          <section className="v2-brief__drawer" role="dialog" aria-modal="true" aria-labelledby="v2-brief-title" aria-describedby="v2-brief-description">
+            <header className="v2-brief__topline">
+              <p>VAZURI / Новый проект</p>
+              <button ref={briefCloseRef} className="v2-brief__close" type="button" onClick={() => setBriefOpen(false)} aria-label="Закрыть">×</button>
+            </header>
+            <div className="v2-brief__content">
               {sent ? (
-                <div className="sent-state">
-                  <span>Запрос принят / 01</span>
-                  <h2>МАТЕРИАЛЫ<br />УЖЕ В ПУТИ.</h2>
-                  <p>Свяжемся с вами и предложим следующий логичный шаг.</p>
-                  <button onClick={() => setBriefOpen(false)}>Вернуться к проекту</button>
+                <div className="v2-brief__success">
+                  <p>Запрос принят</p>
+                  <h2>Спасибо.</h2>
+                  <span>Ответим лично по указанному вами контакту.</span>
+                  <button type="button" onClick={() => setBriefOpen(false)}>Вернуться к кейсу <b aria-hidden="true">→</b></button>
                 </div>
               ) : (
-                <form onSubmit={submitBrief}>
-                  <p className="form-index">Материалы по кейсу / NIGHTSHIFT</p>
-                  <h2 id="brief-title">ХОТИТЕ РАЗОБРАТЬ<br />ЭТО РЕШЕНИЕ?</h2>
-                  <p className="form-lead">
-                    Оставьте контакт — отправим краткий разбор визуальной системы
-                    и подскажем, как применить похожий подход в вашем проекте.
-                  </p>
-                  <input className="website-field" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
-                  <label>
-                    <span>01 / Ваше имя</span>
-                    <input name="name" autoComplete="name" placeholder="Имя или компания" required />
-                  </label>
-                  <label>
-                    <span>02 / Как с вами связаться?</span>
-                    <input name="contact" autoComplete="email" placeholder="Email или Telegram" required />
-                  </label>
-                  <fieldset className="brief-choices">
-                    <legend>03 / Что вам интересно?</legend>
-                    <div>
-                      {["Разбор визуального решения", "Сайт бренда", "Запуск продукта", "Другое"].map((option, index) => (
-                        <label key={option}>
-                          <input type="radio" name="project" value={option} defaultChecked={index === 0} />
-                          <span>{option}</span>
-                        </label>
-                      ))}
-                    </div>
-                  </fieldset>
-                  <label className="consent-row">
-                    <input name="consent" type="checkbox" required />
-                    <span>Соглашаюсь на обработку персональных данных</span>
-                  </label>
-                  <button className="submit-button" type="submit">
-                    {formStatus === "sending" ? "Отправляем…" : "Получить материалы"} <span>↗</span>
-                  </button>
-                  {formStatus === "error" && (
-                    <small className="form-error">Не удалось отправить. Напишите нам: hello@vazuri.ru</small>
-                  )}
-                  <small>Никакой рассылки — только материалы по кейсу и ответ по вашему запросу.</small>
-                </form>
+                <div className="v2-brief__form-state">
+                  <h2 id="v2-brief-title"><span>Опишите</span>{" "}<span>задачу</span></h2>
+                  <p className="v2-brief__lead" id="v2-brief-description">Ответим лично</p>
+                  <form
+                    className="v2-brief__form"
+                    autoComplete="off"
+                    onSubmit={submitBrief}
+                    onInput={updateFormProgress}
+                    style={{ "--v2-form-progress": formProgress } as CSSProperties}
+                  >
+                    <input className="v2-brief__trap" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
+                    <label className="v2-brief__field">
+                      <input name="name" autoComplete="off" autoCapitalize="words" data-1p-ignore data-lpignore="true" aria-label="Ваше имя" placeholder="Ваше имя" maxLength={120} required />
+                    </label>
+                    <label className="v2-brief__field">
+                      <input name="contact" autoComplete="off" autoCapitalize="none" data-1p-ignore data-lpignore="true" aria-label="Email или Telegram" placeholder="Email или Telegram" maxLength={180} required />
+                    </label>
+                    <fieldset className="v2-brief__choices">
+                      <legend>Что нужно сделать?</legend>
+                      <div className="v2-brief__choice-grid">
+                        {[
+                          ["Сайт / digital", "Сайт или цифровой продукт"],
+                          ["Бренд / art direction", "Бренд и арт-дирекшн"],
+                          ["Интерактив", "Интерактивный опыт"],
+                          ["Разбор проекта", "Разбор проекта"],
+                        ].map(([label, value], index) => (
+                          <label key={value}>
+                            <input type="radio" name="interest" value={value} defaultChecked={index === 0} />
+                            <span>{label}</span>
+                          </label>
+                        ))}
+                      </div>
+                    </fieldset>
+                    <label className="v2-brief__consent">
+                      <input name="consent" type="checkbox" value="yes" required />
+                      <span>Соглашаюсь на обработку персональных данных</span>
+                    </label>
+                    <button className="v2-brief__submit" type="submit" disabled={formStatus === "sending"}>
+                      <span>{formStatus === "sending" ? "Отправляем…" : "Отправить запрос"}</span><b aria-hidden="true">↗</b>
+                    </button>
+                    <p className="v2-brief__feedback" aria-live="polite">
+                      {formStatus === "error" ? "Не удалось отправить сообщение. Попробуйте ещё раз." : ""}
+                    </p>
+                  </form>
+                </div>
               )}
             </div>
-          </div>
+          </section>
         </div>
       )}
     </main>
