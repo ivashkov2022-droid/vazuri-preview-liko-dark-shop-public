@@ -111,7 +111,7 @@ export default function Home() {
     setFormStatus("sending");
 
     try {
-      const response = await fetch("/lead.php", {
+      const response = await fetch("https://vazuri.io/lead.php", {
         method: "POST",
         headers: {
           Accept: "application/json",

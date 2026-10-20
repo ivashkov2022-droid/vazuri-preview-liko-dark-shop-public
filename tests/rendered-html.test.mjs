@@ -1,17 +1,20 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 async function render() {
+  const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "/nightshift";
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
   return worker.fetch(
-    new Request("http://localhost/nightshift/", { headers: { accept: "text/html" } }),
+    new Request(`http://localhost${publicBasePath}/`, { headers: { accept: "text/html" } }),
     { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
     { waitUntil() {}, passThroughOnException() {} },
   );
 }
 
 test("server-renders the complete NIGHTSHIFT preview", async () => {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://vazuri.ru/nightshift/";
+  const escapedSiteUrl = siteUrl.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -22,8 +25,8 @@ test("server-renders the complete NIGHTSHIFT preview", async () => {
   assert.match(html, /DARK/);
   assert.match(html, /Case notes/);
   assert.match(html, /<title>NIGHTSHIFT — E-commerce Concept Case \| VAZURI<\/title>/i);
-  assert.match(html, /rel="canonical"[^>]+https:\/\/vazuri\.ru\/nightshift\//i);
-  assert.match(html, /rel="(?:shortcut )?icon"[^>]+nightshift\/favicon\.svg/i);
+  assert.match(html, new RegExp(`rel="canonical"[^>]+${escapedSiteUrl}`, "i"));
+  assert.match(html, new RegExp(`rel="(?:shortcut )?icon"[^>]+${escapedSiteUrl}favicon\\.svg`, "i"));
   assert.match(html, /<h1\b/i);
   assert.match(html, /application\/ld\+json/i);
   assert.match(html, /class="case-dock case-dock--night"/i);

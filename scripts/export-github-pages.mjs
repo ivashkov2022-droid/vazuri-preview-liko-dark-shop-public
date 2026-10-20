@@ -4,12 +4,14 @@ import { pathToFileURL } from 'node:url';
 
 const target = resolve(process.argv[2] || '');
 if (!process.argv[2]) throw new Error('Expected the gh-pages worktree path');
+const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '/nightshift';
+const publicBaseName = publicBasePath.split('/').filter(Boolean).at(-1) ?? 'nightshift';
 
 const workerUrl = pathToFileURL(resolve('dist/server/index.js'));
 workerUrl.searchParams.set('export', `${process.pid}-${Date.now()}`);
 const { default: worker } = await import(workerUrl.href);
 const response = await worker.fetch(
-  new Request('http://localhost/nightshift/', { headers: { accept: 'text/html' } }),
+  new Request(`http://localhost${publicBasePath}/`, { headers: { accept: 'text/html' } }),
   { ASSETS: { fetch: async () => new Response('Not found', { status: 404 }) } },
   { waitUntil() {}, passThroughOnException() {} },
 );
@@ -20,7 +22,6 @@ if (!html.includes('class="case-dock case-dock--night"')) throw new Error('Rende
 
 await mkdir(target, { recursive: true });
 const clientRoot = resolve('dist/client');
-const publicBaseName = 'nightshift';
 for (const entry of await readdir(clientRoot)) {
   if (entry === publicBaseName) continue;
   await cp(resolve(clientRoot, entry), resolve(target, entry), { recursive: true, force: true });
