@@ -28,7 +28,9 @@ test("server-renders the complete NIGHTSHIFT preview", async () => {
   assert.match(html, /application\/ld\+json/i);
   assert.match(html, /class="case-dock case-dock--night"/i);
   assert.match(html, /Обсудить проект/i);
-  assert.match(html, /href="https:\/\/vazuri\.ru\/#projects"/i);
+  assert.match(html, /href="https:\/\/vazuri\.io\/\?fromCase=ru-project-nightshift#project-nightshift"/i);
+  assert.match(html, /case-dock__track-progress/i);
+  assert.match(html, /Вернуться/i);
   assert.doesNotMatch(html, /E-commerce design built around product character/i);
   assert.match(html, /"isPartOf":\{"@type":"WebSite","name":"VAZURI"/i);
   assert.doesNotMatch(html, /Want a site like this/);
