@@ -6,7 +6,7 @@ type CaseDockProps = {
   onBrief: () => void;
 };
 
-const arrowCellIndexes = new Set([3, 9, 10, 15, 16, 17, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 37, 38, 45]);
+const arrowCellIndexes = new Set([3, 9, 15, 21, 22, 23, 24, 25, 26, 27, 29, 37, 45]);
 
 const puzzleCells = Array.from({ length: 49 }, (_, index) => {
   const column = index % 7;
@@ -35,7 +35,8 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLElement>(null);
   const backLinkRef = useRef<HTMLAnchorElement>(null);
-  const outlineRef = useRef<SVGPathElement>(null);
+  const outlineProgressRef = useRef<SVGPathElement>(null);
+  const outlineRunnerRef = useRef<SVGPathElement>(null);
   const completionShown = useRef(false);
 
   useEffect(() => {
@@ -56,7 +57,11 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
       const scrollTop = Math.max(window.scrollY, scrollingElement.scrollTop);
       const remaining = Math.max(0, available - scrollTop);
       const progress = Math.max(0, Math.min(1, scrollTop / available));
-      if (outlineRef.current) outlineRef.current.style.strokeDashoffset = (1 - progress).toFixed(4);
+      if (outlineProgressRef.current) outlineProgressRef.current.style.strokeDashoffset = (1 - progress).toFixed(4);
+      if (outlineRunnerRef.current) {
+        outlineRunnerRef.current.style.strokeDashoffset = (1.12 - progress).toFixed(4);
+        outlineRunnerRef.current.style.opacity = progress > 0.006 && progress < 0.994 ? "1" : "0";
+      }
       rootRef.current?.querySelectorAll<SVGGraphicsElement>("[data-puzzle-piece]").forEach((piece) => {
         const start = Number(piece.dataset.start || 0);
         const end = Number(piece.dataset.end || 1);
@@ -167,7 +172,8 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
           </svg>
         </span>
         <svg className="v2-console__outline" viewBox="0 0 56 56" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-          <path ref={outlineRef} pathLength="1" d="M55.5 55.5H.5V.5H55.5V55.5" />
+          <path ref={outlineProgressRef} className="v2-console__outline-progress" pathLength="1" d="M55.5 55.5H.5V.5H55.5V55.5" />
+          <path ref={outlineRunnerRef} className="v2-console__outline-runner" pathLength="1" d="M55.5 55.5H.5V.5H55.5V55.5" />
         </svg>
       </button>
     </aside>

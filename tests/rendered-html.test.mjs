@@ -52,6 +52,8 @@ test("uses the approved progress console and brief instead of the legacy popup",
   assert.doesNotMatch(dock, /data-puzzle-arrow/);
   assert.match(dock, /arrowCellIndexes/);
   assert.match(dock, /v2-console__outline/);
+  assert.match(dock, /v2-console__outline-runner/);
+  assert.match(styles, /stroke-dasharray: \.12 \.88/);
   assert.match(dock, /remaining <= Math\.max\(32, viewportHeight \* 0\.04\)/);
   assert.match(page, /v2-brief__drawer/);
   assert.match(page, /Опишите/);
