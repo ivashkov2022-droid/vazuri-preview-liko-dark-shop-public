@@ -6,6 +6,31 @@ type CaseDockProps = {
   onBrief: () => void;
 };
 
+const arrowCellIndexes = new Set([3, 9, 10, 15, 16, 17, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 37, 38, 45]);
+
+const puzzleCells = Array.from({ length: 49 }, (_, index) => {
+  const column = index % 7;
+  const row = Math.floor(index / 7);
+  const order = (index * 17) % 49;
+  const direction = (column + row * 2) % 4;
+  const offsets = [
+    { x: -12, y: 0, rotate: -18 },
+    { x: 0, y: -12, rotate: 14 },
+    { x: 12, y: 0, rotate: 18 },
+    { x: 0, y: 12, rotate: -14 },
+  ] as const;
+  const start = 0.015 + (order / 48) * 0.72;
+
+  return {
+    index,
+    column,
+    row,
+    start,
+    end: Math.min(start + 0.18, 0.9),
+    ...offsets[direction],
+  };
+}).filter((piece) => !arrowCellIndexes.has(piece.index));
+
 export default function CaseDock({ onBrief }: CaseDockProps) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLElement>(null);
@@ -32,13 +57,17 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
       const remaining = Math.max(0, available - scrollTop);
       const progress = Math.max(0, Math.min(1, scrollTop / available));
       if (outlineRef.current) outlineRef.current.style.strokeDashoffset = (1 - progress).toFixed(4);
-      rootRef.current?.querySelectorAll<SVGGraphicsElement>("[data-sole-lug]").forEach((lug) => {
-        const start = Number(lug.dataset.start || 0);
-        const end = Number(lug.dataset.end || 1);
+      rootRef.current?.querySelectorAll<SVGGraphicsElement>("[data-puzzle-piece]").forEach((piece) => {
+        const start = Number(piece.dataset.start || 0);
+        const end = Number(piece.dataset.end || 1);
+        const offsetX = Number(piece.dataset.x || 0);
+        const offsetY = Number(piece.dataset.y || 0);
+        const rotation = Number(piece.dataset.rotate || 0);
         const segmentProgress = Math.max(0, Math.min(1, (progress - start) / Math.max(end - start, 0.01)));
         const easedProgress = segmentProgress * segmentProgress * (3 - 2 * segmentProgress);
-        lug.style.opacity = easedProgress.toFixed(3);
-        lug.style.transform = `scale(${(0.84 + easedProgress * 0.16).toFixed(3)})`;
+        const remainingMotion = 1 - easedProgress;
+        piece.style.opacity = easedProgress.toFixed(3);
+        piece.style.transform = `translate(${(offsetX * remainingMotion).toFixed(2)}px, ${(offsetY * remainingMotion).toFixed(2)}px) rotate(${(rotation * remainingMotion).toFixed(2)}deg) scale(${(0.62 + easedProgress * 0.38).toFixed(3)})`;
       });
       if (scrollTop > 0 && remaining <= Math.max(32, viewportHeight * 0.04) && !completionShown.current) {
         completionShown.current = true;
@@ -116,32 +145,29 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
         onClick={() => setOpen((value) => !value)}
       >
         <span className="v2-console__beacon" aria-hidden="true">
-          <svg className="v2-sole" viewBox="0 0 40 62" focusable="false">
-            <defs>
-              <clipPath id="v2-nightshift-sole-clip">
-                <path d="M20 1.3c7.8 0 12.4 4.8 12.7 12 .2 5.5-2.2 9.5-1.5 14.7.7 5.1 3.8 10.1 3.1 16.3-.8 7.6-5.7 13.4-12.5 14.7-6.3 1.2-12-2-13.8-7.6-1.7-5.3 1.4-10 1.9-14.9.5-5.1-2.6-10.2-2.7-16.2C7 9.6 11.3 1.3 20 1.3Z" />
-              </clipPath>
-            </defs>
-            <g clipPath="url(#v2-nightshift-sole-clip)">
-              <g className="v2-sole__lug" data-sole-lug data-start="0" data-end="0.18"><path d="M10.3 7.6C12.4 4 15.4 2.1 18.8 2l-.7 7.4-5.6 2.8Z" /></g>
-              <g className="v2-sole__lug" data-sole-lug data-start="0.04" data-end="0.22"><path d="m21.7 52.8 7.2-2.9c-.9 4-3.4 6.7-7.5 7.8Z" /></g>
-              <g className="v2-sole__lug" data-sole-lug data-start="0.1" data-end="0.28"><path d="M21.2 2.1c4.2.4 7.2 2.5 8.8 5.8l-3.4 4.5-5.9-3Z" /></g>
-              <g className="v2-sole__lug" data-sole-lug data-start="0.16" data-end="0.34"><path d="m11.2 52.9 8.2-.8-.7 5.7c-3.2-.5-5.8-2.1-7.5-4.9Z" /></g>
-              <g className="v2-sole__lug" data-sole-lug data-start="0.22" data-end="0.4"><path d="m8.2 13.8 9.5-2.6.1 6.6-9.8 3.7Z" /></g>
-              <g className="v2-sole__lug" data-sole-lug data-start="0.28" data-end="0.46"><path d="m21.9 44.2 8.1.9-1 6.2-7.7-1.9Z" /></g>
-              <g className="v2-sole__lug" data-sole-lug data-start="0.34" data-end="0.52"><path d="m21.1 11.4 9.6 2.1-.1 7.3-9.8-3.2Z" /></g>
-              <g className="v2-sole__lug" data-sole-lug data-start="0.4" data-end="0.58"><path d="m10.5 45.1 8.4-1.1.9 5.6-8.8 1.4Z" /></g>
-              <g className="v2-sole__lug" data-sole-lug data-start="0.46" data-end="0.64"><path d="m7.9 24 8.9-4.1 2.1 5.7-8.3 5.9Z" /></g>
-              <g className="v2-sole__lug" data-sole-lug data-start="0.52" data-end="0.7"><path d="m21.6 34.9 7.7-2.3-.5 5.1-6.9 3.8-2-4.3Z" /></g>
-              <g className="v2-sole__lug" data-sole-lug data-start="0.58" data-end="0.76"><path d="m21.3 20.1 10 3.1-2.5 7.5-8.3-5.2Z" /></g>
-              <g className="v2-sole__lug" data-sole-lug data-start="0.64" data-end="0.82"><path d="m11 32.9 6.4-4.7 2.1 4.9-5.9 5.8-3.5-1.5Z" /></g>
-              <g className="v2-sole__lug" data-sole-lug data-start="0.72" data-end="0.9"><path d="m12.2 40.1 5.8-4.4 1.8 5.3-5.8 3.3-2.9-1.7Z" /></g>
-              <g className="v2-sole__lug" data-sole-lug data-start="0.8" data-end="0.98"><path d="m21.8 40.2 6.5-.8 1.3 3.8-7.5-.8Z" /></g>
+          <svg className="v2-puzzle" viewBox="0 0 56 56" focusable="false">
+            <g className="v2-puzzle__field">
+              {puzzleCells.map((piece) => (
+                <rect
+                  key={piece.index}
+                  className="v2-puzzle__piece"
+                  data-puzzle-piece
+                  data-start={piece.start.toFixed(4)}
+                  data-end={piece.end.toFixed(4)}
+                  data-x={piece.x}
+                  data-y={piece.y}
+                  data-rotate={piece.rotate}
+                  x={3 + piece.column * (50 / 7)}
+                  y={3 + piece.row * (50 / 7)}
+                  width={(50 / 7) + 0.08}
+                  height={(50 / 7) + 0.08}
+                />
+              ))}
             </g>
           </svg>
         </span>
-        <svg className="v2-console__outline" viewBox="0 0 56 64" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-          <path ref={outlineRef} pathLength="1" d="M55.5 63.5H.5V.5H55.5V63.5" />
+        <svg className="v2-console__outline" viewBox="0 0 56 56" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <path ref={outlineRef} pathLength="1" d="M55.5 55.5H.5V.5H55.5V55.5" />
         </svg>
       </button>
     </aside>
