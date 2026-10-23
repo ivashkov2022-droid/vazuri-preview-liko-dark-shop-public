@@ -12,6 +12,7 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
   const backLinkRef = useRef<HTMLAnchorElement>(null);
   const meterRef = useRef<HTMLElement>(null);
   const outlineRef = useRef<SVGPathElement>(null);
+  const sneakerTraceRef = useRef<SVGPathElement>(null);
   const completionShown = useRef(false);
 
   useEffect(() => {
@@ -34,6 +35,7 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
       const progress = Math.max(0, Math.min(1, scrollTop / available));
       if (meterRef.current) meterRef.current.style.transform = `scaleY(${Math.max(0.1, progress).toFixed(4)})`;
       if (outlineRef.current) outlineRef.current.style.strokeDashoffset = (1 - progress).toFixed(4);
+      if (sneakerTraceRef.current) sneakerTraceRef.current.style.strokeDashoffset = (1 - progress).toFixed(4);
       if (scrollTop > 0 && remaining <= Math.max(32, viewportHeight * 0.04) && !completionShown.current) {
         completionShown.current = true;
         setOpen(true);
@@ -109,9 +111,12 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
         aria-label={open ? "Закрыть навигацию VAZURI" : "Открыть навигацию VAZURI"}
         onClick={() => setOpen((value) => !value)}
       >
-        <span className="v2-console__mark">
-          <strong>VZ</strong>
-          <small><span>CASE</span><i aria-hidden="true">/</i><span>01</span></small>
+        <span className="v2-console__beacon" aria-hidden="true">
+          <svg viewBox="0 0 50 42" focusable="false">
+            <path className="v2-beacon__base" d="M4 28c8 0 11-15 17-15 5 0 8 8 13 10 4 2 8 1 11 5v6H5Z" />
+            <path ref={sneakerTraceRef} className="v2-beacon__trace" pathLength="1" d="M5 33h39v-5c-5-5-9-2-15-7-4-3-5-9-9-9-6 0-9 14-16 15" />
+            <path className="v2-beacon__detail" d="m18 19 5 2m-7 2 5 2M9 29h28" />
+          </svg>
         </span>
         <span className="v2-console__meter" aria-hidden="true"><i ref={meterRef} /></span>
         <svg className="v2-console__outline" viewBox="0 0 76 64" preserveAspectRatio="none" aria-hidden="true" focusable="false">
