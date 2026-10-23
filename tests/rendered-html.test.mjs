@@ -47,7 +47,8 @@ test("uses the approved progress console and brief instead of the legacy popup",
     readFile(new URL("../app/CaseDock.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/case-console.css", import.meta.url), "utf8"),
   ]);
-  assert.match(dock, /v2-console__meter/);
+  assert.doesNotMatch(dock, /v2-console__meter/);
+  assert.match(dock, /data-sole-lug/);
   assert.match(dock, /v2-console__outline/);
   assert.match(dock, /remaining <= Math\.max\(32, viewportHeight \* 0\.04\)/);
   assert.match(page, /v2-brief__drawer/);
