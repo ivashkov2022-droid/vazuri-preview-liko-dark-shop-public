@@ -314,3 +314,9 @@
 }
 
 .v2-console--nightshift .v2-console__toggle:focus-visible::after { opacity: 1; }
+
+/* Solid arrow cells assemble and reverse with the existing colored pieces. */
+.v2-console--nightshift .v2-puzzle__piece--arrow {
+  fill: #000000;
+  stroke: #000000;
+}

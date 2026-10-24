@@ -29,7 +29,7 @@ const puzzleCells = Array.from({ length: 49 }, (_, index) => {
     end: Math.min(start + 0.18, 0.9),
     ...offsets[direction],
   };
-}).filter((piece) => !arrowCellIndexes.has(piece.index));
+});
 
 const puzzleCompletionProgress = Math.max(...puzzleCells.map((piece) => Number(piece.end.toFixed(4))));
 
@@ -157,7 +157,7 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
               {puzzleCells.map((piece) => (
                 <rect
                   key={piece.index}
-                  className="v2-puzzle__piece"
+                  className={`v2-puzzle__piece${arrowCellIndexes.has(piece.index) ? " v2-puzzle__piece--arrow" : ""}`}
                   data-puzzle-piece
                   data-start={piece.start.toFixed(4)}
                   data-end={piece.end.toFixed(4)}

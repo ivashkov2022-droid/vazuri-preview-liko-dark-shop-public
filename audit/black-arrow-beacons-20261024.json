@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-24",
+  "scope": "Fill the 13 transparent arrow cells with black cubes in the existing staggered sequence; preserve 36 colored cubes, the completion threshold, transparent surface, frame, banner, form and all page/media content.",
+  "validation": {
+    "profiles": 3,
+    "checks": 357,
+    "passed": 357,
+    "failed": 0,
+    "valid": true
+  },
+  "sourceIntegrity": {
+    "key": "night",
+    "onlyArrowCellsAdded": true,
+    "blackArrowCells": 13,
+    "coloredCells": 36,
+    "existingColorGeometryTimingsAndSequenceUnchanged": true,
+    "originalCompletionThresholdPreserved": true,
+    "allFormPanelScrollAndVideoCodeVerbatim": true,
+    "existingCSSRetainedVerbatim": true,
+    "transparentSurfaceAndReverseBehaviorPreserved": true
+  },
+  "candidate": {
+    "key": "night",
+    "serverCase": "vazuri-preview-liko-dark-shop-public",
+    "previous": "/srv/www/vazuri.io/releases/20261024T070002Z-transparent-beacons-rollout-v1",
+    "changed": [
+      ".vite/manifest.json",
+      "index.html",
+      "vinext-client-entry-manifest.json",
+      "_next/static/6e263929-9648-484a-b393-05bd128c77d1/_buildManifest.js",
+      "_next/static/6e263929-9648-484a-b393-05bd128c77d1/_ssgManifest.js",
+      "_next/static/chunks/index-CPREJyj3.js",
+      "_next/static/chunks/layout-segment-context-CWKH6FCT.js",
+      "_next/static/chunks/page-C_XwsVcQ.js",
+      "_next/static/css/index.Md4KjdcB.css"
+    ],
+    "hashes": {
+      ".vite/manifest.json": "c4ab4ad5208ee3d411737d67e6d80e00aa46dd2d3651defc4c37fef4c65e7aa3",
+      "index.html": "88e54a92f15931e781fa052536173f27cecf771be1251a5d4a187cd4f3f5c3a6",
+      "vinext-client-entry-manifest.json": "f7a76f10ce2327556e481830afadc0420847e61aff2950fb9898da0fc34d5e68",
+      "_next/static/6e263929-9648-484a-b393-05bd128c77d1/_buildManifest.js": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "_next/static/6e263929-9648-484a-b393-05bd128c77d1/_ssgManifest.js": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "_next/static/chunks/index-CPREJyj3.js": "3ab8028eb9e716889a38c9a98188119687e12e3ddfebcea1113b041ca620f59b",
+      "_next/static/chunks/layout-segment-context-CWKH6FCT.js": "db2b7cd3b425d4a92ca63318817024928ad1486e5226f3d89726d49d16499b46",
+      "_next/static/chunks/page-C_XwsVcQ.js": "5dfb339f44aa50c4720fec8db14ec7ab8c424ad6764b349b95f3ace1d5ee2349",
+      "_next/static/css/index.Md4KjdcB.css": "2776994e35f704944196637a311560fb61bf1978f2d49009edd060f69085005d"
+    },
+    "before": {
+      ".vite/manifest.json": "aacad7008ace5a9fe0a6b99e3c229d51edbb8b318151965f767c18b46c518cfb",
+      "index.html": "63418e708e27476c1565185746d5f8ab23d065dd1bf4c722c7f3d1930d731f83",
+      "vinext-client-entry-manifest.json": "ab4c97d5447dfa52015980f98b2ebf6c3b6f5548a049e8be09cbde55b22a85ed",
+      "_next/static/6e263929-9648-484a-b393-05bd128c77d1/_buildManifest.js": null,
+      "_next/static/6e263929-9648-484a-b393-05bd128c77d1/_ssgManifest.js": null,
+      "_next/static/chunks/index-CPREJyj3.js": null,
+      "_next/static/chunks/layout-segment-context-CWKH6FCT.js": null,
+      "_next/static/chunks/page-C_XwsVcQ.js": null,
+      "_next/static/css/index.Md4KjdcB.css": null
+    },
+    "htmlChanged": 1,
+    "allMediaAndPageContentUnchanged": true,
+    "SSRMarkupVerbatimExceptThirteenAddedArrowCells": true,
+    "colored36CellsSSRVerbatim": true,
+    "oldRuntimeAssetsRetainedForCachedPages": true
+  }
+}
