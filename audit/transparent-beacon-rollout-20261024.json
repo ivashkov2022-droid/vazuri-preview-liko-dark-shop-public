@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-24",
+  "scope": "Approved transparent beacon: preserve own cube sequence/color, banner, form and case; remove background/shadow/blur/running perimeter; reveal full frame at final cube and hide on reverse.",
+  "validation": {
+    "profiles": 3,
+    "checks": 243,
+    "passed": 243,
+    "failed": 0,
+    "valid": true
+  },
+  "sourceIntegrity": {
+    "onlyOutlineCompletionLogicChanged": true,
+    "cubeGeometrySequenceAndAnimationUnchanged": true,
+    "JSXAndFormCodeUnchanged": true,
+    "existingCSSRetainedVerbatim": true,
+    "sourcePaths": [
+      "projects/nightshift-concept-public/vazuri-preview-liko-dark-shop-public-main/app/CaseDock.tsx",
+      "projects/nightshift-concept-public/vazuri-preview-liko-dark-shop-public-main/app/case-console.css"
+    ]
+  },
+  "candidate": {
+    "key": "night",
+    "serverCase": "vazuri-preview-liko-dark-shop-public",
+    "previous": "/srv/www/vazuri.io/releases/20261024T061023Z-scrollsync-transparent-v1",
+    "changed": [
+      ".vite/manifest.json",
+      "index.html",
+      "vinext-client-entry-manifest.json",
+      "_next/static/c2da41be-c5c7-4335-aa02-50a7a0317f7f/_buildManifest.js",
+      "_next/static/c2da41be-c5c7-4335-aa02-50a7a0317f7f/_ssgManifest.js",
+      "_next/static/chunks/index-CIkE_Hrp.js",
+      "_next/static/chunks/layout-segment-context-B-4sHPX8.js",
+      "_next/static/chunks/page-DBUVij7O.js",
+      "_next/static/css/index.rAhEGvBQ.css"
+    ],
+    "hashes": {
+      ".vite/manifest.json": "aacad7008ace5a9fe0a6b99e3c229d51edbb8b318151965f767c18b46c518cfb",
+      "index.html": "63418e708e27476c1565185746d5f8ab23d065dd1bf4c722c7f3d1930d731f83",
+      "vinext-client-entry-manifest.json": "ab4c97d5447dfa52015980f98b2ebf6c3b6f5548a049e8be09cbde55b22a85ed",
+      "_next/static/c2da41be-c5c7-4335-aa02-50a7a0317f7f/_buildManifest.js": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "_next/static/c2da41be-c5c7-4335-aa02-50a7a0317f7f/_ssgManifest.js": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "_next/static/chunks/index-CIkE_Hrp.js": "e24d1c75aa7b1356d746dde4cf4e97e10b6a14ba0d77e96df1027882a17b02b9",
+      "_next/static/chunks/layout-segment-context-B-4sHPX8.js": "a13acbf3423ec7eb7381f373c41929f43b58357b00e922e3cfa25a357beb23ff",
+      "_next/static/chunks/page-DBUVij7O.js": "8c133ae7b6ebddbd4a1a5330ad517dc3e3b347337d660940960eb7827c8d70f6",
+      "_next/static/css/index.rAhEGvBQ.css": "002e1b37f6f18897bc8c623705547c5b2557a54f47a57eac14326c3a4ec1bc73"
+    },
+    "before": {
+      ".vite/manifest.json": "c7c1e10669028f662c09761fcc1d36783b673a680db8f4af22a3a24220bdd9db",
+      "index.html": "ff59adead44ab270305c4b8ecabaee4726e796e0496c1acf8f1e1a280bf25c4b",
+      "vinext-client-entry-manifest.json": "71545a6c8803835ce0495207b2b8bd350245657f9bddfb182488d4b0b09e0518",
+      "_next/static/c2da41be-c5c7-4335-aa02-50a7a0317f7f/_buildManifest.js": null,
+      "_next/static/c2da41be-c5c7-4335-aa02-50a7a0317f7f/_ssgManifest.js": null,
+      "_next/static/chunks/index-CIkE_Hrp.js": null,
+      "_next/static/chunks/layout-segment-context-B-4sHPX8.js": null,
+      "_next/static/chunks/page-DBUVij7O.js": null,
+      "_next/static/css/index.rAhEGvBQ.css": null
+    },
+    "htmlChanged": 1,
+    "allMediaAndPageContentUnchanged": true,
+    "SSRMarkupVerbatim": true,
+    "oldRuntimeAssetsRetainedForCachedPages": true
+  }
+}

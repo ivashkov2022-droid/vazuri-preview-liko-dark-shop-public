@@ -285,3 +285,32 @@
 @keyframes v2-rise { from { opacity: 0; transform: translateY(12px); } }
 @keyframes v2-title-in { from { opacity: 0; transform: translateY(110%); } }
 @keyframes v2-brief-signal { 0% { opacity: 0; transform: scaleY(0); transform-origin: top; } 18% { opacity: 1; } 72% { opacity: 1; transform: scaleY(1); } 100% { opacity: 0; transform: scaleY(1); } }
+
+/* Assemble directly over the case; frame the puzzle only when it is whole. */
+.v2-console--nightshift .v2-console__toggle,
+.v2-console--nightshift .v2-console__toggle:hover,
+.v2-console--nightshift .v2-console__toggle:focus-visible {
+  background: transparent;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  outline: 0;
+}
+
+.v2-console--nightshift .v2-console__outline-progress { opacity: 0; }
+.v2-console--nightshift .v2-console__outline-runner { display: none; }
+
+/* A small keyboard focus marker does not introduce an early square frame. */
+.v2-console--nightshift .v2-console__toggle::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: calc(50% - 4px);
+  width: 8px;
+  height: 2px;
+  background: var(--v2-accent);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.v2-console--nightshift .v2-console__toggle:focus-visible::after { opacity: 1; }

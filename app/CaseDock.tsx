@@ -31,6 +31,8 @@ const puzzleCells = Array.from({ length: 49 }, (_, index) => {
   };
 }).filter((piece) => !arrowCellIndexes.has(piece.index));
 
+const puzzleCompletionProgress = Math.max(...puzzleCells.map((piece) => Number(piece.end.toFixed(4))));
+
 export default function CaseDock({ onBrief }: CaseDockProps) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLElement>(null);
@@ -57,11 +59,11 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
       const scrollTop = Math.max(window.scrollY, scrollingElement.scrollTop);
       const remaining = Math.max(0, available - scrollTop);
       const progress = Math.max(0, Math.min(1, scrollTop / available));
-      if (outlineProgressRef.current) outlineProgressRef.current.style.strokeDashoffset = (1 - progress).toFixed(4);
-      if (outlineRunnerRef.current) {
-        outlineRunnerRef.current.style.strokeDashoffset = (1.12 - progress).toFixed(4);
-        outlineRunnerRef.current.style.opacity = progress > 0.006 && progress < 0.994 ? "1" : "0";
+      if (outlineProgressRef.current) {
+        outlineProgressRef.current.style.strokeDashoffset = "0";
+        outlineProgressRef.current.style.opacity = progress >= puzzleCompletionProgress ? "1" : "0";
       }
+      if (outlineRunnerRef.current) outlineRunnerRef.current.style.opacity = "0";
       rootRef.current?.querySelectorAll<SVGGraphicsElement>("[data-puzzle-piece]").forEach((piece) => {
         const start = Number(piece.dataset.start || 0);
         const end = Number(piece.dataset.end || 1);
