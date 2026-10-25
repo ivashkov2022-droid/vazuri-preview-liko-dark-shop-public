@@ -1,0 +1,29 @@
+{
+  "valid": true,
+  "mode": "live",
+  "requirement": "The complete horizontal arrow, including every cell and contact, is rigidly rotated as one group.",
+  "observations": [
+    {
+      "reducedMotion": "no-preference",
+      "valid": true,
+      "sameViewBox": true,
+      "identicalChildren": true,
+      "leftTransform": null,
+      "diagonalTransform": "rotate(135 11.5 11.5)",
+      "eachHasOneSolidShaft": true,
+      "eachHasSixWingCells": true,
+      "childrenSettled": true
+    },
+    {
+      "reducedMotion": "reduce",
+      "valid": true,
+      "sameViewBox": true,
+      "identicalChildren": true,
+      "leftTransform": null,
+      "diagonalTransform": "rotate(135 11.5 11.5)",
+      "eachHasOneSolidShaft": true,
+      "eachHasSixWingCells": true,
+      "childrenSettled": true
+    }
+  ]
+}

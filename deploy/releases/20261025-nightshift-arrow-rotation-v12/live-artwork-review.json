@@ -1,0 +1,356 @@
+{
+  "generatedAt": "2026-10-25T15:40:56.639Z",
+  "mode": "live",
+  "scope": "Visual review and measured preservation of the approved banner layout; scroll controller is byte-identical to approved v6.",
+  "valid": true,
+  "summary": {
+    "profiles": 2,
+    "checks": 16,
+    "failed": 0,
+    "passed": 16
+  },
+  "results": [
+    {
+      "profile": "390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "observations": {
+        "candidate": {
+          "geometry": {
+            "panel": {
+              "x": 46,
+              "y": 312.609375,
+              "width": 332,
+              "height": 174,
+              "top": 312.609375,
+              "right": 378,
+              "bottom": 486.609375,
+              "left": 46
+            },
+            "head": {
+              "x": 47,
+              "y": 313.609375,
+              "width": 330,
+              "height": 68,
+              "top": 313.609375,
+              "right": 377,
+              "bottom": 381.609375,
+              "left": 47
+            },
+            "title": {
+              "x": 60,
+              "y": 342.609375,
+              "width": 218.90625,
+              "height": 19,
+              "top": 342.609375,
+              "right": 278.90625,
+              "bottom": 361.609375,
+              "left": 60
+            },
+            "meta": {
+              "x": 60,
+              "y": 326.609375,
+              "width": 218.90625,
+              "height": 9,
+              "top": 326.609375,
+              "right": 278.90625,
+              "bottom": 335.609375,
+              "left": 60
+            },
+            "status": {
+              "x": 294.90625,
+              "y": 326.609375,
+              "width": 69.09375,
+              "height": 12,
+              "top": 326.609375,
+              "right": 364,
+              "bottom": 338.609375,
+              "left": 294.90625
+            },
+            "toggle": {
+              "x": 324,
+              "y": 494.609375,
+              "width": 54,
+              "height": 54,
+              "top": 494.609375,
+              "right": 378,
+              "bottom": 548.609375,
+              "left": 324
+            },
+            "actions": [
+              {
+                "x": 47,
+                "y": 381.609375,
+                "width": 330,
+                "height": 52,
+                "top": 381.609375,
+                "right": 377,
+                "bottom": 433.609375,
+                "left": 47
+              },
+              {
+                "x": 47,
+                "y": 433.609375,
+                "width": 330,
+                "height": 52,
+                "top": 433.609375,
+                "right": 377,
+                "bottom": 485.609375,
+                "left": 47
+              }
+            ],
+            "labels": [
+              {
+                "x": 62,
+                "y": 401.484375,
+                "width": 62.3125,
+                "height": 11.25,
+                "top": 401.484375,
+                "right": 124.3125,
+                "bottom": 412.734375,
+                "left": 62
+              },
+              {
+                "x": 62,
+                "y": 453.984375,
+                "width": 84.8125,
+                "height": 11.25,
+                "top": 453.984375,
+                "right": 146.8125,
+                "bottom": 465.234375,
+                "left": 62
+              }
+            ]
+          },
+          "background": "rgb(241, 240, 234)",
+          "ink": "rgb(9, 10, 9)",
+          "arrowRects": [
+            {
+              "x": 338,
+              "y": 395.109375,
+              "width": 24,
+              "height": 24,
+              "top": 395.109375,
+              "right": 362,
+              "bottom": 419.109375,
+              "left": 338
+            },
+            {
+              "x": 338,
+              "y": 447.609375,
+              "width": 24,
+              "height": 24,
+              "top": 447.609375,
+              "right": 362,
+              "bottom": 471.609375,
+              "left": 338
+            }
+          ],
+          "fragments": [],
+          "pieces": 49,
+          "complete": 49,
+          "outline": 1,
+          "scrollWidth": 390,
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "expanded": "true",
+          "labelText": [
+            "Все проекты",
+            "Обсудить проект"
+          ],
+          "accessibleArtwork": true
+        }
+      },
+      "errors": [],
+      "blockedPosts": [],
+      "httpErrors": [],
+      "review": {
+        "layoutUnchanged": null,
+        "panelFitsViewport": true,
+        "paperAndInkUnchanged": true,
+        "artworkInsidePanel": true,
+        "decorationClearOfText": true,
+        "beaconStill49CompletePieces": true,
+        "noHorizontalOverflow": true,
+        "decorationsDoNotInterceptClicksOrAccessibility": true,
+        "noPageOrNetworkErrors": true
+      },
+      "valid": true
+    },
+    {
+      "profile": "1366x660",
+      "viewport": {
+        "width": 1366,
+        "height": 660
+      },
+      "observations": {
+        "candidate": {
+          "geometry": {
+            "panel": {
+              "x": 990,
+              "y": 330,
+              "width": 356,
+              "height": 134,
+              "top": 330,
+              "right": 1346,
+              "bottom": 464,
+              "left": 990
+            },
+            "head": {
+              "x": 991,
+              "y": 331,
+              "width": 354,
+              "height": 74,
+              "top": 331,
+              "right": 1345,
+              "bottom": 405,
+              "left": 991
+            },
+            "title": {
+              "x": 1006,
+              "y": 361,
+              "width": 238.90625,
+              "height": 19,
+              "top": 361,
+              "right": 1244.90625,
+              "bottom": 380,
+              "left": 1006
+            },
+            "meta": {
+              "x": 1006,
+              "y": 345,
+              "width": 238.90625,
+              "height": 9,
+              "top": 345,
+              "right": 1244.90625,
+              "bottom": 354,
+              "left": 1006
+            },
+            "status": {
+              "x": 1260.90625,
+              "y": 345,
+              "width": 69.09375,
+              "height": 12,
+              "top": 345,
+              "right": 1330,
+              "bottom": 357,
+              "left": 1260.90625
+            },
+            "toggle": {
+              "x": 1290,
+              "y": 472,
+              "width": 56,
+              "height": 56,
+              "top": 472,
+              "right": 1346,
+              "bottom": 528,
+              "left": 1290
+            },
+            "actions": [
+              {
+                "x": 991,
+                "y": 405,
+                "width": 160.90625,
+                "height": 58,
+                "top": 405,
+                "right": 1151.90625,
+                "bottom": 463,
+                "left": 991
+              },
+              {
+                "x": 1151.90625,
+                "y": 405,
+                "width": 193.09375,
+                "height": 58,
+                "top": 405,
+                "right": 1345,
+                "bottom": 463,
+                "left": 1151.90625
+              }
+            ],
+            "labels": [
+              {
+                "x": 1006,
+                "y": 428.375,
+                "width": 62.3125,
+                "height": 11.25,
+                "top": 428.375,
+                "right": 1068.3125,
+                "bottom": 439.625,
+                "left": 1006
+              },
+              {
+                "x": 1166.90625,
+                "y": 428.375,
+                "width": 84.8125,
+                "height": 11.25,
+                "top": 428.375,
+                "right": 1251.71875,
+                "bottom": 439.625,
+                "left": 1166.90625
+              }
+            ]
+          },
+          "background": "rgb(241, 240, 234)",
+          "ink": "rgb(9, 10, 9)",
+          "arrowRects": [
+            {
+              "x": 1111.90625,
+              "y": 422,
+              "width": 24,
+              "height": 24,
+              "top": 422,
+              "right": 1135.90625,
+              "bottom": 446,
+              "left": 1111.90625
+            },
+            {
+              "x": 1306,
+              "y": 422,
+              "width": 24,
+              "height": 24,
+              "top": 422,
+              "right": 1330,
+              "bottom": 446,
+              "left": 1306
+            }
+          ],
+          "fragments": [],
+          "pieces": 49,
+          "complete": 49,
+          "outline": 1,
+          "scrollWidth": 1366,
+          "viewport": {
+            "width": 1366,
+            "height": 660
+          },
+          "expanded": "true",
+          "labelText": [
+            "Все проекты",
+            "Обсудить проект"
+          ],
+          "accessibleArtwork": true
+        }
+      },
+      "errors": [],
+      "blockedPosts": [],
+      "httpErrors": [],
+      "review": {
+        "layoutUnchanged": null,
+        "panelFitsViewport": true,
+        "paperAndInkUnchanged": true,
+        "artworkInsidePanel": true,
+        "decorationClearOfText": true,
+        "beaconStill49CompletePieces": true,
+        "noHorizontalOverflow": true,
+        "decorationsDoNotInterceptClicksOrAccessibility": true,
+        "noPageOrNetworkErrors": true
+      },
+      "valid": true
+    }
+  ]
+}
