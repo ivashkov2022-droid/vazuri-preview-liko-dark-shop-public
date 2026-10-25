@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-25",
+  "key": "night",
+  "scope": "Both action arrows have a continuous shaft and square-cell head wings that assemble when the existing banner opens. No perimeter ornaments. Approved light panel, geometry and all scroll mechanics retained.",
+  "baselineCommit": "a06889b8a4e35e0424147d54b0673d7b3415fad2",
+  "controllerSHA256": "ad3902e4a5f47ca3f0519b42bc940502798fe6e3392c1a92a49dca1641800a23",
+  "controllerByteIdentical": true,
+  "approvedCSSRetainedVerbatim": true,
+  "beaconUnchanged": true,
+  "pageAndFormUnchanged": true,
+  "otherEightCasesUnchanged": true,
+  "visual": {
+    "profiles": 6,
+    "checks": 54,
+    "failed": 0,
+    "passed": 54
+  },
+  "desktop": {
+    "profiles": 2,
+    "viewports": 1,
+    "scenarios": 2,
+    "checks": 37,
+    "passed": 37,
+    "failed": 0
+  },
+  "mobile": {
+    "profiles": 1,
+    "checks": 23,
+    "passed": 23,
+    "failed": 0
+  },
+  "motion": {
+    "normalAndReducedPass": true
+  },
+  "artwork": "app/CasePanelArtwork.tsx"
+}

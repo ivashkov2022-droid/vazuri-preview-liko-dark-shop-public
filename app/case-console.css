@@ -348,12 +348,15 @@
   shape-rendering: crispEdges;
   pointer-events: none;
 }
-.v2-console--nightshift .v2-console__pixel-arrow rect {
+.v2-console--nightshift .v2-console__pixel-arrow rect,
+.v2-console--nightshift .v2-console__pixel-arrow path {
   opacity: 0;
   transform-box: fill-box;
   transform-origin: center;
 }
-.v2-console--nightshift.is-open .v2-console__pixel-arrow rect {
+.v2-console--nightshift .v2-console__pixel-shaft { shape-rendering: geometricPrecision; }
+.v2-console--nightshift.is-open .v2-console__pixel-arrow rect,
+.v2-console--nightshift.is-open .v2-console__pixel-arrow path {
   animation: v2-panel-cube-assemble 360ms cubic-bezier(.2, .8, .2, 1) both;
   animation-delay: var(--cube-delay);
 }
@@ -362,5 +365,6 @@
   to { opacity: 1; transform: none; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .v2-console--nightshift.is-open .v2-console__pixel-arrow rect { animation: none; opacity: 1; transform: none; }
+  .v2-console--nightshift.is-open .v2-console__pixel-arrow rect,
+  .v2-console--nightshift.is-open .v2-console__pixel-arrow path { animation: none; opacity: 1; transform: none; }
 }
