@@ -5,10 +5,10 @@
  * use the generic aria state or a React ref rather than a pending rendered class.
  * Importing this module has no DOM side effects.
  *
- * @param {{isOpen: () => boolean, isBlocked: () => boolean, open: () => void, close: () => void}} callbacks
+ * @param {{isOpen: () => boolean, isBlocked: () => boolean, open: () => void, close: () => void, isEndingZone?: () => boolean}} callbacks
  * @returns {{check: () => void, requestCheck: () => void, dismiss: () => void, toggle: () => void, destroy: () => void}}
  */
-export function createCaseCompletionLifecycle({ isOpen, isBlocked, open, close }) {
+export function createCaseCompletionLifecycle({ isOpen, isBlocked, open, close, isEndingZone }) {
   const pageWindow = window;
   const pageDocument = document;
   const quietMs = 600;
@@ -31,7 +31,7 @@ export function createCaseCompletionLifecycle({ isOpen, isBlocked, open, close }
     const scrollTop = Math.max(0, Math.min(available, rawTop));
     return {
       available, viewportHeight, scrollTop, actualScrollTop: Math.max(0, rawTop),
-      atEnd: available > Math.max(220, viewportHeight * .35)
+      atEnd: isEndingZone ? Boolean(isEndingZone()) : available > Math.max(220, viewportHeight * .35)
         && scrollTop > 0
         && scrollTop / available >= .9
         && available - scrollTop <= viewportHeight * .5,

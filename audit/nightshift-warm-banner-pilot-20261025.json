@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-25",
+  "key": "night",
+  "scope": "User-approved Nightshift-only pilot: automatic banner follows actual footer visibility, independently of arrow/document progress; warm panel matches the unchanged existing form.",
+  "moduleSha256": "41711c3176d9e65443a6be5ad404a2183f8f51fc90ea8dfc7d55b2d8ff3c0943",
+  "palette": {
+    "paper": "#f1f0ea",
+    "ink": "#090a09",
+    "secondary": "#53565d"
+  },
+  "unchanged": [
+    "page JSX",
+    "form",
+    "beacon geometry and palette",
+    "media",
+    "other eight cases"
+  ],
+  "localValidation": {
+    "profiles": 3,
+    "checks": 43,
+    "passed": 43,
+    "failed": 0
+  },
+  "unitChecks": 42
+}

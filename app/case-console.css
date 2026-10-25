@@ -320,3 +320,20 @@
   fill: #000000;
   stroke: #000000;
 }
+
+/* Nightshift pilot: use the existing brief form's paper on the action panel. */
+.v2-console--nightshift .v2-console__panel {
+  --v2-line: rgba(9, 10, 9, .22);
+  color: var(--v2-ink);
+  background: var(--v2-paper);
+}
+
+.v2-console--nightshift .v2-console__action,
+.v2-console--nightshift .v2-console__status { color: var(--v2-ink); }
+
+.v2-console--nightshift .v2-console__head p { color: #53565d; }
+
+.v2-console--nightshift .v2-console__status::before {
+  border-color: var(--v2-ink);
+  background: var(--v2-accent);
+}

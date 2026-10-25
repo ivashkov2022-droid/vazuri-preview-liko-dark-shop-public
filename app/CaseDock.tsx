@@ -53,6 +53,7 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
 
   useEffect(() => {
     let frame = 0;
+    const endingBlock = document.querySelector<HTMLElement>("main > footer");
     const setConsole = (value: boolean) => {
       desiredOpenRef.current = value;
       setOpen(value);
@@ -62,8 +63,17 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
       isBlocked: () => Boolean(document.querySelector(".v2-brief.is-open")),
       open: () => setConsole(true),
       close: () => setConsole(false),
+      isEndingZone: () => {
+        if (!endingBlock) return false;
+        const viewportHeight = document.documentElement.clientHeight || window.innerHeight;
+        const rect = endingBlock.getBoundingClientRect();
+        const visibleHeight = Math.max(0, Math.min(viewportHeight, rect.bottom) - Math.max(0, rect.top));
+        return rect.height > 0 && visibleHeight >= Math.min(rect.height * .5, viewportHeight * .25);
+      },
     });
     completionLifecycleRef.current = completionLifecycle;
+    const endingObserver = endingBlock && typeof IntersectionObserver === "function" ? new IntersectionObserver(() => completionLifecycle.check(), { threshold: [0, .25, .5, 1] }) : null;
+    if (endingBlock) endingObserver?.observe(endingBlock);
     const updateProgress = () => {
       frame = 0;
       if (document.querySelector(".v2-brief.is-open")) return;
@@ -101,6 +111,7 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
     window.addEventListener("touchend", scheduleProgress, { passive: true });
     window.visualViewport?.addEventListener("resize", scheduleProgress);
     return () => {
+      endingObserver?.disconnect();
       completionLifecycle.destroy();
       if (completionLifecycleRef.current === completionLifecycle) completionLifecycleRef.current = null;
       if (frame) window.cancelAnimationFrame(frame);
