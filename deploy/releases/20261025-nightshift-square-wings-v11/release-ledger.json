@@ -1,0 +1,44 @@
+{
+  "schema": "vazuri/nightshift-publication-result/v1",
+  "valid": true,
+  "previous": "/srv/www/vazuri.io/releases/20261025T110217Z-nightshift-pixel-banner-v8",
+  "current": "/srv/www/vazuri.io/releases/20261025T151047Z-nightshift-square-wings-v11",
+  "preparedReportSHA256": "3059d98110e2a04577af2ba1e15c21c7450dc17c431545a5a4f91e1076485a96",
+  "binding": {
+    "baselineSHA256": "0a4da6652fa64636d71f28d8c2835d0604b9c3beca70a757ac75d1ecc42a198f",
+    "deltaSHA256": "8dba3488cd4609ce67ad27a8c290441b0c1a88d4adff03b744621b4c184dd41d",
+    "archiveSHA256": "65ebafd24d6dce97716cd812e7bec88c14cde7282a9177c1e7d829240e6bb0c8"
+  },
+  "scope": {
+    "pointers": {
+      "current": "/srv/www/vazuri.io/releases/20261025T151047Z-nightshift-square-wings-v11",
+      "baseline-current": "/srv/www/vazuri.io/releases/20261023T160956Z-general-build-v1",
+      "general-build-current": "/srv/www/vazuri.io/releases/20261023T160956Z-general-build-v1"
+    },
+    "otherPointer": "/srv/previews/darya-dneprovskaya-io/releases/20261025T145840Z-970c47194de4",
+    "releasePaths": [
+      "/srv/www/vazuri.io/releases/20261023T160956Z-general-build-v1",
+      "/srv/www/vazuri.io/releases/20261025T104236Z-nightshift-mobile-touch-v6",
+      "/srv/www/vazuri.io/releases/20261025T110217Z-nightshift-pixel-banner-v8",
+      "/srv/www/vazuri.io/releases/20261025T151047Z-nightshift-square-wings-v11"
+    ]
+  },
+  "changedOrAdded": [
+    "vazuri-preview-liko-dark-shop-public/.vite/manifest.json",
+    "vazuri-preview-liko-dark-shop-public/_next/static/73de8152-5141-4474-882a-555658d93c2e/_buildManifest.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/73de8152-5141-4474-882a-555658d93c2e/_ssgManifest.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-C0p6CYMa.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-D_agcafV.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-BbUVXMjc.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/css/index.DYAn_bTs.css",
+    "vazuri-preview-liko-dark-shop-public/index.html",
+    "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json"
+  ],
+  "allOtherFilesAndMediaUnchanged": true,
+  "allThreePreviousReleasesPreserved": true,
+  "smmPointerUnchanged": true,
+  "nginxChanged": false,
+  "nginxReloaded": false,
+  "pointerSwitched": true,
+  "finishedAt": "2026-10-25T15:20:17.978030+00:00"
+}

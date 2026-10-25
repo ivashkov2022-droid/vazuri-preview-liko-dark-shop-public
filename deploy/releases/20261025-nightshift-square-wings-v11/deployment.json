@@ -1,0 +1,20 @@
+{
+  "schema": "vazuri/nightshift-deployment/v1",
+  "valid": true,
+  "sourceRepository": "https://github.com/ivashkov2022-droid/vazuri-preview-liko-dark-shop-public",
+  "sourceCommit": "2475b5dea7c321ff4b93eb358962265c23d41d37",
+  "publishedURL": "https://vazuri.io/nightshift/",
+  "serverRelease": "/srv/www/vazuri.io/releases/20261025T151047Z-nightshift-square-wings-v11",
+  "previousRelease": "/srv/www/vazuri.io/releases/20261025T110217Z-nightshift-pixel-banner-v8",
+  "rollback": "Restore the current symlink to previousRelease after verifying it. Existing prior releases are preserved.",
+  "archiveSHA256": "65ebafd24d6dce97716cd812e7bec88c14cde7282a9177c1e7d829240e6bb0c8",
+  "candidateSHA256": "e125a7d98764f6daf070b24adb6d33269a06a2e69bc9ef38e59cb7a8c4e186ed",
+  "liveVerificationSHA256": "f599b08a08cb682c5b143d1a9f40b8248c1ea339281403698c6b7020fafe02d4",
+  "liveVisualSHA256": "a16d831d3ba2b0297bbb7e0096d34fc3bbe217ceccaee6b01ef40e3b503f9f4b",
+  "publicGETChecks": 40,
+  "publicGETFailures": 0,
+  "allOtherCoreFilesAndMediaUnchanged": true,
+  "smmPointerUnchangedFromFreshBaseline": true,
+  "nginxChanged": false,
+  "publishedAt": "2026-10-25T15:20:17.978030+00:00"
+}
