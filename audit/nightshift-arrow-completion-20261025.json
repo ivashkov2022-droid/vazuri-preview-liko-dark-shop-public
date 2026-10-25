@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-25",
+  "key": "night",
+  "scope": "Immediate automatic reveal from the same completed-arrow boolean as the outline. No appearance pause or footer condition. Continuous forward finishing gesture stays visible; new completion after reversing rearms the reveal.",
+  "sourceSha256": "b9025ad19b9f46aee8ef3fb5c5cd7ed0c084866c19feb32ccae342b221f3f82c",
+  "arrowGeometryAndMarkupUnchanged": true,
+  "cssAndPaletteUnchanged": true,
+  "otherEightCasesUnchanged": true,
+  "local": {
+    "profiles": 6,
+    "viewports": 3,
+    "scenarios": 6,
+    "checks": 109,
+    "passed": 109,
+    "failed": 0
+  },
+  "unitChecks": 14
+}
