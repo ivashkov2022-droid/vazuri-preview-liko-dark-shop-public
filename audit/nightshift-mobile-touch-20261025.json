@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-25",
+  "key": "night",
+  "scope": "Mobile touch continuity: defer outside touch dismissal until swipe direction or a real tap is known; keep the automatic panel across forward swipes to the page floor, including inertia and finger-repositioning gaps. Desktop policy unchanged.",
+  "sourceSha256": "ad3902e4a5f47ca3f0519b42bc940502798fe6e3392c1a92a49dca1641800a23",
+  "unchanged": [
+    "CaseDock.tsx",
+    "case-console.css",
+    "page.tsx",
+    "globals.css",
+    "other eight cases"
+  ],
+  "desktop": {
+    "profiles": 6,
+    "viewports": 3,
+    "scenarios": 6,
+    "checks": 109,
+    "passed": 109,
+    "failed": 0
+  },
+  "mobile": {
+    "profiles": 4,
+    "checks": 92,
+    "passed": 92,
+    "failed": 0
+  },
+  "unitChecks": 30,
+  "negativeReproduction": true
+}
