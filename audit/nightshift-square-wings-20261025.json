@@ -1,0 +1,23 @@
+{
+  "scope": "Correct the diagonal action arrow: straight solid shaft; six axis-aligned square cells on its head wings.",
+  "visual": {
+    "profiles": 6,
+    "checks": 54,
+    "failed": 0,
+    "passed": 54
+  },
+  "motionPassed": true,
+  "sourceScope": {
+    "baselineCommit": "a06889b8a4e35e0424147d54b0673d7b3415fad2",
+    "approvedControllerVerbatim": true,
+    "dockVerbatimExceptArtwork": true,
+    "approvedCSSVerbatimPrefix": true,
+    "pageAndFormVerbatim": true,
+    "globalStylesVerbatim": true,
+    "sourceSha256": "ad3902e4a5f47ca3f0519b42bc940502798fe6e3392c1a92a49dca1641800a23",
+    "artworkOnlyUsesItsOwnRects": true,
+    "valid": true
+  },
+  "artifactSHA256": "65ebafd24d6dce97716cd812e7bec88c14cde7282a9177c1e7d829240e6bb0c8",
+  "runtimeSavedAt": "deploy/releases/20261025-nightshift-square-wings-v11"
+}

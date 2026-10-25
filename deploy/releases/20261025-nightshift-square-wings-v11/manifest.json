@@ -1,0 +1,101 @@
+{
+  "schema": "vazuri/nightshift-release/v1",
+  "purpose": "Correct the diagonal action arrow: straight solid shaft; six axis-aligned square cells on its head wings.",
+  "parentDomainSnapshot": {
+    "repository": "ivashkov2022-droid/vazuri-site",
+    "tag": "vazuri-io-domain-baseline-20261025",
+    "commit": "1fee9317ee288f811533364098560a72fc8495d0"
+  },
+  "serverDelta": {
+    "schema": "vazuri/nightshift-delta/v1",
+    "previous": "/srv/www/vazuri.io/releases/20261025T110217Z-nightshift-pixel-banner-v8",
+    "releaseName": "20261025T151047Z-nightshift-square-wings-v11",
+    "archivePath": "/home/uwinadmin/vazuri-incoming/20261025T151047Z-nightshift-square-wings-v11.tar",
+    "archiveSHA256": "65ebafd24d6dce97716cd812e7bec88c14cde7282a9177c1e7d829240e6bb0c8",
+    "expected": {
+      "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": "43a3864fecc04955d4bfefae1407345279f706a190f81bfea772d64e2636201b",
+      "vazuri-preview-liko-dark-shop-public/_next/static/73de8152-5141-4474-882a-555658d93c2e/_buildManifest.js": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "vazuri-preview-liko-dark-shop-public/_next/static/73de8152-5141-4474-882a-555658d93c2e/_ssgManifest.js": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-C0p6CYMa.js": "1c5fcd0acad8819c43708bd16e37979025958234404effdfc2d4cf229955bc64",
+      "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-D_agcafV.js": "ffb574d9d1ba8e5f7486a678464b514a2a274f3ef01f6f64a8a98d727325b450",
+      "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-BbUVXMjc.js": "230f58de8a48a0fc3dd95461df23bc70550ff7f2dc4268b1c861fef9458a1cd8",
+      "vazuri-preview-liko-dark-shop-public/_next/static/css/index.DYAn_bTs.css": "12cb8766ed7bba177f6dbcb3fb684d1953b4267741e23c68d2c2e009a9c8a418",
+      "vazuri-preview-liko-dark-shop-public/index.html": "fc2258a2919411cbe5f220de73feeee265704ef72ff3c6f774e73c93d11096f6",
+      "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json": "4d88df33d3343c5678a9810f76d84015605b9db6125274c294b40ed6ed806836"
+    },
+    "before": {
+      "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": "73305565dc11b52f32f7273dd0d10f4ce9b9ee2688e60a3a2a8aa1e8f48771b4",
+      "vazuri-preview-liko-dark-shop-public/_next/static/73de8152-5141-4474-882a-555658d93c2e/_buildManifest.js": null,
+      "vazuri-preview-liko-dark-shop-public/_next/static/73de8152-5141-4474-882a-555658d93c2e/_ssgManifest.js": null,
+      "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-C0p6CYMa.js": null,
+      "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-D_agcafV.js": null,
+      "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-BbUVXMjc.js": null,
+      "vazuri-preview-liko-dark-shop-public/_next/static/css/index.DYAn_bTs.css": null,
+      "vazuri-preview-liko-dark-shop-public/index.html": "22e5b72ab6b10be84c541465bf29b0f5d95c650a5ef89ccbce1dfe73cbd7629e",
+      "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json": "c62c39797005df77f723a800aedd9f67614a12c3e8e53cddc398007b458fe5cc"
+    }
+  },
+  "candidateFiles": {
+    "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": {
+      "sha256": "43a3864fecc04955d4bfefae1407345279f706a190f81bfea772d64e2636201b",
+      "size": 1750,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/73de8152-5141-4474-882a-555658d93c2e/_buildManifest.js": {
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "size": 159,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/73de8152-5141-4474-882a-555658d93c2e/_ssgManifest.js": {
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "size": 76,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-C0p6CYMa.js": {
+      "sha256": "1c5fcd0acad8819c43708bd16e37979025958234404effdfc2d4cf229955bc64",
+      "size": 176767,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-D_agcafV.js": {
+      "sha256": "ffb574d9d1ba8e5f7486a678464b514a2a274f3ef01f6f64a8a98d727325b450",
+      "size": 489,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-BbUVXMjc.js": {
+      "sha256": "230f58de8a48a0fc3dd95461df23bc70550ff7f2dc4268b1c861fef9458a1cd8",
+      "size": 64447,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/css/index.DYAn_bTs.css": {
+      "sha256": "12cb8766ed7bba177f6dbcb3fb684d1953b4267741e23c68d2c2e009a9c8a418",
+      "size": 33912,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/index.html": {
+      "sha256": "fc2258a2919411cbe5f220de73feeee265704ef72ff3c6f774e73c93d11096f6",
+      "size": 33379,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json": {
+      "sha256": "4d88df33d3343c5678a9810f76d84015605b9db6125274c294b40ed6ed806836",
+      "size": 76,
+      "mode": "0o444"
+    }
+  },
+  "sourceFiles": [
+    "app/CasePanelArtwork.tsx",
+    "app/case-console.css"
+  ],
+  "visualChecks": {
+    "profiles": 6,
+    "checks": 54,
+    "failed": 0,
+    "passed": 54
+  },
+  "motionPassed": true,
+  "scopePassed": true,
+  "existingRenderedHTMLTestsPassed": 3,
+  "otherCasesUnchanged": true,
+  "allMediaUnchanged": true,
+  "language": "Existing English-only Nightshift case retained."
+}

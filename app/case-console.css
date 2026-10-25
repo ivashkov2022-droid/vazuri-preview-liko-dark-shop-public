@@ -345,7 +345,7 @@
   width: 24px;
   height: 24px;
   fill: currentColor;
-  shape-rendering: crispEdges;
+  shape-rendering: geometricPrecision;
   pointer-events: none;
 }
 .v2-console--nightshift .v2-console__pixel-arrow rect,
@@ -354,7 +354,6 @@
   transform-box: fill-box;
   transform-origin: center;
 }
-.v2-console--nightshift .v2-console__pixel-shaft { shape-rendering: geometricPrecision; }
 .v2-console--nightshift.is-open .v2-console__pixel-arrow rect,
 .v2-console--nightshift.is-open .v2-console__pixel-arrow path {
   animation: v2-panel-cube-assemble 360ms cubic-bezier(.2, .8, .2, 1) both;
