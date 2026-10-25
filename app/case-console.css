@@ -337,3 +337,30 @@
   border-color: var(--v2-ink);
   background: var(--v2-accent);
 }
+
+/* The beacon's solid square cells assemble into the two action arrows. */
+.v2-console--nightshift .v2-console__pixel-arrow {
+  display: block;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  shape-rendering: crispEdges;
+  pointer-events: none;
+}
+.v2-console--nightshift .v2-console__pixel-arrow rect {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.v2-console--nightshift.is-open .v2-console__pixel-arrow rect {
+  animation: v2-panel-cube-assemble 360ms cubic-bezier(.2, .8, .2, 1) both;
+  animation-delay: var(--cube-delay);
+}
+@keyframes v2-panel-cube-assemble {
+  from { opacity: 0; transform: translate(var(--cube-x), var(--cube-y)) rotate(var(--cube-rotate)) scale(.62); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .v2-console--nightshift.is-open .v2-console__pixel-arrow rect { animation: none; opacity: 1; transform: none; }
+}

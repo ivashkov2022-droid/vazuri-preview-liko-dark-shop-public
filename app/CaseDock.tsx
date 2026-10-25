@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { createCaseCompletionLifecycle } from "./beacon-completion.js";
+import { PixelArrow } from "./CasePanelArtwork";
 
 type CaseDockProps = {
   onBrief: () => void;
@@ -133,10 +134,10 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
         </div>
         <nav className="v2-console__actions" aria-label="Действия с кейсом">
           <a ref={backLinkRef} className="v2-console__action" href="https://vazuri.io/#projects">
-            <span>Все проекты</span><span aria-hidden="true">←</span>
+            <span>Все проекты</span><PixelArrow direction="left" />
           </a>
           <button className="v2-console__action" type="button" onClick={() => { completionLifecycleRef.current?.dismiss(); onBrief(); }}>
-            <span>Обсудить проект</span><span aria-hidden="true">↗</span>
+            <span>Обсудить проект</span><PixelArrow direction="up-right" />
           </button>
         </nav>
       </div>
