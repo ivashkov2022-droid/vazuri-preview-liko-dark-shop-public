@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { createCaseCompletionLifecycle } from "./beacon-completion.js";
 
 type CaseDockProps = {
   onBrief: () => void;
@@ -39,7 +40,8 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
   const backLinkRef = useRef<HTMLAnchorElement>(null);
   const outlineProgressRef = useRef<SVGPathElement>(null);
   const outlineRunnerRef = useRef<SVGPathElement>(null);
-  const completionShown = useRef(false);
+  const desiredOpenRef = useRef(false);
+  const completionLifecycleRef = useRef<ReturnType<typeof createCaseCompletionLifecycle> | null>(null);
 
   useEffect(() => {
     const token = new URLSearchParams(window.location.search).get("return") || "ru-project-nightshift";
@@ -51,13 +53,24 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
 
   useEffect(() => {
     let frame = 0;
+    const setConsole = (value: boolean) => {
+      desiredOpenRef.current = value;
+      setOpen(value);
+    };
+    const completionLifecycle = createCaseCompletionLifecycle({
+      isOpen: () => desiredOpenRef.current,
+      isBlocked: () => Boolean(document.querySelector(".v2-brief.is-open")),
+      open: () => setConsole(true),
+      close: () => setConsole(false),
+    });
+    completionLifecycleRef.current = completionLifecycle;
     const updateProgress = () => {
       frame = 0;
+      if (document.querySelector(".v2-brief.is-open")) return;
       const scrollingElement = document.scrollingElement || document.documentElement;
       const viewportHeight = scrollingElement.clientHeight || window.innerHeight;
       const available = Math.max(scrollingElement.scrollHeight - viewportHeight, 1);
       const scrollTop = Math.max(window.scrollY, scrollingElement.scrollTop);
-      const remaining = Math.max(0, available - scrollTop);
       const progress = Math.max(0, Math.min(1, scrollTop / available));
       if (outlineProgressRef.current) {
         outlineProgressRef.current.style.strokeDashoffset = "0";
@@ -76,10 +89,7 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
         piece.style.opacity = easedProgress.toFixed(3);
         piece.style.transform = `translate(${(offsetX * remainingMotion).toFixed(2)}px, ${(offsetY * remainingMotion).toFixed(2)}px) rotate(${(rotation * remainingMotion).toFixed(2)}deg) scale(${(0.62 + easedProgress * 0.38).toFixed(3)})`;
       });
-      if (scrollTop > 0 && remaining <= Math.max(32, viewportHeight * 0.04) && !completionShown.current) {
-        completionShown.current = true;
-        setOpen(true);
-      }
+      completionLifecycle.check();
     };
     const scheduleProgress = () => {
       if (!frame) frame = window.requestAnimationFrame(updateProgress);
@@ -91,6 +101,8 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
     window.addEventListener("touchend", scheduleProgress, { passive: true });
     window.visualViewport?.addEventListener("resize", scheduleProgress);
     return () => {
+      completionLifecycle.destroy();
+      if (completionLifecycleRef.current === completionLifecycle) completionLifecycleRef.current = null;
       if (frame) window.cancelAnimationFrame(frame);
       window.removeEventListener("scroll", scheduleProgress);
       window.removeEventListener("resize", scheduleProgress);
@@ -100,32 +112,11 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
     };
   }, []);
 
-  useEffect(() => {
-    const closeOutside = (event: PointerEvent) => {
-      if (open && !rootRef.current?.contains(event.target as Node)) setOpen(false);
-    };
-    const closeWithEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
-    };
-    document.addEventListener("pointerdown", closeOutside);
-    document.addEventListener("keydown", closeWithEscape);
-    return () => {
-      document.removeEventListener("pointerdown", closeOutside);
-      document.removeEventListener("keydown", closeWithEscape);
-    };
-  }, [open]);
-
   return (
     <aside
       ref={rootRef}
       className={`v2-console v2-console--nightshift${open ? " is-open" : ""}`}
       aria-label="Навигация VAZURI"
-      onPointerEnter={() => {
-        if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) setOpen(true);
-      }}
-      onPointerLeave={() => {
-        if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) setOpen(false);
-      }}
     >
       <div className="v2-console__panel" hidden={!open}>
         <div className="v2-console__head">
@@ -139,7 +130,7 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
           <a ref={backLinkRef} className="v2-console__action" href="https://vazuri.io/#projects">
             <span>Все проекты</span><span aria-hidden="true">←</span>
           </a>
-          <button className="v2-console__action" type="button" onClick={() => { setOpen(false); onBrief(); }}>
+          <button className="v2-console__action" type="button" onClick={() => { completionLifecycleRef.current?.dismiss(); onBrief(); }}>
             <span>Обсудить проект</span><span aria-hidden="true">↗</span>
           </button>
         </nav>
@@ -149,7 +140,7 @@ export default function CaseDock({ onBrief }: CaseDockProps) {
         type="button"
         aria-expanded={open}
         aria-label={open ? "Закрыть навигацию VAZURI" : "Открыть навигацию VAZURI"}
-        onClick={() => setOpen((value) => !value)}
+        onClick={() => completionLifecycleRef.current?.toggle()}
       >
         <span className="v2-console__beacon" aria-hidden="true">
           <svg className="v2-puzzle" viewBox="0 0 56 56" focusable="false">

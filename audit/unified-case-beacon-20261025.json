@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-24",
+  "scope": "Use one canonical completion lifecycle across all nine cases: once at physical page end after ending gesture quiet; next input dismisses even at a scroll boundary; native beacon click or keyboard reopens. Preserve cube progression, palette, black arrow, transparent surface, form and all case content/media.",
+  "validation": {
+    "profiles": 3,
+    "checks": 246,
+    "passed": 246,
+    "failed": 0,
+    "valid": true
+  },
+  "lifecycleValidation": {
+    "profiles": 3,
+    "checks": 92,
+    "passed": 92,
+    "failed": 0
+  },
+  "controllerUnitChecks": 24,
+  "sourceIntegrity": {
+    "key": "night",
+    "canonicalLifecycleSha256": "53532691d5ad47787710afdc3e05d59e62ce73a6562e07abf20daa81a678a7f1",
+    "sameControllerAcrossAllCases": true,
+    "sourceInverseVerbatim": true,
+    "all49CubeGeometryOrderPaletteAndMotionMathUnchanged": true,
+    "blackArrowAndTransparentSurfaceUnchanged": true,
+    "CSSUnchanged": true,
+    "pageContentMediaAndFormsUnchanged": true,
+    "formPoseGuardAdded": true,
+    "onceAtPhysicalEndAfterGestureQuiet": true,
+    "nextInputDismissAndManualClickReopen": true
+  },
+  "candidate": {
+    "key": "night",
+    "serverCase": "vazuri-preview-liko-dark-shop-public",
+    "previous": "/srv/www/vazuri.io/releases/20261024T164925Z-relief-banner-dismiss-v1",
+    "changed": [
+      ".vite/manifest.json",
+      "index.html",
+      "vinext-client-entry-manifest.json",
+      "_next/static/cac50a5d-081c-41ac-a85a-40b873ed1cb2/_buildManifest.js",
+      "_next/static/cac50a5d-081c-41ac-a85a-40b873ed1cb2/_ssgManifest.js",
+      "_next/static/chunks/index-BVn6K7op.js",
+      "_next/static/chunks/layout-segment-context-YnuvCF_s.js",
+      "_next/static/chunks/page-GNnzhOLV.js"
+    ],
+    "hashes": {
+      ".vite/manifest.json": "452f1b9e0eee5712c6be811be3e643380f99473accc2565868d7038311aec709",
+      "index.html": "e6e023da0d5451dbffca65cedabc0ee59c3abd4121bcdad81587415a6282a2af",
+      "vinext-client-entry-manifest.json": "a37a9e03f382a61a4cbc5b255fc7361eea4ae54eca40960002b2b9656cda22db",
+      "_next/static/cac50a5d-081c-41ac-a85a-40b873ed1cb2/_buildManifest.js": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "_next/static/cac50a5d-081c-41ac-a85a-40b873ed1cb2/_ssgManifest.js": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "_next/static/chunks/index-BVn6K7op.js": "84c066c6b9b070ddc8c0915aff59afb88aae0f0ff98e25c4c55781c5f12a8163",
+      "_next/static/chunks/layout-segment-context-YnuvCF_s.js": "fa3c02b1f58a51bf18c6f04758f12b44f86f7b73fb5bbc617c596bed77f2d495",
+      "_next/static/chunks/page-GNnzhOLV.js": "5f003d78a3f6594626c1174b1a3acef2b98720d92ae53066392568ed974d75c3"
+    },
+    "before": {
+      ".vite/manifest.json": "c4ab4ad5208ee3d411737d67e6d80e00aa46dd2d3651defc4c37fef4c65e7aa3",
+      "index.html": "88e54a92f15931e781fa052536173f27cecf771be1251a5d4a187cd4f3f5c3a6",
+      "vinext-client-entry-manifest.json": "f7a76f10ce2327556e481830afadc0420847e61aff2950fb9898da0fc34d5e68",
+      "_next/static/cac50a5d-081c-41ac-a85a-40b873ed1cb2/_buildManifest.js": null,
+      "_next/static/cac50a5d-081c-41ac-a85a-40b873ed1cb2/_ssgManifest.js": null,
+      "_next/static/chunks/index-BVn6K7op.js": null,
+      "_next/static/chunks/layout-segment-context-YnuvCF_s.js": null,
+      "_next/static/chunks/page-GNnzhOLV.js": null
+    },
+    "htmlChanged": 1,
+    "allMediaAndPageContentUnchanged": true,
+    "SSRMarkupVerbatim": true,
+    "oldRuntimeAssetsRetainedForCachedPages": true
+  }
+}
