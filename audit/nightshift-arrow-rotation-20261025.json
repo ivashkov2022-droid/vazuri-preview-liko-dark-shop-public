@@ -1,0 +1,51 @@
+{
+  "scope": "Use the exact complete horizontal arrow and rigidly rotate its entire contour, preserving all cube contacts.",
+  "visual": {
+    "profiles": 6,
+    "checks": 54,
+    "failed": 0,
+    "passed": 54
+  },
+  "identityProof": {
+    "valid": true,
+    "mode": "local",
+    "requirement": "The complete horizontal arrow, including every cell and contact, is rigidly rotated as one group.",
+    "observations": [
+      {
+        "reducedMotion": "no-preference",
+        "valid": true,
+        "sameViewBox": true,
+        "identicalChildren": true,
+        "leftTransform": null,
+        "diagonalTransform": "rotate(135 11.5 11.5)",
+        "eachHasOneSolidShaft": true,
+        "eachHasSixWingCells": true,
+        "childrenSettled": true
+      },
+      {
+        "reducedMotion": "reduce",
+        "valid": true,
+        "sameViewBox": true,
+        "identicalChildren": true,
+        "leftTransform": null,
+        "diagonalTransform": "rotate(135 11.5 11.5)",
+        "eachHasOneSolidShaft": true,
+        "eachHasSixWingCells": true,
+        "childrenSettled": true
+      }
+    ]
+  },
+  "motionPassed": true,
+  "sourceScope": {
+    "baselineCommit": "a06889b8a4e35e0424147d54b0673d7b3415fad2",
+    "approvedControllerVerbatim": true,
+    "dockVerbatimExceptArtwork": true,
+    "approvedCSSVerbatimPrefix": true,
+    "pageAndFormVerbatim": true,
+    "globalStylesVerbatim": true,
+    "sourceSha256": "ad3902e4a5f47ca3f0519b42bc940502798fe6e3392c1a92a49dca1641800a23",
+    "artworkOnlyUsesItsOwnRects": true,
+    "valid": true
+  },
+  "artifactSHA256": "4454ed6559534702c6b5abd0a72b4860261f49cfabdf2e330dc0fc3aca3012c2"
+}

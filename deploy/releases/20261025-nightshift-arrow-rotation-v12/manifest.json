@@ -1,0 +1,118 @@
+{
+  "schema": "vazuri/nightshift-release/v1",
+  "purpose": "Use the exact complete horizontal arrow and rigidly rotate its entire contour, preserving all cube contacts.",
+  "previousPublishedCommit": "344d9d751b7d3d7d5a790169135c8b603075b6d3",
+  "previousPublishedTag": "nightshift-square-wings-v11-20261025",
+  "serverDelta": {
+    "schema": "vazuri/nightshift-delta/v1",
+    "previous": "/srv/www/vazuri.io/releases/20261025T151047Z-nightshift-square-wings-v11",
+    "releaseName": "20261025T153408Z-nightshift-arrow-rotation-v12",
+    "archivePath": "/home/uwinadmin/vazuri-incoming/20261025T153408Z-nightshift-arrow-rotation-v12.tar",
+    "archiveSHA256": "4454ed6559534702c6b5abd0a72b4860261f49cfabdf2e330dc0fc3aca3012c2",
+    "expected": {
+      "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": "52ba2ceea7c16f47f7ffb715d48890a34ac45d48a96fce1aaa5579591984ba02",
+      "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-CSlwtlba.js": "8f7ea6c99bb468c24218454928445e8f652f61e8b2ec8c6a6bcaec49e5713a7b",
+      "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-BUoCMRWe.js": "23ba9214f9b9b8a820ffc845c719602cfe2214a872ca8d1f3a7e3b69c2c9455c",
+      "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-mhzMaF0K.js": "1d931f67bf9ca249fd01b6c9354634521996b0e31795d7f7fb0102cb31375550",
+      "vazuri-preview-liko-dark-shop-public/_next/static/f108f653-bf4d-4688-ba5b-13a132f8e14a/_buildManifest.js": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "vazuri-preview-liko-dark-shop-public/_next/static/f108f653-bf4d-4688-ba5b-13a132f8e14a/_ssgManifest.js": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "vazuri-preview-liko-dark-shop-public/index.html": "746d27171ce45a1929af47b0c4858489b7d2590cb598acdfa100701d253baa18",
+      "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json": "6595b421cba9b4bc1945d74986ec997407e2bd247541fba10b6afa92a14f2d4b"
+    },
+    "before": {
+      "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": "43a3864fecc04955d4bfefae1407345279f706a190f81bfea772d64e2636201b",
+      "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-CSlwtlba.js": null,
+      "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-BUoCMRWe.js": null,
+      "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-mhzMaF0K.js": null,
+      "vazuri-preview-liko-dark-shop-public/_next/static/f108f653-bf4d-4688-ba5b-13a132f8e14a/_buildManifest.js": null,
+      "vazuri-preview-liko-dark-shop-public/_next/static/f108f653-bf4d-4688-ba5b-13a132f8e14a/_ssgManifest.js": null,
+      "vazuri-preview-liko-dark-shop-public/index.html": "fc2258a2919411cbe5f220de73feeee265704ef72ff3c6f774e73c93d11096f6",
+      "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json": "4d88df33d3343c5678a9810f76d84015605b9db6125274c294b40ed6ed806836"
+    }
+  },
+  "candidateFiles": {
+    "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": {
+      "sha256": "52ba2ceea7c16f47f7ffb715d48890a34ac45d48a96fce1aaa5579591984ba02",
+      "size": 1750,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-CSlwtlba.js": {
+      "sha256": "8f7ea6c99bb468c24218454928445e8f652f61e8b2ec8c6a6bcaec49e5713a7b",
+      "size": 176767,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-BUoCMRWe.js": {
+      "sha256": "23ba9214f9b9b8a820ffc845c719602cfe2214a872ca8d1f3a7e3b69c2c9455c",
+      "size": 489,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-mhzMaF0K.js": {
+      "sha256": "1d931f67bf9ca249fd01b6c9354634521996b0e31795d7f7fb0102cb31375550",
+      "size": 64336,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/f108f653-bf4d-4688-ba5b-13a132f8e14a/_buildManifest.js": {
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "size": 159,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/f108f653-bf4d-4688-ba5b-13a132f8e14a/_ssgManifest.js": {
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "size": 76,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/index.html": {
+      "sha256": "746d27171ce45a1929af47b0c4858489b7d2590cb598acdfa100701d253baa18",
+      "size": 33373,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json": {
+      "sha256": "6595b421cba9b4bc1945d74986ec997407e2bd247541fba10b6afa92a14f2d4b",
+      "size": 76,
+      "mode": "0o444"
+    }
+  },
+  "sourceFiles": [
+    "app/CasePanelArtwork.tsx"
+  ],
+  "visualChecks": {
+    "profiles": 6,
+    "checks": 54,
+    "failed": 0,
+    "passed": 54
+  },
+  "identityProof": {
+    "valid": true,
+    "mode": "local",
+    "requirement": "The complete horizontal arrow, including every cell and contact, is rigidly rotated as one group.",
+    "observations": [
+      {
+        "reducedMotion": "no-preference",
+        "valid": true,
+        "sameViewBox": true,
+        "identicalChildren": true,
+        "leftTransform": null,
+        "diagonalTransform": "rotate(135 11.5 11.5)",
+        "eachHasOneSolidShaft": true,
+        "eachHasSixWingCells": true,
+        "childrenSettled": true
+      },
+      {
+        "reducedMotion": "reduce",
+        "valid": true,
+        "sameViewBox": true,
+        "identicalChildren": true,
+        "leftTransform": null,
+        "diagonalTransform": "rotate(135 11.5 11.5)",
+        "eachHasOneSolidShaft": true,
+        "eachHasSixWingCells": true,
+        "childrenSettled": true
+      }
+    ]
+  },
+  "motionPassed": true,
+  "scopePassed": true,
+  "existingRenderedHTMLTestsPassed": 3,
+  "otherCasesUnchanged": true,
+  "allMediaUnchanged": true
+}
