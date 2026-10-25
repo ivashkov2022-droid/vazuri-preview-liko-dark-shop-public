@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-25",
+  "scope": "Use one canonical completion lifecycle across all nine cases: once in the completed ending zone after 600ms input quiet; next input dismisses even at a scroll boundary; native beacon click or keyboard reopens. Preserve cube progression, palette, black arrow, transparent surface, form and all case content/media.",
+  "validation": {
+    "profiles": 3,
+    "checks": 246,
+    "passed": 246,
+    "failed": 0,
+    "valid": true
+  },
+  "lifecycleValidation": {
+    "profiles": 1,
+    "scenarios": 3,
+    "checks": 37,
+    "passed": 37,
+    "failed": 0
+  },
+  "controllerUnitChecks": 33,
+  "sourceIntegrity": {
+    "key": "night",
+    "canonicalSha256": "75f58d0d7781bd3059e50bfb5211a2405c28a306bd049b2086f7327c8532419b",
+    "onlyCanonicalPolicyChanged": true,
+    "beforeSha256": "53532691d5ad47787710afdc3e05d59e62ce73a6562e07abf20daa81a678a7f1",
+    "afterSha256": "75f58d0d7781bd3059e50bfb5211a2405c28a306bd049b2086f7327c8532419b",
+    "cssUnchanged": true
+  },
+  "candidate": {
+    "key": "night",
+    "serverCase": "vazuri-preview-liko-dark-shop-public",
+    "previous": "/srv/www/vazuri.io/releases/20261025T050218Z-unified-case-beacon-v1",
+    "changed": [
+      ".vite/manifest.json",
+      "index.html",
+      "vinext-client-entry-manifest.json",
+      "_next/static/c3f2feb4-87c0-4868-b365-c9d43f02ed7d/_buildManifest.js",
+      "_next/static/c3f2feb4-87c0-4868-b365-c9d43f02ed7d/_ssgManifest.js",
+      "_next/static/chunks/index-DxFuSjg3.js",
+      "_next/static/chunks/layout-segment-context-DHpyYz3w.js",
+      "_next/static/chunks/page-CG4BkKvt.js"
+    ],
+    "hashes": {
+      ".vite/manifest.json": "6ae8a0b465f1f5a3de08d22976d852b3e11894149261225d3d0358a62dd3ed74",
+      "index.html": "353d7e87c1bee9efe516ee5a6af2ff34505160d2cc2a684dd474dc17ea07dfee",
+      "vinext-client-entry-manifest.json": "94143810213812a50ffd4b79a9394fb48e3bcbdc22f2ccf482d91e7af9ed7ba3",
+      "_next/static/c3f2feb4-87c0-4868-b365-c9d43f02ed7d/_buildManifest.js": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "_next/static/c3f2feb4-87c0-4868-b365-c9d43f02ed7d/_ssgManifest.js": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "_next/static/chunks/index-DxFuSjg3.js": "6c4fec52745684174ce41253136a8be9a6e62ee08094de7a814a66250d80ee67",
+      "_next/static/chunks/layout-segment-context-DHpyYz3w.js": "bac390c63f576ce7db2fc2160f04bbc1433529b2d7b4756a894033782ba4a5af",
+      "_next/static/chunks/page-CG4BkKvt.js": "11af06fda9bfb6009767e652116ce56de6015d2d086860c88ddd71db742974f4"
+    },
+    "before": {
+      ".vite/manifest.json": "452f1b9e0eee5712c6be811be3e643380f99473accc2565868d7038311aec709",
+      "index.html": "e6e023da0d5451dbffca65cedabc0ee59c3abd4121bcdad81587415a6282a2af",
+      "vinext-client-entry-manifest.json": "a37a9e03f382a61a4cbc5b255fc7361eea4ae54eca40960002b2b9656cda22db",
+      "_next/static/c3f2feb4-87c0-4868-b365-c9d43f02ed7d/_buildManifest.js": null,
+      "_next/static/c3f2feb4-87c0-4868-b365-c9d43f02ed7d/_ssgManifest.js": null,
+      "_next/static/chunks/index-DxFuSjg3.js": null,
+      "_next/static/chunks/layout-segment-context-DHpyYz3w.js": null,
+      "_next/static/chunks/page-CG4BkKvt.js": null
+    },
+    "htmlChanged": 1,
+    "allMediaAndPageContentUnchanged": true,
+    "SSRMarkupVerbatim": true,
+    "oldRuntimeAssetsRetainedForCachedPages": true
+  }
+}
