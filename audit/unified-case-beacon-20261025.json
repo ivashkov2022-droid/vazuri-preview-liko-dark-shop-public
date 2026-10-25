@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "scope": "Use one canonical completion lifecycle across all nine cases: once at physical page end after ending gesture quiet; next input dismisses even at a scroll boundary; native beacon click or keyboard reopens. Preserve cube progression, palette, black arrow, transparent surface, form and all case content/media.",
   "validation": {
     "profiles": 3,
