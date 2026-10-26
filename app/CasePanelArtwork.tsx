@@ -3,9 +3,9 @@ import type { CSSProperties } from "react";
 // Use the exact same arrow in both actions; rotate the whole contour for NE.
 const arrowWingCells = [3, 9, 15, 29, 37, 45];
 
-export function PixelArrow({ direction }: { direction: "left" | "up-right" }) {
+export function PixelArrow({ direction, className = "v2-console__pixel-arrow", style }: { direction: "left" | "up-right"; className?: string; style?: CSSProperties }) {
   return (
-    <svg className="v2-console__pixel-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <svg className={className} style={style} viewBox="0 0 24 24" aria-hidden="true" focusable="false">
       <g transform={direction === "up-right" ? "rotate(135 11.5 11.5)" : undefined}>
         <path className="v2-console__pixel-shaft" d="M1 10H22V13H1Z" style={{ "--cube-x": "0px", "--cube-y": "7px", "--cube-rotate": "0deg", "--cube-delay": "64ms" } as CSSProperties} />
         {arrowWingCells.map((index) => {

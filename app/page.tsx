@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { CSSProperties, FormEvent, useEffect, useRef, useState } from "react";
 import CaseDock from "./CaseDock";
+import { PixelArrow } from "./CasePanelArtwork";
 
 const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -365,7 +366,7 @@ export default function Home() {
                       <span>Соглашаюсь на обработку персональных данных</span>
                     </label>
                     <button className="v2-brief__submit" type="submit" disabled={formStatus === "sending"}>
-                      <span>{formStatus === "sending" ? "Отправляем…" : "Отправить запрос"}</span><b aria-hidden="true">↗</b>
+                      <span>{formStatus === "sending" ? "Отправляем…" : "Отправить запрос"}</span><PixelArrow direction="up-right" className="v2-brief__submit-arrow" style={{ display: "block", flex: "0 0 20px", width: 20, height: 20, fill: "currentColor", shapeRendering: "geometricPrecision", pointerEvents: "none" }} />
                     </button>
                     <p className="v2-brief__feedback" aria-live="polite">
                       {formStatus === "error" ? "Не удалось отправить сообщение. Попробуйте ещё раз." : ""}

@@ -1,0 +1,145 @@
+{
+  "schema": "vazuri/form-submit-arrow-case/v1",
+  "key": "night",
+  "project": "projects/nightshift-concept-public/vazuri-preview-liko-dark-shop-public-main",
+  "sourceProject": "projects/nightshift-concept-public/vazuri-preview-liko-dark-shop-public-main",
+  "serverCase": "vazuri-preview-liko-dark-shop-public",
+  "sourceParent": "06ff0fc959e8de483d4aec968c09a334f8da63e4",
+  "sourceSHA256": {
+    "app/page.tsx": "e1442f46d99fa37e93936416ecd8402414e6c1ccc80ce5bdd963e236e091fede",
+    "app/CasePanelArtwork.tsx": "a3f7a8c867ac57471879813a160396b586a7909e06bfb1c802e8af77b003de38"
+  },
+  "intendedDelta": {
+    "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": {
+      "sha256": "4d1ffe0610f8c230f21188aa7b27d6199dc2b2e29f354b6ba7e4d3f1a9dbbafb",
+      "size": 1750,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/82ceeab9-67e9-4494-9abd-840fb4e4db4a/_buildManifest.js": {
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "size": 159,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/82ceeab9-67e9-4494-9abd-840fb4e4db4a/_ssgManifest.js": {
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "size": 76,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-DYH1prnj.js": {
+      "sha256": "87d68c160f564a1c453945cf6e161082101e94c44b981795da72f5bc752e7df8",
+      "size": 176767,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-DfCMjpkp.js": {
+      "sha256": "569204f48cec5f888b8f614c77576dbd5ac22256a9847da3541d324d2aff1063",
+      "size": 489,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-COZS92t5.js": {
+      "sha256": "6b0f0959152e3dca6db163ab8cda8dff9dc61dcec9fe99b7fe5203a3e83a51e3",
+      "size": 64934,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/index.html": {
+      "sha256": "ecca252179747d6e7ea1547dd4672b4b0e01a37f240d93917d73c66c3b58e94a",
+      "size": 33373,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json": {
+      "sha256": "fc4b711b333c775a916efebbfc60d857991b373e71ef914e5525bbef05f18bb0",
+      "size": 76,
+      "mode": "0o444"
+    }
+  },
+  "delta": [
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/.vite/manifest.json",
+      "sha256": "4d1ffe0610f8c230f21188aa7b27d6199dc2b2e29f354b6ba7e4d3f1a9dbbafb",
+      "size": 1750,
+      "mode": "0o444"
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/_next/static/82ceeab9-67e9-4494-9abd-840fb4e4db4a/_buildManifest.js",
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "size": 159,
+      "mode": "0o444"
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/_next/static/82ceeab9-67e9-4494-9abd-840fb4e4db4a/_ssgManifest.js",
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "size": 76,
+      "mode": "0o444"
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-DYH1prnj.js",
+      "sha256": "87d68c160f564a1c453945cf6e161082101e94c44b981795da72f5bc752e7df8",
+      "size": 176767,
+      "mode": "0o444"
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-DfCMjpkp.js",
+      "sha256": "569204f48cec5f888b8f614c77576dbd5ac22256a9847da3541d324d2aff1063",
+      "size": 489,
+      "mode": "0o444"
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-COZS92t5.js",
+      "sha256": "6b0f0959152e3dca6db163ab8cda8dff9dc61dcec9fe99b7fe5203a3e83a51e3",
+      "size": 64934,
+      "mode": "0o444"
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/index.html",
+      "sha256": "ecca252179747d6e7ea1547dd4672b4b0e01a37f240d93917d73c66c3b58e94a",
+      "size": 33373,
+      "mode": "0o444"
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json",
+      "sha256": "fc4b711b333c775a916efebbfc60d857991b373e71ef914e5525bbef05f18bb0",
+      "size": 76,
+      "mode": "0o444"
+    }
+  ],
+  "deletedFiles": [],
+  "routes": [
+    {
+      "url": "https://vazuri.io/nightshift/",
+      "localPath": "/nightshift/",
+      "bodyLanguage": "en",
+      "overlayLanguage": "ru",
+      "runtimeFile": "vazuri-preview-liko-dark-shop-public/index.html",
+      "caseName": "Night Shift",
+      "source": "case-nightshift"
+    }
+  ],
+  "palette": {
+    "paper": "#f1f0ea",
+    "ink": "#090a09",
+    "accent": "#c8ff00"
+  },
+  "requiredFields": [
+    "name",
+    "phone",
+    "contact",
+    "consent"
+  ],
+  "arrowSpec": {
+    "size": 20,
+    "bannerSize": 24,
+    "direction": "up-right",
+    "viewBox": "0 0 24 24",
+    "groupTransform": "rotate(135 11.5 11.5)",
+    "shaft": "M1 10H22V13H1Z",
+    "wingIndices": [
+      3,
+      9,
+      15,
+      29,
+      37,
+      45
+    ]
+  },
+  "baselineReportSHA256": "dd5f2fa9cae3fb9a5718873e37a6f07879d136e62a418b829036484814c32668",
+  "initialHTMLBodyPreserved": true
+}

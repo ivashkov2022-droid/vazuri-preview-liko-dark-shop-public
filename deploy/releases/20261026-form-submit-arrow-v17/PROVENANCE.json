@@ -1,0 +1,33 @@
+{
+  "schema": "vazuri/form-submit-arrow-source-package/v1",
+  "key": "night",
+  "sourceParent": "06ff0fc959e8de483d4aec968c09a334f8da63e4",
+  "sourceSHA256": {
+    "app/page.tsx": "e1442f46d99fa37e93936416ecd8402414e6c1ccc80ce5bdd963e236e091fede",
+    "app/CasePanelArtwork.tsx": "a3f7a8c867ac57471879813a160396b586a7909e06bfb1c802e8af77b003de38"
+  },
+  "sourceGitBlobSHA256": {
+    "app/page.tsx": "3b4379a852fab0330e4859d278473be1da60a5f7328003fdfdf35bcbb29d95b1",
+    "app/CasePanelArtwork.tsx": "a3f7a8c867ac57471879813a160396b586a7909e06bfb1c802e8af77b003de38"
+  },
+  "ledgerSHA256": "dc43c75c366061e6f2a88e7993896953df69dc7cb7c447b94b9e2133a009fe75",
+  "qaSummarySHA256": "63d513eeea84f693467b5a7938da41350a8732a9d21835312fb4942039eeec54",
+  "baselineReportSHA256": "dd5f2fa9cae3fb9a5718873e37a6f07879d136e62a418b829036484814c32668",
+  "runtimeDeltaFiles": 8,
+  "fullBaseRuntimeFiles": 97,
+  "verifiedRuntimeBase": {
+    "archivePath": "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\projects\\nightshift-concept-public\\vazuri-preview-liko-dark-shop-public-main\\release\\vazuri-preview-liko-dark-shop-public-main-case-phone-required-v16-complete-current.zip",
+    "archiveSHA256": "6a9427d4e11d542cd8b54059424e3901709f91df14f0afb621aa134b35cfd5e4",
+    "sourceCommit": "06ff0fc959e8de483d4aec968c09a334f8da63e4",
+    "sourceProofFile": "audit/case-phone-required-20261026/published-archives.json",
+    "sourceProofSHA256": "80f7e5de8ff9b8ce4fadb2c658e7813ef4987bdbaa0d11fd32ab12fa1d92b773"
+  },
+  "requiredFields": [
+    "name",
+    "phone",
+    "contact",
+    "consent"
+  ],
+  "submitArrowPolicy": "Reuse the existing diagonal banner glyph without changing CSS or form controls.",
+  "languagePolicy": "Preserve the actual live overlay and case languages. This source finalizer never rewrites language or palette."
+}
