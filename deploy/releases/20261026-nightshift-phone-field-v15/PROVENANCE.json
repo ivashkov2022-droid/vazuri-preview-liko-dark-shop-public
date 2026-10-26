@@ -1,0 +1,19 @@
+{
+  "schema": "vazuri/nightshift-phone-source-package/v1",
+  "sourceParent": "c9860e9b1bf25c757535f1e2f55001493637327c",
+  "sourceFile": "app/page.tsx",
+  "sourceBeforeSHA256": "dd2ce350f2f0f247cf65bbcc94eb09b5809d257c5516995328174e1d40c66461",
+  "sourceSHA256": "aa7a370134ba975acc1f2b0600c33831da2b2c610da8197de3ae678cbc6b465a",
+  "sourceGitBlobSHA256": "b2344a1d876ada7c02d5d030c9cf01d6c3a837d20d903e449fb46fb91da0a2af",
+  "candidateSHA256": "a88dcf59b6931d479ab95815b201098d2540529a529f36dec5adccc8316f2425",
+  "qaSHA256": "498a05faea6583b5de53e7ea96a85783555602186de23a165e38fa5a048a072b",
+  "runtimeDeltaFiles": 8,
+  "fullBaseRuntimeFiles": 87,
+  "baselineReportSHA256": "1aaf0ab35537e2b0b5d3b5627eb6e2add695a58df8e384d74ae5f92ce4af44f9",
+  "verifiedV12Archive": {
+    "path": "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\projects\\nightshift-concept-public\\vazuri-preview-liko-dark-shop-public-main\\release\\vazuri-preview-liko-dark-shop-public-main-complete-current.zip",
+    "sha256": "fc9e0da7f13593c18b2988787c281e5906b703ceaeff5c3c9c310bd2be9acdee",
+    "freshRuntimeFiles": 31
+  },
+  "change": "Only the optional phone field between name and contact, contact reveal delay and nonempty phone appended to the existing lead message."
+}

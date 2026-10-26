@@ -1,0 +1,5418 @@
+{
+  "schema": "vazuri/nightshift-phone-field-local-qa/v1",
+  "generatedAt": "2026-10-26T03:24:42.980Z",
+  "mode": "local",
+  "url": "http://127.0.0.1:4474/nightshift/",
+  "valid": true,
+  "localQAPassed": true,
+  "sourceSHA256": {
+    "app/page.tsx": "aa7a370134ba975acc1f2b0600c33831da2b2c610da8197de3ae678cbc6b465a",
+    "app/case-console.css": "7f51441557a80993804cc7e7b5e30833116badbf6db9d8a446f1f21824eb0b79",
+    "app/CaseDock.tsx": "71aeb4f61470f4c7ab8331783b470d8fe3de77f536254d3fc710f649f700c486"
+  },
+  "baseline": "Published v12 archive, browser-only GET overrides; unchanged media/framework served by local4474. Every POST is either locally fulfilled with synthetic success for /lead.php or aborted.",
+  "summary": {
+    "profiles": 5,
+    "checks": 72,
+    "passed": 72,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "profile": "scope",
+      "name": "app/case-console.css byte-identical to HEAD",
+      "passed": true,
+      "detail": {
+        "sha256": "7f51441557a80993804cc7e7b5e30833116badbf6db9d8a446f1f21824eb0b79"
+      }
+    },
+    {
+      "profile": "scope",
+      "name": "app/CaseDock.tsx byte-identical to HEAD",
+      "passed": true,
+      "detail": {
+        "sha256": "71aeb4f61470f4c7ab8331783b470d8fe3de77f536254d3fc710f649f700c486"
+      }
+    },
+    {
+      "profile": "1440x900",
+      "name": "candidate route returns200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "profile": "1440x900",
+      "name": "exact Russian field order and phone only added once",
+      "passed": true,
+      "detail": [
+        [
+          "name",
+          "Ваше имя"
+        ],
+        [
+          "phone",
+          "Телефон"
+        ],
+        [
+          "contact",
+          "Email или Telegram"
+        ]
+      ]
+    },
+    {
+      "profile": "1440x900",
+      "name": "phone optional tel40 and required name/contact/consent unchanged",
+      "passed": true,
+      "detail": {
+        "phone": {
+          "name": "phone",
+          "placeholder": "Телефон",
+          "ariaLabel": "Телефон",
+          "required": false,
+          "type": "tel",
+          "inputMode": "tel",
+          "maxLength": 40,
+          "label": {
+            "x": 941,
+            "y": 340.65625,
+            "width": 459,
+            "height": 66,
+            "top": 340.65625,
+            "right": 1400,
+            "bottom": 406.65625,
+            "left": 941
+          },
+          "labelCSS": {
+            "width": "459px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "18px",
+            "paddingBottom": "0px",
+            "paddingLeft": "18px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 959,
+            "y": 349.15625,
+            "width": 423,
+            "height": 48,
+            "top": 349.15625,
+            "right": 1382,
+            "bottom": 397.15625,
+            "left": 959
+          },
+          "inputCSS": {
+            "width": "423px",
+            "height": "48px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "letterSpacing": "0.49px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        },
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ]
+      }
+    },
+    {
+      "profile": "1440x900",
+      "name": "all three rows and inputs share exact width/height/padding/font/borders",
+      "passed": true,
+      "detail": [
+        {
+          "name": "name",
+          "placeholder": "Ваше имя",
+          "ariaLabel": "Ваше имя",
+          "required": true,
+          "type": "text",
+          "inputMode": "",
+          "maxLength": 120,
+          "label": {
+            "x": 941,
+            "y": 274.65625,
+            "width": 459,
+            "height": 66,
+            "top": 274.65625,
+            "right": 1400,
+            "bottom": 340.65625,
+            "left": 941
+          },
+          "labelCSS": {
+            "width": "459px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "18px",
+            "paddingBottom": "0px",
+            "paddingLeft": "18px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 959,
+            "y": 283.15625,
+            "width": 423,
+            "height": 48,
+            "top": 283.15625,
+            "right": 1382,
+            "bottom": 331.15625,
+            "left": 959
+          },
+          "inputCSS": {
+            "width": "423px",
+            "height": "48px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "letterSpacing": "0.49px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.28s"
+        },
+        {
+          "name": "phone",
+          "placeholder": "Телефон",
+          "ariaLabel": "Телефон",
+          "required": false,
+          "type": "tel",
+          "inputMode": "tel",
+          "maxLength": 40,
+          "label": {
+            "x": 941,
+            "y": 340.65625,
+            "width": 459,
+            "height": 66,
+            "top": 340.65625,
+            "right": 1400,
+            "bottom": 406.65625,
+            "left": 941
+          },
+          "labelCSS": {
+            "width": "459px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "18px",
+            "paddingBottom": "0px",
+            "paddingLeft": "18px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 959,
+            "y": 349.15625,
+            "width": 423,
+            "height": 48,
+            "top": 349.15625,
+            "right": 1382,
+            "bottom": 397.15625,
+            "left": 959
+          },
+          "inputCSS": {
+            "width": "423px",
+            "height": "48px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "letterSpacing": "0.49px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        },
+        {
+          "name": "contact",
+          "placeholder": "Email или Telegram",
+          "ariaLabel": "Email или Telegram",
+          "required": true,
+          "type": "text",
+          "inputMode": "",
+          "maxLength": 180,
+          "label": {
+            "x": 941,
+            "y": 406.65625,
+            "width": 459,
+            "height": 66,
+            "top": 406.65625,
+            "right": 1400,
+            "bottom": 472.65625,
+            "left": 941
+          },
+          "labelCSS": {
+            "width": "459px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "18px",
+            "paddingBottom": "0px",
+            "paddingLeft": "18px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 959,
+            "y": 415.15625,
+            "width": 423,
+            "height": 48,
+            "top": 415.15625,
+            "right": 1382,
+            "bottom": 463.15625,
+            "left": 959
+          },
+          "inputCSS": {
+            "width": "423px",
+            "height": "48px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "letterSpacing": "0.49px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        }
+      ]
+    },
+    {
+      "profile": "1440x900",
+      "name": "three rows contiguous with equal heights",
+      "passed": true,
+      "detail": [
+        {
+          "x": 941,
+          "y": 274.65625,
+          "width": 459,
+          "height": 66,
+          "top": 274.65625,
+          "right": 1400,
+          "bottom": 340.65625,
+          "left": 941
+        },
+        {
+          "x": 941,
+          "y": 340.65625,
+          "width": 459,
+          "height": 66,
+          "top": 340.65625,
+          "right": 1400,
+          "bottom": 406.65625,
+          "left": 941
+        },
+        {
+          "x": 941,
+          "y": 406.65625,
+          "width": 459,
+          "height": 66,
+          "top": 406.65625,
+          "right": 1400,
+          "bottom": 472.65625,
+          "left": 941
+        }
+      ]
+    },
+    {
+      "profile": "1440x900",
+      "name": "Russian form, safe focus and body lock retained",
+      "passed": true,
+      "detail": {
+        "title": "Опишите задачу",
+        "activeTag": "BUTTON"
+      }
+    },
+    {
+      "profile": "1440x900",
+      "name": "drawer and fields fit viewport horizontally",
+      "passed": true,
+      "detail": {
+        "drawer": {
+          "rect": {
+            "x": 900,
+            "y": 0,
+            "width": 540,
+            "height": 900,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900,
+            "left": 900
+          },
+          "clientHeight": 900,
+          "scrollHeight": 900,
+          "scrollTop": 0,
+          "css": {
+            "width": "540px",
+            "height": "900px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "1px solid rgba(9, 10, 9, 0.22)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "docWidth": 1440
+      }
+    },
+    {
+      "profile": "1440x900",
+      "name": "submit reachable by natural drawer scroll without field shrinking",
+      "passed": true,
+      "detail": {
+        "x": 941,
+        "y": 721.65625,
+        "width": 459,
+        "height": 60
+      }
+    },
+    {
+      "profile": "1440x900",
+      "name": "blank optional phone leaves native validity satisfied",
+      "passed": true
+    },
+    {
+      "profile": "1440x900",
+      "name": "blank phone produces original payload unchanged",
+      "passed": true,
+      "detail": {
+        "source": "nightshift",
+        "language": "ru",
+        "website": "",
+        "name": "QA Demo",
+        "contact": "qa@example.invalid",
+        "company": "",
+        "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.",
+        "consent": "yes"
+      }
+    },
+    {
+      "profile": "1440x900",
+      "name": "filled phone trimmed into existing message and all other payload values preserved",
+      "passed": true,
+      "detail": {
+        "source": "nightshift",
+        "language": "ru",
+        "website": "",
+        "name": "QA Demo",
+        "contact": "qa@example.invalid",
+        "company": "",
+        "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+        "consent": "yes"
+      }
+    },
+    {
+      "profile": "1440x900",
+      "name": "v12 baseline loads two-field original without errors",
+      "passed": true,
+      "detail": {
+        "count": 2,
+        "pageErrors": [],
+        "networkErrors": []
+      }
+    },
+    {
+      "profile": "1440x900",
+      "name": "old fields preserve exact geometry/style and form grows exactly one row",
+      "passed": true,
+      "detail": {
+        "beforeForm": {
+          "x": 941,
+          "y": 273.65625,
+          "width": 459,
+          "height": 442,
+          "top": 273.65625,
+          "right": 1400,
+          "bottom": 715.65625,
+          "left": 941
+        },
+        "afterForm": {
+          "x": 941,
+          "y": 273.65625,
+          "width": 459,
+          "height": 508,
+          "top": 273.65625,
+          "right": 1400,
+          "bottom": 781.65625,
+          "left": 941
+        },
+        "addedRow": 66
+      }
+    },
+    {
+      "profile": "1440x900",
+      "name": "no candidate JavaScript/hydration/resource errors",
+      "passed": true,
+      "detail": {
+        "page": [],
+        "network": []
+      }
+    },
+    {
+      "profile": "768x1024",
+      "name": "candidate route returns200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "profile": "768x1024",
+      "name": "exact Russian field order and phone only added once",
+      "passed": true,
+      "detail": [
+        [
+          "name",
+          "Ваше имя"
+        ],
+        [
+          "phone",
+          "Телефон"
+        ],
+        [
+          "contact",
+          "Email или Telegram"
+        ]
+      ]
+    },
+    {
+      "profile": "768x1024",
+      "name": "phone optional tel40 and required name/contact/consent unchanged",
+      "passed": true,
+      "detail": {
+        "phone": {
+          "name": "phone",
+          "placeholder": "Телефон",
+          "ariaLabel": "Телефон",
+          "required": false,
+          "type": "tel",
+          "inputMode": "tel",
+          "maxLength": 40,
+          "label": {
+            "x": 269,
+            "y": 311.65625,
+            "width": 459,
+            "height": 66,
+            "top": 311.65625,
+            "right": 728,
+            "bottom": 377.65625,
+            "left": 269
+          },
+          "labelCSS": {
+            "width": "459px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "18px",
+            "paddingBottom": "0px",
+            "paddingLeft": "18px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 287,
+            "y": 320.15625,
+            "width": 423,
+            "height": 48,
+            "top": 320.15625,
+            "right": 710,
+            "bottom": 368.15625,
+            "left": 287
+          },
+          "inputCSS": {
+            "width": "423px",
+            "height": "48px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "letterSpacing": "0.49px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        },
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ]
+      }
+    },
+    {
+      "profile": "768x1024",
+      "name": "all three rows and inputs share exact width/height/padding/font/borders",
+      "passed": true,
+      "detail": [
+        {
+          "name": "name",
+          "placeholder": "Ваше имя",
+          "ariaLabel": "Ваше имя",
+          "required": true,
+          "type": "text",
+          "inputMode": "",
+          "maxLength": 120,
+          "label": {
+            "x": 269,
+            "y": 245.65625,
+            "width": 459,
+            "height": 66,
+            "top": 245.65625,
+            "right": 728,
+            "bottom": 311.65625,
+            "left": 269
+          },
+          "labelCSS": {
+            "width": "459px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "18px",
+            "paddingBottom": "0px",
+            "paddingLeft": "18px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 287,
+            "y": 254.15625,
+            "width": 423,
+            "height": 48,
+            "top": 254.15625,
+            "right": 710,
+            "bottom": 302.15625,
+            "left": 287
+          },
+          "inputCSS": {
+            "width": "423px",
+            "height": "48px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "letterSpacing": "0.49px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.28s"
+        },
+        {
+          "name": "phone",
+          "placeholder": "Телефон",
+          "ariaLabel": "Телефон",
+          "required": false,
+          "type": "tel",
+          "inputMode": "tel",
+          "maxLength": 40,
+          "label": {
+            "x": 269,
+            "y": 311.65625,
+            "width": 459,
+            "height": 66,
+            "top": 311.65625,
+            "right": 728,
+            "bottom": 377.65625,
+            "left": 269
+          },
+          "labelCSS": {
+            "width": "459px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "18px",
+            "paddingBottom": "0px",
+            "paddingLeft": "18px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 287,
+            "y": 320.15625,
+            "width": 423,
+            "height": 48,
+            "top": 320.15625,
+            "right": 710,
+            "bottom": 368.15625,
+            "left": 287
+          },
+          "inputCSS": {
+            "width": "423px",
+            "height": "48px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "letterSpacing": "0.49px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        },
+        {
+          "name": "contact",
+          "placeholder": "Email или Telegram",
+          "ariaLabel": "Email или Telegram",
+          "required": true,
+          "type": "text",
+          "inputMode": "",
+          "maxLength": 180,
+          "label": {
+            "x": 269,
+            "y": 377.65625,
+            "width": 459,
+            "height": 66,
+            "top": 377.65625,
+            "right": 728,
+            "bottom": 443.65625,
+            "left": 269
+          },
+          "labelCSS": {
+            "width": "459px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "18px",
+            "paddingBottom": "0px",
+            "paddingLeft": "18px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 287,
+            "y": 386.15625,
+            "width": 423,
+            "height": 48,
+            "top": 386.15625,
+            "right": 710,
+            "bottom": 434.15625,
+            "left": 287
+          },
+          "inputCSS": {
+            "width": "423px",
+            "height": "48px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "letterSpacing": "0.49px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        }
+      ]
+    },
+    {
+      "profile": "768x1024",
+      "name": "three rows contiguous with equal heights",
+      "passed": true,
+      "detail": [
+        {
+          "x": 269,
+          "y": 245.65625,
+          "width": 459,
+          "height": 66,
+          "top": 245.65625,
+          "right": 728,
+          "bottom": 311.65625,
+          "left": 269
+        },
+        {
+          "x": 269,
+          "y": 311.65625,
+          "width": 459,
+          "height": 66,
+          "top": 311.65625,
+          "right": 728,
+          "bottom": 377.65625,
+          "left": 269
+        },
+        {
+          "x": 269,
+          "y": 377.65625,
+          "width": 459,
+          "height": 66,
+          "top": 377.65625,
+          "right": 728,
+          "bottom": 443.65625,
+          "left": 269
+        }
+      ]
+    },
+    {
+      "profile": "768x1024",
+      "name": "Russian form, safe focus and body lock retained",
+      "passed": true,
+      "detail": {
+        "title": "Опишите задачу",
+        "activeTag": "BUTTON"
+      }
+    },
+    {
+      "profile": "768x1024",
+      "name": "drawer and fields fit viewport horizontally",
+      "passed": true,
+      "detail": {
+        "drawer": {
+          "rect": {
+            "x": 228,
+            "y": 0,
+            "width": 540,
+            "height": 1024,
+            "top": 0,
+            "right": 768,
+            "bottom": 1024,
+            "left": 228
+          },
+          "clientHeight": 1024,
+          "scrollHeight": 1024,
+          "scrollTop": 0,
+          "css": {
+            "width": "540px",
+            "height": "1024px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "1px solid rgba(9, 10, 9, 0.22)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "docWidth": 768
+      }
+    },
+    {
+      "profile": "768x1024",
+      "name": "submit reachable by natural drawer scroll without field shrinking",
+      "passed": true,
+      "detail": {
+        "x": 269,
+        "y": 692.65625,
+        "width": 459,
+        "height": 60
+      }
+    },
+    {
+      "profile": "768x1024",
+      "name": "blank optional phone leaves native validity satisfied",
+      "passed": true
+    },
+    {
+      "profile": "768x1024",
+      "name": "blank phone produces original payload unchanged",
+      "passed": true,
+      "detail": {
+        "source": "nightshift",
+        "language": "ru",
+        "website": "",
+        "name": "QA Demo",
+        "contact": "qa@example.invalid",
+        "company": "",
+        "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.",
+        "consent": "yes"
+      }
+    },
+    {
+      "profile": "768x1024",
+      "name": "filled phone trimmed into existing message and all other payload values preserved",
+      "passed": true,
+      "detail": {
+        "source": "nightshift",
+        "language": "ru",
+        "website": "",
+        "name": "QA Demo",
+        "contact": "qa@example.invalid",
+        "company": "",
+        "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+        "consent": "yes"
+      }
+    },
+    {
+      "profile": "768x1024",
+      "name": "v12 baseline loads two-field original without errors",
+      "passed": true,
+      "detail": {
+        "count": 2,
+        "pageErrors": [],
+        "networkErrors": []
+      }
+    },
+    {
+      "profile": "768x1024",
+      "name": "old fields preserve exact geometry/style and form grows exactly one row",
+      "passed": true,
+      "detail": {
+        "beforeForm": {
+          "x": 269,
+          "y": 244.65625,
+          "width": 459,
+          "height": 442,
+          "top": 244.65625,
+          "right": 728,
+          "bottom": 686.65625,
+          "left": 269
+        },
+        "afterForm": {
+          "x": 269,
+          "y": 244.65625,
+          "width": 459,
+          "height": 508,
+          "top": 244.65625,
+          "right": 728,
+          "bottom": 752.65625,
+          "left": 269
+        },
+        "addedRow": 66
+      }
+    },
+    {
+      "profile": "768x1024",
+      "name": "no candidate JavaScript/hydration/resource errors",
+      "passed": true,
+      "detail": {
+        "page": [],
+        "network": []
+      }
+    },
+    {
+      "profile": "390x844",
+      "name": "candidate route returns200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "profile": "390x844",
+      "name": "exact Russian field order and phone only added once",
+      "passed": true,
+      "detail": [
+        [
+          "name",
+          "Ваше имя"
+        ],
+        [
+          "phone",
+          "Телефон"
+        ],
+        [
+          "contact",
+          "Email или Telegram"
+        ]
+      ]
+    },
+    {
+      "profile": "390x844",
+      "name": "phone optional tel40 and required name/contact/consent unchanged",
+      "passed": true,
+      "detail": {
+        "phone": {
+          "name": "phone",
+          "placeholder": "Телефон",
+          "ariaLabel": "Телефон",
+          "required": false,
+          "type": "tel",
+          "inputMode": "tel",
+          "maxLength": 40,
+          "label": {
+            "x": 24,
+            "y": 327,
+            "width": 342,
+            "height": 66,
+            "top": 327,
+            "right": 366,
+            "bottom": 393,
+            "left": 24
+          },
+          "labelCSS": {
+            "width": "342px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 40,
+            "y": 330.5,
+            "width": 310,
+            "height": 58,
+            "top": 330.5,
+            "right": 350,
+            "bottom": 388.5,
+            "left": 40
+          },
+          "inputCSS": {
+            "width": "310px",
+            "height": "58px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        },
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ]
+      }
+    },
+    {
+      "profile": "390x844",
+      "name": "all three rows and inputs share exact width/height/padding/font/borders",
+      "passed": true,
+      "detail": [
+        {
+          "name": "name",
+          "placeholder": "Ваше имя",
+          "ariaLabel": "Ваше имя",
+          "required": true,
+          "type": "text",
+          "inputMode": "",
+          "maxLength": 120,
+          "label": {
+            "x": 24,
+            "y": 261,
+            "width": 342,
+            "height": 66,
+            "top": 261,
+            "right": 366,
+            "bottom": 327,
+            "left": 24
+          },
+          "labelCSS": {
+            "width": "342px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 40,
+            "y": 264.5,
+            "width": 310,
+            "height": 58,
+            "top": 264.5,
+            "right": 350,
+            "bottom": 322.5,
+            "left": 40
+          },
+          "inputCSS": {
+            "width": "310px",
+            "height": "58px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.28s"
+        },
+        {
+          "name": "phone",
+          "placeholder": "Телефон",
+          "ariaLabel": "Телефон",
+          "required": false,
+          "type": "tel",
+          "inputMode": "tel",
+          "maxLength": 40,
+          "label": {
+            "x": 24,
+            "y": 327,
+            "width": 342,
+            "height": 66,
+            "top": 327,
+            "right": 366,
+            "bottom": 393,
+            "left": 24
+          },
+          "labelCSS": {
+            "width": "342px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 40,
+            "y": 330.5,
+            "width": 310,
+            "height": 58,
+            "top": 330.5,
+            "right": 350,
+            "bottom": 388.5,
+            "left": 40
+          },
+          "inputCSS": {
+            "width": "310px",
+            "height": "58px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        },
+        {
+          "name": "contact",
+          "placeholder": "Email или Telegram",
+          "ariaLabel": "Email или Telegram",
+          "required": true,
+          "type": "text",
+          "inputMode": "",
+          "maxLength": 180,
+          "label": {
+            "x": 24,
+            "y": 393,
+            "width": 342,
+            "height": 66,
+            "top": 393,
+            "right": 366,
+            "bottom": 459,
+            "left": 24
+          },
+          "labelCSS": {
+            "width": "342px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 40,
+            "y": 396.5,
+            "width": 310,
+            "height": 58,
+            "top": 396.5,
+            "right": 350,
+            "bottom": 454.5,
+            "left": 40
+          },
+          "inputCSS": {
+            "width": "310px",
+            "height": "58px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        }
+      ]
+    },
+    {
+      "profile": "390x844",
+      "name": "three rows contiguous with equal heights",
+      "passed": true,
+      "detail": [
+        {
+          "x": 24,
+          "y": 261,
+          "width": 342,
+          "height": 66,
+          "top": 261,
+          "right": 366,
+          "bottom": 327,
+          "left": 24
+        },
+        {
+          "x": 24,
+          "y": 327,
+          "width": 342,
+          "height": 66,
+          "top": 327,
+          "right": 366,
+          "bottom": 393,
+          "left": 24
+        },
+        {
+          "x": 24,
+          "y": 393,
+          "width": 342,
+          "height": 66,
+          "top": 393,
+          "right": 366,
+          "bottom": 459,
+          "left": 24
+        }
+      ]
+    },
+    {
+      "profile": "390x844",
+      "name": "Russian form, safe focus and body lock retained",
+      "passed": true,
+      "detail": {
+        "title": "Опишите задачу",
+        "activeTag": "BUTTON"
+      }
+    },
+    {
+      "profile": "390x844",
+      "name": "drawer and fields fit viewport horizontally",
+      "passed": true,
+      "detail": {
+        "drawer": {
+          "rect": {
+            "x": 0,
+            "y": 47.125,
+            "width": 390,
+            "height": 796.875,
+            "top": 47.125,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          },
+          "clientHeight": 796,
+          "scrollHeight": 796,
+          "scrollTop": 0,
+          "css": {
+            "width": "390px",
+            "height": "796.875px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "1px solid rgba(9, 10, 9, 0.22)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "docWidth": 390
+      }
+    },
+    {
+      "profile": "390x844",
+      "name": "submit reachable by natural drawer scroll without field shrinking",
+      "passed": true,
+      "detail": {
+        "x": 24,
+        "y": 746,
+        "width": 342,
+        "height": 78
+      }
+    },
+    {
+      "profile": "390x844",
+      "name": "blank optional phone leaves native validity satisfied",
+      "passed": true
+    },
+    {
+      "profile": "390x844",
+      "name": "blank phone produces original payload unchanged",
+      "passed": true,
+      "detail": {
+        "source": "nightshift",
+        "language": "ru",
+        "website": "",
+        "name": "QA Demo",
+        "contact": "qa@example.invalid",
+        "company": "",
+        "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.",
+        "consent": "yes"
+      }
+    },
+    {
+      "profile": "390x844",
+      "name": "filled phone trimmed into existing message and all other payload values preserved",
+      "passed": true,
+      "detail": {
+        "source": "nightshift",
+        "language": "ru",
+        "website": "",
+        "name": "QA Demo",
+        "contact": "qa@example.invalid",
+        "company": "",
+        "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+        "consent": "yes"
+      }
+    },
+    {
+      "profile": "390x844",
+      "name": "v12 baseline loads two-field original without errors",
+      "passed": true,
+      "detail": {
+        "count": 2,
+        "pageErrors": [],
+        "networkErrors": []
+      }
+    },
+    {
+      "profile": "390x844",
+      "name": "old fields preserve exact geometry/style and form grows exactly one row",
+      "passed": true,
+      "detail": {
+        "beforeForm": {
+          "x": 24,
+          "y": 326,
+          "width": 342,
+          "height": 498,
+          "top": 326,
+          "right": 366,
+          "bottom": 824,
+          "left": 24
+        },
+        "afterForm": {
+          "x": 24,
+          "y": 260,
+          "width": 342,
+          "height": 564,
+          "top": 260,
+          "right": 366,
+          "bottom": 824,
+          "left": 24
+        },
+        "addedRow": 66
+      }
+    },
+    {
+      "profile": "390x844",
+      "name": "no candidate JavaScript/hydration/resource errors",
+      "passed": true,
+      "detail": {
+        "page": [],
+        "network": []
+      }
+    },
+    {
+      "profile": "390x667",
+      "name": "candidate route returns200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "profile": "390x667",
+      "name": "exact Russian field order and phone only added once",
+      "passed": true,
+      "detail": [
+        [
+          "name",
+          "Ваше имя"
+        ],
+        [
+          "phone",
+          "Телефон"
+        ],
+        [
+          "contact",
+          "Email или Telegram"
+        ]
+      ]
+    },
+    {
+      "profile": "390x667",
+      "name": "phone optional tel40 and required name/contact/consent unchanged",
+      "passed": true,
+      "detail": {
+        "phone": {
+          "name": "phone",
+          "placeholder": "Телефон",
+          "ariaLabel": "Телефон",
+          "required": false,
+          "type": "tel",
+          "inputMode": "tel",
+          "maxLength": 40,
+          "label": {
+            "x": 16,
+            "y": 255.875,
+            "width": 358,
+            "height": 53,
+            "top": 255.875,
+            "right": 374,
+            "bottom": 308.875,
+            "left": 16
+          },
+          "labelCSS": {
+            "width": "358px",
+            "height": "53px",
+            "minHeight": "52px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 32,
+            "y": 255.875,
+            "width": 326,
+            "height": 52,
+            "top": 255.875,
+            "right": 358,
+            "bottom": 307.875,
+            "left": 32
+          },
+          "inputCSS": {
+            "width": "326px",
+            "height": "52px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        },
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ]
+      }
+    },
+    {
+      "profile": "390x667",
+      "name": "all three rows and inputs share exact width/height/padding/font/borders",
+      "passed": true,
+      "detail": [
+        {
+          "name": "name",
+          "placeholder": "Ваше имя",
+          "ariaLabel": "Ваше имя",
+          "required": true,
+          "type": "text",
+          "inputMode": "",
+          "maxLength": 120,
+          "label": {
+            "x": 16,
+            "y": 202.875,
+            "width": 358,
+            "height": 53,
+            "top": 202.875,
+            "right": 374,
+            "bottom": 255.875,
+            "left": 16
+          },
+          "labelCSS": {
+            "width": "358px",
+            "height": "53px",
+            "minHeight": "52px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 32,
+            "y": 202.875,
+            "width": 326,
+            "height": 52,
+            "top": 202.875,
+            "right": 358,
+            "bottom": 254.875,
+            "left": 32
+          },
+          "inputCSS": {
+            "width": "326px",
+            "height": "52px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.28s"
+        },
+        {
+          "name": "phone",
+          "placeholder": "Телефон",
+          "ariaLabel": "Телефон",
+          "required": false,
+          "type": "tel",
+          "inputMode": "tel",
+          "maxLength": 40,
+          "label": {
+            "x": 16,
+            "y": 255.875,
+            "width": 358,
+            "height": 53,
+            "top": 255.875,
+            "right": 374,
+            "bottom": 308.875,
+            "left": 16
+          },
+          "labelCSS": {
+            "width": "358px",
+            "height": "53px",
+            "minHeight": "52px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 32,
+            "y": 255.875,
+            "width": 326,
+            "height": 52,
+            "top": 255.875,
+            "right": 358,
+            "bottom": 307.875,
+            "left": 32
+          },
+          "inputCSS": {
+            "width": "326px",
+            "height": "52px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        },
+        {
+          "name": "contact",
+          "placeholder": "Email или Telegram",
+          "ariaLabel": "Email или Telegram",
+          "required": true,
+          "type": "text",
+          "inputMode": "",
+          "maxLength": 180,
+          "label": {
+            "x": 16,
+            "y": 308.875,
+            "width": 358,
+            "height": 53,
+            "top": 308.875,
+            "right": 374,
+            "bottom": 361.875,
+            "left": 16
+          },
+          "labelCSS": {
+            "width": "358px",
+            "height": "53px",
+            "minHeight": "52px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 32,
+            "y": 308.875,
+            "width": 326,
+            "height": 52,
+            "top": 308.875,
+            "right": 358,
+            "bottom": 360.875,
+            "left": 32
+          },
+          "inputCSS": {
+            "width": "326px",
+            "height": "52px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        }
+      ]
+    },
+    {
+      "profile": "390x667",
+      "name": "three rows contiguous with equal heights",
+      "passed": true,
+      "detail": [
+        {
+          "x": 16,
+          "y": 202.875,
+          "width": 358,
+          "height": 53,
+          "top": 202.875,
+          "right": 374,
+          "bottom": 255.875,
+          "left": 16
+        },
+        {
+          "x": 16,
+          "y": 255.875,
+          "width": 358,
+          "height": 53,
+          "top": 255.875,
+          "right": 374,
+          "bottom": 308.875,
+          "left": 16
+        },
+        {
+          "x": 16,
+          "y": 308.875,
+          "width": 358,
+          "height": 53,
+          "top": 308.875,
+          "right": 374,
+          "bottom": 361.875,
+          "left": 16
+        }
+      ]
+    },
+    {
+      "profile": "390x667",
+      "name": "Russian form, safe focus and body lock retained",
+      "passed": true,
+      "detail": {
+        "title": "Опишите задачу",
+        "activeTag": "BUTTON"
+      }
+    },
+    {
+      "profile": "390x667",
+      "name": "drawer and fields fit viewport horizontally",
+      "passed": true,
+      "detail": {
+        "drawer": {
+          "rect": {
+            "x": 0,
+            "y": 12,
+            "width": 390,
+            "height": 655,
+            "top": 12,
+            "right": 390,
+            "bottom": 667,
+            "left": 0
+          },
+          "clientHeight": 654,
+          "scrollHeight": 664,
+          "scrollTop": 0,
+          "css": {
+            "width": "390px",
+            "height": "655px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "1px solid rgba(9, 10, 9, 0.22)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "docWidth": 390
+      }
+    },
+    {
+      "profile": "390x667",
+      "name": "submit reachable by natural drawer scroll without field shrinking",
+      "passed": true,
+      "detail": {
+        "x": 16,
+        "y": 602.875,
+        "width": 358,
+        "height": 58
+      }
+    },
+    {
+      "profile": "390x667",
+      "name": "blank optional phone leaves native validity satisfied",
+      "passed": true
+    },
+    {
+      "profile": "390x667",
+      "name": "blank phone produces original payload unchanged",
+      "passed": true,
+      "detail": {
+        "source": "nightshift",
+        "language": "ru",
+        "website": "",
+        "name": "QA Demo",
+        "contact": "qa@example.invalid",
+        "company": "",
+        "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.",
+        "consent": "yes"
+      }
+    },
+    {
+      "profile": "390x667",
+      "name": "filled phone trimmed into existing message and all other payload values preserved",
+      "passed": true,
+      "detail": {
+        "source": "nightshift",
+        "language": "ru",
+        "website": "",
+        "name": "QA Demo",
+        "contact": "qa@example.invalid",
+        "company": "",
+        "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+        "consent": "yes"
+      }
+    },
+    {
+      "profile": "390x667",
+      "name": "v12 baseline loads two-field original without errors",
+      "passed": true,
+      "detail": {
+        "count": 2,
+        "pageErrors": [],
+        "networkErrors": []
+      }
+    },
+    {
+      "profile": "390x667",
+      "name": "old fields preserve exact geometry/style and form grows exactly one row",
+      "passed": true,
+      "detail": {
+        "beforeForm": {
+          "x": 16,
+          "y": 245,
+          "width": 358,
+          "height": 406,
+          "top": 245,
+          "right": 374,
+          "bottom": 651,
+          "left": 16
+        },
+        "afterForm": {
+          "x": 16,
+          "y": 201.875,
+          "width": 358,
+          "height": 459,
+          "top": 201.875,
+          "right": 374,
+          "bottom": 660.875,
+          "left": 16
+        },
+        "addedRow": 53
+      }
+    },
+    {
+      "profile": "390x667",
+      "name": "no candidate JavaScript/hydration/resource errors",
+      "passed": true,
+      "detail": {
+        "page": [],
+        "network": []
+      }
+    },
+    {
+      "profile": "320x568",
+      "name": "candidate route returns200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "profile": "320x568",
+      "name": "exact Russian field order and phone only added once",
+      "passed": true,
+      "detail": [
+        [
+          "name",
+          "Ваше имя"
+        ],
+        [
+          "phone",
+          "Телефон"
+        ],
+        [
+          "contact",
+          "Email или Telegram"
+        ]
+      ]
+    },
+    {
+      "profile": "320x568",
+      "name": "phone optional tel40 and required name/contact/consent unchanged",
+      "passed": true,
+      "detail": {
+        "phone": {
+          "name": "phone",
+          "placeholder": "Телефон",
+          "ariaLabel": "Телефон",
+          "required": false,
+          "type": "tel",
+          "inputMode": "tel",
+          "maxLength": 40,
+          "label": {
+            "x": 14,
+            "y": 240.09375,
+            "width": 292,
+            "height": 46,
+            "top": 240.09375,
+            "right": 306,
+            "bottom": 286.09375,
+            "left": 14
+          },
+          "labelCSS": {
+            "width": "292px",
+            "height": "46px",
+            "minHeight": "46px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 30,
+            "y": 240.59375,
+            "width": 260,
+            "height": 44,
+            "top": 240.59375,
+            "right": 290,
+            "bottom": 284.59375,
+            "left": 30
+          },
+          "inputCSS": {
+            "width": "260px",
+            "height": "44px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        },
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ]
+      }
+    },
+    {
+      "profile": "320x568",
+      "name": "all three rows and inputs share exact width/height/padding/font/borders",
+      "passed": true,
+      "detail": [
+        {
+          "name": "name",
+          "placeholder": "Ваше имя",
+          "ariaLabel": "Ваше имя",
+          "required": true,
+          "type": "text",
+          "inputMode": "",
+          "maxLength": 120,
+          "label": {
+            "x": 14,
+            "y": 194.09375,
+            "width": 292,
+            "height": 46,
+            "top": 194.09375,
+            "right": 306,
+            "bottom": 240.09375,
+            "left": 14
+          },
+          "labelCSS": {
+            "width": "292px",
+            "height": "46px",
+            "minHeight": "46px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 30,
+            "y": 194.59375,
+            "width": 260,
+            "height": 44,
+            "top": 194.59375,
+            "right": 290,
+            "bottom": 238.59375,
+            "left": 30
+          },
+          "inputCSS": {
+            "width": "260px",
+            "height": "44px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.28s"
+        },
+        {
+          "name": "phone",
+          "placeholder": "Телефон",
+          "ariaLabel": "Телефон",
+          "required": false,
+          "type": "tel",
+          "inputMode": "tel",
+          "maxLength": 40,
+          "label": {
+            "x": 14,
+            "y": 240.09375,
+            "width": 292,
+            "height": 46,
+            "top": 240.09375,
+            "right": 306,
+            "bottom": 286.09375,
+            "left": 14
+          },
+          "labelCSS": {
+            "width": "292px",
+            "height": "46px",
+            "minHeight": "46px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 30,
+            "y": 240.59375,
+            "width": 260,
+            "height": 44,
+            "top": 240.59375,
+            "right": 290,
+            "bottom": 284.59375,
+            "left": 30
+          },
+          "inputCSS": {
+            "width": "260px",
+            "height": "44px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        },
+        {
+          "name": "contact",
+          "placeholder": "Email или Telegram",
+          "ariaLabel": "Email или Telegram",
+          "required": true,
+          "type": "text",
+          "inputMode": "",
+          "maxLength": 180,
+          "label": {
+            "x": 14,
+            "y": 286.09375,
+            "width": 292,
+            "height": 46,
+            "top": 286.09375,
+            "right": 306,
+            "bottom": 332.09375,
+            "left": 14
+          },
+          "labelCSS": {
+            "width": "292px",
+            "height": "46px",
+            "minHeight": "46px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 30,
+            "y": 286.59375,
+            "width": 260,
+            "height": 44,
+            "top": 286.59375,
+            "right": 290,
+            "bottom": 330.59375,
+            "left": 30
+          },
+          "inputCSS": {
+            "width": "260px",
+            "height": "44px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "animationDelay": "0.33s"
+        }
+      ]
+    },
+    {
+      "profile": "320x568",
+      "name": "three rows contiguous with equal heights",
+      "passed": true,
+      "detail": [
+        {
+          "x": 14,
+          "y": 194.09375,
+          "width": 292,
+          "height": 46,
+          "top": 194.09375,
+          "right": 306,
+          "bottom": 240.09375,
+          "left": 14
+        },
+        {
+          "x": 14,
+          "y": 240.09375,
+          "width": 292,
+          "height": 46,
+          "top": 240.09375,
+          "right": 306,
+          "bottom": 286.09375,
+          "left": 14
+        },
+        {
+          "x": 14,
+          "y": 286.09375,
+          "width": 292,
+          "height": 46,
+          "top": 286.09375,
+          "right": 306,
+          "bottom": 332.09375,
+          "left": 14
+        }
+      ]
+    },
+    {
+      "profile": "320x568",
+      "name": "Russian form, safe focus and body lock retained",
+      "passed": true,
+      "detail": {
+        "title": "Опишите задачу",
+        "activeTag": "BUTTON"
+      }
+    },
+    {
+      "profile": "320x568",
+      "name": "drawer and fields fit viewport horizontally",
+      "passed": true,
+      "detail": {
+        "drawer": {
+          "rect": {
+            "x": 0,
+            "y": 12,
+            "width": 320,
+            "height": 556,
+            "top": 12,
+            "right": 320,
+            "bottom": 568,
+            "left": 0
+          },
+          "clientHeight": 555,
+          "scrollHeight": 594,
+          "scrollTop": 0,
+          "css": {
+            "width": "320px",
+            "height": "556px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "1px solid rgba(9, 10, 9, 0.22)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "docWidth": 320
+      }
+    },
+    {
+      "profile": "320x568",
+      "name": "submit reachable by natural drawer scroll without field shrinking",
+      "passed": true,
+      "detail": {
+        "x": 14,
+        "y": 518.09375,
+        "width": 292,
+        "height": 50
+      }
+    },
+    {
+      "profile": "320x568",
+      "name": "blank optional phone leaves native validity satisfied",
+      "passed": true
+    },
+    {
+      "profile": "320x568",
+      "name": "blank phone produces original payload unchanged",
+      "passed": true,
+      "detail": {
+        "source": "nightshift",
+        "language": "ru",
+        "website": "",
+        "name": "QA Demo",
+        "contact": "qa@example.invalid",
+        "company": "",
+        "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.",
+        "consent": "yes"
+      }
+    },
+    {
+      "profile": "320x568",
+      "name": "filled phone trimmed into existing message and all other payload values preserved",
+      "passed": true,
+      "detail": {
+        "source": "nightshift",
+        "language": "ru",
+        "website": "",
+        "name": "QA Demo",
+        "contact": "qa@example.invalid",
+        "company": "",
+        "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+        "consent": "yes"
+      }
+    },
+    {
+      "profile": "320x568",
+      "name": "v12 baseline loads two-field original without errors",
+      "passed": true,
+      "detail": {
+        "count": 2,
+        "pageErrors": [],
+        "networkErrors": []
+      }
+    },
+    {
+      "profile": "320x568",
+      "name": "old fields preserve exact geometry/style and form grows exactly one row",
+      "passed": true,
+      "detail": {
+        "beforeForm": {
+          "x": 14,
+          "y": 200,
+          "width": 292,
+          "height": 354,
+          "top": 200,
+          "right": 306,
+          "bottom": 554,
+          "left": 14
+        },
+        "afterForm": {
+          "x": 14,
+          "y": 193.09375,
+          "width": 292,
+          "height": 400,
+          "top": 193.09375,
+          "right": 306,
+          "bottom": 593.09375,
+          "left": 14
+        },
+        "addedRow": 46
+      }
+    },
+    {
+      "profile": "320x568",
+      "name": "no candidate JavaScript/hydration/resource errors",
+      "passed": true,
+      "detail": {
+        "page": [],
+        "network": []
+      }
+    }
+  ],
+  "failures": [],
+  "results": [
+    {
+      "profile": "1440x900",
+      "url": "http://127.0.0.1:4474/nightshift/",
+      "payloads": [
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.",
+          "consent": "yes"
+        },
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        }
+      ],
+      "blockedPosts": [],
+      "pageErrors": [],
+      "networkErrors": [],
+      "baselineErrors": [],
+      "baselineNetworkErrors": [],
+      "screenshots": [
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\nightshift-phone-field-20261026\\qa\\2026-10-26T03-24-16-134Z\\1440x900-three-fields.png",
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\nightshift-phone-field-20261026\\qa\\2026-10-26T03-24-16-134Z\\1440x900-v12-original.png"
+      ],
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "htmlLang": "en",
+        "activeTag": "BUTTON",
+        "drawer": {
+          "rect": {
+            "x": 900,
+            "y": 0,
+            "width": 540,
+            "height": 900,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900,
+            "left": 900
+          },
+          "clientHeight": 900,
+          "scrollHeight": 900,
+          "scrollTop": 0,
+          "css": {
+            "width": "540px",
+            "height": "900px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "1px solid rgba(9, 10, 9, 0.22)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "content": {
+          "x": 901,
+          "y": 55,
+          "width": 539,
+          "height": 764.65625,
+          "top": 55,
+          "right": 1440,
+          "bottom": 819.65625,
+          "left": 901
+        },
+        "form": {
+          "x": 941,
+          "y": 273.65625,
+          "width": 459,
+          "height": 508,
+          "top": 273.65625,
+          "right": 1400,
+          "bottom": 781.65625,
+          "left": 941
+        },
+        "title": "Опишите задачу",
+        "fields": [
+          {
+            "name": "name",
+            "placeholder": "Ваше имя",
+            "ariaLabel": "Ваше имя",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 120,
+            "label": {
+              "x": 941,
+              "y": 274.65625,
+              "width": 459,
+              "height": 66,
+              "top": 274.65625,
+              "right": 1400,
+              "bottom": 340.65625,
+              "left": 941
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 959,
+              "y": 283.15625,
+              "width": 423,
+              "height": 48,
+              "top": 283.15625,
+              "right": 1382,
+              "bottom": 331.15625,
+              "left": 959
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.28s"
+          },
+          {
+            "name": "phone",
+            "placeholder": "Телефон",
+            "ariaLabel": "Телефон",
+            "required": false,
+            "type": "tel",
+            "inputMode": "tel",
+            "maxLength": 40,
+            "label": {
+              "x": 941,
+              "y": 340.65625,
+              "width": 459,
+              "height": 66,
+              "top": 340.65625,
+              "right": 1400,
+              "bottom": 406.65625,
+              "left": 941
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 959,
+              "y": 349.15625,
+              "width": 423,
+              "height": 48,
+              "top": 349.15625,
+              "right": 1382,
+              "bottom": 397.15625,
+              "left": 959
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          },
+          {
+            "name": "contact",
+            "placeholder": "Email или Telegram",
+            "ariaLabel": "Email или Telegram",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 180,
+            "label": {
+              "x": 941,
+              "y": 406.65625,
+              "width": 459,
+              "height": 66,
+              "top": 406.65625,
+              "right": 1400,
+              "bottom": 472.65625,
+              "left": 941
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 959,
+              "y": 415.15625,
+              "width": 423,
+              "height": 48,
+              "top": 415.15625,
+              "right": 1382,
+              "bottom": 463.15625,
+              "left": 959
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          }
+        ],
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ],
+        "submit": {
+          "x": 941,
+          "y": 721.65625,
+          "width": 459,
+          "height": 60,
+          "top": 721.65625,
+          "right": 1400,
+          "bottom": 781.65625,
+          "left": 941
+        },
+        "docWidth": 1440,
+        "formText": "Что нужно сделать?Сайт / digitalБренд / art directionИнтерактивРазбор проектаСоглашаюсь на обработку персональных данныхОтправить запрос↗",
+        "bodyFixed": true
+      },
+      "v12Baseline": {
+        "width": 1440,
+        "height": 900,
+        "htmlLang": "en",
+        "activeTag": "BUTTON",
+        "drawer": {
+          "rect": {
+            "x": 900,
+            "y": 0,
+            "width": 540,
+            "height": 900,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900,
+            "left": 900
+          },
+          "clientHeight": 900,
+          "scrollHeight": 900,
+          "scrollTop": 0,
+          "css": {
+            "width": "540px",
+            "height": "900px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "1px solid rgba(9, 10, 9, 0.22)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "content": {
+          "x": 901,
+          "y": 55,
+          "width": 539,
+          "height": 698.65625,
+          "top": 55,
+          "right": 1440,
+          "bottom": 753.65625,
+          "left": 901
+        },
+        "form": {
+          "x": 941,
+          "y": 273.65625,
+          "width": 459,
+          "height": 442,
+          "top": 273.65625,
+          "right": 1400,
+          "bottom": 715.65625,
+          "left": 941
+        },
+        "title": "Опишите задачу",
+        "fields": [
+          {
+            "name": "name",
+            "placeholder": "Ваше имя",
+            "ariaLabel": "Ваше имя",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 120,
+            "label": {
+              "x": 941,
+              "y": 274.65625,
+              "width": 459,
+              "height": 66,
+              "top": 274.65625,
+              "right": 1400,
+              "bottom": 340.65625,
+              "left": 941
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 959,
+              "y": 283.15625,
+              "width": 423,
+              "height": 48,
+              "top": 283.15625,
+              "right": 1382,
+              "bottom": 331.15625,
+              "left": 959
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.28s"
+          },
+          {
+            "name": "contact",
+            "placeholder": "Email или Telegram",
+            "ariaLabel": "Email или Telegram",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 180,
+            "label": {
+              "x": 941,
+              "y": 340.65625,
+              "width": 459,
+              "height": 66,
+              "top": 340.65625,
+              "right": 1400,
+              "bottom": 406.65625,
+              "left": 941
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 959,
+              "y": 349.15625,
+              "width": 423,
+              "height": 48,
+              "top": 349.15625,
+              "right": 1382,
+              "bottom": 397.15625,
+              "left": 959
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          }
+        ],
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ],
+        "submit": {
+          "x": 941,
+          "y": 655.65625,
+          "width": 459,
+          "height": 60,
+          "top": 655.65625,
+          "right": 1400,
+          "bottom": 715.65625,
+          "left": 941
+        },
+        "docWidth": 1440,
+        "formText": "Что нужно сделать?Сайт / digitalБренд / art directionИнтерактивРазбор проектаСоглашаюсь на обработку персональных данныхОтправить запрос↗",
+        "bodyFixed": true
+      }
+    },
+    {
+      "profile": "768x1024",
+      "url": "http://127.0.0.1:4474/nightshift/",
+      "payloads": [
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.",
+          "consent": "yes"
+        },
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        }
+      ],
+      "blockedPosts": [],
+      "pageErrors": [],
+      "networkErrors": [],
+      "baselineErrors": [],
+      "baselineNetworkErrors": [],
+      "screenshots": [
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\nightshift-phone-field-20261026\\qa\\2026-10-26T03-24-16-134Z\\768x1024-three-fields.png",
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\nightshift-phone-field-20261026\\qa\\2026-10-26T03-24-16-134Z\\768x1024-v12-original.png"
+      ],
+      "geometry": {
+        "width": 768,
+        "height": 1024,
+        "htmlLang": "en",
+        "activeTag": "BUTTON",
+        "drawer": {
+          "rect": {
+            "x": 228,
+            "y": 0,
+            "width": 540,
+            "height": 1024,
+            "top": 0,
+            "right": 768,
+            "bottom": 1024,
+            "left": 228
+          },
+          "clientHeight": 1024,
+          "scrollHeight": 1024,
+          "scrollTop": 0,
+          "css": {
+            "width": "540px",
+            "height": "1024px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "1px solid rgba(9, 10, 9, 0.22)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "content": {
+          "x": 229,
+          "y": 55,
+          "width": 539,
+          "height": 735.65625,
+          "top": 55,
+          "right": 768,
+          "bottom": 790.65625,
+          "left": 229
+        },
+        "form": {
+          "x": 269,
+          "y": 244.65625,
+          "width": 459,
+          "height": 508,
+          "top": 244.65625,
+          "right": 728,
+          "bottom": 752.65625,
+          "left": 269
+        },
+        "title": "Опишите задачу",
+        "fields": [
+          {
+            "name": "name",
+            "placeholder": "Ваше имя",
+            "ariaLabel": "Ваше имя",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 120,
+            "label": {
+              "x": 269,
+              "y": 245.65625,
+              "width": 459,
+              "height": 66,
+              "top": 245.65625,
+              "right": 728,
+              "bottom": 311.65625,
+              "left": 269
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 287,
+              "y": 254.15625,
+              "width": 423,
+              "height": 48,
+              "top": 254.15625,
+              "right": 710,
+              "bottom": 302.15625,
+              "left": 287
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.28s"
+          },
+          {
+            "name": "phone",
+            "placeholder": "Телефон",
+            "ariaLabel": "Телефон",
+            "required": false,
+            "type": "tel",
+            "inputMode": "tel",
+            "maxLength": 40,
+            "label": {
+              "x": 269,
+              "y": 311.65625,
+              "width": 459,
+              "height": 66,
+              "top": 311.65625,
+              "right": 728,
+              "bottom": 377.65625,
+              "left": 269
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 287,
+              "y": 320.15625,
+              "width": 423,
+              "height": 48,
+              "top": 320.15625,
+              "right": 710,
+              "bottom": 368.15625,
+              "left": 287
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          },
+          {
+            "name": "contact",
+            "placeholder": "Email или Telegram",
+            "ariaLabel": "Email или Telegram",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 180,
+            "label": {
+              "x": 269,
+              "y": 377.65625,
+              "width": 459,
+              "height": 66,
+              "top": 377.65625,
+              "right": 728,
+              "bottom": 443.65625,
+              "left": 269
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 287,
+              "y": 386.15625,
+              "width": 423,
+              "height": 48,
+              "top": 386.15625,
+              "right": 710,
+              "bottom": 434.15625,
+              "left": 287
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          }
+        ],
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ],
+        "submit": {
+          "x": 269,
+          "y": 692.65625,
+          "width": 459,
+          "height": 60,
+          "top": 692.65625,
+          "right": 728,
+          "bottom": 752.65625,
+          "left": 269
+        },
+        "docWidth": 768,
+        "formText": "Что нужно сделать?Сайт / digitalБренд / art directionИнтерактивРазбор проектаСоглашаюсь на обработку персональных данныхОтправить запрос↗",
+        "bodyFixed": true
+      },
+      "v12Baseline": {
+        "width": 768,
+        "height": 1024,
+        "htmlLang": "en",
+        "activeTag": "BUTTON",
+        "drawer": {
+          "rect": {
+            "x": 228,
+            "y": 0,
+            "width": 540,
+            "height": 1024,
+            "top": 0,
+            "right": 768,
+            "bottom": 1024,
+            "left": 228
+          },
+          "clientHeight": 1024,
+          "scrollHeight": 1024,
+          "scrollTop": 0,
+          "css": {
+            "width": "540px",
+            "height": "1024px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "1px solid rgba(9, 10, 9, 0.22)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "content": {
+          "x": 229,
+          "y": 55,
+          "width": 539,
+          "height": 669.65625,
+          "top": 55,
+          "right": 768,
+          "bottom": 724.65625,
+          "left": 229
+        },
+        "form": {
+          "x": 269,
+          "y": 244.65625,
+          "width": 459,
+          "height": 442,
+          "top": 244.65625,
+          "right": 728,
+          "bottom": 686.65625,
+          "left": 269
+        },
+        "title": "Опишите задачу",
+        "fields": [
+          {
+            "name": "name",
+            "placeholder": "Ваше имя",
+            "ariaLabel": "Ваше имя",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 120,
+            "label": {
+              "x": 269,
+              "y": 245.65625,
+              "width": 459,
+              "height": 66,
+              "top": 245.65625,
+              "right": 728,
+              "bottom": 311.65625,
+              "left": 269
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 287,
+              "y": 254.15625,
+              "width": 423,
+              "height": 48,
+              "top": 254.15625,
+              "right": 710,
+              "bottom": 302.15625,
+              "left": 287
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.28s"
+          },
+          {
+            "name": "contact",
+            "placeholder": "Email или Telegram",
+            "ariaLabel": "Email или Telegram",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 180,
+            "label": {
+              "x": 269,
+              "y": 311.65625,
+              "width": 459,
+              "height": 66,
+              "top": 311.65625,
+              "right": 728,
+              "bottom": 377.65625,
+              "left": 269
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 287,
+              "y": 320.15625,
+              "width": 423,
+              "height": 48,
+              "top": 320.15625,
+              "right": 710,
+              "bottom": 368.15625,
+              "left": 287
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          }
+        ],
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ],
+        "submit": {
+          "x": 269,
+          "y": 626.65625,
+          "width": 459,
+          "height": 60,
+          "top": 626.65625,
+          "right": 728,
+          "bottom": 686.65625,
+          "left": 269
+        },
+        "docWidth": 768,
+        "formText": "Что нужно сделать?Сайт / digitalБренд / art directionИнтерактивРазбор проектаСоглашаюсь на обработку персональных данныхОтправить запрос↗",
+        "bodyFixed": true
+      }
+    },
+    {
+      "profile": "390x844",
+      "url": "http://127.0.0.1:4474/nightshift/",
+      "payloads": [
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.",
+          "consent": "yes"
+        },
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        }
+      ],
+      "blockedPosts": [],
+      "pageErrors": [],
+      "networkErrors": [],
+      "baselineErrors": [],
+      "baselineNetworkErrors": [],
+      "screenshots": [
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\nightshift-phone-field-20261026\\qa\\2026-10-26T03-24-16-134Z\\390x844-three-fields.png",
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\nightshift-phone-field-20261026\\qa\\2026-10-26T03-24-16-134Z\\390x844-v12-original.png"
+      ],
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "htmlLang": "en",
+        "activeTag": "BUTTON",
+        "drawer": {
+          "rect": {
+            "x": 0,
+            "y": 47.125,
+            "width": 390,
+            "height": 796.875,
+            "top": 47.125,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          },
+          "clientHeight": 796,
+          "scrollHeight": 796,
+          "scrollTop": 0,
+          "css": {
+            "width": "390px",
+            "height": "796.875px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "1px solid rgba(9, 10, 9, 0.22)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "content": {
+          "x": 0,
+          "y": 103.125,
+          "width": 390,
+          "height": 740.875,
+          "top": 103.125,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "form": {
+          "x": 24,
+          "y": 260,
+          "width": 342,
+          "height": 564,
+          "top": 260,
+          "right": 366,
+          "bottom": 824,
+          "left": 24
+        },
+        "title": "Опишите задачу",
+        "fields": [
+          {
+            "name": "name",
+            "placeholder": "Ваше имя",
+            "ariaLabel": "Ваше имя",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 120,
+            "label": {
+              "x": 24,
+              "y": 261,
+              "width": 342,
+              "height": 66,
+              "top": 261,
+              "right": 366,
+              "bottom": 327,
+              "left": 24
+            },
+            "labelCSS": {
+              "width": "342px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 40,
+              "y": 264.5,
+              "width": 310,
+              "height": 58,
+              "top": 264.5,
+              "right": 350,
+              "bottom": 322.5,
+              "left": 40
+            },
+            "inputCSS": {
+              "width": "310px",
+              "height": "58px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.28s"
+          },
+          {
+            "name": "phone",
+            "placeholder": "Телефон",
+            "ariaLabel": "Телефон",
+            "required": false,
+            "type": "tel",
+            "inputMode": "tel",
+            "maxLength": 40,
+            "label": {
+              "x": 24,
+              "y": 327,
+              "width": 342,
+              "height": 66,
+              "top": 327,
+              "right": 366,
+              "bottom": 393,
+              "left": 24
+            },
+            "labelCSS": {
+              "width": "342px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 40,
+              "y": 330.5,
+              "width": 310,
+              "height": 58,
+              "top": 330.5,
+              "right": 350,
+              "bottom": 388.5,
+              "left": 40
+            },
+            "inputCSS": {
+              "width": "310px",
+              "height": "58px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          },
+          {
+            "name": "contact",
+            "placeholder": "Email или Telegram",
+            "ariaLabel": "Email или Telegram",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 180,
+            "label": {
+              "x": 24,
+              "y": 393,
+              "width": 342,
+              "height": 66,
+              "top": 393,
+              "right": 366,
+              "bottom": 459,
+              "left": 24
+            },
+            "labelCSS": {
+              "width": "342px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 40,
+              "y": 396.5,
+              "width": 310,
+              "height": 58,
+              "top": 396.5,
+              "right": 350,
+              "bottom": 454.5,
+              "left": 40
+            },
+            "inputCSS": {
+              "width": "310px",
+              "height": "58px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          }
+        ],
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ],
+        "submit": {
+          "x": 24,
+          "y": 746,
+          "width": 342,
+          "height": 78,
+          "top": 746,
+          "right": 366,
+          "bottom": 824,
+          "left": 24
+        },
+        "docWidth": 390,
+        "formText": "Что нужно сделать?Сайт / digitalБренд / art directionИнтерактивРазбор проектаСоглашаюсь на обработку персональных данныхОтправить запрос↗",
+        "bodyFixed": true
+      },
+      "v12Baseline": {
+        "width": 390,
+        "height": 844,
+        "htmlLang": "en",
+        "activeTag": "BUTTON",
+        "drawer": {
+          "rect": {
+            "x": 0,
+            "y": 113.125,
+            "width": 390,
+            "height": 730.875,
+            "top": 113.125,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          },
+          "clientHeight": 730,
+          "scrollHeight": 730,
+          "scrollTop": 0,
+          "css": {
+            "width": "390px",
+            "height": "730.875px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "1px solid rgba(9, 10, 9, 0.22)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "content": {
+          "x": 0,
+          "y": 169.125,
+          "width": 390,
+          "height": 674.875,
+          "top": 169.125,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "form": {
+          "x": 24,
+          "y": 326,
+          "width": 342,
+          "height": 498,
+          "top": 326,
+          "right": 366,
+          "bottom": 824,
+          "left": 24
+        },
+        "title": "Опишите задачу",
+        "fields": [
+          {
+            "name": "name",
+            "placeholder": "Ваше имя",
+            "ariaLabel": "Ваше имя",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 120,
+            "label": {
+              "x": 24,
+              "y": 327,
+              "width": 342,
+              "height": 66,
+              "top": 327,
+              "right": 366,
+              "bottom": 393,
+              "left": 24
+            },
+            "labelCSS": {
+              "width": "342px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 40,
+              "y": 330.5,
+              "width": 310,
+              "height": 58,
+              "top": 330.5,
+              "right": 350,
+              "bottom": 388.5,
+              "left": 40
+            },
+            "inputCSS": {
+              "width": "310px",
+              "height": "58px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.28s"
+          },
+          {
+            "name": "contact",
+            "placeholder": "Email или Telegram",
+            "ariaLabel": "Email или Telegram",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 180,
+            "label": {
+              "x": 24,
+              "y": 393,
+              "width": 342,
+              "height": 66,
+              "top": 393,
+              "right": 366,
+              "bottom": 459,
+              "left": 24
+            },
+            "labelCSS": {
+              "width": "342px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 40,
+              "y": 396.5,
+              "width": 310,
+              "height": 58,
+              "top": 396.5,
+              "right": 350,
+              "bottom": 454.5,
+              "left": 40
+            },
+            "inputCSS": {
+              "width": "310px",
+              "height": "58px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          }
+        ],
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ],
+        "submit": {
+          "x": 24,
+          "y": 746,
+          "width": 342,
+          "height": 78,
+          "top": 746,
+          "right": 366,
+          "bottom": 824,
+          "left": 24
+        },
+        "docWidth": 390,
+        "formText": "Что нужно сделать?Сайт / digitalБренд / art directionИнтерактивРазбор проектаСоглашаюсь на обработку персональных данныхОтправить запрос↗",
+        "bodyFixed": true
+      }
+    },
+    {
+      "profile": "390x667",
+      "url": "http://127.0.0.1:4474/nightshift/",
+      "payloads": [
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.",
+          "consent": "yes"
+        },
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        }
+      ],
+      "blockedPosts": [],
+      "pageErrors": [],
+      "networkErrors": [],
+      "baselineErrors": [],
+      "baselineNetworkErrors": [],
+      "screenshots": [
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\nightshift-phone-field-20261026\\qa\\2026-10-26T03-24-16-134Z\\390x667-three-fields.png",
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\nightshift-phone-field-20261026\\qa\\2026-10-26T03-24-16-134Z\\390x667-v12-original.png"
+      ],
+      "geometry": {
+        "width": 390,
+        "height": 667,
+        "htmlLang": "en",
+        "activeTag": "BUTTON",
+        "drawer": {
+          "rect": {
+            "x": 0,
+            "y": 12,
+            "width": 390,
+            "height": 655,
+            "top": 12,
+            "right": 390,
+            "bottom": 667,
+            "left": 0
+          },
+          "clientHeight": 654,
+          "scrollHeight": 664,
+          "scrollTop": 0,
+          "css": {
+            "width": "390px",
+            "height": "655px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "1px solid rgba(9, 10, 9, 0.22)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "content": {
+          "x": 0,
+          "y": 60,
+          "width": 390,
+          "height": 616.875,
+          "top": 60,
+          "right": 390,
+          "bottom": 676.875,
+          "left": 0
+        },
+        "form": {
+          "x": 16,
+          "y": 201.875,
+          "width": 358,
+          "height": 459,
+          "top": 201.875,
+          "right": 374,
+          "bottom": 660.875,
+          "left": 16
+        },
+        "title": "Опишите задачу",
+        "fields": [
+          {
+            "name": "name",
+            "placeholder": "Ваше имя",
+            "ariaLabel": "Ваше имя",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 120,
+            "label": {
+              "x": 16,
+              "y": 202.875,
+              "width": 358,
+              "height": 53,
+              "top": 202.875,
+              "right": 374,
+              "bottom": 255.875,
+              "left": 16
+            },
+            "labelCSS": {
+              "width": "358px",
+              "height": "53px",
+              "minHeight": "52px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 32,
+              "y": 202.875,
+              "width": 326,
+              "height": 52,
+              "top": 202.875,
+              "right": 358,
+              "bottom": 254.875,
+              "left": 32
+            },
+            "inputCSS": {
+              "width": "326px",
+              "height": "52px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.28s"
+          },
+          {
+            "name": "phone",
+            "placeholder": "Телефон",
+            "ariaLabel": "Телефон",
+            "required": false,
+            "type": "tel",
+            "inputMode": "tel",
+            "maxLength": 40,
+            "label": {
+              "x": 16,
+              "y": 255.875,
+              "width": 358,
+              "height": 53,
+              "top": 255.875,
+              "right": 374,
+              "bottom": 308.875,
+              "left": 16
+            },
+            "labelCSS": {
+              "width": "358px",
+              "height": "53px",
+              "minHeight": "52px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 32,
+              "y": 255.875,
+              "width": 326,
+              "height": 52,
+              "top": 255.875,
+              "right": 358,
+              "bottom": 307.875,
+              "left": 32
+            },
+            "inputCSS": {
+              "width": "326px",
+              "height": "52px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          },
+          {
+            "name": "contact",
+            "placeholder": "Email или Telegram",
+            "ariaLabel": "Email или Telegram",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 180,
+            "label": {
+              "x": 16,
+              "y": 308.875,
+              "width": 358,
+              "height": 53,
+              "top": 308.875,
+              "right": 374,
+              "bottom": 361.875,
+              "left": 16
+            },
+            "labelCSS": {
+              "width": "358px",
+              "height": "53px",
+              "minHeight": "52px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 32,
+              "y": 308.875,
+              "width": 326,
+              "height": 52,
+              "top": 308.875,
+              "right": 358,
+              "bottom": 360.875,
+              "left": 32
+            },
+            "inputCSS": {
+              "width": "326px",
+              "height": "52px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          }
+        ],
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ],
+        "submit": {
+          "x": 16,
+          "y": 602.875,
+          "width": 358,
+          "height": 58,
+          "top": 602.875,
+          "right": 374,
+          "bottom": 660.875,
+          "left": 16
+        },
+        "docWidth": 390,
+        "formText": "Что нужно сделать?Сайт / digitalБренд / art directionИнтерактивРазбор проектаСоглашаюсь на обработку персональных данныхОтправить запрос↗",
+        "bodyFixed": true
+      },
+      "v12Baseline": {
+        "width": 390,
+        "height": 667,
+        "htmlLang": "en",
+        "activeTag": "BUTTON",
+        "drawer": {
+          "rect": {
+            "x": 0,
+            "y": 55.125,
+            "width": 390,
+            "height": 611.875,
+            "top": 55.125,
+            "right": 390,
+            "bottom": 667,
+            "left": 0
+          },
+          "clientHeight": 611,
+          "scrollHeight": 611,
+          "scrollTop": 0,
+          "css": {
+            "width": "390px",
+            "height": "611.875px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "1px solid rgba(9, 10, 9, 0.22)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "content": {
+          "x": 0,
+          "y": 103.125,
+          "width": 390,
+          "height": 563.875,
+          "top": 103.125,
+          "right": 390,
+          "bottom": 667,
+          "left": 0
+        },
+        "form": {
+          "x": 16,
+          "y": 245,
+          "width": 358,
+          "height": 406,
+          "top": 245,
+          "right": 374,
+          "bottom": 651,
+          "left": 16
+        },
+        "title": "Опишите задачу",
+        "fields": [
+          {
+            "name": "name",
+            "placeholder": "Ваше имя",
+            "ariaLabel": "Ваше имя",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 120,
+            "label": {
+              "x": 16,
+              "y": 246,
+              "width": 358,
+              "height": 53,
+              "top": 246,
+              "right": 374,
+              "bottom": 299,
+              "left": 16
+            },
+            "labelCSS": {
+              "width": "358px",
+              "height": "53px",
+              "minHeight": "52px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 32,
+              "y": 246,
+              "width": 326,
+              "height": 52,
+              "top": 246,
+              "right": 358,
+              "bottom": 298,
+              "left": 32
+            },
+            "inputCSS": {
+              "width": "326px",
+              "height": "52px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.28s"
+          },
+          {
+            "name": "contact",
+            "placeholder": "Email или Telegram",
+            "ariaLabel": "Email или Telegram",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 180,
+            "label": {
+              "x": 16,
+              "y": 299,
+              "width": 358,
+              "height": 53,
+              "top": 299,
+              "right": 374,
+              "bottom": 352,
+              "left": 16
+            },
+            "labelCSS": {
+              "width": "358px",
+              "height": "53px",
+              "minHeight": "52px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 32,
+              "y": 299,
+              "width": 326,
+              "height": 52,
+              "top": 299,
+              "right": 358,
+              "bottom": 351,
+              "left": 32
+            },
+            "inputCSS": {
+              "width": "326px",
+              "height": "52px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          }
+        ],
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ],
+        "submit": {
+          "x": 16,
+          "y": 593,
+          "width": 358,
+          "height": 58,
+          "top": 593,
+          "right": 374,
+          "bottom": 651,
+          "left": 16
+        },
+        "docWidth": 390,
+        "formText": "Что нужно сделать?Сайт / digitalБренд / art directionИнтерактивРазбор проектаСоглашаюсь на обработку персональных данныхОтправить запрос↗",
+        "bodyFixed": true
+      }
+    },
+    {
+      "profile": "320x568",
+      "url": "http://127.0.0.1:4474/nightshift/",
+      "payloads": [
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.",
+          "consent": "yes"
+        },
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        }
+      ],
+      "blockedPosts": [],
+      "pageErrors": [],
+      "networkErrors": [],
+      "baselineErrors": [],
+      "baselineNetworkErrors": [],
+      "screenshots": [
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\nightshift-phone-field-20261026\\qa\\2026-10-26T03-24-16-134Z\\320x568-three-fields.png",
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\nightshift-phone-field-20261026\\qa\\2026-10-26T03-24-16-134Z\\320x568-v12-original.png"
+      ],
+      "geometry": {
+        "width": 320,
+        "height": 568,
+        "htmlLang": "en",
+        "activeTag": "BUTTON",
+        "drawer": {
+          "rect": {
+            "x": 0,
+            "y": 12,
+            "width": 320,
+            "height": 556,
+            "top": 12,
+            "right": 320,
+            "bottom": 568,
+            "left": 0
+          },
+          "clientHeight": 555,
+          "scrollHeight": 594,
+          "scrollTop": 0,
+          "css": {
+            "width": "320px",
+            "height": "556px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "1px solid rgba(9, 10, 9, 0.22)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "content": {
+          "x": 0,
+          "y": 60,
+          "width": 320,
+          "height": 547.09375,
+          "top": 60,
+          "right": 320,
+          "bottom": 607.09375,
+          "left": 0
+        },
+        "form": {
+          "x": 14,
+          "y": 193.09375,
+          "width": 292,
+          "height": 400,
+          "top": 193.09375,
+          "right": 306,
+          "bottom": 593.09375,
+          "left": 14
+        },
+        "title": "Опишите задачу",
+        "fields": [
+          {
+            "name": "name",
+            "placeholder": "Ваше имя",
+            "ariaLabel": "Ваше имя",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 120,
+            "label": {
+              "x": 14,
+              "y": 194.09375,
+              "width": 292,
+              "height": 46,
+              "top": 194.09375,
+              "right": 306,
+              "bottom": 240.09375,
+              "left": 14
+            },
+            "labelCSS": {
+              "width": "292px",
+              "height": "46px",
+              "minHeight": "46px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 30,
+              "y": 194.59375,
+              "width": 260,
+              "height": 44,
+              "top": 194.59375,
+              "right": 290,
+              "bottom": 238.59375,
+              "left": 30
+            },
+            "inputCSS": {
+              "width": "260px",
+              "height": "44px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.28s"
+          },
+          {
+            "name": "phone",
+            "placeholder": "Телефон",
+            "ariaLabel": "Телефон",
+            "required": false,
+            "type": "tel",
+            "inputMode": "tel",
+            "maxLength": 40,
+            "label": {
+              "x": 14,
+              "y": 240.09375,
+              "width": 292,
+              "height": 46,
+              "top": 240.09375,
+              "right": 306,
+              "bottom": 286.09375,
+              "left": 14
+            },
+            "labelCSS": {
+              "width": "292px",
+              "height": "46px",
+              "minHeight": "46px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 30,
+              "y": 240.59375,
+              "width": 260,
+              "height": 44,
+              "top": 240.59375,
+              "right": 290,
+              "bottom": 284.59375,
+              "left": 30
+            },
+            "inputCSS": {
+              "width": "260px",
+              "height": "44px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          },
+          {
+            "name": "contact",
+            "placeholder": "Email или Telegram",
+            "ariaLabel": "Email или Telegram",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 180,
+            "label": {
+              "x": 14,
+              "y": 286.09375,
+              "width": 292,
+              "height": 46,
+              "top": 286.09375,
+              "right": 306,
+              "bottom": 332.09375,
+              "left": 14
+            },
+            "labelCSS": {
+              "width": "292px",
+              "height": "46px",
+              "minHeight": "46px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 30,
+              "y": 286.59375,
+              "width": 260,
+              "height": 44,
+              "top": 286.59375,
+              "right": 290,
+              "bottom": 330.59375,
+              "left": 30
+            },
+            "inputCSS": {
+              "width": "260px",
+              "height": "44px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          }
+        ],
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ],
+        "submit": {
+          "x": 14,
+          "y": 543.09375,
+          "width": 292,
+          "height": 50,
+          "top": 543.09375,
+          "right": 306,
+          "bottom": 593.09375,
+          "left": 14
+        },
+        "docWidth": 320,
+        "formText": "Что нужно сделать?Сайт / digitalБренд / art directionИнтерактивРазбор проектаСоглашаюсь на обработку персональных данныхОтправить запрос↗",
+        "bodyFixed": true
+      },
+      "v12Baseline": {
+        "width": 320,
+        "height": 568,
+        "htmlLang": "en",
+        "activeTag": "BUTTON",
+        "drawer": {
+          "rect": {
+            "x": 0,
+            "y": 18.90625,
+            "width": 320,
+            "height": 549.09375,
+            "top": 18.90625,
+            "right": 320,
+            "bottom": 568,
+            "left": 0
+          },
+          "clientHeight": 548,
+          "scrollHeight": 548,
+          "scrollTop": 0,
+          "css": {
+            "width": "320px",
+            "height": "549.094px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "1px solid rgba(9, 10, 9, 0.22)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "content": {
+          "x": 0,
+          "y": 66.90625,
+          "width": 320,
+          "height": 501.09375,
+          "top": 66.90625,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "form": {
+          "x": 14,
+          "y": 200,
+          "width": 292,
+          "height": 354,
+          "top": 200,
+          "right": 306,
+          "bottom": 554,
+          "left": 14
+        },
+        "title": "Опишите задачу",
+        "fields": [
+          {
+            "name": "name",
+            "placeholder": "Ваше имя",
+            "ariaLabel": "Ваше имя",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 120,
+            "label": {
+              "x": 14,
+              "y": 201,
+              "width": 292,
+              "height": 46,
+              "top": 201,
+              "right": 306,
+              "bottom": 247,
+              "left": 14
+            },
+            "labelCSS": {
+              "width": "292px",
+              "height": "46px",
+              "minHeight": "46px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 30,
+              "y": 201.5,
+              "width": 260,
+              "height": 44,
+              "top": 201.5,
+              "right": 290,
+              "bottom": 245.5,
+              "left": 30
+            },
+            "inputCSS": {
+              "width": "260px",
+              "height": "44px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.28s"
+          },
+          {
+            "name": "contact",
+            "placeholder": "Email или Telegram",
+            "ariaLabel": "Email или Telegram",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 180,
+            "label": {
+              "x": 14,
+              "y": 247,
+              "width": 292,
+              "height": 46,
+              "top": 247,
+              "right": 306,
+              "bottom": 293,
+              "left": 14
+            },
+            "labelCSS": {
+              "width": "292px",
+              "height": "46px",
+              "minHeight": "46px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 30,
+              "y": 247.5,
+              "width": 260,
+              "height": 44,
+              "top": 247.5,
+              "right": 290,
+              "bottom": 291.5,
+              "left": 30
+            },
+            "inputCSS": {
+              "width": "260px",
+              "height": "44px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "animationDelay": "0.33s"
+          }
+        ],
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ],
+        "submit": {
+          "x": 14,
+          "y": 504,
+          "width": 292,
+          "height": 50,
+          "top": 504,
+          "right": 306,
+          "bottom": 554,
+          "left": 14
+        },
+        "docWidth": 320,
+        "formText": "Что нужно сделать?Сайт / digitalБренд / art directionИнтерактивРазбор проектаСоглашаюсь на обработку персональных данныхОтправить запрос↗",
+        "bodyFixed": true
+      }
+    }
+  ],
+  "candidateSHA256": "a88dcf59b6931d479ab95815b201098d2540529a529f36dec5adccc8316f2425",
+  "bindingFinalizedAfterRun": true,
+  "postRunCandidateBinding": {
+    "generatedAt": "2026-10-26T03:26:52.570658+00:00",
+    "preFreezeReport": "C:/Users/Степная/Documents/ChatGPT/сайтодел/audit/nightshift-phone-field-20261026/qa/2026-10-26T03-24-16-134Z/pre-freeze-report.json",
+    "preFreezeReportSHA256": "10e02a6ccc63a66228872d581331b71c9269247ba73ef5258910e4906ba72888",
+    "preservesOriginalUIResults": true,
+    "productTestsRerun": false,
+    "scope": "Binding finalized honestly after the five-profile UI run. Current source hashes equal those recorded before that run; every frozen runtime delta is checked against its ledger and a fresh local GET. This does not claim the candidate ledger existed before UI testing.",
+    "sourceFiles": [
+      {
+        "file": "app/page.tsx",
+        "sha256": "aa7a370134ba975acc1f2b0600c33831da2b2c610da8197de3ae678cbc6b465a",
+        "matchesOriginalQASource": true
+      },
+      {
+        "file": "app/case-console.css",
+        "sha256": "7f51441557a80993804cc7e7b5e30833116badbf6db9d8a446f1f21824eb0b79",
+        "matchesOriginalQASource": true
+      },
+      {
+        "file": "app/CaseDock.tsx",
+        "sha256": "71aeb4f61470f4c7ab8331783b470d8fe3de77f536254d3fc710f649f700c486",
+        "matchesOriginalQASource": true
+      }
+    ],
+    "runtimeDeltaFiles": [
+      {
+        "file": "vazuri-preview-liko-dark-shop-public/.vite/manifest.json",
+        "sha256": "1f16e33ccb255d5c1c04d3fda664e7d5e1c72ba95066d7c58f1b5f16aa9f771c",
+        "size": 1750,
+        "stagedMatchesLedger": true,
+        "postRunLocalHTTPURL": "http://127.0.0.1:4474/nightshift/.vite/manifest.json",
+        "postRunHTTPStatus": 200,
+        "postRunHTTPMatchesStaged": true
+      },
+      {
+        "file": "vazuri-preview-liko-dark-shop-public/_next/static/73277b6b-7577-408b-9ac2-be7fd6e7dd01/_buildManifest.js",
+        "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+        "size": 159,
+        "stagedMatchesLedger": true,
+        "postRunLocalHTTPURL": "http://127.0.0.1:4474/nightshift/_next/static/73277b6b-7577-408b-9ac2-be7fd6e7dd01/_buildManifest.js",
+        "postRunHTTPStatus": 200,
+        "postRunHTTPMatchesStaged": true
+      },
+      {
+        "file": "vazuri-preview-liko-dark-shop-public/_next/static/73277b6b-7577-408b-9ac2-be7fd6e7dd01/_ssgManifest.js",
+        "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+        "size": 76,
+        "stagedMatchesLedger": true,
+        "postRunLocalHTTPURL": "http://127.0.0.1:4474/nightshift/_next/static/73277b6b-7577-408b-9ac2-be7fd6e7dd01/_ssgManifest.js",
+        "postRunHTTPStatus": 200,
+        "postRunHTTPMatchesStaged": true
+      },
+      {
+        "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-VOl1C6Bc.js",
+        "sha256": "3014845779bcb0ebd69f1f92aa13e4fbf6eb328a1020bb911b9805691da691a2",
+        "size": 176767,
+        "stagedMatchesLedger": true,
+        "postRunLocalHTTPURL": "http://127.0.0.1:4474/nightshift/_next/static/chunks/index-VOl1C6Bc.js",
+        "postRunHTTPStatus": 200,
+        "postRunHTTPMatchesStaged": true
+      },
+      {
+        "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-BKHnLtG2.js",
+        "sha256": "003eee0265ffc9cb422fbfeab4a67eee9c3ed72ac7fbf66be267041d415a5d66",
+        "size": 489,
+        "stagedMatchesLedger": true,
+        "postRunLocalHTTPURL": "http://127.0.0.1:4474/nightshift/_next/static/chunks/layout-segment-context-BKHnLtG2.js",
+        "postRunHTTPStatus": 200,
+        "postRunHTTPMatchesStaged": true
+      },
+      {
+        "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-DojVh_92.js",
+        "sha256": "816bc37a71844a6be26812357bdcdbb759ea7ccdd2d0268168078227748dbc47",
+        "size": 64688,
+        "stagedMatchesLedger": true,
+        "postRunLocalHTTPURL": "http://127.0.0.1:4474/nightshift/_next/static/chunks/page-DojVh_92.js",
+        "postRunHTTPStatus": 200,
+        "postRunHTTPMatchesStaged": true
+      },
+      {
+        "file": "vazuri-preview-liko-dark-shop-public/index.html",
+        "sha256": "855cac73aaebc22cf0d64a16b3c6f8c3e6372cc8e564223d01efae93a8e90a4a",
+        "size": 33373,
+        "stagedMatchesLedger": true,
+        "postRunLocalHTTPURL": "http://127.0.0.1:4474/nightshift/",
+        "postRunHTTPStatus": 200,
+        "postRunHTTPMatchesStaged": true
+      },
+      {
+        "file": "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json",
+        "sha256": "27a6117ab4b34f03f3c619d9489f4d55c9bbcd2744182630cf6bfe85318a33dd",
+        "size": 76,
+        "stagedMatchesLedger": true,
+        "postRunLocalHTTPURL": "http://127.0.0.1:4474/nightshift/vinext-client-entry-manifest.json",
+        "postRunHTTPStatus": 200,
+        "postRunHTTPMatchesStaged": true
+      }
+    ],
+    "allSourceAndRuntimeChecksPassed": true
+  }
+}

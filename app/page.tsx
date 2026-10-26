@@ -110,6 +110,7 @@ export default function Home() {
     event.preventDefault();
     const form = event.currentTarget;
     const data = new FormData(form);
+    const phone = String(data.get("phone") || "").trim();
     setFormStatus("sending");
 
     try {
@@ -126,7 +127,7 @@ export default function Home() {
           name: data.get("name") || "",
           contact: data.get("contact") || "",
           company: "",
-          message: `NIGHTSHIFT. Запрос: ${data.get("interest") || "Сайт или цифровой продукт"}.`,
+          message: `NIGHTSHIFT. Запрос: ${data.get("interest") || "Сайт или цифровой продукт"}.${phone ? `\nТелефон: ${phone}` : ""}`,
           consent: data.get("consent") || "",
         }),
       });
@@ -337,6 +338,9 @@ export default function Home() {
                       <input name="name" autoComplete="off" autoCapitalize="words" data-1p-ignore data-lpignore="true" aria-label="Ваше имя" placeholder="Ваше имя" maxLength={120} required />
                     </label>
                     <label className="v2-brief__field">
+                      <input name="phone" type="tel" inputMode="tel" autoComplete="off" data-1p-ignore data-lpignore="true" aria-label="Телефон" placeholder="Телефон" maxLength={40} />
+                    </label>
+                    <label className="v2-brief__field" style={{ animationDelay: "330ms" }}>
                       <input name="contact" autoComplete="off" autoCapitalize="none" data-1p-ignore data-lpignore="true" aria-label="Email или Telegram" placeholder="Email или Telegram" maxLength={180} required />
                     </label>
                     <fieldset className="v2-brief__choices">

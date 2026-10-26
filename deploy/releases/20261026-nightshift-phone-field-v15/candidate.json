@@ -1,0 +1,96 @@
+{
+  "schema": "vazuri/nightshift-phone-field-candidate/v1",
+  "key": "night",
+  "previous": "/srv/www/vazuri.io/releases/20261025T172117Z-altera-overlay-ru-v14",
+  "expectedRelease": "/srv/www/vazuri.io/releases/20261026T031928Z-nightshift-phone-field-v15",
+  "releaseName": "20261026T031928Z-nightshift-phone-field-v15",
+  "sourceProject": "projects/nightshift-concept-public/vazuri-preview-liko-dark-shop-public-main",
+  "sourceParent": "c9860e9b1bf25c757535f1e2f55001493637327c",
+  "sourceFile": "app/page.tsx",
+  "sourceBeforeSHA256": "dd2ce350f2f0f247cf65bbcc94eb09b5809d257c5516995328174e1d40c66461",
+  "sourceSHA256": "aa7a370134ba975acc1f2b0600c33831da2b2c610da8197de3ae678cbc6b465a",
+  "intendedDelta": {
+    "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": {
+      "sha256": "1f16e33ccb255d5c1c04d3fda664e7d5e1c72ba95066d7c58f1b5f16aa9f771c",
+      "size": 1750,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/73277b6b-7577-408b-9ac2-be7fd6e7dd01/_buildManifest.js": {
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "size": 159,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/73277b6b-7577-408b-9ac2-be7fd6e7dd01/_ssgManifest.js": {
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "size": 76,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-VOl1C6Bc.js": {
+      "sha256": "3014845779bcb0ebd69f1f92aa13e4fbf6eb328a1020bb911b9805691da691a2",
+      "size": 176767,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-BKHnLtG2.js": {
+      "sha256": "003eee0265ffc9cb422fbfeab4a67eee9c3ed72ac7fbf66be267041d415a5d66",
+      "size": 489,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-DojVh_92.js": {
+      "sha256": "816bc37a71844a6be26812357bdcdbb759ea7ccdd2d0268168078227748dbc47",
+      "size": 64688,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/index.html": {
+      "sha256": "855cac73aaebc22cf0d64a16b3c6f8c3e6372cc8e564223d01efae93a8e90a4a",
+      "size": 33373,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json": {
+      "sha256": "27a6117ab4b34f03f3c619d9489f4d55c9bbcd2744182630cf6bfe85318a33dd",
+      "size": 76,
+      "mode": "0o444"
+    }
+  },
+  "archiveSHA256": "4628618865f2208a3f28b9b8dfcf2c9f3c10c91ab9ddb49f61bf055d6296cac0",
+  "deletedFiles": [],
+  "htmlFile": "vazuri-preview-liko-dark-shop-public/index.html",
+  "initialHTMLBodyPreserved": true,
+  "newField": {
+    "name": "phone",
+    "label": "Телефон",
+    "type": "tel",
+    "required": false,
+    "position": 2
+  },
+  "baselineFiles": 2850,
+  "expectedCoreFiles": 2855,
+  "localURL": "http://127.0.0.1:4474/nightshift/",
+  "url": "https://vazuri.io/nightshift/",
+  "allOtherCasesUnchanged": true,
+  "allExistingMediaAndCSSUnchanged": true,
+  "unchangedBuiltFiles": [
+    "vazuri-preview-liko-dark-shop-public/.assetsignore",
+    "vazuri-preview-liko-dark-shop-public/.nojekyll",
+    "vazuri-preview-liko-dark-shop-public/_headers",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/framework-Bl69ZMmM.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/rolldown-runtime-CT5IpSuU.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/css/index.DYAn_bTs.css",
+    "vazuri-preview-liko-dark-shop-public/favicon.svg",
+    "vazuri-preview-liko-dark-shop-public/fonts/archivo-black-latin.woff2",
+    "vazuri-preview-liko-dark-shop-public/fonts/dm-mono-300-latin.woff2",
+    "vazuri-preview-liko-dark-shop-public/fonts/dm-mono-400-latin.woff2",
+    "vazuri-preview-liko-dark-shop-public/fonts/dm-mono-500-latin.woff2",
+    "vazuri-preview-liko-dark-shop-public/fonts/inter-latin.woff2",
+    "vazuri-preview-liko-dark-shop-public/fonts/LICENSES.md",
+    "vazuri-preview-liko-dark-shop-public/images/shop-banner-1.jpg",
+    "vazuri-preview-liko-dark-shop-public/images/shop-banner-2.jpg",
+    "vazuri-preview-liko-dark-shop-public/images/shop-banner-3.jpg",
+    "vazuri-preview-liko-dark-shop-public/images/shop-category-1.jpg",
+    "vazuri-preview-liko-dark-shop-public/images/shop-category-2.jpg",
+    "vazuri-preview-liko-dark-shop-public/images/shop-category-3.jpg",
+    "vazuri-preview-liko-dark-shop-public/images/shop-slider-1.jpg",
+    "vazuri-preview-liko-dark-shop-public/images/shop-slider-2.jpg",
+    "vazuri-preview-liko-dark-shop-public/images/shop-slider-3.jpg",
+    "vazuri-preview-liko-dark-shop-public/og.png"
+  ]
+}
