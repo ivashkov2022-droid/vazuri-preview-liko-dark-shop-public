@@ -1,0 +1,30 @@
+{
+  "schema": "vazuri/case-phone-required-source-package/v1",
+  "key": "night",
+  "sourceParent": "5f841b312d32df52619252b7ac64628fdb3d8edc",
+  "sourceSHA256": {
+    "app/page.tsx": "b399c42b908a1a466b731c58f19867f53b0c861231fbbc0abc4ccecc9e20fbc3"
+  },
+  "sourceGitBlobSHA256": {
+    "app/page.tsx": "f2f2dfcf9c472114f24a55ae4ae3cac7b6cc9ca9bca4e40885c7860e3cdad9a1"
+  },
+  "ledgerSHA256": "797c3902b112452cb9f560a03fcae0fd4395d1ada47c9c97e4225d8fcfa08a60",
+  "qaSummarySHA256": "eb5c2f0217e03c8740cc2309d77069ebef5bfc7230899b8d30032031aa72ef58",
+  "baselineReportSHA256": "0b23ae267d089831cecde5b430633f9330747ccb81d7c5b38002ee5198ae9091",
+  "runtimeDeltaFiles": 8,
+  "fullBaseRuntimeFiles": 92,
+  "verifiedRuntimeBase": {
+    "archivePath": "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\projects\\nightshift-concept-public\\vazuri-preview-liko-dark-shop-public-main\\release\\nightshift-phone-v15-complete-current.zip",
+    "archiveSHA256": "fcda1cd04a9fa964b7a002d27d8f0b82122bc7554c26652cbc0c21f17f687040",
+    "sourceCommit": "5f841b312d32df52619252b7ac64628fdb3d8edc",
+    "sourceProofFile": "audit/nightshift-phone-field-20261026/complete-current-archive.json",
+    "sourceProofSHA256": "212fa9c0e92bbc01bae4175290b285d842c5729cd9c249a00142aae99622a7a0"
+  },
+  "requiredFields": [
+    "name",
+    "phone",
+    "contact",
+    "consent"
+  ],
+  "languagePolicy": "Preserve the actual live overlay and case languages. This source finalizer never rewrites language or palette."
+}

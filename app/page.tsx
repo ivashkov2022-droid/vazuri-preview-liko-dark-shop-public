@@ -97,9 +97,9 @@ export default function Home() {
 
   function updateFormProgress(event: FormEvent<HTMLFormElement>) {
     const data = new FormData(event.currentTarget);
-    const completed = [data.get("name"), data.get("contact"), data.get("consent")]
+    const completed = [data.get("name"), data.get("phone"), data.get("contact"), data.get("consent")]
       .reduce((total, value) => total + Number(Boolean(String(value || "").trim())), 0);
-    setFormProgress(Math.max(0.06, completed / 3));
+    setFormProgress(Math.max(0.06, completed / 4));
   }
 
   function addToBag() {
@@ -109,6 +109,7 @@ export default function Home() {
   async function submitBrief(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
+    if (!form.reportValidity()) return;
     const data = new FormData(form);
     const phone = String(data.get("phone") || "").trim();
     setFormStatus("sending");
@@ -338,7 +339,7 @@ export default function Home() {
                       <input name="name" autoComplete="off" autoCapitalize="words" data-1p-ignore data-lpignore="true" aria-label="Ваше имя" placeholder="Ваше имя" maxLength={120} required />
                     </label>
                     <label className="v2-brief__field">
-                      <input name="phone" type="tel" inputMode="tel" autoComplete="off" data-1p-ignore data-lpignore="true" aria-label="Телефон" placeholder="Телефон" maxLength={40} />
+                      <input name="phone" type="tel" inputMode="tel" autoComplete="off" data-1p-ignore data-lpignore="true" aria-label="Телефон" placeholder="Телефон" maxLength={40} required />
                     </label>
                     <label className="v2-brief__field" style={{ animationDelay: "330ms" }}>
                       <input name="contact" autoComplete="off" autoCapitalize="none" data-1p-ignore data-lpignore="true" aria-label="Email или Telegram" placeholder="Email или Telegram" maxLength={180} required />

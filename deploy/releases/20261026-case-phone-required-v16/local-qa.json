@@ -1,0 +1,2298 @@
+{
+  "schema": "vazuri/case-phone-required-local-qa/v1",
+  "key": "night",
+  "generatedAt": "2026-10-26T03:59:17.144Z",
+  "mode": "local",
+  "candidateSHA256": "797c3902b112452cb9f560a03fcae0fd4395d1ada47c9c97e4225d8fcfa08a60",
+  "sourceSHA256": {
+    "app/page.tsx": "b399c42b908a1a466b731c58f19867f53b0c861231fbbc0abc4ccecc9e20fbc3"
+  },
+  "valid": true,
+  "localQAPassed": true,
+  "fixture": "Current candidate GETs untouched; separate baseline context remaps all same-origin GETs to /__baseline. Each missing required control tested by real submit click. Only exact local /lead.php POST is intercepted and fulfilled; all other POSTs aborted. No request reaches the real lead service.",
+  "summary": {
+    "profiles": 2,
+    "checks": 38,
+    "passed": 38,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "profile": "ru-1440x900-full",
+      "name": "exact candidate route returns200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "HTML response equals frozen candidate",
+      "passed": true,
+      "detail": "ed9617d6adeb5a84965f27f7be18fe88d147a077721ad61fc575b493d150ea51"
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "localized field order name/phone/contact exactly preserved",
+      "passed": true,
+      "detail": [
+        [
+          "name",
+          "Ваше имя"
+        ],
+        [
+          "phone",
+          "Телефон"
+        ],
+        [
+          "contact",
+          "Email или Telegram"
+        ]
+      ]
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "all four intended controls required; telephone remains tel40",
+      "passed": true,
+      "detail": {
+        "required": [
+          "name",
+          "phone",
+          "contact",
+          "consent"
+        ],
+        "phone": {
+          "name": "phone",
+          "placeholder": "Телефон",
+          "required": true,
+          "type": "tel",
+          "inputMode": "tel",
+          "maxLength": 40,
+          "label": {
+            "x": 941,
+            "y": 340.65625,
+            "width": 459,
+            "height": 66,
+            "top": 340.65625,
+            "right": 1400,
+            "bottom": 406.65625,
+            "left": 941
+          },
+          "labelCSS": {
+            "width": "459px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "18px",
+            "paddingBottom": "0px",
+            "paddingLeft": "18px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 959,
+            "y": 349.15625,
+            "width": 423,
+            "height": 48,
+            "top": 349.15625,
+            "right": 1382,
+            "bottom": 397.15625,
+            "left": 959
+          },
+          "inputCSS": {
+            "width": "423px",
+            "height": "48px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "letterSpacing": "0.49px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          }
+        }
+      }
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "three equal rows and inputs preserve width/padding/font/borders",
+      "passed": true,
+      "detail": [
+        {
+          "name": "name",
+          "placeholder": "Ваше имя",
+          "required": true,
+          "type": "text",
+          "inputMode": "",
+          "maxLength": 120,
+          "label": {
+            "x": 941,
+            "y": 274.65625,
+            "width": 459,
+            "height": 66,
+            "top": 274.65625,
+            "right": 1400,
+            "bottom": 340.65625,
+            "left": 941
+          },
+          "labelCSS": {
+            "width": "459px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "18px",
+            "paddingBottom": "0px",
+            "paddingLeft": "18px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 959,
+            "y": 283.15625,
+            "width": 423,
+            "height": 48,
+            "top": 283.15625,
+            "right": 1382,
+            "bottom": 331.15625,
+            "left": 959
+          },
+          "inputCSS": {
+            "width": "423px",
+            "height": "48px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "letterSpacing": "0.49px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          }
+        },
+        {
+          "name": "phone",
+          "placeholder": "Телефон",
+          "required": true,
+          "type": "tel",
+          "inputMode": "tel",
+          "maxLength": 40,
+          "label": {
+            "x": 941,
+            "y": 340.65625,
+            "width": 459,
+            "height": 66,
+            "top": 340.65625,
+            "right": 1400,
+            "bottom": 406.65625,
+            "left": 941
+          },
+          "labelCSS": {
+            "width": "459px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "18px",
+            "paddingBottom": "0px",
+            "paddingLeft": "18px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 959,
+            "y": 349.15625,
+            "width": 423,
+            "height": 48,
+            "top": 349.15625,
+            "right": 1382,
+            "bottom": 397.15625,
+            "left": 959
+          },
+          "inputCSS": {
+            "width": "423px",
+            "height": "48px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "letterSpacing": "0.49px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          }
+        },
+        {
+          "name": "contact",
+          "placeholder": "Email или Telegram",
+          "required": true,
+          "type": "text",
+          "inputMode": "",
+          "maxLength": 180,
+          "label": {
+            "x": 941,
+            "y": 406.65625,
+            "width": 459,
+            "height": 66,
+            "top": 406.65625,
+            "right": 1400,
+            "bottom": 472.65625,
+            "left": 941
+          },
+          "labelCSS": {
+            "width": "459px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "18px",
+            "paddingBottom": "0px",
+            "paddingLeft": "18px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 959,
+            "y": 415.15625,
+            "width": 423,
+            "height": 48,
+            "top": 415.15625,
+            "right": 1382,
+            "bottom": 463.15625,
+            "left": 959
+          },
+          "inputCSS": {
+            "width": "423px",
+            "height": "48px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "letterSpacing": "0.49px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          }
+        }
+      ]
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "existing case palette retained",
+      "passed": true,
+      "detail": {
+        "expectedPalette": {
+          "paper": "rgb(241, 240, 234)",
+          "ink": "rgb(9, 10, 9)",
+          "accent": "rgb(200, 255, 0)"
+        },
+        "paper": "rgb(241, 240, 234)",
+        "ink": "rgb(9, 10, 9)",
+        "status": "rgb(200, 255, 0)"
+      }
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "no horizontal overflow and safe initial focus",
+      "passed": true,
+      "detail": {
+        "drawer": {
+          "rect": {
+            "x": 900,
+            "y": 0,
+            "width": 540,
+            "height": 900,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900,
+            "left": 900
+          },
+          "clientHeight": 900,
+          "scrollHeight": 900,
+          "css": {
+            "width": "540px",
+            "height": "900px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "1px solid rgba(9, 10, 9, 0.22)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "docWidth": 1440,
+        "focus": "BUTTON"
+      }
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "submit reachable with natural drawer scroll",
+      "passed": true,
+      "detail": {
+        "x": 941,
+        "y": 721.65625,
+        "width": 459,
+        "height": 60
+      }
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "missing name independently blocks submission",
+      "passed": true,
+      "detail": {
+        "valid": false,
+        "missing": true
+      }
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "missing phone independently blocks submission",
+      "passed": true,
+      "detail": {
+        "valid": false,
+        "missing": true
+      }
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "missing contact independently blocks submission",
+      "passed": true,
+      "detail": {
+        "valid": false,
+        "missing": true
+      }
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "missing consent independently blocks submission",
+      "passed": true,
+      "detail": {
+        "valid": false,
+        "missing": true
+      }
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "all four completed controls validate and fill progress",
+      "passed": true,
+      "detail": {
+        "valid": true,
+        "progress": 1
+      }
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "one valid request is mocked locally",
+      "passed": true,
+      "detail": [
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        }
+      ]
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "baseline locale palette beacon and arrows remain identical",
+      "passed": true,
+      "detail": {
+        "before": {
+          "language": "en",
+          "paper": "rgb(241, 240, 234)",
+          "actions": [
+            "Все проекты",
+            "Обсудить проект"
+          ],
+          "pieces": 49
+        },
+        "after": {
+          "language": "en",
+          "paper": "rgb(241, 240, 234)",
+          "actions": [
+            "Все проекты",
+            "Обсудить проект"
+          ],
+          "pieces": 49
+        }
+      }
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "existing fields unchanged and growth exactly one added row (Night already had phone)",
+      "passed": true,
+      "detail": {
+        "oldHeight": 508,
+        "newHeight": 508,
+        "expectedAdded": 0
+      }
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "phone uses existing message only; all other payload values unchanged",
+      "passed": true,
+      "detail": {
+        "original": {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        },
+        "actual": {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        },
+        "expected": {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        }
+      }
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "successful form closes and reopens with mandatory phone",
+      "passed": true
+    },
+    {
+      "profile": "ru-1440x900-full",
+      "name": "no new or baseline JavaScript/hydration/resource errors",
+      "passed": true,
+      "detail": {
+        "page": [],
+        "network": [],
+        "baseline": [],
+        "baselineNetwork": []
+      }
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "exact candidate route returns200",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "HTML response equals frozen candidate",
+      "passed": true,
+      "detail": "ed9617d6adeb5a84965f27f7be18fe88d147a077721ad61fc575b493d150ea51"
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "localized field order name/phone/contact exactly preserved",
+      "passed": true,
+      "detail": [
+        [
+          "name",
+          "Ваше имя"
+        ],
+        [
+          "phone",
+          "Телефон"
+        ],
+        [
+          "contact",
+          "Email или Telegram"
+        ]
+      ]
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "all four intended controls required; telephone remains tel40",
+      "passed": true,
+      "detail": {
+        "required": [
+          "name",
+          "phone",
+          "contact",
+          "consent"
+        ],
+        "phone": {
+          "name": "phone",
+          "placeholder": "Телефон",
+          "required": true,
+          "type": "tel",
+          "inputMode": "tel",
+          "maxLength": 40,
+          "label": {
+            "x": 24,
+            "y": 327,
+            "width": 342,
+            "height": 66,
+            "top": 327,
+            "right": 366,
+            "bottom": 393,
+            "left": 24
+          },
+          "labelCSS": {
+            "width": "342px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 40,
+            "y": 330.5,
+            "width": 310,
+            "height": 58,
+            "top": 330.5,
+            "right": 350,
+            "bottom": 388.5,
+            "left": 40
+          },
+          "inputCSS": {
+            "width": "310px",
+            "height": "58px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          }
+        }
+      }
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "three equal rows and inputs preserve width/padding/font/borders",
+      "passed": true,
+      "detail": [
+        {
+          "name": "name",
+          "placeholder": "Ваше имя",
+          "required": true,
+          "type": "text",
+          "inputMode": "",
+          "maxLength": 120,
+          "label": {
+            "x": 24,
+            "y": 261,
+            "width": 342,
+            "height": 66,
+            "top": 261,
+            "right": 366,
+            "bottom": 327,
+            "left": 24
+          },
+          "labelCSS": {
+            "width": "342px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 40,
+            "y": 264.5,
+            "width": 310,
+            "height": 58,
+            "top": 264.5,
+            "right": 350,
+            "bottom": 322.5,
+            "left": 40
+          },
+          "inputCSS": {
+            "width": "310px",
+            "height": "58px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          }
+        },
+        {
+          "name": "phone",
+          "placeholder": "Телефон",
+          "required": true,
+          "type": "tel",
+          "inputMode": "tel",
+          "maxLength": 40,
+          "label": {
+            "x": 24,
+            "y": 327,
+            "width": 342,
+            "height": 66,
+            "top": 327,
+            "right": 366,
+            "bottom": 393,
+            "left": 24
+          },
+          "labelCSS": {
+            "width": "342px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 40,
+            "y": 330.5,
+            "width": 310,
+            "height": 58,
+            "top": 330.5,
+            "right": 350,
+            "bottom": 388.5,
+            "left": 40
+          },
+          "inputCSS": {
+            "width": "310px",
+            "height": "58px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          }
+        },
+        {
+          "name": "contact",
+          "placeholder": "Email или Telegram",
+          "required": true,
+          "type": "text",
+          "inputMode": "",
+          "maxLength": 180,
+          "label": {
+            "x": 24,
+            "y": 393,
+            "width": 342,
+            "height": 66,
+            "top": 393,
+            "right": 366,
+            "bottom": 459,
+            "left": 24
+          },
+          "labelCSS": {
+            "width": "342px",
+            "height": "66px",
+            "minHeight": "66px",
+            "paddingTop": "0px",
+            "paddingRight": "16px",
+            "paddingBottom": "0px",
+            "paddingLeft": "16px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "input": {
+            "x": 40,
+            "y": 396.5,
+            "width": 310,
+            "height": 58,
+            "top": 396.5,
+            "right": 350,
+            "bottom": 454.5,
+            "left": 40
+          },
+          "inputCSS": {
+            "width": "310px",
+            "height": "58px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", monospace",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "14.4px",
+            "letterSpacing": "0.42px",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          }
+        }
+      ]
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "existing case palette retained",
+      "passed": true,
+      "detail": {
+        "expectedPalette": {
+          "paper": "rgb(241, 240, 234)",
+          "ink": "rgb(9, 10, 9)",
+          "accent": "rgb(200, 255, 0)"
+        },
+        "paper": "rgb(241, 240, 234)",
+        "ink": "rgb(9, 10, 9)",
+        "status": "rgb(200, 255, 0)"
+      }
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "no horizontal overflow and safe initial focus",
+      "passed": true,
+      "detail": {
+        "drawer": {
+          "rect": {
+            "x": 0,
+            "y": 47.125,
+            "width": 390,
+            "height": 796.875,
+            "top": 47.125,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          },
+          "clientHeight": 796,
+          "scrollHeight": 796,
+          "css": {
+            "width": "390px",
+            "height": "796.875px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "1px solid rgba(9, 10, 9, 0.22)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "docWidth": 390,
+        "focus": "BUTTON"
+      }
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "submit reachable with natural drawer scroll",
+      "passed": true,
+      "detail": {
+        "x": 24,
+        "y": 746,
+        "width": 342,
+        "height": 78
+      }
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "missing name independently blocks submission",
+      "passed": true,
+      "detail": {
+        "valid": false,
+        "missing": true
+      }
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "missing phone independently blocks submission",
+      "passed": true,
+      "detail": {
+        "valid": false,
+        "missing": true
+      }
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "missing contact independently blocks submission",
+      "passed": true,
+      "detail": {
+        "valid": false,
+        "missing": true
+      }
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "missing consent independently blocks submission",
+      "passed": true,
+      "detail": {
+        "valid": false,
+        "missing": true
+      }
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "all four completed controls validate and fill progress",
+      "passed": true,
+      "detail": {
+        "valid": true,
+        "progress": 1
+      }
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "one valid request is mocked locally",
+      "passed": true,
+      "detail": [
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        }
+      ]
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "baseline locale palette beacon and arrows remain identical",
+      "passed": true,
+      "detail": {
+        "before": {
+          "language": "en",
+          "paper": "rgb(241, 240, 234)",
+          "actions": [
+            "Все проекты",
+            "Обсудить проект"
+          ],
+          "pieces": 49
+        },
+        "after": {
+          "language": "en",
+          "paper": "rgb(241, 240, 234)",
+          "actions": [
+            "Все проекты",
+            "Обсудить проект"
+          ],
+          "pieces": 49
+        }
+      }
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "existing fields unchanged and growth exactly one added row (Night already had phone)",
+      "passed": true,
+      "detail": {
+        "oldHeight": 564,
+        "newHeight": 564,
+        "expectedAdded": 0
+      }
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "phone uses existing message only; all other payload values unchanged",
+      "passed": true,
+      "detail": {
+        "original": {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        },
+        "actual": {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        },
+        "expected": {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        }
+      }
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "successful form closes and reopens with mandatory phone",
+      "passed": true
+    },
+    {
+      "profile": "ru-390x844-full",
+      "name": "no new or baseline JavaScript/hydration/resource errors",
+      "passed": true,
+      "detail": {
+        "page": [],
+        "network": [],
+        "baseline": [],
+        "baselineNetwork": []
+      }
+    }
+  ],
+  "failures": [],
+  "results": [
+    {
+      "profile": "ru-1440x900-full",
+      "url": "http://127.0.0.1:4476/nightshift/",
+      "payloads": [
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        }
+      ],
+      "baselinePayloads": [
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        }
+      ],
+      "pageErrors": [],
+      "networkErrors": [],
+      "baselineErrors": [],
+      "baselineNetworkErrors": [],
+      "blockedExternalPosts": [],
+      "screenshots": [
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\case-phone-required-20261026\\qa\\night\\2026-10-26T03-59-06-149Z-aa2bf4bb\\ru-1440x900-full-form.png"
+      ],
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "htmlLanguage": "en",
+        "activeTag": "BUTTON",
+        "bodyFixed": true,
+        "docWidth": 1440,
+        "drawer": {
+          "rect": {
+            "x": 900,
+            "y": 0,
+            "width": 540,
+            "height": 900,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900,
+            "left": 900
+          },
+          "clientHeight": 900,
+          "scrollHeight": 900,
+          "css": {
+            "width": "540px",
+            "height": "900px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "1px solid rgba(9, 10, 9, 0.22)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "form": {
+          "x": 941,
+          "y": 273.65625,
+          "width": 459,
+          "height": 508,
+          "top": 273.65625,
+          "right": 1400,
+          "bottom": 781.65625,
+          "left": 941
+        },
+        "progress": 0.06,
+        "fields": [
+          {
+            "name": "name",
+            "placeholder": "Ваше имя",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 120,
+            "label": {
+              "x": 941,
+              "y": 274.65625,
+              "width": 459,
+              "height": 66,
+              "top": 274.65625,
+              "right": 1400,
+              "bottom": 340.65625,
+              "left": 941
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 959,
+              "y": 283.15625,
+              "width": 423,
+              "height": 48,
+              "top": 283.15625,
+              "right": 1382,
+              "bottom": 331.15625,
+              "left": 959
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "name": "phone",
+            "placeholder": "Телефон",
+            "required": true,
+            "type": "tel",
+            "inputMode": "tel",
+            "maxLength": 40,
+            "label": {
+              "x": 941,
+              "y": 340.65625,
+              "width": 459,
+              "height": 66,
+              "top": 340.65625,
+              "right": 1400,
+              "bottom": 406.65625,
+              "left": 941
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 959,
+              "y": 349.15625,
+              "width": 423,
+              "height": 48,
+              "top": 349.15625,
+              "right": 1382,
+              "bottom": 397.15625,
+              "left": 959
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "name": "contact",
+            "placeholder": "Email или Telegram",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 180,
+            "label": {
+              "x": 941,
+              "y": 406.65625,
+              "width": 459,
+              "height": 66,
+              "top": 406.65625,
+              "right": 1400,
+              "bottom": 472.65625,
+              "left": 941
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 959,
+              "y": 415.15625,
+              "width": 423,
+              "height": 48,
+              "top": 415.15625,
+              "right": 1382,
+              "bottom": 463.15625,
+              "left": 959
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ],
+        "required": [
+          "name",
+          "phone",
+          "contact",
+          "consent"
+        ],
+        "title": "Опишите задачу",
+        "submit": "Отправить запрос↗",
+        "actions": [
+          "Все проекты",
+          "Обсудить проект"
+        ],
+        "paper": "rgb(241, 240, 234)",
+        "ink": "rgb(9, 10, 9)",
+        "panelPaper": "rgb(241, 240, 234)",
+        "statusFill": "rgb(200, 255, 0)",
+        "arrowMarkup": [
+          "<g><path class=\"v2-console__pixel-shaft\" d=\"M1 10H22V13H1Z\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:0deg;--cube-delay:64ms\"></path><rect x=\"10\" y=\"1\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:8ms\"></rect><rect x=\"7\" y=\"4\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:24ms\"></rect><rect x=\"4\" y=\"7\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:40ms\"></rect><rect x=\"4\" y=\"13\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:12ms\"></rect><rect x=\"7\" y=\"16\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:164ms\"></rect><rect x=\"10\" y=\"19\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:120ms\"></rect></g>",
+          "<g transform=\"rotate(135 11.5 11.5)\"><path class=\"v2-console__pixel-shaft\" d=\"M1 10H22V13H1Z\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:0deg;--cube-delay:64ms\"></path><rect x=\"10\" y=\"1\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:8ms\"></rect><rect x=\"7\" y=\"4\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:24ms\"></rect><rect x=\"4\" y=\"7\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:40ms\"></rect><rect x=\"4\" y=\"13\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:12ms\"></rect><rect x=\"7\" y=\"16\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:164ms\"></rect><rect x=\"10\" y=\"19\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:120ms\"></rect></g>"
+        ],
+        "beaconPieces": 49
+      },
+      "baselineGeometry": {
+        "width": 1440,
+        "height": 900,
+        "htmlLanguage": "en",
+        "activeTag": "BUTTON",
+        "bodyFixed": true,
+        "docWidth": 1440,
+        "drawer": {
+          "rect": {
+            "x": 900,
+            "y": 0,
+            "width": 540,
+            "height": 900,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900,
+            "left": 900
+          },
+          "clientHeight": 900,
+          "scrollHeight": 900,
+          "css": {
+            "width": "540px",
+            "height": "900px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "0px none rgb(9, 10, 9)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "1px solid rgba(9, 10, 9, 0.22)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "form": {
+          "x": 941,
+          "y": 273.65625,
+          "width": 459,
+          "height": 508,
+          "top": 273.65625,
+          "right": 1400,
+          "bottom": 781.65625,
+          "left": 941
+        },
+        "progress": 0.06,
+        "fields": [
+          {
+            "name": "name",
+            "placeholder": "Ваше имя",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 120,
+            "label": {
+              "x": 941,
+              "y": 274.65625,
+              "width": 459,
+              "height": 66,
+              "top": 274.65625,
+              "right": 1400,
+              "bottom": 340.65625,
+              "left": 941
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 959,
+              "y": 283.15625,
+              "width": 423,
+              "height": 48,
+              "top": 283.15625,
+              "right": 1382,
+              "bottom": 331.15625,
+              "left": 959
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "name": "phone",
+            "placeholder": "Телефон",
+            "required": false,
+            "type": "tel",
+            "inputMode": "tel",
+            "maxLength": 40,
+            "label": {
+              "x": 941,
+              "y": 340.65625,
+              "width": 459,
+              "height": 66,
+              "top": 340.65625,
+              "right": 1400,
+              "bottom": 406.65625,
+              "left": 941
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 959,
+              "y": 349.15625,
+              "width": 423,
+              "height": 48,
+              "top": 349.15625,
+              "right": 1382,
+              "bottom": 397.15625,
+              "left": 959
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "name": "contact",
+            "placeholder": "Email или Telegram",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 180,
+            "label": {
+              "x": 941,
+              "y": 406.65625,
+              "width": 459,
+              "height": 66,
+              "top": 406.65625,
+              "right": 1400,
+              "bottom": 472.65625,
+              "left": 941
+            },
+            "labelCSS": {
+              "width": "459px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "18px",
+              "paddingBottom": "0px",
+              "paddingLeft": "18px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 959,
+              "y": 415.15625,
+              "width": 423,
+              "height": 48,
+              "top": 415.15625,
+              "right": 1382,
+              "bottom": 463.15625,
+              "left": 959
+            },
+            "inputCSS": {
+              "width": "423px",
+              "height": "48px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16.8px",
+              "letterSpacing": "0.49px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ],
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ],
+        "title": "Опишите задачу",
+        "submit": "Отправить запрос↗",
+        "actions": [
+          "Все проекты",
+          "Обсудить проект"
+        ],
+        "paper": "rgb(241, 240, 234)",
+        "ink": "rgb(9, 10, 9)",
+        "panelPaper": "rgb(241, 240, 234)",
+        "statusFill": "rgb(200, 255, 0)",
+        "arrowMarkup": [
+          "<g><path class=\"v2-console__pixel-shaft\" d=\"M1 10H22V13H1Z\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:0deg;--cube-delay:64ms\"></path><rect x=\"10\" y=\"1\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:8ms\"></rect><rect x=\"7\" y=\"4\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:24ms\"></rect><rect x=\"4\" y=\"7\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:40ms\"></rect><rect x=\"4\" y=\"13\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:12ms\"></rect><rect x=\"7\" y=\"16\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:164ms\"></rect><rect x=\"10\" y=\"19\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:120ms\"></rect></g>",
+          "<g transform=\"rotate(135 11.5 11.5)\"><path class=\"v2-console__pixel-shaft\" d=\"M1 10H22V13H1Z\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:0deg;--cube-delay:64ms\"></path><rect x=\"10\" y=\"1\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:8ms\"></rect><rect x=\"7\" y=\"4\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:24ms\"></rect><rect x=\"4\" y=\"7\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:40ms\"></rect><rect x=\"4\" y=\"13\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:12ms\"></rect><rect x=\"7\" y=\"16\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:164ms\"></rect><rect x=\"10\" y=\"19\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:120ms\"></rect></g>"
+        ],
+        "beaconPieces": 49
+      }
+    },
+    {
+      "profile": "ru-390x844-full",
+      "url": "http://127.0.0.1:4476/nightshift/",
+      "payloads": [
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        }
+      ],
+      "baselinePayloads": [
+        {
+          "source": "nightshift",
+          "language": "ru",
+          "website": "",
+          "name": "QA Demo",
+          "contact": "qa@example.invalid",
+          "company": "",
+          "message": "NIGHTSHIFT. Запрос: Сайт или цифровой продукт.\nТелефон: +7 999 123-45-67",
+          "consent": "yes"
+        }
+      ],
+      "pageErrors": [],
+      "networkErrors": [],
+      "baselineErrors": [],
+      "baselineNetworkErrors": [],
+      "blockedExternalPosts": [],
+      "screenshots": [
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\case-phone-required-20261026\\qa\\night\\2026-10-26T03-59-06-149Z-aa2bf4bb\\ru-390x844-full-form.png"
+      ],
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "htmlLanguage": "en",
+        "activeTag": "BUTTON",
+        "bodyFixed": true,
+        "docWidth": 390,
+        "drawer": {
+          "rect": {
+            "x": 0,
+            "y": 47.125,
+            "width": 390,
+            "height": 796.875,
+            "top": 47.125,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          },
+          "clientHeight": 796,
+          "scrollHeight": 796,
+          "css": {
+            "width": "390px",
+            "height": "796.875px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "1px solid rgba(9, 10, 9, 0.22)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "form": {
+          "x": 24,
+          "y": 260,
+          "width": 342,
+          "height": 564,
+          "top": 260,
+          "right": 366,
+          "bottom": 824,
+          "left": 24
+        },
+        "progress": 0.06,
+        "fields": [
+          {
+            "name": "name",
+            "placeholder": "Ваше имя",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 120,
+            "label": {
+              "x": 24,
+              "y": 261,
+              "width": 342,
+              "height": 66,
+              "top": 261,
+              "right": 366,
+              "bottom": 327,
+              "left": 24
+            },
+            "labelCSS": {
+              "width": "342px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 40,
+              "y": 264.5,
+              "width": 310,
+              "height": 58,
+              "top": 264.5,
+              "right": 350,
+              "bottom": 322.5,
+              "left": 40
+            },
+            "inputCSS": {
+              "width": "310px",
+              "height": "58px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "name": "phone",
+            "placeholder": "Телефон",
+            "required": true,
+            "type": "tel",
+            "inputMode": "tel",
+            "maxLength": 40,
+            "label": {
+              "x": 24,
+              "y": 327,
+              "width": 342,
+              "height": 66,
+              "top": 327,
+              "right": 366,
+              "bottom": 393,
+              "left": 24
+            },
+            "labelCSS": {
+              "width": "342px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 40,
+              "y": 330.5,
+              "width": 310,
+              "height": 58,
+              "top": 330.5,
+              "right": 350,
+              "bottom": 388.5,
+              "left": 40
+            },
+            "inputCSS": {
+              "width": "310px",
+              "height": "58px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "name": "contact",
+            "placeholder": "Email или Telegram",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 180,
+            "label": {
+              "x": 24,
+              "y": 393,
+              "width": 342,
+              "height": 66,
+              "top": 393,
+              "right": 366,
+              "bottom": 459,
+              "left": 24
+            },
+            "labelCSS": {
+              "width": "342px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 40,
+              "y": 396.5,
+              "width": 310,
+              "height": 58,
+              "top": 396.5,
+              "right": 350,
+              "bottom": 454.5,
+              "left": 40
+            },
+            "inputCSS": {
+              "width": "310px",
+              "height": "58px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ],
+        "required": [
+          "name",
+          "phone",
+          "contact",
+          "consent"
+        ],
+        "title": "Опишите задачу",
+        "submit": "Отправить запрос↗",
+        "actions": [
+          "Все проекты",
+          "Обсудить проект"
+        ],
+        "paper": "rgb(241, 240, 234)",
+        "ink": "rgb(9, 10, 9)",
+        "panelPaper": "rgb(241, 240, 234)",
+        "statusFill": "rgb(200, 255, 0)",
+        "arrowMarkup": [
+          "<g><path class=\"v2-console__pixel-shaft\" d=\"M1 10H22V13H1Z\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:0deg;--cube-delay:64ms\"></path><rect x=\"10\" y=\"1\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:8ms\"></rect><rect x=\"7\" y=\"4\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:24ms\"></rect><rect x=\"4\" y=\"7\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:40ms\"></rect><rect x=\"4\" y=\"13\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:12ms\"></rect><rect x=\"7\" y=\"16\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:164ms\"></rect><rect x=\"10\" y=\"19\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:120ms\"></rect></g>",
+          "<g transform=\"rotate(135 11.5 11.5)\"><path class=\"v2-console__pixel-shaft\" d=\"M1 10H22V13H1Z\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:0deg;--cube-delay:64ms\"></path><rect x=\"10\" y=\"1\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:8ms\"></rect><rect x=\"7\" y=\"4\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:24ms\"></rect><rect x=\"4\" y=\"7\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:40ms\"></rect><rect x=\"4\" y=\"13\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:12ms\"></rect><rect x=\"7\" y=\"16\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:164ms\"></rect><rect x=\"10\" y=\"19\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:120ms\"></rect></g>"
+        ],
+        "beaconPieces": 49
+      },
+      "baselineGeometry": {
+        "width": 390,
+        "height": 844,
+        "htmlLanguage": "en",
+        "activeTag": "BUTTON",
+        "bodyFixed": true,
+        "docWidth": 390,
+        "drawer": {
+          "rect": {
+            "x": 0,
+            "y": 47.125,
+            "width": 390,
+            "height": 796.875,
+            "top": 47.125,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          },
+          "clientHeight": 796,
+          "scrollHeight": 796,
+          "css": {
+            "width": "390px",
+            "height": "796.875px",
+            "minHeight": "auto",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "borderTop": "1px solid rgba(9, 10, 9, 0.22)",
+            "borderRight": "0px none rgb(9, 10, 9)",
+            "borderBottom": "0px none rgb(9, 10, 9)",
+            "borderLeft": "0px none rgb(9, 10, 9)",
+            "color": "rgb(9, 10, 9)",
+            "backgroundColor": "rgb(241, 240, 234)"
+          }
+        },
+        "form": {
+          "x": 24,
+          "y": 260,
+          "width": 342,
+          "height": 564,
+          "top": 260,
+          "right": 366,
+          "bottom": 824,
+          "left": 24
+        },
+        "progress": 0.06,
+        "fields": [
+          {
+            "name": "name",
+            "placeholder": "Ваше имя",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 120,
+            "label": {
+              "x": 24,
+              "y": 261,
+              "width": 342,
+              "height": 66,
+              "top": 261,
+              "right": 366,
+              "bottom": 327,
+              "left": 24
+            },
+            "labelCSS": {
+              "width": "342px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 40,
+              "y": 264.5,
+              "width": 310,
+              "height": 58,
+              "top": 264.5,
+              "right": 350,
+              "bottom": 322.5,
+              "left": 40
+            },
+            "inputCSS": {
+              "width": "310px",
+              "height": "58px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "name": "phone",
+            "placeholder": "Телефон",
+            "required": false,
+            "type": "tel",
+            "inputMode": "tel",
+            "maxLength": 40,
+            "label": {
+              "x": 24,
+              "y": 327,
+              "width": 342,
+              "height": 66,
+              "top": 327,
+              "right": 366,
+              "bottom": 393,
+              "left": 24
+            },
+            "labelCSS": {
+              "width": "342px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 40,
+              "y": 330.5,
+              "width": 310,
+              "height": 58,
+              "top": 330.5,
+              "right": 350,
+              "bottom": 388.5,
+              "left": 40
+            },
+            "inputCSS": {
+              "width": "310px",
+              "height": "58px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "name": "contact",
+            "placeholder": "Email или Telegram",
+            "required": true,
+            "type": "text",
+            "inputMode": "",
+            "maxLength": 180,
+            "label": {
+              "x": 24,
+              "y": 393,
+              "width": 342,
+              "height": 66,
+              "top": 393,
+              "right": 366,
+              "bottom": 459,
+              "left": 24
+            },
+            "labelCSS": {
+              "width": "342px",
+              "height": "66px",
+              "minHeight": "66px",
+              "paddingTop": "0px",
+              "paddingRight": "16px",
+              "paddingBottom": "0px",
+              "paddingLeft": "16px",
+              "fontFamily": "\"DM Mono\", ui-monospace, monospace",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "1px solid rgba(9, 10, 9, 0.24)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "input": {
+              "x": 40,
+              "y": 396.5,
+              "width": 310,
+              "height": 58,
+              "top": 396.5,
+              "right": 350,
+              "bottom": 454.5,
+              "left": 40
+            },
+            "inputCSS": {
+              "width": "310px",
+              "height": "58px",
+              "minHeight": "auto",
+              "paddingTop": "0px",
+              "paddingRight": "0px",
+              "paddingBottom": "0px",
+              "paddingLeft": "0px",
+              "fontFamily": "\"DM Mono\", monospace",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "14.4px",
+              "letterSpacing": "0.42px",
+              "borderTop": "0px none rgb(9, 10, 9)",
+              "borderRight": "0px none rgb(9, 10, 9)",
+              "borderBottom": "0px none rgb(9, 10, 9)",
+              "borderLeft": "0px none rgb(9, 10, 9)",
+              "color": "rgb(9, 10, 9)",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            }
+          }
+        ],
+        "required": [
+          "name",
+          "contact",
+          "consent"
+        ],
+        "title": "Опишите задачу",
+        "submit": "Отправить запрос↗",
+        "actions": [
+          "Все проекты",
+          "Обсудить проект"
+        ],
+        "paper": "rgb(241, 240, 234)",
+        "ink": "rgb(9, 10, 9)",
+        "panelPaper": "rgb(241, 240, 234)",
+        "statusFill": "rgb(200, 255, 0)",
+        "arrowMarkup": [
+          "<g><path class=\"v2-console__pixel-shaft\" d=\"M1 10H22V13H1Z\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:0deg;--cube-delay:64ms\"></path><rect x=\"10\" y=\"1\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:8ms\"></rect><rect x=\"7\" y=\"4\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:24ms\"></rect><rect x=\"4\" y=\"7\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:40ms\"></rect><rect x=\"4\" y=\"13\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:12ms\"></rect><rect x=\"7\" y=\"16\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:164ms\"></rect><rect x=\"10\" y=\"19\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:120ms\"></rect></g>",
+          "<g transform=\"rotate(135 11.5 11.5)\"><path class=\"v2-console__pixel-shaft\" d=\"M1 10H22V13H1Z\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:0deg;--cube-delay:64ms\"></path><rect x=\"10\" y=\"1\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:8ms\"></rect><rect x=\"7\" y=\"4\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:24ms\"></rect><rect x=\"4\" y=\"7\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:40ms\"></rect><rect x=\"4\" y=\"13\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:-7px;--cube-rotate:14deg;--cube-delay:12ms\"></rect><rect x=\"7\" y=\"16\" width=\"3\" height=\"3\" style=\"--cube-x:-7px;--cube-y:0px;--cube-rotate:-18deg;--cube-delay:164ms\"></rect><rect x=\"10\" y=\"19\" width=\"3\" height=\"3\" style=\"--cube-x:0px;--cube-y:7px;--cube-rotate:-14deg;--cube-delay:120ms\"></rect></g>"
+        ],
+        "beaconPieces": 49
+      }
+    }
+  ]
+}
