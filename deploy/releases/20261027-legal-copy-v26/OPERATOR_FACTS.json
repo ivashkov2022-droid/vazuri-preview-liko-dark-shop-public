@@ -1,0 +1,45 @@
+{
+  "operator": {
+    "name": "Общество с ограниченной ответственностью «ТОРГСЕРВИС 122»",
+    "shortName": "ООО «ТОРГСЕРВИС 122»",
+    "inn": "2225231152",
+    "ogrn": "1232200018170",
+    "phone": "+7 923 001-78-16",
+    "email": "hello@vazuri.io",
+    "addresses": [
+      {
+        "ru": "Россия, г. Калининград, Яблоневая аллея, д. 34",
+        "en": "34 Yablonevaya Alley, Kaliningrad, Russia"
+      },
+      {
+        "ru": "191023, Россия, г. Санкт-Петербург, Невский проспект, д. 71/1",
+        "en": "71/1 Nevsky Prospekt, Saint Petersburg, Russia, 191023"
+      }
+    ]
+  },
+  "identitySourceURL": "https://uwingroup.io/companies/assets/documents/torgservise-122-company-card.pdf?v=20260810",
+  "identitySourceSHA256": "0c965a6763d8bf0dad996e32b6051bdc47caf0aa54024493fd451c752ff68954",
+  "addressRole": "correspondence",
+  "addressOrderUserSpecified": true,
+  "addressSources": [
+    {
+      "source": "direct user instruction",
+      "address": {
+        "ru": "Россия, г. Калининград, Яблоневая аллея, д. 34",
+        "en": "34 Yablonevaya Alley, Kaliningrad, Russia"
+      }
+    },
+    {
+      "sourceURL": "https://uwingroup.io/companies/assets/documents/uwin-group-company-card.pdf?v=20260810",
+      "sourceSHA256": "8334c8fd4c04fdcc1e0e926e4dc9e7711664371954f4fdb29c43b69a3c434f97",
+      "cardField": "Actual address",
+      "address": {
+        "ru": "191023, Россия, г. Санкт-Петербург, Невский проспект, д. 71/1",
+        "en": "71/1 Nevsky Prospekt, Saint Petersburg, Russia, 191023"
+      }
+    }
+  ],
+  "registeredAddressAssertion": false,
+  "phoneAndEmailRetainedByUser": true,
+  "privateContractExcluded": true
+}

@@ -1,0 +1,23 @@
+{
+  "valid": true,
+  "documents": {
+    "privacy": {
+      "sha256": "0472bffd685c41754d3600954c4144c2abcd0c3237452f9d3764d817224729ac",
+      "pages": 1,
+      "images": [
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\legal-copy-20261027\\pdf-preview\\privacy-1.png"
+      ],
+      "embeddedFontCount": 3,
+      "unnecessaryContractFieldsAbsent": true
+    },
+    "consent": {
+      "sha256": "a1a6e83ca75ed51167d6977f4237a32c585312472ef20b9f3f27261d7627e238",
+      "pages": 1,
+      "images": [
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\legal-copy-20261027\\pdf-preview\\consent-1.png"
+      ],
+      "embeddedFontCount": 3,
+      "unnecessaryContractFieldsAbsent": true
+    }
+  }
+}

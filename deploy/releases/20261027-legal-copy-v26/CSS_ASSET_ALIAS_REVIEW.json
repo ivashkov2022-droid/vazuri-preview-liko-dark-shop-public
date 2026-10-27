@@ -1,0 +1,48 @@
+{
+  "valid": true,
+  "mediaFilesAddedOrChanged": 0,
+  "aliases": [
+    {
+      "css": "main/_next/static/css/index.wQ9uJQ_k.css",
+      "from": "/_next/static/media/04.DRm1ROsz.webp",
+      "to": "/_next/static/media/04-d.DRm1ROsz.webp",
+      "sameByteSHA256": "161a8c42ccd4b59748aa6a40d2fd920fb90dc22af0300e51ebed63e0e632f9ba",
+      "publishedFile": "main/_next/static/media/04-d.DRm1ROsz.webp"
+    },
+    {
+      "css": "main/_next/static/css/index.wQ9uJQ_k.css",
+      "from": "/_next/static/media/04.DRm1ROsz.webp",
+      "to": "/_next/static/media/04-d.DRm1ROsz.webp",
+      "sameByteSHA256": "161a8c42ccd4b59748aa6a40d2fd920fb90dc22af0300e51ebed63e0e632f9ba",
+      "publishedFile": "main/_next/static/media/04-d.DRm1ROsz.webp"
+    },
+    {
+      "css": "main/_next/static/css/index.wQ9uJQ_k.css",
+      "from": "/_next/static/media/1920x1200_dv02.vCyiIrbl.webp",
+      "to": "/_next/static/media/1920x1200_h02.vCyiIrbl.webp",
+      "sameByteSHA256": "fed0abe902dfd7a7bbbae0a83f9cd8089ee4ea5fae5e0052c442d33fd76e9863",
+      "publishedFile": "main/_next/static/media/1920x1200_h02.vCyiIrbl.webp"
+    },
+    {
+      "css": "main/_next/static/css/index.wQ9uJQ_k.css",
+      "from": "/_next/static/media/1920x1200_dv02.vCyiIrbl.webp",
+      "to": "/_next/static/media/1920x1200_h02.vCyiIrbl.webp",
+      "sameByteSHA256": "fed0abe902dfd7a7bbbae0a83f9cd8089ee4ea5fae5e0052c442d33fd76e9863",
+      "publishedFile": "main/_next/static/media/1920x1200_h02.vCyiIrbl.webp"
+    },
+    {
+      "css": "main/_next/static/css/index.wQ9uJQ_k.css",
+      "from": "/_next/static/media/1920x1200_dv02.vCyiIrbl.webp",
+      "to": "/_next/static/media/1920x1200_h02.vCyiIrbl.webp",
+      "sameByteSHA256": "fed0abe902dfd7a7bbbae0a83f9cd8089ee4ea5fae5e0052c442d33fd76e9863",
+      "publishedFile": "main/_next/static/media/1920x1200_h02.vCyiIrbl.webp"
+    },
+    {
+      "css": "main/_next/static/css/index.wQ9uJQ_k.css",
+      "from": "/_next/static/media/1920x1200_dv02.vCyiIrbl.webp",
+      "to": "/_next/static/media/1920x1200_h02.vCyiIrbl.webp",
+      "sameByteSHA256": "fed0abe902dfd7a7bbbae0a83f9cd8089ee4ea5fae5e0052c442d33fd76e9863",
+      "publishedFile": "main/_next/static/media/1920x1200_h02.vCyiIrbl.webp"
+    }
+  ]
+}

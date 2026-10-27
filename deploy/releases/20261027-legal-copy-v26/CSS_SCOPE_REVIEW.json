@@ -1,0 +1,22 @@
+{
+  "schema": "vazuri/legal-copy-source-scope-review/v1",
+  "valid": true,
+  "candidateSHA256": "3c43a74066aed85c1051688fa347c1c67b3b283dc947f1ed19014efcca9b0b8e",
+  "footerOnlyCSSAppend": true,
+  "approvedArrowGeometryPreserved": true,
+  "menuLinksUnchanged": true,
+  "linkComponentExactInverse": true,
+  "operatorIdentityUnchanged": true,
+  "correspondenceAddressesUserAuthorized": true,
+  "originalBusinessCardUserAuthorized": true,
+  "footerOnlyCompanyLink": true,
+  "companyLanguageSwitchPreserved": true,
+  "oldPublishedPDFsUnchanged": true,
+  "allFrozenSourceAndRuntimeSHAExact": true,
+  "tarExact": true,
+  "deltaFiles": 201,
+  "sourceProjects": 10,
+  "sourceFiles": 26,
+  "externalRoutePayloadRead": false,
+  "network": false
+}

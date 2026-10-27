@@ -1,0 +1,17 @@
+[
+  "data/legal-documents.json",
+  "components/common/LegalLinks.tsx",
+  "styles/vazuri-legal.css",
+  "public/lead.php",
+  "public/documents/privacy-policy-2026-10-27-r2.pdf",
+  "public/documents/personal-data-consent-2026-10-27-r2.pdf",
+  "public/documents/torgservis-122-company-card.pdf",
+  "scripts/build-legal-pdfs.py",
+  "components/contact/VazuriLegalPage.tsx",
+  "components/contact/VazuriCompanyPage.tsx",
+  "app/company/page.tsx",
+  "app/en/company/page.tsx",
+  "scripts/capture-regru-static.mjs",
+  "scripts/prepare-regru-static.mjs",
+  "components/headers/LanguageSwitcher.tsx"
+]

@@ -1,0 +1,29 @@
+{
+  "valid": true,
+  "sourceSHA256": "8d5d9a90f0ec31802af8e02a3247ee24f4d9c56ff727b959f859f07bcfdf5598",
+  "version": "2026-10-27-r2",
+  "documents": {
+    "privacy": {
+      "path": "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\projects\\vazuri-main-integration\\public\\documents\\privacy-policy-2026-10-27-r2.pdf",
+      "downloadURL": "https://vazuri.io/documents/privacy-policy-2026-10-27-r2.pdf",
+      "deliverable": "output\\pdf\\vazuri-legal-20261027-r2\\privacy-policy-2026-10-27-r2.pdf",
+      "sha256": "0472bffd685c41754d3600954c4144c2abcd0c3237452f9d3764d817224729ac",
+      "bytes": 112258,
+      "pages": 1,
+      "allRussianWebSectionsPresent": true,
+      "operatorFieldsPresent": true,
+      "fontsEmbedded": true
+    },
+    "consent": {
+      "path": "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\projects\\vazuri-main-integration\\public\\documents\\personal-data-consent-2026-10-27-r2.pdf",
+      "downloadURL": "https://vazuri.io/documents/personal-data-consent-2026-10-27-r2.pdf",
+      "deliverable": "output\\pdf\\vazuri-legal-20261027-r2\\personal-data-consent-2026-10-27-r2.pdf",
+      "sha256": "a1a6e83ca75ed51167d6977f4237a32c585312472ef20b9f3f27261d7627e238",
+      "bytes": 109091,
+      "pages": 1,
+      "allRussianWebSectionsPresent": true,
+      "operatorFieldsPresent": true,
+      "fontsEmbedded": true
+    }
+  }
+}

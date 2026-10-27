@@ -1,0 +1,1728 @@
+{
+  "schema": "vazuri/staged-main-approved-forms/v1",
+  "valid": true,
+  "baselineReportSHA256": "d63286cdf44e6635c1e04adfba9117b433868020de26eb7fef31d0bad5cb6fc2",
+  "intendedDelta": {
+    "main/.vite/manifest.json": {
+      "sha256": "b4e38bb3a0ec0b7035c432847e0cec7119bcba1af4aab03bf5c4dc30a47b6dea",
+      "size": 79866,
+      "mode": "0o444"
+    },
+    "main/_next/static/98e6c919-d0bb-49c3-9299-5b943749e722/_buildManifest.js": {
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "size": 159,
+      "mode": "0o444"
+    },
+    "main/_next/static/98e6c919-d0bb-49c3-9299-5b943749e722/_ssgManifest.js": {
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "size": 76,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/AboutTeaser-B7D_ZcWg.js": {
+      "sha256": "02c55b29ea7ab40c49e8a6fa07b87a9e9fa15ef31258031ab81089ee9688a309",
+      "size": 4554,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ApprovedBrief-CeDELoid.js": {
+      "sha256": "aa67d3e6c78cfa69e422c0ab5760c63337ea03102362572a798f2f2570b6e1cf",
+      "size": 27155,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/AutoplayLoopVideo-qScXwoYg.js": {
+      "sha256": "4d8dcf259732beb4c602ead7bf073d6264839e0bbe4678b4d3cc9d49651983fb",
+      "size": 2487,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Blog-aOp0up2f.js": {
+      "sha256": "245febc13831e2a9321545017f76fae3e358c83cfae45e42df20ecdcdf4b98ee",
+      "size": 22753,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogArticle-CFcEeSS_.js": {
+      "sha256": "18c71ffd0f8b344c790d24db247aff9a2db0b32e656eeef9e3fd99bb7ad74d46",
+      "size": 20232,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-87Lt_SKA.js": {
+      "sha256": "63015d84c8d8280a0efde43538529fafa2b15c9e6b9257067ef54076915886be",
+      "size": 4989,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-B88IjntG.js": {
+      "sha256": "7b5cdc6c57f18c6d8628a98ca386ae92c35cc6c3b6e97cd2ee897668dfd91677",
+      "size": 5282,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-BUUnDiwr.js": {
+      "sha256": "71124a1f5c99213737c6118a1c828652eb265df5b31bbd3046dc5ea3e06d31a8",
+      "size": 4766,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-BwSUQWt6.js": {
+      "sha256": "24aed8eb713c61becae0ab4ed9c40a94540084d082ca569897189daf2c09f139",
+      "size": 4809,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-BzQJm_3s.js": {
+      "sha256": "7db0d9781ae965064ff1eba2f876d4c689ff8f9be1cfeac5ac7dc0761e5d491e",
+      "size": 5087,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-Ckjyk289.js": {
+      "sha256": "eba11bdac6904031483cd7e0550f2e21a52d48fc13fa09197c346e957aae1698",
+      "size": 5263,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-DQHve_6G.js": {
+      "sha256": "570a7df12e19bfe1a242a02819fdfb91e779968456bb921f1b196776eeb77e19",
+      "size": 6288,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-DQqdFIPV.js": {
+      "sha256": "9676f9bab338a2c9b4f7928c43bce8795b0bc25c28618c1821606c2d50b67af5",
+      "size": 4888,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-DZs__17e.js": {
+      "sha256": "7f35ba65e21114d04815164ce103172bc465a8574dda422e80e9bf76cbb78569",
+      "size": 5282,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-Di4cY11w.js": {
+      "sha256": "72aad2de5f614bf97355cf1ff333bf000b0a851bdac23a416c83e79decea8679",
+      "size": 4768,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-DyQFEbdd.js": {
+      "sha256": "9d5730a3b2354b515715b606fac474aafcbfeff9077b05d7cb629627d242e62f",
+      "size": 4778,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreviewEn-Cl4W02-G.js": {
+      "sha256": "2dadb372af799a2b8307be6c52de04721cba9284e392607f7223db574109d5bc",
+      "size": 5863,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-B6LfS0GC.js": {
+      "sha256": "dffee16730206c12633737e6d0c7aafc0f230e4ec0180ee5da28d9cff33a6f2a",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-BBr3Q0eA.js": {
+      "sha256": "dffee16730206c12633737e6d0c7aafc0f230e4ec0180ee5da28d9cff33a6f2a",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-BEITMUIX.js": {
+      "sha256": "c9eb092c8a8d9db7121b783251cde03d4cd6df51c5e0d27d8f28ec5ac6d4ee20",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-BJ7FmkGF.js": {
+      "sha256": "cf0b5ccdbb257e86df607ec5764c0a80951ae12246476968a5eae54f7bdea095",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-BRVHbdUl.js": {
+      "sha256": "dffee16730206c12633737e6d0c7aafc0f230e4ec0180ee5da28d9cff33a6f2a",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-ByYrKlCU.js": {
+      "sha256": "dffee16730206c12633737e6d0c7aafc0f230e4ec0180ee5da28d9cff33a6f2a",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-C9llk8At.js": {
+      "sha256": "537003b1b42c3ef093cc7dc68a8e2ca9fbef7a4e10e19b42aa70f72ca3d455d5",
+      "size": 6789,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-CIldw8NG.js": {
+      "sha256": "c9eb092c8a8d9db7121b783251cde03d4cd6df51c5e0d27d8f28ec5ac6d4ee20",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-CLFUhKw4.js": {
+      "sha256": "c9eb092c8a8d9db7121b783251cde03d4cd6df51c5e0d27d8f28ec5ac6d4ee20",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-CfuHgcYQ.js": {
+      "sha256": "c9eb092c8a8d9db7121b783251cde03d4cd6df51c5e0d27d8f28ec5ac6d4ee20",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-DQusn63c.js": {
+      "sha256": "537003b1b42c3ef093cc7dc68a8e2ca9fbef7a4e10e19b42aa70f72ca3d455d5",
+      "size": 6789,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-DkF20Nyq.js": {
+      "sha256": "c9eb092c8a8d9db7121b783251cde03d4cd6df51c5e0d27d8f28ec5ac6d4ee20",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-l4WBXZ99.js": {
+      "sha256": "54164ac3bb6794ddba6b3af715c313e3b10cbd59c0143053c7882338b48c20f0",
+      "size": 6924,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-qxIlE1qk.js": {
+      "sha256": "dffee16730206c12633737e6d0c7aafc0f230e4ec0180ee5da28d9cff33a6f2a",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-rmDh6g0J.js": {
+      "sha256": "c620368c5d3fd34711994afc753563e7f624ba01eeccb5f6f07c75b59d697759",
+      "size": 6789,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CommonAnimatedText-C_P8eWNm.js": {
+      "sha256": "440a3376faf6fddf4eb8265e8698db4ecf9d668c265a57a825e9a618ebd16557",
+      "size": 13582,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CommonHeroVideoScale-Dv7aJN_h.js": {
+      "sha256": "8a641c5b859b701d831d0ea9aa4ecf08e7ec1eee7f6f3631a280b5a525254914",
+      "size": 2121,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CommonScrollAnimated-B6zwH-Hx.js": {
+      "sha256": "3afd0cfee55af6ba429147321a71b2ac9708886a1d5b42bd72508262c00f1beb",
+      "size": 3865,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Components-BeZ00gfn.js": {
+      "sha256": "373646f6d6fe341dff795cb68a3ee2503652af4941c8f5800935674be8918b0a",
+      "size": 7246,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ContactLeadForm-CyATc1-q.js": {
+      "sha256": "05b243c5ae557016363bda98dd552b70ee728d62ca49fc808368f8021b469753",
+      "size": 490,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ContentPagesStack-Bv5kUrHI.js": {
+      "sha256": "fe40c2acb10b46edf223303346cd928af10ca0fbbea38a61bc1e3789cc441b7d",
+      "size": 10129,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/DemoGrid-DqbpJ4NN.js": {
+      "sha256": "b92b30ddae307b67f48e15d9136118bf037403b9ffe224960f93701a846e110b",
+      "size": 12160,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/DividerStickyCaption-BDYr6l_D.js": {
+      "sha256": "c7c163d47711dc1122f75e1d75004c2d9c9a5f89814ca81428685218f9422830",
+      "size": 6775,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/DividerStickyImages-BXVFrwsJ.js": {
+      "sha256": "ba7cfcefabbba4b4616ba075c8f6ed809d561de8eda106089de983d74b427de7",
+      "size": 5862,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/FooterBackToTop-BreRSfj8.js": {
+      "sha256": "c403322999c345242b788f29fb19ab3b2a06a3b65c74e837ccc2f8492984ca73",
+      "size": 4691,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/GravityCTAContent-BQfUdPCJ.js": {
+      "sha256": "26cdf54fcd750663799b6c1d716a536f1b1d6994ca40843729606a0d4ecc5e72",
+      "size": 1582,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-BUxuQJYc2.js": {
+      "sha256": "9fdd93955489c0147b09d02ed08049f3dc827087b0eff4d7cdadf85f94bd21fd",
+      "size": 6849,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-BZFhX4J1.js": {
+      "sha256": "4699b8669dae718313a42b293f0aa1140ffe20d2904c458e7b61c6b8f4eb652c",
+      "size": 10367,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-CN-8K58w.js": {
+      "sha256": "844755a4523bcb6f2dea8aea25020a3bd37dcdb4fc4b6420aaa6d74e3e0e181a",
+      "size": 5077,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-CZO_VgK5.js": {
+      "sha256": "8636fa527eb4c5558730ad1e208eafda2bf6c555a04e27e1be8cf17fb7f82819",
+      "size": 29382,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-CkczjTPU.js": {
+      "sha256": "c66886bf823be9d36a331cb7a87f8c3d4d22ac3a4faeb617affd285caf9b1ade",
+      "size": 4576,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-DLw3-eui.js": {
+      "sha256": "ed6f16bd37c774279ca0989d5086e82ca1b4977ef6303290b084e356af24e32a",
+      "size": 5650,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-De-rU9-f.js": {
+      "sha256": "e87fecddc3c4b9627e2689916e182e29f75df7b150d872b0aa681611a53a3d08",
+      "size": 4294,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-DuygJQOT.js": {
+      "sha256": "94c5efd29697f49e921c7695b7b4d3858c0462c4ec14b409368fb3338c3dc13b",
+      "size": 5478,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-vF2_6KQR.js": {
+      "sha256": "398d57afe5f0c323e16f4110dafd0bfca7f8fc606c35df6e341e1d636fd5ca73",
+      "size": 3539,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/HeroEn-CB_Wj3ar.js": {
+      "sha256": "2bc63ea1de43a7cf8e670888c8d26e70fc4109295129380f402eb44195d4e950",
+      "size": 4248,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-84CMHwJ0.js": {
+      "sha256": "2775dbf49635b5cff1efa9066f768cd8aa3f2efed4868b0c19a808441907dea1",
+      "size": 7133,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-BblPqmLX.js": {
+      "sha256": "84a0c02f513934bdb27c9b456db71f7a3674e2cbd3e84b3b22927269557c9c92",
+      "size": 2840,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-Byk0jTvW.js": {
+      "sha256": "9bf1a819bbb8ecae658b64477c7b10fde7408ce70b9248f7f86a802133f2efb6",
+      "size": 3373,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-C7A98HiX.js": {
+      "sha256": "3bb37cfc4d4301bc7cbc23f8f7afca3693d6c6266d172d341494f4e38f5a1544",
+      "size": 14666,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-C8QSjXpW.js": {
+      "sha256": "0510c5b0adea75b842aba75990bface608247296a7eba0f8a897cd40b09681d7",
+      "size": 3590,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-D_KJrGim.js": {
+      "sha256": "aac6e2aa62cfbf59607ee6730e847446956849e54cc5b0707e4a96c29497cd28",
+      "size": 7437,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-GuUC9OAV.js": {
+      "sha256": "8941c431f2b9917008ba828def0cf651a11ceed00dceb756144fdb3dfd53f9be",
+      "size": 2636,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-LNpgcVt0.js": {
+      "sha256": "a2c904056681e4373e96a6a29982506b159c61fc659d0060ce5f4be48f8f3866",
+      "size": 3668,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-oRYK9ibk.js": {
+      "sha256": "84bb96acc682f93d9a45db2f03756e1a572298bc1bc2b52e88708fce5b839ca1",
+      "size": 3368,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerPagesSlider-DIxIAj3B.js": {
+      "sha256": "083ebb075849f63073e470959cc22b6d54f48536bc882a267f1d01794b763518",
+      "size": 4028,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/LazyGravityCTA-Cjjv7iMm.js": {
+      "sha256": "fa12717f509fd990109deacba19711bcbebf3ee896ef0736fd28d6d0a2b17cf8",
+      "size": 2942,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/LegalLinks-CwVqezKJ.js": {
+      "sha256": "09829dd188f4534f25d2dcc61600cacec30f50d2799c1f6202fce1329d70ad1f",
+      "size": 1552,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/MoreOnTopic-ClWxGGZE.js": {
+      "sha256": "82abf0433ffe38398e4bade037370445109473aeecd82e8fc8cebedbfa03d6c3",
+      "size": 4963,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/MyExpertise-DT6XTm-U.js": {
+      "sha256": "92005d05699ff43e8f5bbee58b5eef199e1fc3e3cdbb317560d51c6fb0467855",
+      "size": 3612,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/NotFound-DymbMWwl.js": {
+      "sha256": "d5a4d5df07e49a6253c7c5c30440f0b79b20d78addb33cf92bb925824c3cb6fe",
+      "size": 7612,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/OurCapabilities-CTAbLshr.js": {
+      "sha256": "3fdf9bc8e70cbee87a727bbd5ae05a8df1c9adef9cf55fd22893676139e34eb5",
+      "size": 3637,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/OurCapabilitiesEn-BdhnVl1N.js": {
+      "sha256": "0a953ab9f7c0d67e00cd888b6546c5a91618a2125e76fb143ff669af7136fbe7",
+      "size": 3579,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ParallaxDivider-DKQHChiq.js": {
+      "sha256": "0c7d3eda906a738c93e27225fb75ed8ede8ffe67b8e3cbff546725f27585b23a",
+      "size": 1363,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGrid-BPmkJVwr.js": {
+      "sha256": "1ae2192e834f4a1a73ef6f00981a64f5db0f42ff454dcff7e430168def393845",
+      "size": 11131,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGrid-ClQ5VYE1.js": {
+      "sha256": "a036c51627855b3862d8f574dd7a4cb5b3c52a9b9c8d94765d20b824962fd585",
+      "size": 12715,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGrid-DA7mOx4P.js": {
+      "sha256": "b319bf9946c864dc1b0d6910fd4871415d2fc6571a91328735b2de51a9848ba3",
+      "size": 9952,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGrid-r18oCu4k.js": {
+      "sha256": "a9e1b13029d40bbb7ee92b5c74f9244be4f6ee029f3425cff5f6451f7012e92e",
+      "size": 13904,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGridEn-DvTOX65V.js": {
+      "sha256": "d34fcc06ef2462feae5dde7417eb93fe68c72bed030553c8f4723861841cb6ac",
+      "size": 12142,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGridX3Showcase-Df41USK4.js": {
+      "sha256": "023c38ab93bd0e746854e37b87d386915eed3b83cdd7b6b622cfdd0304426eb8",
+      "size": 10357,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsList-B95UbGho.js": {
+      "sha256": "da7a33bd0c750fbccd765ac3c5ef58212fbda70dff59a0413810587c59cfcbd0",
+      "size": 8745,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsList-CSp1m6aE.js": {
+      "sha256": "e950faff74b87239aa55a8c1a51c9a5e96ab6459619d0297ac165a024f324f10",
+      "size": 7762,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsList-DQpyexkc.js": {
+      "sha256": "e1fff1a4fbbbcb804704e932caa67c076a070334b011c40e38fa6819d727d19f",
+      "size": 9547,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsList-ku0gBsul.js": {
+      "sha256": "497d6d2c93c930688e291eb28787eff3c94b6222e648aa1e09d319f6286d6b0a",
+      "size": 9699,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsShowcase-BbxKjtJu.js": {
+      "sha256": "475525807781d39835a7d0b70185f9d58f1407c70349c92fc7e61f2432e7faee",
+      "size": 1530,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsShowcase-C4iFGp21.js": {
+      "sha256": "23c0e25bf1efcc3f6f9c9cb5eaa61022a497ac6310145236063d1a4218fe0ad6",
+      "size": 1541,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsStack-DabebNc6.js": {
+      "sha256": "2edb51cf1165ca56d5785b34d74457d17bf629c95b93e4699484ae34622fd765",
+      "size": 4557,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProtectsStack-DxOrvmI6.js": {
+      "sha256": "f6c5a38582ed208d8b76794261c960232b0dd696f2ea09a5410f726d3e10902e",
+      "size": 3636,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ResponsivePromo-CnHCx_ya.js": {
+      "sha256": "80fab53a1f19e8290ca91a3efb1d9d6fd82937de9e9805daebac80dc9f876686",
+      "size": 4198,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Resume-CBy7f577.js": {
+      "sha256": "d874fe87a87bfd3a73911d42e680c07ed2e29ffa765b4880aae3516928871b05",
+      "size": 17682,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Resume-Dvtx3Kf8.js": {
+      "sha256": "51e5d24bdd6a4bedbb0b06141b52d3c09efbb60dd526339360ace83df97c45af",
+      "size": 18505,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/SelectedWork-DwFVXmCI.js": {
+      "sha256": "12dafe3b08949108ec6d8871759356b16b439ee2e3b0005e2a9b681fa4631c7e",
+      "size": 8643,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ServicesList-XzHUU614.js": {
+      "sha256": "262b7cd0debe7a3403d64b2d2bb660313c846f8716050d3150a33aa5edb9d383",
+      "size": 7351,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ServicesList-neAg1dZJ.js": {
+      "sha256": "11c8e41efd4bac0dbdcf51fb90e5f82bbb50af6a050df1f2ea0c3a4e10aba2ce",
+      "size": 6237,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ServicesStack-B_j5PNSj.js": {
+      "sha256": "e006531716eea39790578a156843e180bdad2da0df5021fefe463c5ebb0edf62",
+      "size": 4752,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ServicesStackVideo-C1ZU9Br8.js": {
+      "sha256": "1642a8f75ac1a4e94b37d4d95557993f7f28dedc0efb51480d024dfc324540f1",
+      "size": 5059,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/SiteAnalytics-BHhTYUiM.js": {
+      "sha256": "d0139e24ef2853e9c847bcfb597c41f2003d89c5458cc8da0e4306e9292e1162",
+      "size": 890,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/SiteChrome-ZhgB0i0x.js": {
+      "sha256": "c2a3f8fd00a8b131d0619c5aefd5fab38111af5c921981519ffd2f974e80eb0d",
+      "size": 44398,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/StatisticsLines-7XJA1feE.js": {
+      "sha256": "91558164ae555fbfc944ae85b50b58c5e9a420098f60ffda7977292a9b48b7de",
+      "size": 3010,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/StatisticsLines-B2yjoRt3.js": {
+      "sha256": "e271673348d94b864ec9305e9085195fc9e0b3f116348b3d4f9078b44595241b",
+      "size": 2079,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/StatisticsLines-KgM-cG-u.js": {
+      "sha256": "5deac73b7053117a6e491b7abebedb0f08f37d1b9e50f6a8fa19985bdfeaca48",
+      "size": 2892,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/StatisticsLinesEn-CUmPCHRK.js": {
+      "sha256": "fb04442e32720a018a8e5273167e5d7b71f8174077530cd7a4bf1c9543a87105",
+      "size": 2011,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/TeamList-Dz2Mzyli.js": {
+      "sha256": "b5c79049bb6a1d5338ad8914db78203236c924a574d97496e827d2e8ede630b5",
+      "size": 7666,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/TemplateRuntimeProvider-DkrmkGMw.js": {
+      "sha256": "5fd997d7a93e0a536286d14a0e00f9df54b0d2cfc5347991364c053d3e4caed1",
+      "size": 33535,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/TestimonialsSlider-B7lFVbaK.js": {
+      "sha256": "7c63e8980b0073246eec51dfd4599bd3a26fb67b534bc111aedc954796691954",
+      "size": 5838,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/TestimonialsSlider-DQvUTaeo.js": {
+      "sha256": "d44aafffecc6f4ba5d5e8d1b90cdf751661904c57db231975d99c9fcd3d1a450",
+      "size": 1831,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/UkiyoParallax-CvrDo8-N.js": {
+      "sha256": "0952e34bc82e729276bc7be2ba7ffc28aef423717dd35b88965097215b8b0cf0",
+      "size": 2183,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/app-rsc-cache-busting-C6fAOUtX.js": {
+      "sha256": "f2487e93b28597728f8d01cab9b0b548b69895212076d463a0dcb9a7d1e63c0d",
+      "size": 4802,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/hybrid-client-route-owner-BuEQx1O9.js": {
+      "sha256": "81a7dfa54ad5e87c8c7ddbff2e9cc6f76fc37b4b5df8ecf8c3ee0d9fd6ed29c4",
+      "size": 19265,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/index-BaaspemL.js": {
+      "sha256": "126a440fa2cbe380bf80e3e704c4bbffd7d23ea51b26ae9138f2c572e52de348",
+      "size": 211991,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/layout-segment-context-QFZ72FWP.js": {
+      "sha256": "8dd65cc6ff7fc7443c4d03d9f8e10268b4195e84485b59460dfcc27565a34b54",
+      "size": 534,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/link-BgD1_lVI.js": {
+      "sha256": "4bf279ddbbf1e071edd756579db21ffd93571475e78e7b2f5463bf64e40c9471",
+      "size": 14248,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/testimonials-CM1ySyoR.js": {
+      "sha256": "2338f1b1f6751297c22685678b3e3c220cbd34dc43091b03fc7df5cc91de46b8",
+      "size": 5706,
+      "mode": "0o444"
+    },
+    "main/_next/static/css/index.wQ9uJQ_k.css": {
+      "sha256": "d0096b642a6eb70525b7215332a986a72309aa06cb22ce9c82462a29d8fb04cb",
+      "size": 554371,
+      "mode": "0o444"
+    },
+    "main/company/index.html": {
+      "sha256": "730df7216814c4828a06c1368d4a703229b5041b470ccf082e43bae4ceb442ea",
+      "size": 98408,
+      "mode": "0o444"
+    },
+    "main/consent/index.html": {
+      "sha256": "7d2f62226aa53b33a16e4c873f395b26b3e3d7900412e10ee947fb9290b671ed",
+      "size": 108785,
+      "mode": "0o444"
+    },
+    "main/contact/index.html": {
+      "sha256": "c718b1fb79074cd9a743d29376935ac688c66d23576539dc6d8fe3d9fd5ccf50",
+      "size": 103050,
+      "mode": "0o444"
+    },
+    "main/documents/personal-data-consent-2026-10-27-r2.pdf": {
+      "sha256": "a1a6e83ca75ed51167d6977f4237a32c585312472ef20b9f3f27261d7627e238",
+      "size": 109091,
+      "mode": "0o444"
+    },
+    "main/documents/privacy-policy-2026-10-27-r2.pdf": {
+      "sha256": "0472bffd685c41754d3600954c4144c2abcd0c3237452f9d3764d817224729ac",
+      "size": 112258,
+      "mode": "0o444"
+    },
+    "main/documents/torgservis-122-company-card.pdf": {
+      "sha256": "0c965a6763d8bf0dad996e32b6051bdc47caf0aa54024493fd451c752ff68954",
+      "size": 70784,
+      "mode": "0o444"
+    },
+    "main/en/company/index.html": {
+      "sha256": "a2ac2958194e9a0e446ba1c65bd5c854644cf72cc9093937cb1c57f065764f45",
+      "size": 97288,
+      "mode": "0o444"
+    },
+    "main/en/consent/index.html": {
+      "sha256": "9f1264b32d32a615dbe46daa904518165be06fffde93c76949dda19661a286b1",
+      "size": 105541,
+      "mode": "0o444"
+    },
+    "main/en/contact/index.html": {
+      "sha256": "d8683ad9f2ed16c409880a47fdc3781526bea58735994ce115cfa8f7b28ac0e9",
+      "size": 100273,
+      "mode": "0o444"
+    },
+    "main/en/index.html": {
+      "sha256": "214adea4f16974bc8e0ff51fc1ab2784d5d7d359629c317da7e959a0e4bc16d4",
+      "size": 192175,
+      "mode": "0o444"
+    },
+    "main/en/privacy/index.html": {
+      "sha256": "07babf8404d706fd78d2e4b6eb0707bbd0c32c051daffcb1f36fa34d6e93bbd7",
+      "size": 109095,
+      "mode": "0o444"
+    },
+    "main/index.html": {
+      "sha256": "097e844538c999b7beff2ce6601ba32f7e3a70d253ea64021126411104da196f",
+      "size": 197435,
+      "mode": "0o444"
+    },
+    "main/lead.php": {
+      "sha256": "20087f2e7de3a2bf1c7523482ce4e485576f36ef6a8730eb8eae354f7e53d56c",
+      "size": 6089,
+      "mode": "0o444"
+    },
+    "main/privacy/index.html": {
+      "sha256": "94f859b8cbf3db1ed895e209d10daa3a4fc8578699ac68e8ac7904fe9c04c377",
+      "size": 113671,
+      "mode": "0o444"
+    },
+    "main/vinext-client-entry-manifest.json": {
+      "sha256": "ed392e56011e8b6037f907728dadd8fc4cbeaacbef4f0d77b23f2b0f261c9a98",
+      "size": 65,
+      "mode": "0o444"
+    },
+    "relief-motion-literal-p8m4k2x7/en/index.html": {
+      "sha256": "fe0102233ed0d69e65df659623cc423499a33b3c6238afa047e951c6b05b5c82",
+      "size": 72338,
+      "mode": "0o444"
+    },
+    "relief-motion-literal-p8m4k2x7/en/vazuri-case-dock.js": {
+      "sha256": "89775364ef8243153a2415dbd18440c006f630b8556d88462c1007e2c59ab9eb",
+      "size": 34626,
+      "mode": "0o444"
+    },
+    "relief-motion-literal-p8m4k2x7/ru/index.html": {
+      "sha256": "aa438735e8c430eb9648f1dc20c7e66afa8031f08995cb62b30c22479b991433",
+      "size": 73523,
+      "mode": "0o444"
+    },
+    "relief-motion-literal-p8m4k2x7/ru/vazuri-case-dock.js": {
+      "sha256": "89775364ef8243153a2415dbd18440c006f630b8556d88462c1007e2c59ab9eb",
+      "size": 34626,
+      "mode": "0o444"
+    },
+    "revive-cosmetics-r8q4m7x2/assets/vazuri-case-dock.js": {
+      "sha256": "f68c367ef4880d906ed4f3bf441fcf6b9a4ab8db87d5b63cdd5b1801a7705b12",
+      "size": 35027,
+      "mode": "0o444"
+    },
+    "revive-cosmetics-r8q4m7x2/index.html": {
+      "sha256": "984ede6988c2f7f70a4072eb1abb55ed60e78a85a8407d03866e8abf650cc93a",
+      "size": 1192106,
+      "mode": "0o444"
+    },
+    "revive-cosmetics-r8q4m7x2/ru/assets/vazuri-case-dock.js": {
+      "sha256": "f68c367ef4880d906ed4f3bf441fcf6b9a4ab8db87d5b63cdd5b1801a7705b12",
+      "size": 35027,
+      "mode": "0o444"
+    },
+    "revive-cosmetics-r8q4m7x2/ru/index.html": {
+      "sha256": "abea69dac2a36285fcfa8d0d4e3e0c255b97ec36529644010df5f26d86fbaa7d",
+      "size": 1194894,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/en/index.html": {
+      "sha256": "c48b12f03f896e342b6e3eadfd2874b3914e94c06760fd9786a04777caf0b9c8",
+      "size": 60854,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/en/vazuri-case-dock.js": {
+      "sha256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "size": 33999,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/index.html": {
+      "sha256": "118b2a4ea30a1a3efd125e8a38273cc67e2d2c3f396d00d3396fdd6fac447838",
+      "size": 59935,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/ru/index.html": {
+      "sha256": "2eaaf8ce50a6a71a091968718dd9c547d420b71e8498296f04270121a133819f",
+      "size": 61444,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/ru/vazuri-case-dock.js": {
+      "sha256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "size": 33999,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/vazuri-case-dock.js": {
+      "sha256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "size": 33999,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/en/index.html": {
+      "sha256": "333958fa8fa07889cd060a999ce7e0ed61b6cdb3b71bf0c6cc14040151d8b374",
+      "size": 3574,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/en/vazuri-case-dock.js": {
+      "sha256": "53e22ba02061f2adb9ea8fd6324e5e9b2b79ce376cde3acc06bd7bb83937e521",
+      "size": 34507,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/index.html": {
+      "sha256": "333958fa8fa07889cd060a999ce7e0ed61b6cdb3b71bf0c6cc14040151d8b374",
+      "size": 3574,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/ru/index.html": {
+      "sha256": "b2b2073c36b4c2b94ab58415e18d5fb2c6d006568330bce2f5ade4d2b7e7d428",
+      "size": 4075,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/ru/vazuri-case-dock.js": {
+      "sha256": "53e22ba02061f2adb9ea8fd6324e5e9b2b79ce376cde3acc06bd7bb83937e521",
+      "size": 34507,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/vazuri-case-dock.js": {
+      "sha256": "53e22ba02061f2adb9ea8fd6324e5e9b2b79ce376cde3acc06bd7bb83937e521",
+      "size": 34507,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/assets/vazuri/vazuri-case-dock.js": {
+      "sha256": "f68c367ef4880d906ed4f3bf441fcf6b9a4ab8db87d5b63cdd5b1801a7705b12",
+      "size": 35027,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/404.html": {
+      "sha256": "593f975272b70070df584f4de40e85960e3b5710afbd0b2ea78862132fbbb16c",
+      "size": 78165,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/about.html": {
+      "sha256": "0450b7f7a85196ebea054a4580459e8cc383b15a815df770ac8175a4006ddfea",
+      "size": 150818,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/blog-single.html": {
+      "sha256": "da087d6883e9b32a5cdd41b67160a5333a7eaab39f1148396523cd8234656ddf",
+      "size": 83960,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/blog.html": {
+      "sha256": "00dd318238f9ea77107dc6a712767b76e382e509a473306895819022e48a9ba8",
+      "size": 87880,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/contact.html": {
+      "sha256": "9d4163636ac0b138d855f83522105dc7ed2d69a56e4ed988496f6173b9de9c2e",
+      "size": 84123,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/faqs.html": {
+      "sha256": "b62e947c41ff63daec93fab26909b7ce7c6772f0c6d06cfec36f0672aa05a750",
+      "size": 123929,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/image-gallery.html": {
+      "sha256": "542e35d51ea23ec126015f6b450a7ca95cfdb5cd911bc4906a59b186fe39ae48",
+      "size": 82933,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/index.html": {
+      "sha256": "368871e96f1d5c1f949137816199f0553484ac748fff71a7a1ae37178751eef9",
+      "size": 196255,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/pricing.html": {
+      "sha256": "ae6a0a2952f6edaef4b77d016b10a8500d3f51a99761788a16345d5a2f148d0e",
+      "size": 110370,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/project-single.html": {
+      "sha256": "eb1d5195aab8d36c9264eeb1d8b69f8ee7f6340e50f7584a832790da928df189",
+      "size": 103947,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/projects.html": {
+      "sha256": "d23651834113605602d45da5011019154e8546159000dac7eb4a5a13800783a4",
+      "size": 87050,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/service-single.html": {
+      "sha256": "5dfbf64c8a92e46f2fa5c5ed279c00faaa1363d43b9b9e249530bb9621bfeedd",
+      "size": 101304,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/services.html": {
+      "sha256": "a1997f8ea4733d6af9236f960ba7d9572b495d91f814609933d1a96a1a2731e3",
+      "size": 147332,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/team-single.html": {
+      "sha256": "06fb98da0e47404072e4f94ca84791bf9813dff31c48cff973a711ffff1a851c",
+      "size": 96636,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/team.html": {
+      "sha256": "4fe78556eee809229b3e063c0ba2eb97d2a0f10d5a51bf6250ee28dfe4c32b9a",
+      "size": 90815,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/testimonials.html": {
+      "sha256": "284153224cad81d329c82e4e9537b9bf21d3e7323461a7cd20fa02400106122b",
+      "size": 120267,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/video-gallery.html": {
+      "sha256": "d610ab19e2bfe6a748a637685cdea6d98d7fffe716f474fbf362cb9bf0855372",
+      "size": 82924,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/404.html": {
+      "sha256": "6281a943fed97ceb67b1680a909bbaf50624cb2007317db1da9ea26e141c31b0",
+      "size": 79232,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/about.html": {
+      "sha256": "0e5abfb022d1702b3be8aa87c84fd012a9649f4fb85396aac915419966720fd7",
+      "size": 156419,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/blog-single.html": {
+      "sha256": "edf5fdff30c5c6d06a8dc5538358d9441a4a8ff082ded90bad2779d23809eb26",
+      "size": 85819,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/blog.html": {
+      "sha256": "3f11ddf1fca990a95563d2eb3cf87cd2c26da3d65c7ec634ad9e3e2519312e16",
+      "size": 89308,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/contact.html": {
+      "sha256": "25bc7153942cd494e2d7f51e7b1e35d272d223e3ae97c642b7922c061676c645",
+      "size": 85413,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/faqs.html": {
+      "sha256": "01354579bf7a3d5bc188081f9fc401f94079306eba2508374f4cad3bedde4894",
+      "size": 129819,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/image-gallery.html": {
+      "sha256": "5b039a2efa601afcff5923b3334489ceaebf25b4dbc7a3e243faff66938e23c2",
+      "size": 84057,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/index.html": {
+      "sha256": "8a1cdd7275ca92570a6d752d311982cd47056eeaf92ec68db26bcac05b526f8d",
+      "size": 204188,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/pricing.html": {
+      "sha256": "232f9bc3023b977a22c3ff3f97b932a03dd9d12f753e761a5e5ae4030f65d235",
+      "size": 114893,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/project-single.html": {
+      "sha256": "3480c20055343f120cb5a46bb92a13ef83552ccddbe32d5e14d847cb18da6a6c",
+      "size": 107361,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/projects.html": {
+      "sha256": "491dcf5553b083809c16a0eb5c93ab82c816c8ba95240b63c01d771ec37be345",
+      "size": 88305,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/service-single.html": {
+      "sha256": "b8afc0b0972a0594f78f1cb34baeb5d1ec9d219cbb2e4ee428d194757326d9d1",
+      "size": 104775,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/services.html": {
+      "sha256": "01b6fad09cce8a6589ace08dae8868caeea2a0c36e74af6396ed263210ea066a",
+      "size": 151775,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/team-single.html": {
+      "sha256": "b6f71bf9386f052ce243483ac8d80ef38d0e8bcccaaf73f0cf7021dff9b2f4ce",
+      "size": 99395,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/team.html": {
+      "sha256": "1f9f5755c1013cc826168f76d42ff47c45ad04dc11f5923e52942bccfd77ce20",
+      "size": 92655,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/testimonials.html": {
+      "sha256": "0dd306c25d015e3edd0b567fa13931cdc068d056fe8d1bb4e920f2edc77e1361",
+      "size": 125033,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/video-gallery.html": {
+      "sha256": "17d856d9b6657bc3bb2b3bb211f3711919cca02badeb78cbc175cceaa802d3fb",
+      "size": 84132,
+      "mode": "0o444"
+    },
+    "urban-pulse-exhibitions-k7m3p9x4/assets/vazuri-case-dock.js": {
+      "sha256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "size": 33999,
+      "mode": "0o444"
+    },
+    "urban-pulse-exhibitions-k7m3p9x4/index.html": {
+      "sha256": "7b4e1f4e7848acf21de9e83e6245f902e28d44217dbff73a90a22b0b760a69b6",
+      "size": 2752935,
+      "mode": "0o444"
+    },
+    "urban-pulse-exhibitions-k7m3p9x4/ru/assets/vazuri-case-dock.js": {
+      "sha256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "size": 33999,
+      "mode": "0o444"
+    },
+    "urban-pulse-exhibitions-k7m3p9x4/ru/index.html": {
+      "sha256": "840fceee58ea22faae5d15dd819a9aa75567e8f838457c355bf970349452e4d7",
+      "size": 2762691,
+      "mode": "0o444"
+    },
+    "vazuri-1099af950ba0e8f8/index.html": {
+      "sha256": "a24851056699c650a8358b6a3a5fa65c4b8c150666974ac7bf3a153e9c2f0917",
+      "size": 2386043,
+      "mode": "0o444"
+    },
+    "vazuri-1099af950ba0e8f8/ru/index.html": {
+      "sha256": "1fa9b3c3c88548f5212dbdfb06757f5124aaf9641d8a3abf33bda212dd5c899d",
+      "size": 2394437,
+      "mode": "0o444"
+    },
+    "vazuri-1099af950ba0e8f8/vazuri-case-dock.js": {
+      "sha256": "f68c367ef4880d906ed4f3bf441fcf6b9a4ab8db87d5b63cdd5b1801a7705b12",
+      "size": 35027,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": {
+      "sha256": "dac2132d7f5fa7607b5636b32d9a640c8d8f927cd20dcdca35b26c63f605ee66",
+      "size": 1750,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-BPmOEuDO.js": {
+      "sha256": "b07a94a78efd78e89e19d13b096d194dcae22a99aea0a38fbe56a14ac4f8a2b4",
+      "size": 176767,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-Ci7lGZe5.js": {
+      "sha256": "a1a1884201d87f66f1e9b89ee16f2fbbe7125aa33841a0d0092fc53bcca65334",
+      "size": 489,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-C8drISJG.js": {
+      "sha256": "94710fde4fb81d8830bd8c61f17ebd11f19e73f2918727e57c2fe34e46ee890c",
+      "size": 65317,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/d4007cf2-7c65-4520-a477-425e2e2135e5/_buildManifest.js": {
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "size": 159,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/d4007cf2-7c65-4520-a477-425e2e2135e5/_ssgManifest.js": {
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "size": 76,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/index.html": {
+      "sha256": "282aacde81a5ca915f98800eb7b7dc46bea361d84a42984d0c66be0f200834aa",
+      "size": 33373,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json": {
+      "sha256": "51c4502c91a6b33499423a1f2cad359eb4ef8b905d52144558515804fa147650",
+      "size": 76,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-fashion-studio-public/index.html": {
+      "sha256": "573af0e8cff149fd14e23435dc9cb0aa54781eb352e86581aee77c7c9576a946",
+      "size": 19296,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-fashion-studio-public/vazuri-case-dock.js": {
+      "sha256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "size": 33999,
+      "mode": "0o444"
+    }
+  },
+  "owners": {
+    "main/.vite/manifest.json": "main",
+    "main/_next/static/98e6c919-d0bb-49c3-9299-5b943749e722/_buildManifest.js": "main",
+    "main/_next/static/98e6c919-d0bb-49c3-9299-5b943749e722/_ssgManifest.js": "main",
+    "main/_next/static/chunks/AboutTeaser-B7D_ZcWg.js": "main",
+    "main/_next/static/chunks/ApprovedBrief-CeDELoid.js": "main",
+    "main/_next/static/chunks/AutoplayLoopVideo-qScXwoYg.js": "main",
+    "main/_next/static/chunks/Blog-aOp0up2f.js": "main",
+    "main/_next/static/chunks/BlogArticle-CFcEeSS_.js": "main",
+    "main/_next/static/chunks/BlogPreview-87Lt_SKA.js": "main",
+    "main/_next/static/chunks/BlogPreview-B88IjntG.js": "main",
+    "main/_next/static/chunks/BlogPreview-BUUnDiwr.js": "main",
+    "main/_next/static/chunks/BlogPreview-BwSUQWt6.js": "main",
+    "main/_next/static/chunks/BlogPreview-BzQJm_3s.js": "main",
+    "main/_next/static/chunks/BlogPreview-Ckjyk289.js": "main",
+    "main/_next/static/chunks/BlogPreview-DQHve_6G.js": "main",
+    "main/_next/static/chunks/BlogPreview-DQqdFIPV.js": "main",
+    "main/_next/static/chunks/BlogPreview-DZs__17e.js": "main",
+    "main/_next/static/chunks/BlogPreview-Di4cY11w.js": "main",
+    "main/_next/static/chunks/BlogPreview-DyQFEbdd.js": "main",
+    "main/_next/static/chunks/BlogPreviewEn-Cl4W02-G.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-B6LfS0GC.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-BBr3Q0eA.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-BEITMUIX.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-BJ7FmkGF.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-BRVHbdUl.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-ByYrKlCU.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-C9llk8At.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-CIldw8NG.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-CLFUhKw4.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-CfuHgcYQ.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-DQusn63c.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-DkF20Nyq.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-l4WBXZ99.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-qxIlE1qk.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-rmDh6g0J.js": "main",
+    "main/_next/static/chunks/CommonAnimatedText-C_P8eWNm.js": "main",
+    "main/_next/static/chunks/CommonHeroVideoScale-Dv7aJN_h.js": "main",
+    "main/_next/static/chunks/CommonScrollAnimated-B6zwH-Hx.js": "main",
+    "main/_next/static/chunks/Components-BeZ00gfn.js": "main",
+    "main/_next/static/chunks/ContactLeadForm-CyATc1-q.js": "main",
+    "main/_next/static/chunks/ContentPagesStack-Bv5kUrHI.js": "main",
+    "main/_next/static/chunks/DemoGrid-DqbpJ4NN.js": "main",
+    "main/_next/static/chunks/DividerStickyCaption-BDYr6l_D.js": "main",
+    "main/_next/static/chunks/DividerStickyImages-BXVFrwsJ.js": "main",
+    "main/_next/static/chunks/FooterBackToTop-BreRSfj8.js": "main",
+    "main/_next/static/chunks/GravityCTAContent-BQfUdPCJ.js": "main",
+    "main/_next/static/chunks/Hero-BUxuQJYc2.js": "main",
+    "main/_next/static/chunks/Hero-BZFhX4J1.js": "main",
+    "main/_next/static/chunks/Hero-CN-8K58w.js": "main",
+    "main/_next/static/chunks/Hero-CZO_VgK5.js": "main",
+    "main/_next/static/chunks/Hero-CkczjTPU.js": "main",
+    "main/_next/static/chunks/Hero-DLw3-eui.js": "main",
+    "main/_next/static/chunks/Hero-De-rU9-f.js": "main",
+    "main/_next/static/chunks/Hero-DuygJQOT.js": "main",
+    "main/_next/static/chunks/Hero-vF2_6KQR.js": "main",
+    "main/_next/static/chunks/HeroEn-CB_Wj3ar.js": "main",
+    "main/_next/static/chunks/InnerHeadline-84CMHwJ0.js": "main",
+    "main/_next/static/chunks/InnerHeadline-BblPqmLX.js": "main",
+    "main/_next/static/chunks/InnerHeadline-Byk0jTvW.js": "main",
+    "main/_next/static/chunks/InnerHeadline-C7A98HiX.js": "main",
+    "main/_next/static/chunks/InnerHeadline-C8QSjXpW.js": "main",
+    "main/_next/static/chunks/InnerHeadline-D_KJrGim.js": "main",
+    "main/_next/static/chunks/InnerHeadline-GuUC9OAV.js": "main",
+    "main/_next/static/chunks/InnerHeadline-LNpgcVt0.js": "main",
+    "main/_next/static/chunks/InnerHeadline-oRYK9ibk.js": "main",
+    "main/_next/static/chunks/InnerPagesSlider-DIxIAj3B.js": "main",
+    "main/_next/static/chunks/LazyGravityCTA-Cjjv7iMm.js": "main",
+    "main/_next/static/chunks/LegalLinks-CwVqezKJ.js": "main",
+    "main/_next/static/chunks/MoreOnTopic-ClWxGGZE.js": "main",
+    "main/_next/static/chunks/MyExpertise-DT6XTm-U.js": "main",
+    "main/_next/static/chunks/NotFound-DymbMWwl.js": "main",
+    "main/_next/static/chunks/OurCapabilities-CTAbLshr.js": "main",
+    "main/_next/static/chunks/OurCapabilitiesEn-BdhnVl1N.js": "main",
+    "main/_next/static/chunks/ParallaxDivider-DKQHChiq.js": "main",
+    "main/_next/static/chunks/ProjectsGrid-BPmkJVwr.js": "main",
+    "main/_next/static/chunks/ProjectsGrid-ClQ5VYE1.js": "main",
+    "main/_next/static/chunks/ProjectsGrid-DA7mOx4P.js": "main",
+    "main/_next/static/chunks/ProjectsGrid-r18oCu4k.js": "main",
+    "main/_next/static/chunks/ProjectsGridEn-DvTOX65V.js": "main",
+    "main/_next/static/chunks/ProjectsGridX3Showcase-Df41USK4.js": "main",
+    "main/_next/static/chunks/ProjectsList-B95UbGho.js": "main",
+    "main/_next/static/chunks/ProjectsList-CSp1m6aE.js": "main",
+    "main/_next/static/chunks/ProjectsList-DQpyexkc.js": "main",
+    "main/_next/static/chunks/ProjectsList-ku0gBsul.js": "main",
+    "main/_next/static/chunks/ProjectsShowcase-BbxKjtJu.js": "main",
+    "main/_next/static/chunks/ProjectsShowcase-C4iFGp21.js": "main",
+    "main/_next/static/chunks/ProjectsStack-DabebNc6.js": "main",
+    "main/_next/static/chunks/ProtectsStack-DxOrvmI6.js": "main",
+    "main/_next/static/chunks/ResponsivePromo-CnHCx_ya.js": "main",
+    "main/_next/static/chunks/Resume-CBy7f577.js": "main",
+    "main/_next/static/chunks/Resume-Dvtx3Kf8.js": "main",
+    "main/_next/static/chunks/SelectedWork-DwFVXmCI.js": "main",
+    "main/_next/static/chunks/ServicesList-XzHUU614.js": "main",
+    "main/_next/static/chunks/ServicesList-neAg1dZJ.js": "main",
+    "main/_next/static/chunks/ServicesStack-B_j5PNSj.js": "main",
+    "main/_next/static/chunks/ServicesStackVideo-C1ZU9Br8.js": "main",
+    "main/_next/static/chunks/SiteAnalytics-BHhTYUiM.js": "main",
+    "main/_next/static/chunks/SiteChrome-ZhgB0i0x.js": "main",
+    "main/_next/static/chunks/StatisticsLines-7XJA1feE.js": "main",
+    "main/_next/static/chunks/StatisticsLines-B2yjoRt3.js": "main",
+    "main/_next/static/chunks/StatisticsLines-KgM-cG-u.js": "main",
+    "main/_next/static/chunks/StatisticsLinesEn-CUmPCHRK.js": "main",
+    "main/_next/static/chunks/TeamList-Dz2Mzyli.js": "main",
+    "main/_next/static/chunks/TemplateRuntimeProvider-DkrmkGMw.js": "main",
+    "main/_next/static/chunks/TestimonialsSlider-B7lFVbaK.js": "main",
+    "main/_next/static/chunks/TestimonialsSlider-DQvUTaeo.js": "main",
+    "main/_next/static/chunks/UkiyoParallax-CvrDo8-N.js": "main",
+    "main/_next/static/chunks/app-rsc-cache-busting-C6fAOUtX.js": "main",
+    "main/_next/static/chunks/hybrid-client-route-owner-BuEQx1O9.js": "main",
+    "main/_next/static/chunks/index-BaaspemL.js": "main",
+    "main/_next/static/chunks/layout-segment-context-QFZ72FWP.js": "main",
+    "main/_next/static/chunks/link-BgD1_lVI.js": "main",
+    "main/_next/static/chunks/testimonials-CM1ySyoR.js": "main",
+    "main/_next/static/css/index.wQ9uJQ_k.css": "main",
+    "main/company/index.html": "main",
+    "main/consent/index.html": "main",
+    "main/contact/index.html": "main",
+    "main/documents/personal-data-consent-2026-10-27-r2.pdf": "main",
+    "main/documents/privacy-policy-2026-10-27-r2.pdf": "main",
+    "main/documents/torgservis-122-company-card.pdf": "main",
+    "main/en/company/index.html": "main",
+    "main/en/consent/index.html": "main",
+    "main/en/contact/index.html": "main",
+    "main/en/index.html": "main",
+    "main/en/privacy/index.html": "main",
+    "main/index.html": "main",
+    "main/lead.php": "main",
+    "main/privacy/index.html": "main",
+    "main/vinext-client-entry-manifest.json": "main",
+    "relief-motion-literal-p8m4k2x7/en/index.html": "relief",
+    "relief-motion-literal-p8m4k2x7/en/vazuri-case-dock.js": "relief",
+    "relief-motion-literal-p8m4k2x7/ru/index.html": "relief",
+    "relief-motion-literal-p8m4k2x7/ru/vazuri-case-dock.js": "relief",
+    "revive-cosmetics-r8q4m7x2/assets/vazuri-case-dock.js": "revive",
+    "revive-cosmetics-r8q4m7x2/index.html": "revive",
+    "revive-cosmetics-r8q4m7x2/ru/assets/vazuri-case-dock.js": "revive",
+    "revive-cosmetics-r8q4m7x2/ru/index.html": "revive",
+    "scroll-slides-kinetic-x8q4m7v2/en/index.html": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/en/vazuri-case-dock.js": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/index.html": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/ru/index.html": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/ru/vazuri-case-dock.js": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/vazuri-case-dock.js": "slides",
+    "scrollsync-video-v7q4m9x2/en/index.html": "sync",
+    "scrollsync-video-v7q4m9x2/en/vazuri-case-dock.js": "sync",
+    "scrollsync-video-v7q4m9x2/index.html": "sync",
+    "scrollsync-video-v7q4m9x2/ru/index.html": "sync",
+    "scrollsync-video-v7q4m9x2/ru/vazuri-case-dock.js": "sync",
+    "scrollsync-video-v7q4m9x2/vazuri-case-dock.js": "sync",
+    "skyvilla-estate-k8m4p2x7/assets/vazuri/vazuri-case-dock.js": "sky",
+    "skyvilla-estate-k8m4p2x7/en/404.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/about.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/blog-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/blog.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/contact.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/faqs.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/image-gallery.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/index.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/pricing.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/project-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/projects.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/service-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/services.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/team-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/team.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/testimonials.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/video-gallery.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/404.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/about.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/blog-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/blog.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/contact.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/faqs.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/image-gallery.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/index.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/pricing.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/project-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/projects.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/service-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/services.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/team-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/team.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/testimonials.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/video-gallery.html": "sky",
+    "urban-pulse-exhibitions-k7m3p9x4/assets/vazuri-case-dock.js": "urban",
+    "urban-pulse-exhibitions-k7m3p9x4/index.html": "urban",
+    "urban-pulse-exhibitions-k7m3p9x4/ru/assets/vazuri-case-dock.js": "urban",
+    "urban-pulse-exhibitions-k7m3p9x4/ru/index.html": "urban",
+    "vazuri-1099af950ba0e8f8/index.html": "hotel",
+    "vazuri-1099af950ba0e8f8/ru/index.html": "hotel",
+    "vazuri-1099af950ba0e8f8/vazuri-case-dock.js": "hotel",
+    "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-BPmOEuDO.js": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-Ci7lGZe5.js": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-C8drISJG.js": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/d4007cf2-7c65-4520-a477-425e2e2135e5/_buildManifest.js": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/d4007cf2-7c65-4520-a477-425e2e2135e5/_ssgManifest.js": "night",
+    "vazuri-preview-liko-dark-shop-public/index.html": "night",
+    "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json": "night",
+    "vazuri-preview-liko-fashion-studio-public/index.html": "altera",
+    "vazuri-preview-liko-fashion-studio-public/vazuri-case-dock.js": "altera"
+  },
+  "deletedFiles": [],
+  "routes": [
+    {
+      "file": "main/index.html",
+      "url": "https://vazuri.io/",
+      "language": "ru",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": true,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": false
+    },
+    {
+      "file": "main/en/index.html",
+      "url": "https://vazuri.io/en",
+      "language": "en",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": true,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": false
+    },
+    {
+      "file": "main/contact/index.html",
+      "url": "https://vazuri.io/contact",
+      "language": "ru",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": true,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": false
+    },
+    {
+      "file": "main/en/contact/index.html",
+      "url": "https://vazuri.io/en/contact",
+      "language": "en",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": true,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": false
+    },
+    {
+      "file": "main/privacy/index.html",
+      "url": "https://vazuri.io/privacy",
+      "language": "ru",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": true,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": true
+    },
+    {
+      "file": "main/en/privacy/index.html",
+      "url": "https://vazuri.io/en/privacy",
+      "language": "en",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": true,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": true
+    },
+    {
+      "file": "main/consent/index.html",
+      "url": "https://vazuri.io/consent",
+      "language": "ru",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": true,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": true
+    },
+    {
+      "file": "main/en/consent/index.html",
+      "url": "https://vazuri.io/en/consent",
+      "language": "en",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": true,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": true
+    },
+    {
+      "file": "main/company/index.html",
+      "url": "https://vazuri.io/company",
+      "language": "ru",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": false,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": true
+    },
+    {
+      "file": "main/en/company/index.html",
+      "url": "https://vazuri.io/en/company",
+      "language": "en",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": false,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": true
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/index.html",
+      "language": "en",
+      "overlayLanguage": "ru",
+      "caseKey": "night",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "vazuri-1099af950ba0e8f8/index.html",
+      "language": null,
+      "overlayLanguage": "en",
+      "caseKey": "hotel",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "vazuri-1099af950ba0e8f8/ru/index.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "hotel",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "vazuri-preview-liko-fashion-studio-public/index.html",
+      "language": "en",
+      "overlayLanguage": "ru",
+      "caseKey": "altera",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "scroll-slides-kinetic-x8q4m7v2/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "slides",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "scroll-slides-kinetic-x8q4m7v2/ru/index.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "slides",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "scroll-slides-kinetic-x8q4m7v2/en/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "slides",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "urban-pulse-exhibitions-k7m3p9x4/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "urban",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "urban-pulse-exhibitions-k7m3p9x4/ru/index.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "urban",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "revive-cosmetics-r8q4m7x2/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "revive",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "revive-cosmetics-r8q4m7x2/ru/index.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "revive",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/404.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/about.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/blog-single.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/blog.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/contact.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/faqs.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/image-gallery.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/index.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/pricing.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/project-single.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/projects.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/service-single.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/services.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/team-single.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/team.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/testimonials.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/video-gallery.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/404.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/about.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/blog-single.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/blog.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/contact.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/faqs.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/image-gallery.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/pricing.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/project-single.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/projects.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/service-single.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/services.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/team-single.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/team.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/testimonials.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/video-gallery.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sync",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/ru/index.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sync",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/en/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sync",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "relief-motion-literal-p8m4k2x7/ru/index.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "relief",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "relief-motion-literal-p8m4k2x7/en/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "relief",
+      "nonDockHTMLExact": true
+    }
+  ],
+  "sameByteMediaAliases": [
+    {
+      "css": "main/_next/static/css/index.wQ9uJQ_k.css",
+      "from": "/_next/static/media/04.DRm1ROsz.webp",
+      "to": "/_next/static/media/04-d.DRm1ROsz.webp",
+      "sameByteSHA256": "161a8c42ccd4b59748aa6a40d2fd920fb90dc22af0300e51ebed63e0e632f9ba",
+      "publishedFile": "main/_next/static/media/04-d.DRm1ROsz.webp"
+    },
+    {
+      "css": "main/_next/static/css/index.wQ9uJQ_k.css",
+      "from": "/_next/static/media/04.DRm1ROsz.webp",
+      "to": "/_next/static/media/04-d.DRm1ROsz.webp",
+      "sameByteSHA256": "161a8c42ccd4b59748aa6a40d2fd920fb90dc22af0300e51ebed63e0e632f9ba",
+      "publishedFile": "main/_next/static/media/04-d.DRm1ROsz.webp"
+    },
+    {
+      "css": "main/_next/static/css/index.wQ9uJQ_k.css",
+      "from": "/_next/static/media/1920x1200_dv02.vCyiIrbl.webp",
+      "to": "/_next/static/media/1920x1200_h02.vCyiIrbl.webp",
+      "sameByteSHA256": "fed0abe902dfd7a7bbbae0a83f9cd8089ee4ea5fae5e0052c442d33fd76e9863",
+      "publishedFile": "main/_next/static/media/1920x1200_h02.vCyiIrbl.webp"
+    },
+    {
+      "css": "main/_next/static/css/index.wQ9uJQ_k.css",
+      "from": "/_next/static/media/1920x1200_dv02.vCyiIrbl.webp",
+      "to": "/_next/static/media/1920x1200_h02.vCyiIrbl.webp",
+      "sameByteSHA256": "fed0abe902dfd7a7bbbae0a83f9cd8089ee4ea5fae5e0052c442d33fd76e9863",
+      "publishedFile": "main/_next/static/media/1920x1200_h02.vCyiIrbl.webp"
+    },
+    {
+      "css": "main/_next/static/css/index.wQ9uJQ_k.css",
+      "from": "/_next/static/media/1920x1200_dv02.vCyiIrbl.webp",
+      "to": "/_next/static/media/1920x1200_h02.vCyiIrbl.webp",
+      "sameByteSHA256": "fed0abe902dfd7a7bbbae0a83f9cd8089ee4ea5fae5e0052c442d33fd76e9863",
+      "publishedFile": "main/_next/static/media/1920x1200_h02.vCyiIrbl.webp"
+    },
+    {
+      "css": "main/_next/static/css/index.wQ9uJQ_k.css",
+      "from": "/_next/static/media/1920x1200_dv02.vCyiIrbl.webp",
+      "to": "/_next/static/media/1920x1200_h02.vCyiIrbl.webp",
+      "sameByteSHA256": "fed0abe902dfd7a7bbbae0a83f9cd8089ee4ea5fae5e0052c442d33fd76e9863",
+      "publishedFile": "main/_next/static/media/1920x1200_h02.vCyiIrbl.webp"
+    }
+  ],
+  "buildSource": "projects/vazuri-main-integration/work/legal-copy-20261027",
+  "mainSourceSHA256": {
+    "data/legal-documents.json": "8d5d9a90f0ec31802af8e02a3247ee24f4d9c56ff727b959f859f07bcfdf5598",
+    "components/common/LegalLinks.tsx": "f00190b5b0d4fe3ac77c7e7e097460e88fc7c414ad508edb483f8d9bd7d121b8",
+    "styles/vazuri-legal.css": "738ec9f7528fa1623577b83c7c020bd7b36aed16a3fdcdcbdb715fc82c37d27d",
+    "public/lead.php": "20087f2e7de3a2bf1c7523482ce4e485576f36ef6a8730eb8eae354f7e53d56c",
+    "public/documents/privacy-policy-2026-10-27-r2.pdf": "0472bffd685c41754d3600954c4144c2abcd0c3237452f9d3764d817224729ac",
+    "public/documents/personal-data-consent-2026-10-27-r2.pdf": "a1a6e83ca75ed51167d6977f4237a32c585312472ef20b9f3f27261d7627e238",
+    "public/documents/torgservis-122-company-card.pdf": "0c965a6763d8bf0dad996e32b6051bdc47caf0aa54024493fd451c752ff68954",
+    "scripts/build-legal-pdfs.py": "28b931a2d28d8aeeb522cdd38a82be1544e961523454b91beb07e95f1d24f885",
+    "components/contact/VazuriLegalPage.tsx": "7f419bb8dd42946c9361fccf1bb81364fcd3230284fd4999dc3f8853a51cf5e0",
+    "components/contact/VazuriCompanyPage.tsx": "44ca39da3f454df0496eae4e9464a5c05b21927e9cad3b444491e31c85099904",
+    "app/company/page.tsx": "d27733cd36d748bba2c891b21f3e1c2a1a0a56c56966ead0d7737066a08f81e9",
+    "app/en/company/page.tsx": "940b59dd030943b70e514a20b27c91ef4db656758b804b41adbc0a7a1638f96c",
+    "scripts/capture-regru-static.mjs": "7ec714e1252a03ea3e877c7ce6fafc13ce5db4a9ca930027516526ff5b6b72a2",
+    "scripts/prepare-regru-static.mjs": "7ec8c54cc826cf90facb3934da25451f105871acdb8da3bf7f823c5a6b5c7585",
+    "components/headers/LanguageSwitcher.tsx": "9f1b3b199a6f30e2885e36e5546f09d0dc56ac27bc629b77a79ee94eed7a006b"
+  },
+  "caseOverlaySHA256": "076db3c10f9f476e9ebf7b422a7196f970df48d8de5289dec0bd135f2d70c952",
+  "PHPCLIProofSHA256": "29dba634d27ce447bdb9c918f70bd32d6210c06fc47616a8a5cd861e306a7845",
+  "PDFBuildProofSHA256": "9f69dfd3993e91e0d956702ab778d48adea9fee00a49cda0e1328020c87d24b0",
+  "PDFRenderProofSHA256": "14c811577054a38d3e24b76239d68005f67c6ed9ee83ee23e4465202dfecc054",
+  "CompanyCardProofSHA256": "363a5dcdf644b31883fcba067115e998cc098b213918ab8d3791bf333c38615f",
+  "OperatorFactsProofSHA256": "a4fdc4c91d2ad05b9610d4e1795151e9014a01a3bff73e12a147cdabdb6f37ef",
+  "mainHTML": 10,
+  "caseProjects": 9,
+  "nginxChanged": false,
+  "mediaAndBulkyUnchanged": true,
+  "PHPPaths": [
+    "main/lead.php"
+  ],
+  "PDFPaths": [
+    "main/documents/personal-data-consent-2026-10-27-r2.pdf",
+    "main/documents/privacy-policy-2026-10-27-r2.pdf",
+    "main/documents/torgservis-122-company-card.pdf"
+  ]
+}

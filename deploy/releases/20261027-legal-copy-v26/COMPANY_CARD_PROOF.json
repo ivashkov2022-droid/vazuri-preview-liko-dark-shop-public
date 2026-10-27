@@ -1,0 +1,19 @@
+{
+  "valid": true,
+  "sourceURL": "https://uwingroup.io/companies/assets/documents/torgservise-122-company-card.pdf?v=20260810",
+  "sourceSHA256": "0c965a6763d8bf0dad996e32b6051bdc47caf0aa54024493fd451c752ff68954",
+  "publicPath": "/documents/torgservis-122-company-card.pdf",
+  "publicSHA256": "0c965a6763d8bf0dad996e32b6051bdc47caf0aa54024493fd451c752ff68954",
+  "bytes": 70784,
+  "pages": 1,
+  "inn": "2225231152",
+  "ogrn": "1232200018170",
+  "userAuthorizedOriginalBusinessCard": true,
+  "userRequestedAddressEditLater": true,
+  "privateContractExcluded": true,
+  "reportingURL": "https://bo.nalog.gov.ru/organizations-card/12285342",
+  "userAuthorizedBusinessCard": true,
+  "originalSourcePDFUnmodified": true,
+  "reportingHTTPStatus": 200,
+  "reportingLinkSource": "Exact href of TORGSERVISE 122 article on user-provided UWIN page"
+}

@@ -1,0 +1,106 @@
+{
+  "valid": true,
+  "GitWrites": false,
+  "network": false,
+  "results": [
+    {
+      "key": "night",
+      "valid": true,
+      "originalTracked": 0,
+      "originalUntracked": 443,
+      "ownedSourceFiles": 1,
+      "head": "59182e6f71869ce0850f9b78bef716fe68826e09",
+      "branch": "codex/legal-documents-20261027",
+      "protectedBytesAndStatusesUnchanged": true,
+      "indexEmpty": true
+    },
+    {
+      "key": "hotel",
+      "valid": true,
+      "originalTracked": 0,
+      "originalUntracked": 5,
+      "ownedSourceFiles": 1,
+      "head": "a122bb675e45c261b634c62e131805d654930a7a",
+      "branch": "codex/legal-documents-20261027",
+      "protectedBytesAndStatusesUnchanged": true,
+      "indexEmpty": true
+    },
+    {
+      "key": "altera",
+      "valid": true,
+      "originalTracked": 0,
+      "originalUntracked": 6,
+      "ownedSourceFiles": 2,
+      "head": "d603fc3f71d8facba37f5ec51dfad5df1336ee7a",
+      "branch": "codex/legal-documents-20261027",
+      "protectedBytesAndStatusesUnchanged": true,
+      "indexEmpty": true
+    },
+    {
+      "key": "slides",
+      "valid": true,
+      "originalTracked": 0,
+      "originalUntracked": 0,
+      "ownedSourceFiles": 1,
+      "head": "251dc5af944db84be91ce066a8549495949d4586",
+      "branch": "codex/legal-documents-20261027",
+      "protectedBytesAndStatusesUnchanged": true,
+      "indexEmpty": true
+    },
+    {
+      "key": "urban",
+      "valid": true,
+      "originalTracked": 0,
+      "originalUntracked": 5,
+      "ownedSourceFiles": 1,
+      "head": "2e669425061cf2a6833747b09ad2ab6232050808",
+      "branch": "codex/legal-documents-20261027",
+      "protectedBytesAndStatusesUnchanged": true,
+      "indexEmpty": true
+    },
+    {
+      "key": "revive",
+      "valid": true,
+      "originalTracked": 0,
+      "originalUntracked": 5,
+      "ownedSourceFiles": 1,
+      "head": "936a86c25fa45b23ed9ec4e6ac1f26687af7d9fc",
+      "branch": "codex/legal-documents-20261027",
+      "protectedBytesAndStatusesUnchanged": true,
+      "indexEmpty": true
+    },
+    {
+      "key": "sky",
+      "valid": true,
+      "originalTracked": 1,
+      "originalUntracked": 2,
+      "ownedSourceFiles": 1,
+      "head": "eeee0ac82cfcbaa2a7017c45c7ca7875b2796160",
+      "branch": "codex/legal-documents-20261027",
+      "protectedBytesAndStatusesUnchanged": true,
+      "indexEmpty": true
+    },
+    {
+      "key": "sync",
+      "valid": true,
+      "originalTracked": 0,
+      "originalUntracked": 0,
+      "ownedSourceFiles": 2,
+      "head": "47745fecf2c6e87bdc6f66667e3964722ab5de4d",
+      "branch": "codex/legal-documents-20261027",
+      "protectedBytesAndStatusesUnchanged": true,
+      "indexEmpty": true
+    },
+    {
+      "key": "relief",
+      "valid": true,
+      "originalTracked": 3,
+      "originalUntracked": 0,
+      "ownedSourceFiles": 1,
+      "head": "9980e56706ab46cfeac58492934c81cedb67c4fa",
+      "branch": "codex/legal-documents-20261027",
+      "protectedBytesAndStatusesUnchanged": true,
+      "indexEmpty": true
+    }
+  ]
+}

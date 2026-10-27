@@ -131,7 +131,7 @@ export default function Home() {
           company: "",
           message: `NIGHTSHIFT. Запрос: ${data.get("interest") || "Сайт или цифровой продукт"}.${phone ? `\nТелефон: ${phone}` : ""}`,
           consent: data.get("consent") || "",
-          consent_version: "2026-10-27",
+          consent_version: "2026-10-27-r2",
         }),
       });
       const payload = await response.json().catch(() => ({ ok: false }));
@@ -336,7 +336,7 @@ export default function Home() {
                     onInput={updateFormProgress}
                     style={{ "--v2-form-progress": formProgress } as CSSProperties}
                   >
-                    <input name="consent_version" type="hidden" value="2026-10-27" />
+                    <input name="consent_version" type="hidden" value="2026-10-27-r2" />
                     <input className="v2-brief__trap" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
                     <label className="v2-brief__field">
                       <input name="name" autoComplete="off" autoCapitalize="words" data-1p-ignore data-lpignore="true" aria-label="Ваше имя" placeholder="Ваше имя" maxLength={120} required />

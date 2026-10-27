@@ -1,0 +1,31 @@
+{
+  "schema": "vazuri/legal-project-source-package/v1",
+  "id": "night",
+  "project": "projects/nightshift-concept-public/vazuri-preview-liko-dark-shop-public-main",
+  "sourceParent": "59182e6f71869ce0850f9b78bef716fe68826e09",
+  "ref": "refs/heads/codex/legal-copy-20261027",
+  "baselineRelease": "/srv/www/vazuri.io/releases/20261027T120000Z-legal-documents-v25",
+  "expectedRelease": "/srv/www/vazuri.io/releases/20261027T150000Z-legal-copy-v26",
+  "candidateSHA256": "3c43a74066aed85c1051688fa347c1c67b3b283dc947f1ed19014efcca9b0b8e",
+  "qaSHA256": "2f781cdccc2f055918f49a0f4cafb35f84a58e257ba0b047d3d671101efbe951",
+  "sourceSHA256": {
+    "app/page.tsx": "e5e1703a7cde468a21b444dd67841c81972df399bd1b1967bf689062995bd110"
+  },
+  "ownedRuntimePaths": [
+    "vazuri-preview-liko-dark-shop-public/.vite/manifest.json",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-BPmOEuDO.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-Ci7lGZe5.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-C8drISJG.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/d4007cf2-7c65-4520-a477-425e2e2135e5/_buildManifest.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/d4007cf2-7c65-4520-a477-425e2e2135e5/_ssgManifest.js",
+    "vazuri-preview-liko-dark-shop-public/index.html",
+    "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json"
+  ],
+  "runtimeOwnership": "Owned subset only; the ten disjoint subsets union to the shared candidate.",
+  "protectedTrackedCount": 0,
+  "originalSnapshotTrackedCount": 0,
+  "cleanWindowsLongpathRows": {},
+  "allOriginalRowsRetainByteGuards": true,
+  "protectedUntrackedCount": 443,
+  "privateOriginalContractIncluded": false
+}
