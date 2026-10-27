@@ -1,0 +1,732 @@
+{
+  "generatedAt": "2026-10-27T04:02:30.637Z",
+  "valid": true,
+  "checks": 143,
+  "passed": 143,
+  "results": [
+    {
+      "key": "night",
+      "name": "approved source hash",
+      "passed": true
+    },
+    {
+      "key": "night",
+      "name": "checkbox markup unchanged",
+      "passed": true
+    },
+    {
+      "key": "night",
+      "name": "one consent reading target",
+      "passed": true
+    },
+    {
+      "key": "night",
+      "name": "one hidden consent version",
+      "passed": true
+    },
+    {
+      "key": "night",
+      "name": "one JSON consent version",
+      "passed": true
+    },
+    {
+      "key": "night",
+      "name": "TSX syntax transpiles",
+      "passed": true
+    },
+    {
+      "key": "night",
+      "name": "whole-source inverse exact",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "approved source hash",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "checkbox markup unchanged",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "one consent reading target",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "ru consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "en consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "one hidden consent version",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "one JSON consent version",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "JavaScript syntax parses",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "guard follows the existing openBrief function",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "both legacy guards use window capture",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "legacy submit cannot continue to vendor handlers",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "legacy submit cannot continue to vendor handlers: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "legacy default or explicit submit click cannot continue",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "legacy default or explicit submit click cannot continue: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "legacy image-submit click cannot continue",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "legacy image-submit click cannot continue: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "ordinary non-submit button is unaffected",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "ordinary non-submit button is unaffected: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "unrelated form is unaffected",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "unrelated form is unaffected: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "other case legacy kind is unaffected",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "other case legacy kind is unaffected: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "approved form submit is excluded",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "approved form submit click is excluded",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "any brief form is excluded",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "any brief form is excluded: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "detached submit button is unaffected",
+      "passed": true
+    },
+    {
+      "key": "hotel",
+      "name": "whole-source inverse exact",
+      "passed": true
+    },
+    {
+      "key": "altera",
+      "name": "approved source hash",
+      "passed": true
+    },
+    {
+      "key": "altera",
+      "name": "checkbox markup unchanged",
+      "passed": true
+    },
+    {
+      "key": "altera",
+      "name": "one consent reading target",
+      "passed": true
+    },
+    {
+      "key": "altera",
+      "name": "ru consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "altera",
+      "name": "en consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "altera",
+      "name": "one hidden consent version",
+      "passed": true
+    },
+    {
+      "key": "altera",
+      "name": "one JSON consent version",
+      "passed": true
+    },
+    {
+      "key": "altera",
+      "name": "JavaScript syntax parses",
+      "passed": true
+    },
+    {
+      "key": "altera",
+      "name": "whole-source inverse exact",
+      "passed": true
+    },
+    {
+      "key": "slides",
+      "name": "approved source hash",
+      "passed": true
+    },
+    {
+      "key": "slides",
+      "name": "checkbox markup unchanged",
+      "passed": true
+    },
+    {
+      "key": "slides",
+      "name": "one consent reading target",
+      "passed": true
+    },
+    {
+      "key": "slides",
+      "name": "ru consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "slides",
+      "name": "en consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "slides",
+      "name": "one hidden consent version",
+      "passed": true
+    },
+    {
+      "key": "slides",
+      "name": "one JSON consent version",
+      "passed": true
+    },
+    {
+      "key": "slides",
+      "name": "JavaScript syntax parses",
+      "passed": true
+    },
+    {
+      "key": "slides",
+      "name": "whole-source inverse exact",
+      "passed": true
+    },
+    {
+      "key": "urban",
+      "name": "approved source hash",
+      "passed": true
+    },
+    {
+      "key": "urban",
+      "name": "checkbox markup unchanged",
+      "passed": true
+    },
+    {
+      "key": "urban",
+      "name": "one consent reading target",
+      "passed": true
+    },
+    {
+      "key": "urban",
+      "name": "ru consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "urban",
+      "name": "en consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "urban",
+      "name": "one hidden consent version",
+      "passed": true
+    },
+    {
+      "key": "urban",
+      "name": "one JSON consent version",
+      "passed": true
+    },
+    {
+      "key": "urban",
+      "name": "JavaScript syntax parses",
+      "passed": true
+    },
+    {
+      "key": "urban",
+      "name": "whole-source inverse exact",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "approved source hash",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "checkbox markup unchanged",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "one consent reading target",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "ru consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "en consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "one hidden consent version",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "one JSON consent version",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "JavaScript syntax parses",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "guard follows the existing openBrief function",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "both legacy guards use window capture",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "legacy submit cannot continue to vendor handlers",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "legacy submit cannot continue to vendor handlers: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "legacy default or explicit submit click cannot continue",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "legacy default or explicit submit click cannot continue: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "legacy image-submit click cannot continue",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "legacy image-submit click cannot continue: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "ordinary non-submit button is unaffected",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "ordinary non-submit button is unaffected: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "unrelated form is unaffected",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "unrelated form is unaffected: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "other case legacy kind is unaffected",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "other case legacy kind is unaffected: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "approved form submit is excluded",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "approved form submit click is excluded",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "any brief form is excluded",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "any brief form is excluded: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "detached submit button is unaffected",
+      "passed": true
+    },
+    {
+      "key": "revive",
+      "name": "whole-source inverse exact",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "approved source hash",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "checkbox markup unchanged",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "one consent reading target",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "ru consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "en consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "one hidden consent version",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "one JSON consent version",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "JavaScript syntax parses",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "guard follows the existing openBrief function",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "both legacy guards use window capture",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "legacy submit cannot continue to vendor handlers",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "legacy submit cannot continue to vendor handlers: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "legacy default or explicit submit click cannot continue",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "legacy default or explicit submit click cannot continue: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "legacy image-submit click cannot continue",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "legacy image-submit click cannot continue: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "ordinary non-submit button is unaffected",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "ordinary non-submit button is unaffected: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "unrelated form is unaffected",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "unrelated form is unaffected: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "other case legacy kind is unaffected",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "other case legacy kind is unaffected: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "approved form submit is excluded",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "approved form submit click is excluded",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "any brief form is excluded",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "any brief form is excluded: native values remain untouched",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "detached submit button is unaffected",
+      "passed": true
+    },
+    {
+      "key": "sky",
+      "name": "whole-source inverse exact",
+      "passed": true
+    },
+    {
+      "key": "sync",
+      "name": "approved source hash",
+      "passed": true
+    },
+    {
+      "key": "sync",
+      "name": "checkbox markup unchanged",
+      "passed": true
+    },
+    {
+      "key": "sync",
+      "name": "one consent reading target",
+      "passed": true
+    },
+    {
+      "key": "sync",
+      "name": "ru consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "sync",
+      "name": "en consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "sync",
+      "name": "one hidden consent version",
+      "passed": true
+    },
+    {
+      "key": "sync",
+      "name": "one JSON consent version",
+      "passed": true
+    },
+    {
+      "key": "sync",
+      "name": "JavaScript syntax parses",
+      "passed": true
+    },
+    {
+      "key": "sync",
+      "name": "whole-source inverse exact",
+      "passed": true
+    },
+    {
+      "key": "relief",
+      "name": "approved source hash",
+      "passed": true
+    },
+    {
+      "key": "relief",
+      "name": "checkbox markup unchanged",
+      "passed": true
+    },
+    {
+      "key": "relief",
+      "name": "one consent reading target",
+      "passed": true
+    },
+    {
+      "key": "relief",
+      "name": "ru consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "relief",
+      "name": "en consent href uses existing form language",
+      "passed": true
+    },
+    {
+      "key": "relief",
+      "name": "one hidden consent version",
+      "passed": true
+    },
+    {
+      "key": "relief",
+      "name": "one JSON consent version",
+      "passed": true
+    },
+    {
+      "key": "relief",
+      "name": "JavaScript syntax parses",
+      "passed": true
+    },
+    {
+      "key": "relief",
+      "name": "whole-source inverse exact",
+      "passed": true
+    },
+    {
+      "key": "runtime",
+      "name": "playwright loads without launching a browser",
+      "passed": true
+    },
+    {
+      "key": "runtime",
+      "name": "sharp loads without launching a browser",
+      "passed": true
+    },
+    {
+      "key": "runtime",
+      "name": "pixelmatch loads without launching a browser",
+      "passed": true
+    },
+    {
+      "key": "altera",
+      "name": "cache source hash",
+      "passed": true
+    },
+    {
+      "key": "altera",
+      "name": "cache source inverse exact",
+      "passed": true
+    },
+    {
+      "key": "sync",
+      "name": "cache source hash",
+      "passed": true
+    },
+    {
+      "key": "sync",
+      "name": "cache source inverse exact",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Source/VM checks only; no browser, build, real POST, network, Git write or publication.",
+    "Native browser event propagation and final rendered geometry remain for the root release QA."
+  ],
+  "independentGuardReview": {
+    "valid": true,
+    "blockers": 0,
+    "note": "Separate agent confirmed selectors, capture precedence, own-form exclusion, empty approved reset and Sky newsletter wrappers on the homepage plus sixteen pages."
+  }
+}

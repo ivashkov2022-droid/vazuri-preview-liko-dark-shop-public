@@ -1,0 +1,173 @@
+[
+  {
+    "id": "main",
+    "project": "projects/vazuri-main-integration",
+    "sourceParent": "d8562bf4e22dfe4587add990d5aa2516b50b634b",
+    "ref": "refs/heads/codex/legal-documents-20261027",
+    "origin": "https://github.com/ivashkov2022-droid/vazuri-site.git",
+    "remote": "github",
+    "sourceFiles": [
+      "components/common/LegalLinks.tsx",
+      "components/contact/VazuriLegalPage.tsx",
+      "components/contact/VazuriPrivacyPage.tsx",
+      "app/consent/page.tsx",
+      "app/en/consent/page.tsx",
+      "components/footers/Footer2.tsx",
+      "components/footers/Footer2En.tsx",
+      "components/headers/Nav.tsx",
+      "components/headers/NavEn.tsx",
+      "components/headers/LanguageSwitcher.tsx",
+      "styles/vazuri-legal.css",
+      "app/layout.tsx",
+      "components/common/ApprovedBrief.tsx",
+      "data/legal-documents.json",
+      "scripts/build-legal-pdfs.py",
+      "scripts/capture-regru-static.mjs",
+      "scripts/prepare-regru-static.mjs",
+      "public/lead.php",
+      "public/documents/privacy-policy-2026-10-27.pdf",
+      "public/documents/personal-data-consent-2026-10-27.pdf"
+    ],
+    "runtimeRoot": "main",
+    "baselineRef": "refs/heads/codex/social-form-profiles-20261026",
+    "beforeSnapshot": "MAIN_SOURCE_BEFORE.json",
+    "beforeSnapshotSHA256": "843b2fb89145a41ef1b1c0b114932e38c874ffde413114d6278b4d7c7915eed7"
+  },
+  {
+    "id": "night",
+    "project": "projects/nightshift-concept-public/vazuri-preview-liko-dark-shop-public-main",
+    "sourceParent": "b5b51a322bd629fd516b64437cfe27db77f0d640",
+    "ref": "refs/heads/codex/legal-documents-20261027",
+    "origin": "https://github.com/ivashkov2022-droid/vazuri-preview-liko-dark-shop-public.git",
+    "remote": "origin",
+    "sourceFiles": [
+      "app/page.tsx"
+    ],
+    "runtimeRoot": "vazuri-preview-liko-dark-shop-public",
+    "baselineRef": "refs/heads/main",
+    "beforeSnapshot": "cases/before-git-snapshot.json",
+    "beforeSnapshotSHA256": "a1070dca165565c24b5d4725b8a259327284117b772ec598ca29ba079c35896f"
+  },
+  {
+    "id": "hotel",
+    "project": "projects/vazuri-hotel-site",
+    "sourceParent": "55af2d1b89c590993dff6a82e5fce3665816d9c8",
+    "ref": "refs/heads/codex/legal-documents-20261027",
+    "origin": "https://github.com/ivashkov2022-droid/vazuri-hotel-site.git",
+    "remote": "origin",
+    "sourceFiles": [
+      "public/vazuri-case-dock.js"
+    ],
+    "runtimeRoot": "vazuri-1099af950ba0e8f8",
+    "baselineRef": "refs/heads/main",
+    "beforeSnapshot": "cases/before-git-snapshot.json",
+    "beforeSnapshotSHA256": "a1070dca165565c24b5d4725b8a259327284117b772ec598ca29ba079c35896f"
+  },
+  {
+    "id": "altera",
+    "project": "projects/altera-concept-public/vazuri-preview-liko-fashion-studio-public-main",
+    "sourceParent": "6edc39c436bfd7e403f9e40e692e0cdde475e6a7",
+    "ref": "refs/heads/codex/legal-documents-20261027",
+    "origin": "https://github.com/ivashkov2022-droid/vazuri-preview-liko-fashion-studio-public.git",
+    "remote": "origin",
+    "sourceFiles": [
+      "app/layout.tsx",
+      "public/vazuri-case-dock.js"
+    ],
+    "runtimeRoot": "vazuri-preview-liko-fashion-studio-public",
+    "baselineRef": "refs/heads/main",
+    "beforeSnapshot": "cases/before-git-snapshot.json",
+    "beforeSnapshotSHA256": "a1070dca165565c24b5d4725b8a259327284117b772ec598ca29ba079c35896f"
+  },
+  {
+    "id": "slides",
+    "project": "projects/scrollslides-block",
+    "sourceParent": "773f0b639d158d81c258537f502c334071fd3dd5",
+    "ref": "refs/heads/codex/legal-documents-20261027",
+    "origin": "https://github.com/ivashkov2022-droid/scrollslides-block.git",
+    "remote": "origin",
+    "sourceFiles": [
+      "src/vazuri-case-dock.js"
+    ],
+    "runtimeRoot": "scroll-slides-kinetic-x8q4m7v2",
+    "baselineRef": "refs/heads/main",
+    "beforeSnapshot": "cases/before-git-snapshot.json",
+    "beforeSnapshotSHA256": "a1070dca165565c24b5d4725b8a259327284117b772ec598ca29ba079c35896f"
+  },
+  {
+    "id": "urban",
+    "project": "projects/urban-pulse-site",
+    "sourceParent": "691f678dd2c14e954bcd2f639962aa1dad023fa4",
+    "ref": "refs/heads/codex/legal-documents-20261027",
+    "origin": "https://github.com/ivashkov2022-droid/urban-pulse-site.git",
+    "remote": "origin",
+    "sourceFiles": [
+      "overrides/vazuri-case-dock.js"
+    ],
+    "runtimeRoot": "urban-pulse-exhibitions-k7m3p9x4",
+    "baselineRef": "refs/heads/main",
+    "beforeSnapshot": "cases/before-git-snapshot.json",
+    "beforeSnapshotSHA256": "a1070dca165565c24b5d4725b8a259327284117b772ec598ca29ba079c35896f"
+  },
+  {
+    "id": "revive",
+    "project": "projects/revive-cosmetics-site",
+    "sourceParent": "b8815887f3a729d77c33be207a08b401581bf2a5",
+    "ref": "refs/heads/codex/legal-documents-20261027",
+    "origin": "https://github.com/ivashkov2022-droid/revive-cosmetics-site.git",
+    "remote": "origin",
+    "sourceFiles": [
+      "overrides/vazuri-case-dock.js"
+    ],
+    "runtimeRoot": "revive-cosmetics-r8q4m7x2",
+    "baselineRef": "refs/heads/main",
+    "beforeSnapshot": "cases/before-git-snapshot.json",
+    "beforeSnapshotSHA256": "a1070dca165565c24b5d4725b8a259327284117b772ec598ca29ba079c35896f"
+  },
+  {
+    "id": "sky",
+    "project": "projects/skyvilla",
+    "sourceParent": "f833591d27007701079c85749e4849ecc9c6859a",
+    "ref": "refs/heads/codex/legal-documents-20261027",
+    "origin": "https://github.com/ivashkov2022-droid/skyvilla-estate.git",
+    "remote": "origin",
+    "sourceFiles": [
+      "assets/vazuri/vazuri-case-dock.js"
+    ],
+    "runtimeRoot": "skyvilla-estate-k8m4p2x7",
+    "baselineRef": "refs/heads/main",
+    "beforeSnapshot": "cases/before-git-snapshot.json",
+    "beforeSnapshotSHA256": "a1070dca165565c24b5d4725b8a259327284117b772ec598ca29ba079c35896f"
+  },
+  {
+    "id": "sync",
+    "project": "projects/scrollsyncvideo-block",
+    "sourceParent": "432a4d760a7faa65763c90911a43655fdafd24c7",
+    "ref": "refs/heads/codex/legal-documents-20261027",
+    "origin": "https://github.com/ivashkov2022-droid/scrollsyncvideo-block.git",
+    "remote": "origin",
+    "sourceFiles": [
+      "src/index.html",
+      "src/vazuri-case-dock.js"
+    ],
+    "runtimeRoot": "scrollsync-video-v7q4m9x2",
+    "baselineRef": "refs/heads/main",
+    "beforeSnapshot": "cases/before-git-snapshot.json",
+    "beforeSnapshotSHA256": "a1070dca165565c24b5d4725b8a259327284117b772ec598ca29ba079c35896f"
+  },
+  {
+    "id": "relief",
+    "project": "projects/relief-motion-literal",
+    "sourceParent": "a228505bb788bff398d3df4f4fb0a1fb03b839bb",
+    "ref": "refs/heads/codex/legal-documents-20261027",
+    "origin": "https://github.com/ivashkov2022-droid/relief-motion-literal.git",
+    "remote": "origin",
+    "sourceFiles": [
+      "src/vazuri-case-dock.js"
+    ],
+    "runtimeRoot": "relief-motion-literal-p8m4k2x7",
+    "baselineRef": "refs/heads/main",
+    "beforeSnapshot": "cases/before-git-snapshot.json",
+    "beforeSnapshotSHA256": "a1070dca165565c24b5d4725b8a259327284117b772ec598ca29ba079c35896f"
+  }
+]

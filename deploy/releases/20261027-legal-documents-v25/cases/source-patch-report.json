@@ -1,0 +1,178 @@
+{
+  "generatedAt": "2026-10-27T04:01:51.455Z",
+  "valid": true,
+  "scope": "Only nine approved case-form working sources. No build, Git write, browser, network, vendor or reference edits.",
+  "cases": [
+    {
+      "key": "night",
+      "source": "projects/nightshift-concept-public/vazuri-preview-liko-dark-shop-public-main/app/page.tsx",
+      "beforeSHA256": "e1442f46d99fa37e93936416ecd8402414e6c1ccc80ce5bdd963e236e091fede",
+      "afterSHA256": "359410ac6f3ddd9bd20f42eb6ea549e9acd105d3d6b34df9f42eb67446194422",
+      "consentHref": "https://vazuri.io/consent",
+      "consentVersion": "2026-10-27",
+      "changes": [
+        "hidden consent version",
+        "consent reading link",
+        "JSON consent version"
+      ],
+      "inverseExact": true,
+      "legacyGuard": false
+    },
+    {
+      "key": "hotel",
+      "source": "projects/vazuri-hotel-site/public/vazuri-case-dock.js",
+      "beforeSHA256": "b10c548efb52dd60daa6afcd229c1551dd3debf8e302c58c630222dfa9bca8e7",
+      "afterSHA256": "69b68fb00ffb6485d89d01185ec4267b04bd9e1e654a78a1b161402edcaa1b9d",
+      "consentHref": {
+        "ru": "https://vazuri.io/consent",
+        "en": "https://vazuri.io/en/consent"
+      },
+      "consentVersion": "2026-10-27",
+      "changes": [
+        "hidden consent version",
+        "consent reading link",
+        "JSON consent version",
+        "legacy window capture guard"
+      ],
+      "inverseExact": true,
+      "legacyGuard": true,
+      "existingLanguagePolicyUnchanged": true
+    },
+    {
+      "key": "altera",
+      "source": "projects/altera-concept-public/vazuri-preview-liko-fashion-studio-public-main/public/vazuri-case-dock.js",
+      "beforeSHA256": "b10c548efb52dd60daa6afcd229c1551dd3debf8e302c58c630222dfa9bca8e7",
+      "afterSHA256": "8d02cda66d07ae6cfef5e5cbd14310032202b80fba83272ed36ae0f9d1b36658",
+      "consentHref": {
+        "ru": "https://vazuri.io/consent",
+        "en": "https://vazuri.io/en/consent"
+      },
+      "consentVersion": "2026-10-27",
+      "changes": [
+        "hidden consent version",
+        "consent reading link",
+        "JSON consent version"
+      ],
+      "inverseExact": true,
+      "legacyGuard": false,
+      "existingLanguagePolicyUnchanged": true
+    },
+    {
+      "key": "slides",
+      "source": "projects/scrollslides-block/src/vazuri-case-dock.js",
+      "beforeSHA256": "b10c548efb52dd60daa6afcd229c1551dd3debf8e302c58c630222dfa9bca8e7",
+      "afterSHA256": "8d02cda66d07ae6cfef5e5cbd14310032202b80fba83272ed36ae0f9d1b36658",
+      "consentHref": {
+        "ru": "https://vazuri.io/consent",
+        "en": "https://vazuri.io/en/consent"
+      },
+      "consentVersion": "2026-10-27",
+      "changes": [
+        "hidden consent version",
+        "consent reading link",
+        "JSON consent version"
+      ],
+      "inverseExact": true,
+      "legacyGuard": false,
+      "existingLanguagePolicyUnchanged": true
+    },
+    {
+      "key": "urban",
+      "source": "projects/urban-pulse-site/overrides/vazuri-case-dock.js",
+      "beforeSHA256": "b10c548efb52dd60daa6afcd229c1551dd3debf8e302c58c630222dfa9bca8e7",
+      "afterSHA256": "8d02cda66d07ae6cfef5e5cbd14310032202b80fba83272ed36ae0f9d1b36658",
+      "consentHref": {
+        "ru": "https://vazuri.io/consent",
+        "en": "https://vazuri.io/en/consent"
+      },
+      "consentVersion": "2026-10-27",
+      "changes": [
+        "hidden consent version",
+        "consent reading link",
+        "JSON consent version"
+      ],
+      "inverseExact": true,
+      "legacyGuard": false,
+      "existingLanguagePolicyUnchanged": true
+    },
+    {
+      "key": "revive",
+      "source": "projects/revive-cosmetics-site/overrides/vazuri-case-dock.js",
+      "beforeSHA256": "b10c548efb52dd60daa6afcd229c1551dd3debf8e302c58c630222dfa9bca8e7",
+      "afterSHA256": "69b68fb00ffb6485d89d01185ec4267b04bd9e1e654a78a1b161402edcaa1b9d",
+      "consentHref": {
+        "ru": "https://vazuri.io/consent",
+        "en": "https://vazuri.io/en/consent"
+      },
+      "consentVersion": "2026-10-27",
+      "changes": [
+        "hidden consent version",
+        "consent reading link",
+        "JSON consent version",
+        "legacy window capture guard"
+      ],
+      "inverseExact": true,
+      "legacyGuard": true,
+      "existingLanguagePolicyUnchanged": true
+    },
+    {
+      "key": "sky",
+      "source": "projects/skyvilla/assets/vazuri/vazuri-case-dock.js",
+      "beforeSHA256": "b10c548efb52dd60daa6afcd229c1551dd3debf8e302c58c630222dfa9bca8e7",
+      "afterSHA256": "69b68fb00ffb6485d89d01185ec4267b04bd9e1e654a78a1b161402edcaa1b9d",
+      "consentHref": {
+        "ru": "https://vazuri.io/consent",
+        "en": "https://vazuri.io/en/consent"
+      },
+      "consentVersion": "2026-10-27",
+      "changes": [
+        "hidden consent version",
+        "consent reading link",
+        "JSON consent version",
+        "legacy window capture guard"
+      ],
+      "inverseExact": true,
+      "legacyGuard": true,
+      "existingLanguagePolicyUnchanged": true
+    },
+    {
+      "key": "sync",
+      "source": "projects/scrollsyncvideo-block/src/vazuri-case-dock.js",
+      "beforeSHA256": "a8f734c256235ca5239082fc988bf5e692ed2c8d15b0325159b058f51e08e2a3",
+      "afterSHA256": "38319762e9aa74370bc45c0759abe56608faef36035277e52efe6ea62037d665",
+      "consentHref": {
+        "ru": "https://vazuri.io/consent",
+        "en": "https://vazuri.io/en/consent"
+      },
+      "consentVersion": "2026-10-27",
+      "changes": [
+        "hidden consent version",
+        "consent reading link",
+        "JSON consent version"
+      ],
+      "inverseExact": true,
+      "legacyGuard": false,
+      "existingLanguagePolicyUnchanged": true
+    },
+    {
+      "key": "relief",
+      "source": "projects/relief-motion-literal/src/vazuri-case-dock.js",
+      "beforeSHA256": "f5a4bfa5b2017b64957a08841e77d9ca35df34785a576996212b35e3f4199cfc",
+      "afterSHA256": "8292289568d12f61130c1e293f825dee7419b3bd85085a52aa200b62ff3dc95f",
+      "consentHref": {
+        "ru": "https://vazuri.io/consent",
+        "en": "https://vazuri.io/en/consent"
+      },
+      "consentVersion": "2026-10-27",
+      "changes": [
+        "hidden consent version",
+        "consent reading link",
+        "JSON consent version"
+      ],
+      "inverseExact": true,
+      "legacyGuard": false,
+      "existingLanguagePolicyUnchanged": true
+    }
+  ],
+  "languageRefinement": "Generic consent uses the existing form language; Night and Altera retain their approved RU form language."
+}

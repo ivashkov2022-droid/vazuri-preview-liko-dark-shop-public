@@ -1,0 +1,22 @@
+[
+  "components/common/LegalLinks.tsx",
+  "components/contact/VazuriLegalPage.tsx",
+  "components/contact/VazuriPrivacyPage.tsx",
+  "app/consent/page.tsx",
+  "app/en/consent/page.tsx",
+  "components/footers/Footer2.tsx",
+  "components/footers/Footer2En.tsx",
+  "components/headers/Nav.tsx",
+  "components/headers/NavEn.tsx",
+  "components/headers/LanguageSwitcher.tsx",
+  "styles/vazuri-legal.css",
+  "app/layout.tsx",
+  "components/common/ApprovedBrief.tsx",
+  "data/legal-documents.json",
+  "scripts/build-legal-pdfs.py",
+  "scripts/capture-regru-static.mjs",
+  "scripts/prepare-regru-static.mjs",
+  "public/lead.php",
+  "public/documents/privacy-policy-2026-10-27.pdf",
+  "public/documents/personal-data-consent-2026-10-27.pdf"
+]

@@ -1,0 +1,3456 @@
+{
+  "schema": "vazuri/main-approved-forms-candidate/v1",
+  "previous": "/srv/www/vazuri.io/releases/20261026T190000Z-social-form-profiles-v24",
+  "expectedRelease": "/srv/www/vazuri.io/releases/20261027T120000Z-legal-documents-v25",
+  "releaseName": "20261027T120000Z-legal-documents-v25",
+  "sourceProject": "projects/vazuri-main-integration",
+  "sourceParent": "d8562bf4e22dfe4587add990d5aa2516b50b634b",
+  "sourceSHA256": {
+    "components/common/LegalLinks.tsx": "011add8c091395303b573d5c02b5e07022ff1d5112b2e052bdae26c9b3622d59",
+    "components/contact/VazuriLegalPage.tsx": "9051e58f67b86fb028059bfa4cc77b9e22e0b372d0ec9ed19dba6e30f5d8ad4b",
+    "components/contact/VazuriPrivacyPage.tsx": "2d08475ed262a671a056d547e0583289ec23013d562a5573e4ad09f6033d7d62",
+    "app/consent/page.tsx": "e4f674a00ddeeed4a9d51a0cfd2674efd563401dfe55936afccaca2d58a643b3",
+    "app/en/consent/page.tsx": "8d8d0a5de73968344f11e2eb4f3694570b62bdc2e39817bbb54a4cdd5664f487",
+    "components/footers/Footer2.tsx": "a79e6f21eb2ada31ce8d964f0adaba0b7f9ca8b57ab77c9936d64943851ec8b9",
+    "components/footers/Footer2En.tsx": "222d2bb7a5bf920cbf614e2d482909b9321fc801e95911c5dbc8323ff0895851",
+    "components/headers/Nav.tsx": "e7b9b155427676fdbbc6df76c124ecba787a68d520238e39f2838b13a6793352",
+    "components/headers/NavEn.tsx": "f4de38b7b6975be22fec2a6f2434d4a0f10fc33c9d8e63600f5a052cf7e1f5ce",
+    "components/headers/LanguageSwitcher.tsx": "4cfc070760cfbba07ce10859788f4ba6a381fd842903afe50540c5cdb8e5d114",
+    "styles/vazuri-legal.css": "e8f2dfd89b9c202c212ce1aece17f4692698aa94f5d565dffa40477e667315b5",
+    "app/layout.tsx": "1066f82cb013dc44f7419b0b6b6d88f59d2aaf4069ff950450a1a8d257fecfe0",
+    "components/common/ApprovedBrief.tsx": "962470d5c1a25986f4480ff63d17155abbd076e7c2b91bab8085a721145b8a5e",
+    "data/legal-documents.json": "328132d56899c9ba25840a323ad240eb9246b9052786079fec68559687198f22",
+    "scripts/build-legal-pdfs.py": "710ad9194109d05ba6078b047f9c5bcafae8dda3addbefe2b966a85567f69b94",
+    "scripts/capture-regru-static.mjs": "3223e609947282bfb5656c2d99ffac4df48b593aac58b363e84ef62f4401722e",
+    "scripts/prepare-regru-static.mjs": "97bcca3fd723f5b5ef807a8b6834d628b849e0c0dff55040ac548506f2d68394",
+    "public/lead.php": "9f0946f175ba7e270179fa4ae9b4b4d2a1a051bcbd7f99cd551bd69abcefb77f",
+    "public/documents/privacy-policy-2026-10-27.pdf": "4e3609f3bc3115f48b396ae54c592abde4c6d8937fe34c7f84a94217f51e5a40",
+    "public/documents/personal-data-consent-2026-10-27.pdf": "a397b8c2d952dcca4f52913c872dc46efc4154384c0c7200833a81e017adf2fe"
+  },
+  "sourceProjects": [
+    {
+      "id": "main",
+      "project": "projects/vazuri-main-integration",
+      "sourceParent": "d8562bf4e22dfe4587add990d5aa2516b50b634b",
+      "ref": "refs/heads/codex/legal-documents-20261027",
+      "origin": "https://github.com/ivashkov2022-droid/vazuri-site.git",
+      "remote": "github",
+      "sourceSHA256": {
+        "components/common/LegalLinks.tsx": "011add8c091395303b573d5c02b5e07022ff1d5112b2e052bdae26c9b3622d59",
+        "components/contact/VazuriLegalPage.tsx": "9051e58f67b86fb028059bfa4cc77b9e22e0b372d0ec9ed19dba6e30f5d8ad4b",
+        "components/contact/VazuriPrivacyPage.tsx": "2d08475ed262a671a056d547e0583289ec23013d562a5573e4ad09f6033d7d62",
+        "app/consent/page.tsx": "e4f674a00ddeeed4a9d51a0cfd2674efd563401dfe55936afccaca2d58a643b3",
+        "app/en/consent/page.tsx": "8d8d0a5de73968344f11e2eb4f3694570b62bdc2e39817bbb54a4cdd5664f487",
+        "components/footers/Footer2.tsx": "a79e6f21eb2ada31ce8d964f0adaba0b7f9ca8b57ab77c9936d64943851ec8b9",
+        "components/footers/Footer2En.tsx": "222d2bb7a5bf920cbf614e2d482909b9321fc801e95911c5dbc8323ff0895851",
+        "components/headers/Nav.tsx": "e7b9b155427676fdbbc6df76c124ecba787a68d520238e39f2838b13a6793352",
+        "components/headers/NavEn.tsx": "f4de38b7b6975be22fec2a6f2434d4a0f10fc33c9d8e63600f5a052cf7e1f5ce",
+        "components/headers/LanguageSwitcher.tsx": "4cfc070760cfbba07ce10859788f4ba6a381fd842903afe50540c5cdb8e5d114",
+        "styles/vazuri-legal.css": "e8f2dfd89b9c202c212ce1aece17f4692698aa94f5d565dffa40477e667315b5",
+        "app/layout.tsx": "1066f82cb013dc44f7419b0b6b6d88f59d2aaf4069ff950450a1a8d257fecfe0",
+        "components/common/ApprovedBrief.tsx": "962470d5c1a25986f4480ff63d17155abbd076e7c2b91bab8085a721145b8a5e",
+        "data/legal-documents.json": "328132d56899c9ba25840a323ad240eb9246b9052786079fec68559687198f22",
+        "scripts/build-legal-pdfs.py": "710ad9194109d05ba6078b047f9c5bcafae8dda3addbefe2b966a85567f69b94",
+        "scripts/capture-regru-static.mjs": "3223e609947282bfb5656c2d99ffac4df48b593aac58b363e84ef62f4401722e",
+        "scripts/prepare-regru-static.mjs": "97bcca3fd723f5b5ef807a8b6834d628b849e0c0dff55040ac548506f2d68394",
+        "public/lead.php": "9f0946f175ba7e270179fa4ae9b4b4d2a1a051bcbd7f99cd551bd69abcefb77f",
+        "public/documents/privacy-policy-2026-10-27.pdf": "4e3609f3bc3115f48b396ae54c592abde4c6d8937fe34c7f84a94217f51e5a40",
+        "public/documents/personal-data-consent-2026-10-27.pdf": "a397b8c2d952dcca4f52913c872dc46efc4154384c0c7200833a81e017adf2fe"
+      },
+      "runtimePaths": [
+        "main/.vite/manifest.json",
+        "main/_next/static/4547e4bc-c19b-4914-9228-83fd89fa9c0d/_buildManifest.js",
+        "main/_next/static/4547e4bc-c19b-4914-9228-83fd89fa9c0d/_ssgManifest.js",
+        "main/_next/static/chunks/AboutTeaser-SfAFSFYB.js",
+        "main/_next/static/chunks/ApprovedBrief-DtdeJzkR.js",
+        "main/_next/static/chunks/AutoplayLoopVideo-CJ9QbE0O.js",
+        "main/_next/static/chunks/Blog-BW8BAL3V.js",
+        "main/_next/static/chunks/BlogArticle-DLWCLUDa.js",
+        "main/_next/static/chunks/BlogPreview-BFP1HKXN.js",
+        "main/_next/static/chunks/BlogPreview-BZHTwiVb.js",
+        "main/_next/static/chunks/BlogPreview-BjKBcJ44.js",
+        "main/_next/static/chunks/BlogPreview-BrKSaBqr.js",
+        "main/_next/static/chunks/BlogPreview-CpmUbh1K.js",
+        "main/_next/static/chunks/BlogPreview-CtYxGaKt.js",
+        "main/_next/static/chunks/BlogPreview-DMBLAWxR.js",
+        "main/_next/static/chunks/BlogPreview-DY9YajT6.js",
+        "main/_next/static/chunks/BlogPreview-DzGPtvX7.js",
+        "main/_next/static/chunks/BlogPreview-lz2XwI1I.js",
+        "main/_next/static/chunks/BlogPreview-rzzMVuY9.js",
+        "main/_next/static/chunks/BlogPreviewEn-CtNcOaoQ.js",
+        "main/_next/static/chunks/BulkyDivider-BZdrSSMD.js",
+        "main/_next/static/chunks/CTAWithMarquee-1KrHHMxt.js",
+        "main/_next/static/chunks/CTAWithMarquee-1hefNEW2.js",
+        "main/_next/static/chunks/CTAWithMarquee-B1hwS1m8.js",
+        "main/_next/static/chunks/CTAWithMarquee-BFkZUcyj.js",
+        "main/_next/static/chunks/CTAWithMarquee-BfWKSORj.js",
+        "main/_next/static/chunks/CTAWithMarquee-CCJZ_h-M.js",
+        "main/_next/static/chunks/CTAWithMarquee-CYn4Xmx6.js",
+        "main/_next/static/chunks/CTAWithMarquee-CZcYYbh5.js",
+        "main/_next/static/chunks/CTAWithMarquee-CtkVWuzo.js",
+        "main/_next/static/chunks/CTAWithMarquee-DpGbsX7l.js",
+        "main/_next/static/chunks/CTAWithMarquee-DvQNU7kZ.js",
+        "main/_next/static/chunks/CTAWithMarquee-DxAfm58Q.js",
+        "main/_next/static/chunks/CTAWithMarquee-GQxU-bvk.js",
+        "main/_next/static/chunks/CTAWithMarquee-d3MtdEzz.js",
+        "main/_next/static/chunks/CTAWithMarquee-i-wbLYTu.js",
+        "main/_next/static/chunks/CommonAnimatedText-D1wXMXl1.js",
+        "main/_next/static/chunks/CommonHeroVideoScale-CMyVI9C7.js",
+        "main/_next/static/chunks/CommonProjectsClip-DMd--1vt.js",
+        "main/_next/static/chunks/CommonScrollAnimated-DoL3WYAH.js",
+        "main/_next/static/chunks/Components-BR2eaDZr.js",
+        "main/_next/static/chunks/ContactLeadForm-BnALt85c.js",
+        "main/_next/static/chunks/ContentPagesStack-DTEpt9YF.js",
+        "main/_next/static/chunks/DemoGrid-Du5MFo-O.js",
+        "main/_next/static/chunks/DividerStickyCaption-CHVSneiV.js",
+        "main/_next/static/chunks/DividerStickyImages-DUuCk4fL.js",
+        "main/_next/static/chunks/DoubleMarqueeDivider-CHESTzjP.js",
+        "main/_next/static/chunks/DoubleMarqueeDivider-CrZMRSWE.js",
+        "main/_next/static/chunks/FooterBackToTop-Cc38EK5a.js",
+        "main/_next/static/chunks/GravityCTAContent-Bd6KJVC0.js",
+        "main/_next/static/chunks/Hero-B5UTeCYf.js",
+        "main/_next/static/chunks/Hero-BGFsp4uZ.js",
+        "main/_next/static/chunks/Hero-CGb-tb6w2.js",
+        "main/_next/static/chunks/Hero-CfCJ0FjN.js",
+        "main/_next/static/chunks/Hero-DFVwWBq6.js",
+        "main/_next/static/chunks/Hero-DQD5356E.js",
+        "main/_next/static/chunks/Hero-IN_2WzjQ.js",
+        "main/_next/static/chunks/Hero-W4brfYk1.js",
+        "main/_next/static/chunks/Hero-da77h_My.js",
+        "main/_next/static/chunks/HeroEn-C0_1Iw1C.js",
+        "main/_next/static/chunks/InnerHeadline-CFpvNP7G.js",
+        "main/_next/static/chunks/InnerHeadline-CTxwA_-q.js",
+        "main/_next/static/chunks/InnerHeadline-CdItmG_t.js",
+        "main/_next/static/chunks/InnerHeadline-D7TjAFHS.js",
+        "main/_next/static/chunks/InnerHeadline-D91mw3zH.js",
+        "main/_next/static/chunks/InnerHeadline-Djv3w7Li.js",
+        "main/_next/static/chunks/InnerHeadline-DkUxTDbU.js",
+        "main/_next/static/chunks/InnerHeadline-YZmem5Wo.js",
+        "main/_next/static/chunks/InnerHeadline-iSn6b3ru.js",
+        "main/_next/static/chunks/InnerPagesSlider-CLHmwr12.js",
+        "main/_next/static/chunks/LazyGravityCTA-DHAjx6VI.js",
+        "main/_next/static/chunks/LegalLinks-DDnZfeAI.js",
+        "main/_next/static/chunks/MarqueeDivider-BMaXpHNE.js",
+        "main/_next/static/chunks/MoreOnTopic-BG5XHSzD.js",
+        "main/_next/static/chunks/MyExpertise-BDfWcAai.js",
+        "main/_next/static/chunks/NotFound-Cae_WfiI.js",
+        "main/_next/static/chunks/OurCapabilities-k-qP_Wbf.js",
+        "main/_next/static/chunks/OurCapabilitiesEn-CW_pmPtn.js",
+        "main/_next/static/chunks/ParallaxDivider-cia_BjeJ.js",
+        "main/_next/static/chunks/ProjectsGrid-BVhjzW3b.js",
+        "main/_next/static/chunks/ProjectsGrid-BzjF_cvo.js",
+        "main/_next/static/chunks/ProjectsGrid-CegAQ1sa.js",
+        "main/_next/static/chunks/ProjectsGrid-UXdFLIkd.js",
+        "main/_next/static/chunks/ProjectsGridEn-hjR5c5u-.js",
+        "main/_next/static/chunks/ProjectsGridX3Showcase-Dis1rDy4.js",
+        "main/_next/static/chunks/ProjectsList-BnRIUgto.js",
+        "main/_next/static/chunks/ProjectsList-CSWp4esF.js",
+        "main/_next/static/chunks/ProjectsList-CzJygzNt.js",
+        "main/_next/static/chunks/ProjectsList-DB68wypU.js",
+        "main/_next/static/chunks/ProjectsShowcase-C0rRlDzz.js",
+        "main/_next/static/chunks/ProjectsShowcase-qsFIgyw8.js",
+        "main/_next/static/chunks/ProjectsStack-CiM9vBaP.js",
+        "main/_next/static/chunks/ProtectsStack-BEZ00uGQ.js",
+        "main/_next/static/chunks/ResponsivePromo-CHogELyC.js",
+        "main/_next/static/chunks/Resume-DGFxWK3h.js",
+        "main/_next/static/chunks/Resume-Dhnv1NOu.js",
+        "main/_next/static/chunks/SelectedWork-BXb9HntE.js",
+        "main/_next/static/chunks/ServicesDescriptionStack-B3SoCTO8.js",
+        "main/_next/static/chunks/ServicesList-C8Znwyz6.js",
+        "main/_next/static/chunks/ServicesList-Ef5WR3fB.js",
+        "main/_next/static/chunks/ServicesStack-qcLuP1z3.js",
+        "main/_next/static/chunks/ServicesStackVideo-CwRmm1w-.js",
+        "main/_next/static/chunks/SiteAnalytics-DhLGDMmq.js",
+        "main/_next/static/chunks/SiteChrome-Bll1iYDn.js",
+        "main/_next/static/chunks/StatisticsLines-BEtUYUTe.js",
+        "main/_next/static/chunks/StatisticsLines-BF1cEzI6.js",
+        "main/_next/static/chunks/StatisticsLines-DmAdSpZ8.js",
+        "main/_next/static/chunks/StatisticsLinesEn-DEXFVIGB.js",
+        "main/_next/static/chunks/TeamList-BRakQ9Kc.js",
+        "main/_next/static/chunks/TemplateRuntimeProvider-DNK3vFN2.js",
+        "main/_next/static/chunks/TestimonialSliderIcons-BQmUwbTL.js",
+        "main/_next/static/chunks/TestimonialsSlider-BghZM7X6.js",
+        "main/_next/static/chunks/TestimonialsSlider-Cuomb-Lv.js",
+        "main/_next/static/chunks/UkiyoParallax-CriyZmif.js",
+        "main/_next/static/chunks/app-rsc-cache-busting-B0D0LJtM.js",
+        "main/_next/static/chunks/facts-Bi4WQpms.js",
+        "main/_next/static/chunks/hybrid-client-route-owner-DB08HIhg.js",
+        "main/_next/static/chunks/index-Bw5puN7J.js",
+        "main/_next/static/chunks/layout-segment-context-l-s_K60f.js",
+        "main/_next/static/chunks/link-B8lZeIRS.js",
+        "main/_next/static/chunks/projects-BOSGw1zB.js",
+        "main/_next/static/chunks/services-CJFaW7rC.js",
+        "main/_next/static/chunks/stackCardsEffects-CRy54oY-.js",
+        "main/_next/static/chunks/testimonials-D8Lu9iut.js",
+        "main/_next/static/chunks/ukiyo.esm.min-i24cqig7.js",
+        "main/_next/static/chunks/vazuri-events-BdOofYl6.js",
+        "main/_next/static/css/index.9xAYx9JL.css",
+        "main/consent/index.html",
+        "main/contact/index.html",
+        "main/documents/personal-data-consent-2026-10-27.pdf",
+        "main/documents/privacy-policy-2026-10-27.pdf",
+        "main/en/consent/index.html",
+        "main/en/contact/index.html",
+        "main/en/index.html",
+        "main/en/privacy/index.html",
+        "main/index.html",
+        "main/lead.php",
+        "main/privacy/index.html",
+        "main/vinext-client-entry-manifest.json"
+      ]
+    },
+    {
+      "id": "night",
+      "project": "projects/nightshift-concept-public/vazuri-preview-liko-dark-shop-public-main",
+      "sourceParent": "b5b51a322bd629fd516b64437cfe27db77f0d640",
+      "ref": "refs/heads/codex/legal-documents-20261027",
+      "origin": "https://github.com/ivashkov2022-droid/vazuri-preview-liko-dark-shop-public.git",
+      "remote": "origin",
+      "sourceSHA256": {
+        "app/page.tsx": "359410ac6f3ddd9bd20f42eb6ea549e9acd105d3d6b34df9f42eb67446194422"
+      },
+      "runtimePaths": [
+        "vazuri-preview-liko-dark-shop-public/.vite/manifest.json",
+        "vazuri-preview-liko-dark-shop-public/_next/static/8df73e16-49fa-4832-8f4a-485d264cd912/_buildManifest.js",
+        "vazuri-preview-liko-dark-shop-public/_next/static/8df73e16-49fa-4832-8f4a-485d264cd912/_ssgManifest.js",
+        "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-D-4-piGv.js",
+        "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-CQ0eSNZO.js",
+        "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-BcQsqhWN.js",
+        "vazuri-preview-liko-dark-shop-public/index.html",
+        "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json"
+      ]
+    },
+    {
+      "id": "hotel",
+      "project": "projects/vazuri-hotel-site",
+      "sourceParent": "55af2d1b89c590993dff6a82e5fce3665816d9c8",
+      "ref": "refs/heads/codex/legal-documents-20261027",
+      "origin": "https://github.com/ivashkov2022-droid/vazuri-hotel-site.git",
+      "remote": "origin",
+      "sourceSHA256": {
+        "public/vazuri-case-dock.js": "69b68fb00ffb6485d89d01185ec4267b04bd9e1e654a78a1b161402edcaa1b9d"
+      },
+      "runtimePaths": [
+        "vazuri-1099af950ba0e8f8/index.html",
+        "vazuri-1099af950ba0e8f8/ru/index.html",
+        "vazuri-1099af950ba0e8f8/vazuri-case-dock.js"
+      ]
+    },
+    {
+      "id": "altera",
+      "project": "projects/altera-concept-public/vazuri-preview-liko-fashion-studio-public-main",
+      "sourceParent": "6edc39c436bfd7e403f9e40e692e0cdde475e6a7",
+      "ref": "refs/heads/codex/legal-documents-20261027",
+      "origin": "https://github.com/ivashkov2022-droid/vazuri-preview-liko-fashion-studio-public.git",
+      "remote": "origin",
+      "sourceSHA256": {
+        "app/layout.tsx": "adec901fb1220f3a2759f16f73db1c3595ef4f1fc0f9293e5dcaf144386ca70b",
+        "public/vazuri-case-dock.js": "8d02cda66d07ae6cfef5e5cbd14310032202b80fba83272ed36ae0f9d1b36658"
+      },
+      "runtimePaths": [
+        "vazuri-preview-liko-fashion-studio-public/index.html",
+        "vazuri-preview-liko-fashion-studio-public/vazuri-case-dock.js"
+      ]
+    },
+    {
+      "id": "slides",
+      "project": "projects/scrollslides-block",
+      "sourceParent": "773f0b639d158d81c258537f502c334071fd3dd5",
+      "ref": "refs/heads/codex/legal-documents-20261027",
+      "origin": "https://github.com/ivashkov2022-droid/scrollslides-block.git",
+      "remote": "origin",
+      "sourceSHA256": {
+        "src/vazuri-case-dock.js": "8d02cda66d07ae6cfef5e5cbd14310032202b80fba83272ed36ae0f9d1b36658"
+      },
+      "runtimePaths": [
+        "scroll-slides-kinetic-x8q4m7v2/en/index.html",
+        "scroll-slides-kinetic-x8q4m7v2/en/vazuri-case-dock.js",
+        "scroll-slides-kinetic-x8q4m7v2/index.html",
+        "scroll-slides-kinetic-x8q4m7v2/ru/index.html",
+        "scroll-slides-kinetic-x8q4m7v2/ru/vazuri-case-dock.js",
+        "scroll-slides-kinetic-x8q4m7v2/vazuri-case-dock.js"
+      ]
+    },
+    {
+      "id": "urban",
+      "project": "projects/urban-pulse-site",
+      "sourceParent": "691f678dd2c14e954bcd2f639962aa1dad023fa4",
+      "ref": "refs/heads/codex/legal-documents-20261027",
+      "origin": "https://github.com/ivashkov2022-droid/urban-pulse-site.git",
+      "remote": "origin",
+      "sourceSHA256": {
+        "overrides/vazuri-case-dock.js": "8d02cda66d07ae6cfef5e5cbd14310032202b80fba83272ed36ae0f9d1b36658"
+      },
+      "runtimePaths": [
+        "urban-pulse-exhibitions-k7m3p9x4/assets/vazuri-case-dock.js",
+        "urban-pulse-exhibitions-k7m3p9x4/index.html",
+        "urban-pulse-exhibitions-k7m3p9x4/ru/assets/vazuri-case-dock.js",
+        "urban-pulse-exhibitions-k7m3p9x4/ru/index.html"
+      ]
+    },
+    {
+      "id": "revive",
+      "project": "projects/revive-cosmetics-site",
+      "sourceParent": "b8815887f3a729d77c33be207a08b401581bf2a5",
+      "ref": "refs/heads/codex/legal-documents-20261027",
+      "origin": "https://github.com/ivashkov2022-droid/revive-cosmetics-site.git",
+      "remote": "origin",
+      "sourceSHA256": {
+        "overrides/vazuri-case-dock.js": "69b68fb00ffb6485d89d01185ec4267b04bd9e1e654a78a1b161402edcaa1b9d"
+      },
+      "runtimePaths": [
+        "revive-cosmetics-r8q4m7x2/assets/vazuri-case-dock.js",
+        "revive-cosmetics-r8q4m7x2/index.html",
+        "revive-cosmetics-r8q4m7x2/ru/assets/vazuri-case-dock.js",
+        "revive-cosmetics-r8q4m7x2/ru/index.html"
+      ]
+    },
+    {
+      "id": "sky",
+      "project": "projects/skyvilla",
+      "sourceParent": "f833591d27007701079c85749e4849ecc9c6859a",
+      "ref": "refs/heads/codex/legal-documents-20261027",
+      "origin": "https://github.com/ivashkov2022-droid/skyvilla-estate.git",
+      "remote": "origin",
+      "sourceSHA256": {
+        "assets/vazuri/vazuri-case-dock.js": "69b68fb00ffb6485d89d01185ec4267b04bd9e1e654a78a1b161402edcaa1b9d"
+      },
+      "runtimePaths": [
+        "skyvilla-estate-k8m4p2x7/assets/vazuri/vazuri-case-dock.js",
+        "skyvilla-estate-k8m4p2x7/en/404.html",
+        "skyvilla-estate-k8m4p2x7/en/about.html",
+        "skyvilla-estate-k8m4p2x7/en/blog-single.html",
+        "skyvilla-estate-k8m4p2x7/en/blog.html",
+        "skyvilla-estate-k8m4p2x7/en/contact.html",
+        "skyvilla-estate-k8m4p2x7/en/faqs.html",
+        "skyvilla-estate-k8m4p2x7/en/image-gallery.html",
+        "skyvilla-estate-k8m4p2x7/en/index.html",
+        "skyvilla-estate-k8m4p2x7/en/pricing.html",
+        "skyvilla-estate-k8m4p2x7/en/project-single.html",
+        "skyvilla-estate-k8m4p2x7/en/projects.html",
+        "skyvilla-estate-k8m4p2x7/en/service-single.html",
+        "skyvilla-estate-k8m4p2x7/en/services.html",
+        "skyvilla-estate-k8m4p2x7/en/team-single.html",
+        "skyvilla-estate-k8m4p2x7/en/team.html",
+        "skyvilla-estate-k8m4p2x7/en/testimonials.html",
+        "skyvilla-estate-k8m4p2x7/en/video-gallery.html",
+        "skyvilla-estate-k8m4p2x7/ru/404.html",
+        "skyvilla-estate-k8m4p2x7/ru/about.html",
+        "skyvilla-estate-k8m4p2x7/ru/blog-single.html",
+        "skyvilla-estate-k8m4p2x7/ru/blog.html",
+        "skyvilla-estate-k8m4p2x7/ru/contact.html",
+        "skyvilla-estate-k8m4p2x7/ru/faqs.html",
+        "skyvilla-estate-k8m4p2x7/ru/image-gallery.html",
+        "skyvilla-estate-k8m4p2x7/ru/index.html",
+        "skyvilla-estate-k8m4p2x7/ru/pricing.html",
+        "skyvilla-estate-k8m4p2x7/ru/project-single.html",
+        "skyvilla-estate-k8m4p2x7/ru/projects.html",
+        "skyvilla-estate-k8m4p2x7/ru/service-single.html",
+        "skyvilla-estate-k8m4p2x7/ru/services.html",
+        "skyvilla-estate-k8m4p2x7/ru/team-single.html",
+        "skyvilla-estate-k8m4p2x7/ru/team.html",
+        "skyvilla-estate-k8m4p2x7/ru/testimonials.html",
+        "skyvilla-estate-k8m4p2x7/ru/video-gallery.html"
+      ]
+    },
+    {
+      "id": "sync",
+      "project": "projects/scrollsyncvideo-block",
+      "sourceParent": "432a4d760a7faa65763c90911a43655fdafd24c7",
+      "ref": "refs/heads/codex/legal-documents-20261027",
+      "origin": "https://github.com/ivashkov2022-droid/scrollsyncvideo-block.git",
+      "remote": "origin",
+      "sourceSHA256": {
+        "src/index.html": "3337c6effbe8db5889f3a48cd8e1320103ca78769527a8605d01a7257bdb8fa9",
+        "src/vazuri-case-dock.js": "38319762e9aa74370bc45c0759abe56608faef36035277e52efe6ea62037d665"
+      },
+      "runtimePaths": [
+        "scrollsync-video-v7q4m9x2/en/index.html",
+        "scrollsync-video-v7q4m9x2/en/vazuri-case-dock.js",
+        "scrollsync-video-v7q4m9x2/index.html",
+        "scrollsync-video-v7q4m9x2/ru/index.html",
+        "scrollsync-video-v7q4m9x2/ru/vazuri-case-dock.js",
+        "scrollsync-video-v7q4m9x2/vazuri-case-dock.js"
+      ]
+    },
+    {
+      "id": "relief",
+      "project": "projects/relief-motion-literal",
+      "sourceParent": "a228505bb788bff398d3df4f4fb0a1fb03b839bb",
+      "ref": "refs/heads/codex/legal-documents-20261027",
+      "origin": "https://github.com/ivashkov2022-droid/relief-motion-literal.git",
+      "remote": "origin",
+      "sourceSHA256": {
+        "src/vazuri-case-dock.js": "8292289568d12f61130c1e293f825dee7419b3bd85085a52aa200b62ff3dc95f"
+      },
+      "runtimePaths": [
+        "relief-motion-literal-p8m4k2x7/en/index.html",
+        "relief-motion-literal-p8m4k2x7/en/vazuri-case-dock.js",
+        "relief-motion-literal-p8m4k2x7/ru/index.html",
+        "relief-motion-literal-p8m4k2x7/ru/vazuri-case-dock.js"
+      ]
+    }
+  ],
+  "sourceProjectsConfigSHA256": "db9f96495acc7ab45bf1c7c4dd242e8031967805f0a76191d6e8f9e01e918700",
+  "runtimeOwners": {
+    "main/.vite/manifest.json": "main",
+    "main/_next/static/4547e4bc-c19b-4914-9228-83fd89fa9c0d/_buildManifest.js": "main",
+    "main/_next/static/4547e4bc-c19b-4914-9228-83fd89fa9c0d/_ssgManifest.js": "main",
+    "main/_next/static/chunks/AboutTeaser-SfAFSFYB.js": "main",
+    "main/_next/static/chunks/ApprovedBrief-DtdeJzkR.js": "main",
+    "main/_next/static/chunks/AutoplayLoopVideo-CJ9QbE0O.js": "main",
+    "main/_next/static/chunks/Blog-BW8BAL3V.js": "main",
+    "main/_next/static/chunks/BlogArticle-DLWCLUDa.js": "main",
+    "main/_next/static/chunks/BlogPreview-BFP1HKXN.js": "main",
+    "main/_next/static/chunks/BlogPreview-BZHTwiVb.js": "main",
+    "main/_next/static/chunks/BlogPreview-BjKBcJ44.js": "main",
+    "main/_next/static/chunks/BlogPreview-BrKSaBqr.js": "main",
+    "main/_next/static/chunks/BlogPreview-CpmUbh1K.js": "main",
+    "main/_next/static/chunks/BlogPreview-CtYxGaKt.js": "main",
+    "main/_next/static/chunks/BlogPreview-DMBLAWxR.js": "main",
+    "main/_next/static/chunks/BlogPreview-DY9YajT6.js": "main",
+    "main/_next/static/chunks/BlogPreview-DzGPtvX7.js": "main",
+    "main/_next/static/chunks/BlogPreview-lz2XwI1I.js": "main",
+    "main/_next/static/chunks/BlogPreview-rzzMVuY9.js": "main",
+    "main/_next/static/chunks/BlogPreviewEn-CtNcOaoQ.js": "main",
+    "main/_next/static/chunks/BulkyDivider-BZdrSSMD.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-1KrHHMxt.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-1hefNEW2.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-B1hwS1m8.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-BFkZUcyj.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-BfWKSORj.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-CCJZ_h-M.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-CYn4Xmx6.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-CZcYYbh5.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-CtkVWuzo.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-DpGbsX7l.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-DvQNU7kZ.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-DxAfm58Q.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-GQxU-bvk.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-d3MtdEzz.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-i-wbLYTu.js": "main",
+    "main/_next/static/chunks/CommonAnimatedText-D1wXMXl1.js": "main",
+    "main/_next/static/chunks/CommonHeroVideoScale-CMyVI9C7.js": "main",
+    "main/_next/static/chunks/CommonProjectsClip-DMd--1vt.js": "main",
+    "main/_next/static/chunks/CommonScrollAnimated-DoL3WYAH.js": "main",
+    "main/_next/static/chunks/Components-BR2eaDZr.js": "main",
+    "main/_next/static/chunks/ContactLeadForm-BnALt85c.js": "main",
+    "main/_next/static/chunks/ContentPagesStack-DTEpt9YF.js": "main",
+    "main/_next/static/chunks/DemoGrid-Du5MFo-O.js": "main",
+    "main/_next/static/chunks/DividerStickyCaption-CHVSneiV.js": "main",
+    "main/_next/static/chunks/DividerStickyImages-DUuCk4fL.js": "main",
+    "main/_next/static/chunks/DoubleMarqueeDivider-CHESTzjP.js": "main",
+    "main/_next/static/chunks/DoubleMarqueeDivider-CrZMRSWE.js": "main",
+    "main/_next/static/chunks/FooterBackToTop-Cc38EK5a.js": "main",
+    "main/_next/static/chunks/GravityCTAContent-Bd6KJVC0.js": "main",
+    "main/_next/static/chunks/Hero-B5UTeCYf.js": "main",
+    "main/_next/static/chunks/Hero-BGFsp4uZ.js": "main",
+    "main/_next/static/chunks/Hero-CGb-tb6w2.js": "main",
+    "main/_next/static/chunks/Hero-CfCJ0FjN.js": "main",
+    "main/_next/static/chunks/Hero-DFVwWBq6.js": "main",
+    "main/_next/static/chunks/Hero-DQD5356E.js": "main",
+    "main/_next/static/chunks/Hero-IN_2WzjQ.js": "main",
+    "main/_next/static/chunks/Hero-W4brfYk1.js": "main",
+    "main/_next/static/chunks/Hero-da77h_My.js": "main",
+    "main/_next/static/chunks/HeroEn-C0_1Iw1C.js": "main",
+    "main/_next/static/chunks/InnerHeadline-CFpvNP7G.js": "main",
+    "main/_next/static/chunks/InnerHeadline-CTxwA_-q.js": "main",
+    "main/_next/static/chunks/InnerHeadline-CdItmG_t.js": "main",
+    "main/_next/static/chunks/InnerHeadline-D7TjAFHS.js": "main",
+    "main/_next/static/chunks/InnerHeadline-D91mw3zH.js": "main",
+    "main/_next/static/chunks/InnerHeadline-Djv3w7Li.js": "main",
+    "main/_next/static/chunks/InnerHeadline-DkUxTDbU.js": "main",
+    "main/_next/static/chunks/InnerHeadline-YZmem5Wo.js": "main",
+    "main/_next/static/chunks/InnerHeadline-iSn6b3ru.js": "main",
+    "main/_next/static/chunks/InnerPagesSlider-CLHmwr12.js": "main",
+    "main/_next/static/chunks/LazyGravityCTA-DHAjx6VI.js": "main",
+    "main/_next/static/chunks/LegalLinks-DDnZfeAI.js": "main",
+    "main/_next/static/chunks/MarqueeDivider-BMaXpHNE.js": "main",
+    "main/_next/static/chunks/MoreOnTopic-BG5XHSzD.js": "main",
+    "main/_next/static/chunks/MyExpertise-BDfWcAai.js": "main",
+    "main/_next/static/chunks/NotFound-Cae_WfiI.js": "main",
+    "main/_next/static/chunks/OurCapabilities-k-qP_Wbf.js": "main",
+    "main/_next/static/chunks/OurCapabilitiesEn-CW_pmPtn.js": "main",
+    "main/_next/static/chunks/ParallaxDivider-cia_BjeJ.js": "main",
+    "main/_next/static/chunks/ProjectsGrid-BVhjzW3b.js": "main",
+    "main/_next/static/chunks/ProjectsGrid-BzjF_cvo.js": "main",
+    "main/_next/static/chunks/ProjectsGrid-CegAQ1sa.js": "main",
+    "main/_next/static/chunks/ProjectsGrid-UXdFLIkd.js": "main",
+    "main/_next/static/chunks/ProjectsGridEn-hjR5c5u-.js": "main",
+    "main/_next/static/chunks/ProjectsGridX3Showcase-Dis1rDy4.js": "main",
+    "main/_next/static/chunks/ProjectsList-BnRIUgto.js": "main",
+    "main/_next/static/chunks/ProjectsList-CSWp4esF.js": "main",
+    "main/_next/static/chunks/ProjectsList-CzJygzNt.js": "main",
+    "main/_next/static/chunks/ProjectsList-DB68wypU.js": "main",
+    "main/_next/static/chunks/ProjectsShowcase-C0rRlDzz.js": "main",
+    "main/_next/static/chunks/ProjectsShowcase-qsFIgyw8.js": "main",
+    "main/_next/static/chunks/ProjectsStack-CiM9vBaP.js": "main",
+    "main/_next/static/chunks/ProtectsStack-BEZ00uGQ.js": "main",
+    "main/_next/static/chunks/ResponsivePromo-CHogELyC.js": "main",
+    "main/_next/static/chunks/Resume-DGFxWK3h.js": "main",
+    "main/_next/static/chunks/Resume-Dhnv1NOu.js": "main",
+    "main/_next/static/chunks/SelectedWork-BXb9HntE.js": "main",
+    "main/_next/static/chunks/ServicesDescriptionStack-B3SoCTO8.js": "main",
+    "main/_next/static/chunks/ServicesList-C8Znwyz6.js": "main",
+    "main/_next/static/chunks/ServicesList-Ef5WR3fB.js": "main",
+    "main/_next/static/chunks/ServicesStack-qcLuP1z3.js": "main",
+    "main/_next/static/chunks/ServicesStackVideo-CwRmm1w-.js": "main",
+    "main/_next/static/chunks/SiteAnalytics-DhLGDMmq.js": "main",
+    "main/_next/static/chunks/SiteChrome-Bll1iYDn.js": "main",
+    "main/_next/static/chunks/StatisticsLines-BEtUYUTe.js": "main",
+    "main/_next/static/chunks/StatisticsLines-BF1cEzI6.js": "main",
+    "main/_next/static/chunks/StatisticsLines-DmAdSpZ8.js": "main",
+    "main/_next/static/chunks/StatisticsLinesEn-DEXFVIGB.js": "main",
+    "main/_next/static/chunks/TeamList-BRakQ9Kc.js": "main",
+    "main/_next/static/chunks/TemplateRuntimeProvider-DNK3vFN2.js": "main",
+    "main/_next/static/chunks/TestimonialSliderIcons-BQmUwbTL.js": "main",
+    "main/_next/static/chunks/TestimonialsSlider-BghZM7X6.js": "main",
+    "main/_next/static/chunks/TestimonialsSlider-Cuomb-Lv.js": "main",
+    "main/_next/static/chunks/UkiyoParallax-CriyZmif.js": "main",
+    "main/_next/static/chunks/app-rsc-cache-busting-B0D0LJtM.js": "main",
+    "main/_next/static/chunks/facts-Bi4WQpms.js": "main",
+    "main/_next/static/chunks/hybrid-client-route-owner-DB08HIhg.js": "main",
+    "main/_next/static/chunks/index-Bw5puN7J.js": "main",
+    "main/_next/static/chunks/layout-segment-context-l-s_K60f.js": "main",
+    "main/_next/static/chunks/link-B8lZeIRS.js": "main",
+    "main/_next/static/chunks/projects-BOSGw1zB.js": "main",
+    "main/_next/static/chunks/services-CJFaW7rC.js": "main",
+    "main/_next/static/chunks/stackCardsEffects-CRy54oY-.js": "main",
+    "main/_next/static/chunks/testimonials-D8Lu9iut.js": "main",
+    "main/_next/static/chunks/ukiyo.esm.min-i24cqig7.js": "main",
+    "main/_next/static/chunks/vazuri-events-BdOofYl6.js": "main",
+    "main/_next/static/css/index.9xAYx9JL.css": "main",
+    "main/consent/index.html": "main",
+    "main/contact/index.html": "main",
+    "main/documents/personal-data-consent-2026-10-27.pdf": "main",
+    "main/documents/privacy-policy-2026-10-27.pdf": "main",
+    "main/en/consent/index.html": "main",
+    "main/en/contact/index.html": "main",
+    "main/en/index.html": "main",
+    "main/en/privacy/index.html": "main",
+    "main/index.html": "main",
+    "main/lead.php": "main",
+    "main/privacy/index.html": "main",
+    "main/vinext-client-entry-manifest.json": "main",
+    "relief-motion-literal-p8m4k2x7/en/index.html": "relief",
+    "relief-motion-literal-p8m4k2x7/en/vazuri-case-dock.js": "relief",
+    "relief-motion-literal-p8m4k2x7/ru/index.html": "relief",
+    "relief-motion-literal-p8m4k2x7/ru/vazuri-case-dock.js": "relief",
+    "revive-cosmetics-r8q4m7x2/assets/vazuri-case-dock.js": "revive",
+    "revive-cosmetics-r8q4m7x2/index.html": "revive",
+    "revive-cosmetics-r8q4m7x2/ru/assets/vazuri-case-dock.js": "revive",
+    "revive-cosmetics-r8q4m7x2/ru/index.html": "revive",
+    "scroll-slides-kinetic-x8q4m7v2/en/index.html": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/en/vazuri-case-dock.js": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/index.html": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/ru/index.html": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/ru/vazuri-case-dock.js": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/vazuri-case-dock.js": "slides",
+    "scrollsync-video-v7q4m9x2/en/index.html": "sync",
+    "scrollsync-video-v7q4m9x2/en/vazuri-case-dock.js": "sync",
+    "scrollsync-video-v7q4m9x2/index.html": "sync",
+    "scrollsync-video-v7q4m9x2/ru/index.html": "sync",
+    "scrollsync-video-v7q4m9x2/ru/vazuri-case-dock.js": "sync",
+    "scrollsync-video-v7q4m9x2/vazuri-case-dock.js": "sync",
+    "skyvilla-estate-k8m4p2x7/assets/vazuri/vazuri-case-dock.js": "sky",
+    "skyvilla-estate-k8m4p2x7/en/404.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/about.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/blog-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/blog.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/contact.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/faqs.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/image-gallery.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/index.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/pricing.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/project-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/projects.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/service-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/services.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/team-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/team.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/testimonials.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/video-gallery.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/404.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/about.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/blog-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/blog.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/contact.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/faqs.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/image-gallery.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/index.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/pricing.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/project-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/projects.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/service-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/services.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/team-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/team.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/testimonials.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/video-gallery.html": "sky",
+    "urban-pulse-exhibitions-k7m3p9x4/assets/vazuri-case-dock.js": "urban",
+    "urban-pulse-exhibitions-k7m3p9x4/index.html": "urban",
+    "urban-pulse-exhibitions-k7m3p9x4/ru/assets/vazuri-case-dock.js": "urban",
+    "urban-pulse-exhibitions-k7m3p9x4/ru/index.html": "urban",
+    "vazuri-1099af950ba0e8f8/index.html": "hotel",
+    "vazuri-1099af950ba0e8f8/ru/index.html": "hotel",
+    "vazuri-1099af950ba0e8f8/vazuri-case-dock.js": "hotel",
+    "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/8df73e16-49fa-4832-8f4a-485d264cd912/_buildManifest.js": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/8df73e16-49fa-4832-8f4a-485d264cd912/_ssgManifest.js": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-D-4-piGv.js": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-CQ0eSNZO.js": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-BcQsqhWN.js": "night",
+    "vazuri-preview-liko-dark-shop-public/index.html": "night",
+    "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json": "night",
+    "vazuri-preview-liko-fashion-studio-public/index.html": "altera",
+    "vazuri-preview-liko-fashion-studio-public/vazuri-case-dock.js": "altera"
+  },
+  "intendedDelta": {
+    "main/.vite/manifest.json": {
+      "sha256": "d30f597e5c195ee0f3b67e261b3d1fa467625a8ef44e6e7aba35658fc8ba2255",
+      "size": 79866,
+      "mode": "0o444"
+    },
+    "main/_next/static/4547e4bc-c19b-4914-9228-83fd89fa9c0d/_buildManifest.js": {
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "size": 159,
+      "mode": "0o444"
+    },
+    "main/_next/static/4547e4bc-c19b-4914-9228-83fd89fa9c0d/_ssgManifest.js": {
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "size": 76,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/AboutTeaser-SfAFSFYB.js": {
+      "sha256": "de181991867ae5ad13e5b84f1344d8a569bed3437f18d075c45a107e73c968ad",
+      "size": 4554,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ApprovedBrief-DtdeJzkR.js": {
+      "sha256": "9476a9894c4283cad7b3a7036fe712ad062df0497f3970ce55cb254f05d38fc4",
+      "size": 33795,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/AutoplayLoopVideo-CJ9QbE0O.js": {
+      "sha256": "90d4224575b86dd088cffffe2fc603cefb1e5a0b42d195c2fc5459135edcd790",
+      "size": 2487,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Blog-BW8BAL3V.js": {
+      "sha256": "daaa978688ff4a0507a228df0bff7f768414bee19ec747591d4fd08b3450bb34",
+      "size": 22753,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogArticle-DLWCLUDa.js": {
+      "sha256": "32e080f556f7d0a426e485a7878d8cf071fa99103757e0d750991c0a9d211328",
+      "size": 20232,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-BFP1HKXN.js": {
+      "sha256": "044afa56e6a971a1697cc00002d97a9c120180ae0e3789907e111784d9b262f0",
+      "size": 5087,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-BZHTwiVb.js": {
+      "sha256": "99273b1b9aecbfab4d693e229c1ce23d1820629570d167b485d0188996684fda",
+      "size": 4989,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-BjKBcJ44.js": {
+      "sha256": "581292acd6ffbbaf40971851846322f2bf43aa1b318c61c7ea8a80606bb73738",
+      "size": 5263,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-BrKSaBqr.js": {
+      "sha256": "f93525eb836918b8e18dfa88a50c863059d2a26fc93bf22636005a2f8fc24235",
+      "size": 4809,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-CpmUbh1K.js": {
+      "sha256": "6b828914f4216e68bb2a9eac01d60bfb9de0721b57a158e2af690e4ad9f5378d",
+      "size": 5282,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-CtYxGaKt.js": {
+      "sha256": "58965c60bf776acc373137ccc2f903fc449257a35863d70d2fb40081a235b169",
+      "size": 4888,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-DMBLAWxR.js": {
+      "sha256": "abee9c23a860f442ed18f2ec92f502fec257412e3fc4f1987f161bff65f87741",
+      "size": 5282,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-DY9YajT6.js": {
+      "sha256": "24bd06772d63896ea2753ef6ff08022692e9c0309551b5346c54af5620a46a1f",
+      "size": 4778,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-DzGPtvX7.js": {
+      "sha256": "6ce56730d1611d0109a95268f94460e0612ff1c9b6b6fe3cc39b8437d8cbdf43",
+      "size": 4768,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-lz2XwI1I.js": {
+      "sha256": "5b80841181d3c9c7b39ebd551550bc8cdb1d36f35a32786881eab9055f175415",
+      "size": 4766,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-rzzMVuY9.js": {
+      "sha256": "be0612b31d17f3306b832645a80a18289dc9474716948a7d83080761a84fc3a3",
+      "size": 6288,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreviewEn-CtNcOaoQ.js": {
+      "sha256": "83717b79e73fa159eea00c4a78d071f97c4f8322a8c5865935652a5ddf4fb6f2",
+      "size": 5863,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BulkyDivider-BZdrSSMD.js": {
+      "sha256": "a437d8285e2bf2bf495d9fe1f83ae28148997ac20f791ac994770316d4cffdf2",
+      "size": 1235,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-1KrHHMxt.js": {
+      "sha256": "0fa370e3f124a1a802320f2fa0f36d58a82e26ac271ea5440be89bade0070b08",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-1hefNEW2.js": {
+      "sha256": "91f14b6cb76bcc12511d3f191bcd97ab7ff7fea79a1ea99cfbfc3eeac7e5e576",
+      "size": 6789,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-B1hwS1m8.js": {
+      "sha256": "df0f819d403b0d01a1d76f1e6bc4dc085d9f49b82bd1e0617cc9458984dfdc47",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-BFkZUcyj.js": {
+      "sha256": "df0f819d403b0d01a1d76f1e6bc4dc085d9f49b82bd1e0617cc9458984dfdc47",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-BfWKSORj.js": {
+      "sha256": "df0f819d403b0d01a1d76f1e6bc4dc085d9f49b82bd1e0617cc9458984dfdc47",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-CCJZ_h-M.js": {
+      "sha256": "2d19911338239f59bc1d51af8b2540798b165c314b035e196d776ee946e352ff",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-CYn4Xmx6.js": {
+      "sha256": "1a1d4f165a3a306502e3904b70bf6de7a303656f2cc51d4df8bc5f49d540ecc1",
+      "size": 6924,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-CZcYYbh5.js": {
+      "sha256": "2d19911338239f59bc1d51af8b2540798b165c314b035e196d776ee946e352ff",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-CtkVWuzo.js": {
+      "sha256": "ca0f8c52473f98cc6d19cfe3775c68102600f48a5765c71032f8035ac7db02d4",
+      "size": 6789,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-DpGbsX7l.js": {
+      "sha256": "2d19911338239f59bc1d51af8b2540798b165c314b035e196d776ee946e352ff",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-DvQNU7kZ.js": {
+      "sha256": "df0f819d403b0d01a1d76f1e6bc4dc085d9f49b82bd1e0617cc9458984dfdc47",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-DxAfm58Q.js": {
+      "sha256": "91f14b6cb76bcc12511d3f191bcd97ab7ff7fea79a1ea99cfbfc3eeac7e5e576",
+      "size": 6789,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-GQxU-bvk.js": {
+      "sha256": "df0f819d403b0d01a1d76f1e6bc4dc085d9f49b82bd1e0617cc9458984dfdc47",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-d3MtdEzz.js": {
+      "sha256": "2d19911338239f59bc1d51af8b2540798b165c314b035e196d776ee946e352ff",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-i-wbLYTu.js": {
+      "sha256": "2d19911338239f59bc1d51af8b2540798b165c314b035e196d776ee946e352ff",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CommonAnimatedText-D1wXMXl1.js": {
+      "sha256": "b2094b39e3cc296de2f4f82adeb611a313a8cc5761655d051d454ee8de230096",
+      "size": 13582,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CommonHeroVideoScale-CMyVI9C7.js": {
+      "sha256": "e6b34bda987e808582e2ad56f4951348f8cd299571b5e513cf4bef3ab550e452",
+      "size": 2121,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CommonProjectsClip-DMd--1vt.js": {
+      "sha256": "6bb32dd583a717984d081ac4d212f5246f45c5706e73fa357f461967e87e65be",
+      "size": 2621,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CommonScrollAnimated-DoL3WYAH.js": {
+      "sha256": "0712e9ae90866689ae33dd06d14e32bf4877e114fec8fd0bafeb2d52d8621de6",
+      "size": 3865,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Components-BR2eaDZr.js": {
+      "sha256": "2116ecbeef2630fe10590eae74fa6369d088de87d689cfcdf3a79e32d571ff45",
+      "size": 7246,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ContactLeadForm-BnALt85c.js": {
+      "sha256": "78f6a5658ffcc1861582139311b80bc638ac3c8812d00a597085248d5ecb52b7",
+      "size": 490,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ContentPagesStack-DTEpt9YF.js": {
+      "sha256": "cb4b2d4336c5866b81ea9dd89ee4a002976fcab316620a51a7639299c034e7f3",
+      "size": 10129,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/DemoGrid-Du5MFo-O.js": {
+      "sha256": "46612ca9bb75fd31060fe51893126e79039c130dddcfea3f8ce02b37d2c27b73",
+      "size": 12160,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/DividerStickyCaption-CHVSneiV.js": {
+      "sha256": "3e6461d5a6bacec9329084f4210cbf86b65a1eebc73ee907234710c5f8b00403",
+      "size": 6775,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/DividerStickyImages-DUuCk4fL.js": {
+      "sha256": "460609374256ffdace20dabb605527aeb122801f6827dac42d37992cf7fb03d0",
+      "size": 5862,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/DoubleMarqueeDivider-CHESTzjP.js": {
+      "sha256": "1213f0f28f0dfc9fd6e2ae6c01517e71ebbb6f7a4f460849a7cd8abbb6b31a9c",
+      "size": 7835,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/DoubleMarqueeDivider-CrZMRSWE.js": {
+      "sha256": "db5592983b0f185eb38aa0b809d8bcf5afd71cc19743cf7871e0637268eed38d",
+      "size": 7705,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/FooterBackToTop-Cc38EK5a.js": {
+      "sha256": "904e4b7734e5fcc050d320cf3a8bbec5b1c621570b293e612dc7fde252b00fd9",
+      "size": 4691,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/GravityCTAContent-Bd6KJVC0.js": {
+      "sha256": "d2e0b1f57e43e02873fab8d1577f08735b6ad5ca92865dbd438d5d3ad8c034ff",
+      "size": 1582,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-B5UTeCYf.js": {
+      "sha256": "52236c20d4d3e95a67866beda0430de4e922d066af601e86add9bfe68f05c6e8",
+      "size": 5650,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-BGFsp4uZ.js": {
+      "sha256": "32a33420e3ab67458ac41f9ab626f9af0eaa04af85ea844b34c94b1495292da9",
+      "size": 5478,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-CGb-tb6w2.js": {
+      "sha256": "49d148baf5a949274ff4b2f0b2a433f376f0be340c71c322c4fc7a6bf96adb31",
+      "size": 6849,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-CfCJ0FjN.js": {
+      "sha256": "4745c42ad3e72e7b2d6eec6671dc433045fd14d4abf6059a7cd7d20d8265f65c",
+      "size": 5077,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-DFVwWBq6.js": {
+      "sha256": "9589d1fb2bd1f143e5baad470efc0aabf9cd739b3914adc50bca73d39496d424",
+      "size": 4294,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-DQD5356E.js": {
+      "sha256": "09839523cf3811cdd110bf6dc264dc6f65928a44740f6d8cc3575add2f9a5f86",
+      "size": 3539,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-IN_2WzjQ.js": {
+      "sha256": "ed70e2f76a46e65704e96b1e1e30b36e7a0cae53729c4e16515c02779f30fbe5",
+      "size": 4576,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-W4brfYk1.js": {
+      "sha256": "05c2aad76581e6be260c7e6de881f09757bc2b23405bef49658b71a1b1162bd6",
+      "size": 10367,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-da77h_My.js": {
+      "sha256": "4982717769f6ebcf12f8272100ba7180414dbf3baece6c56a2984c63e5f59abf",
+      "size": 29382,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/HeroEn-C0_1Iw1C.js": {
+      "sha256": "4a73814ebecd04dce793c13f01a42b31a6e17bd5ab65fcfa48be48ecba7eb6ba",
+      "size": 4248,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-CFpvNP7G.js": {
+      "sha256": "ff58efdadd682b2721446e1f638c6f1d8c465b8edbc674d8f3a9c4d73dc8a422",
+      "size": 3368,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-CTxwA_-q.js": {
+      "sha256": "1243656e92ca29062ffa3d449b3a7d92bd9db59d7bfe547eecb0b1c329541a61",
+      "size": 7133,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-CdItmG_t.js": {
+      "sha256": "a54982eeb8186e1d466b5d830ea7b5f10872825bf2acc9d739fa35314e82cf32",
+      "size": 3590,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-D7TjAFHS.js": {
+      "sha256": "9d7e26cf275fbb81bbf1d4afea9ccc65e0e8db60bb1a7505b21ea8f46a66b591",
+      "size": 2636,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-D91mw3zH.js": {
+      "sha256": "d47854e60239892f7dafc1252661cd703912efa2166267d4ec286d793f0f5965",
+      "size": 2840,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-Djv3w7Li.js": {
+      "sha256": "06a6161dd037bd3ec5a2fd09428c1248295c2b269566687c0cf3cc5dec786c54",
+      "size": 7437,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-DkUxTDbU.js": {
+      "sha256": "cae79fc295693c1f79b10d59e205ad071b6c70f1e505f098994725faa3897206",
+      "size": 3373,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-YZmem5Wo.js": {
+      "sha256": "ac8724d9baf6bd3b14469d6b0ab9d049a1eea80195603d2e8407a75968172208",
+      "size": 14666,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-iSn6b3ru.js": {
+      "sha256": "b5e005a5c4ac09b5abdf4e78c86a78791af3f1ae17e8cb6b30434bd751890374",
+      "size": 3668,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerPagesSlider-CLHmwr12.js": {
+      "sha256": "d7d5c3bd6d7f14db0755d35dce33d1f389cc9e603a6deb4b6935f388143a0a6f",
+      "size": 4028,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/LazyGravityCTA-DHAjx6VI.js": {
+      "sha256": "416e23722912ce045a00f503a993a337689fd29af42b75a030b8bf38d5a0df3e",
+      "size": 2942,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/LegalLinks-DDnZfeAI.js": {
+      "sha256": "6e001ee9c9dfe894fd32b567d60eb725bb1929944ec395c019320a57c175f782",
+      "size": 1265,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/MarqueeDivider-BMaXpHNE.js": {
+      "sha256": "8cda0b6c4492cd19423ec905ce98fcb6e4a2c781136f8b0ee02ecb8d0cc01f40",
+      "size": 11982,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/MoreOnTopic-BG5XHSzD.js": {
+      "sha256": "68fb5cdfd6eddf931a6c4d59879756506c989b45860b52d3ec60e1c1acf4a010",
+      "size": 4963,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/MyExpertise-BDfWcAai.js": {
+      "sha256": "65d886daacfd4a637d7f0b05332785fba6a435ac8c838aa7aefd4eb147206e63",
+      "size": 3612,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/NotFound-Cae_WfiI.js": {
+      "sha256": "c771dc42671344693d247d0c219271262d52fece5285e8cc3cb9de848120d35c",
+      "size": 7612,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/OurCapabilities-k-qP_Wbf.js": {
+      "sha256": "b2a279f69f2caf846021e0dc3342442686d0d37280177e7c410f3c82c987f428",
+      "size": 3637,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/OurCapabilitiesEn-CW_pmPtn.js": {
+      "sha256": "dc22358db67c6c0ba5d1827d9da01f2373618e17e486bbf1bf37851581b33468",
+      "size": 3579,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ParallaxDivider-cia_BjeJ.js": {
+      "sha256": "11be880483105e99ca97980c00a930eabfa9c4b7ffa88cfb4d1f4c5719c407ff",
+      "size": 1363,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGrid-BVhjzW3b.js": {
+      "sha256": "2456dd42c16eb70caf8074c87981df6a2d97a358ce66e62736d7cb10eb36ba05",
+      "size": 13904,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGrid-BzjF_cvo.js": {
+      "sha256": "91700ae3461cccf26f52764ad181ba29e954fbddadf69ac2ea40ab24779376bb",
+      "size": 9952,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGrid-CegAQ1sa.js": {
+      "sha256": "c1840417768f9c4df0be45d9534cc4bf8b35eed2dce902d0677cc18eb3b14883",
+      "size": 11131,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGrid-UXdFLIkd.js": {
+      "sha256": "9de540ce53f95b135cf5b72ab5eb01c0d8d7d3c07cce43afdc949f9300704262",
+      "size": 12715,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGridEn-hjR5c5u-.js": {
+      "sha256": "acd1898cd3dd921c8cfea1c6b51b6f22b7427d653c10789cceeddc769d07f6e8",
+      "size": 12142,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGridX3Showcase-Dis1rDy4.js": {
+      "sha256": "51afcabbc78b0426d4bd3be5a5edf743376a3b5604003a04aa0a36a457c0b543",
+      "size": 10357,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsList-BnRIUgto.js": {
+      "sha256": "2037ea6becf3e878010234300af27fa9d9db7d5e0d21cb0c0e0a10571beaa810",
+      "size": 8745,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsList-CSWp4esF.js": {
+      "sha256": "c178f48834ed69660920d95b0f973454c57e7de487e7a0ec612e39eb412c09b9",
+      "size": 9547,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsList-CzJygzNt.js": {
+      "sha256": "b59fa4a40eea432b5393d818e871a06a1a3ad5795ae20cbf7d862746b6bc33c4",
+      "size": 9699,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsList-DB68wypU.js": {
+      "sha256": "2ba43ff11db16152498c8696686ea1c2e25e1c7cc7450478552e73879972c9b8",
+      "size": 7762,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsShowcase-C0rRlDzz.js": {
+      "sha256": "370d4270c89c15bb575d82672353c678eb283d728935ede03a7b99761740d052",
+      "size": 1541,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsShowcase-qsFIgyw8.js": {
+      "sha256": "567c838735ba5ecaebb0841678f7eac88d6064f5c336eb3aec5da1952d80aec1",
+      "size": 1530,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsStack-CiM9vBaP.js": {
+      "sha256": "294a094a6678c44300183491c6c63e6bb97c603d471ed9b741b836e0a3ce6118",
+      "size": 4557,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProtectsStack-BEZ00uGQ.js": {
+      "sha256": "ed990f558aa64dea701c8ba68e2feaea8aa9578c81bde43f862fb8de24e8045e",
+      "size": 3636,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ResponsivePromo-CHogELyC.js": {
+      "sha256": "c04c84ecc9d80826ab96e6ce56e3546095410bdce078db7d57d1a625793e2013",
+      "size": 4198,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Resume-DGFxWK3h.js": {
+      "sha256": "051b188a31c6952b27a131a6e1c2652d29ee1edf6031cd1965d80e91b4e559e6",
+      "size": 18505,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Resume-Dhnv1NOu.js": {
+      "sha256": "bf8f793f52a811af18d0759b36434efb952d49967780d32164ed135b73925596",
+      "size": 17682,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/SelectedWork-BXb9HntE.js": {
+      "sha256": "633532cddd034e8c8a4b34eb442b9b64eb5d4f1d08aa50422beb71fa5857ed34",
+      "size": 8643,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ServicesDescriptionStack-B3SoCTO8.js": {
+      "sha256": "f0420db6cb3b3638a24eb2d882853890c25a77ec699610966dd398e65dd89677",
+      "size": 8336,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ServicesList-C8Znwyz6.js": {
+      "sha256": "b52a3030bf44ed1f443599fde5fe5d0e967c6f3c1b941f5b51ad3cb5b4b67492",
+      "size": 6237,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ServicesList-Ef5WR3fB.js": {
+      "sha256": "8c517b438c8cabe4103f28dcf9b58d60e62fe1f643c9c5d9ec121f65167fd709",
+      "size": 7351,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ServicesStack-qcLuP1z3.js": {
+      "sha256": "2272716196ee93a9658d52ad231d283f67aa8ce1897d6940ca926479583ac9f3",
+      "size": 4752,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ServicesStackVideo-CwRmm1w-.js": {
+      "sha256": "356827b118ce446c7410df22657759447d834a8468c852a1708b3fa12be3971e",
+      "size": 5059,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/SiteAnalytics-DhLGDMmq.js": {
+      "sha256": "d8d8c1309400c0e685f0633aab6785bd18a47246ccee45b9c2f283cf901d3f87",
+      "size": 890,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/SiteChrome-Bll1iYDn.js": {
+      "sha256": "526e6809d6dc5187556f696fd57dad22d77b9c9720afe57a368751964f0a06d7",
+      "size": 44382,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/StatisticsLines-BEtUYUTe.js": {
+      "sha256": "92bb9fbbc13b3379c6bc077f25047629861376adc2c579a1ec08faadce01fac6",
+      "size": 3010,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/StatisticsLines-BF1cEzI6.js": {
+      "sha256": "88bfabb7cb9dff7eb98003905e3c59885d3b9713867184b029b530c56b4b9376",
+      "size": 2079,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/StatisticsLines-DmAdSpZ8.js": {
+      "sha256": "69fd81438c9e67b30eba670f3d1ac5c41c29d36caee35f45019f78604b9ceb28",
+      "size": 2892,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/StatisticsLinesEn-DEXFVIGB.js": {
+      "sha256": "9af865860a145d4a5f22838fc5858d41f71a81f253e1482e7b04c025b1783c7f",
+      "size": 2011,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/TeamList-BRakQ9Kc.js": {
+      "sha256": "62954ce018d28e6dca41f1a4ea4b4dde6764a18b6f5df0fe20adf76dc6cf8a1f",
+      "size": 7666,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/TemplateRuntimeProvider-DNK3vFN2.js": {
+      "sha256": "d0ce47ae83c214fea1d3ab1736a8522cde0897fb6953849256c715cf61e62faa",
+      "size": 33535,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/TestimonialSliderIcons-BQmUwbTL.js": {
+      "sha256": "3059bf3c2c7d20ec89a0153c5cba3b6fad36586f2a5156b09440c1fa055f3fa7",
+      "size": 102450,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/TestimonialsSlider-BghZM7X6.js": {
+      "sha256": "c37efb5a5bc939b9e63e0e2921aa7b40abc0fe943331edcbeff1bbe1deeddee1",
+      "size": 1831,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/TestimonialsSlider-Cuomb-Lv.js": {
+      "sha256": "33b9bb0ea1e9136aaace0c5126ab9f466deb792cf24e7a6ee005433a763d4509",
+      "size": 5838,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/UkiyoParallax-CriyZmif.js": {
+      "sha256": "0f2ec0fd3c24c1cc1253a7813e4655ce525e594c0de833ff4d3f06ab3d1a2840",
+      "size": 2183,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/app-rsc-cache-busting-B0D0LJtM.js": {
+      "sha256": "bc95146ba7de88db2e9ba8d289a8c28bc691a589bb801e19487efdddc712d564",
+      "size": 4802,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/facts-Bi4WQpms.js": {
+      "sha256": "04140d5ff1b7af345a8681a65d9ed689c7d771d8730fc27d3fb8fc2cb6676c52",
+      "size": 788,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/hybrid-client-route-owner-DB08HIhg.js": {
+      "sha256": "a8e8e84cc8b9678f18dfa50750c82caf62767547cf35208d4def2f61e991d90b",
+      "size": 19265,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/index-Bw5puN7J.js": {
+      "sha256": "eb9508cda7d547614d17d31fd186015206654a1b82a8e9a54ee2444b8a417970",
+      "size": 211147,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/layout-segment-context-l-s_K60f.js": {
+      "sha256": "aa43184b9e370de749b0a1d7794b1310e4eed966b451c35ec927aa042dd6bee0",
+      "size": 534,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/link-B8lZeIRS.js": {
+      "sha256": "c69bb9633793eb2683614d89132a2ddd985561d5380114a90516e77a3b89d71c",
+      "size": 14248,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/projects-BOSGw1zB.js": {
+      "sha256": "70bb5d85e21805b1f35d7f596e36c42f7d7fb9c34ff311e64f0d0cc7fcffb753",
+      "size": 1544,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/services-CJFaW7rC.js": {
+      "sha256": "f3ebe82367fd6ae215801b63e5a78dc29b110e2e1aa5894de0203b39ce446a4f",
+      "size": 5404,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/stackCardsEffects-CRy54oY-.js": {
+      "sha256": "2339585e687a55195707e1db8cd55497c68adfc15dd6ab59811e9261c944b436",
+      "size": 3208,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/testimonials-D8Lu9iut.js": {
+      "sha256": "b3e54e41ca39e468057829a374c0ffed1fb062123d59e00235616386eda2ba92",
+      "size": 5706,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ukiyo.esm.min-i24cqig7.js": {
+      "sha256": "9a86371ab73de2de856ef87cc44112c7ff144cc4a435ef8744fe48a4db31f417",
+      "size": 6984,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/vazuri-events-BdOofYl6.js": {
+      "sha256": "178f87ab60862303798320a81fd1cf4fa3b5e1d91bc74e0fa8dd90f2fd6cffca",
+      "size": 237,
+      "mode": "0o444"
+    },
+    "main/_next/static/css/index.9xAYx9JL.css": {
+      "sha256": "bc64bcf1dcf0bd08e733b9805ffb5953b780f3b6f7b8acbfde7cc27448ed0548",
+      "size": 554244,
+      "mode": "0o444"
+    },
+    "main/consent/index.html": {
+      "sha256": "ba259f3b9927ce2cb1ac06f6dcf91f9846d2e21bb2a38a50c82bb6dc202ef8b8",
+      "size": 111051,
+      "mode": "0o444"
+    },
+    "main/contact/index.html": {
+      "sha256": "06f1c9eb95647e9f47cbfc37d416dc52c7c510601801b75f6bdf9854c0232879",
+      "size": 103880,
+      "mode": "0o444"
+    },
+    "main/documents/personal-data-consent-2026-10-27.pdf": {
+      "sha256": "a397b8c2d952dcca4f52913c872dc46efc4154384c0c7200833a81e017adf2fe",
+      "size": 111281,
+      "mode": "0o444"
+    },
+    "main/documents/privacy-policy-2026-10-27.pdf": {
+      "sha256": "4e3609f3bc3115f48b396ae54c592abde4c6d8937fe34c7f84a94217f51e5a40",
+      "size": 117271,
+      "mode": "0o444"
+    },
+    "main/en/consent/index.html": {
+      "sha256": "c0b33fcef24a6ba7816bcf91751603ba7a5377e812245a184aa2123cf48a0622",
+      "size": 107076,
+      "mode": "0o444"
+    },
+    "main/en/contact/index.html": {
+      "sha256": "1d48f09dce96bee8c9a14e7e4ed1b87ce3294fbbff309c2dd8650daa240f8b78",
+      "size": 101080,
+      "mode": "0o444"
+    },
+    "main/en/index.html": {
+      "sha256": "14fb2edbda2118bab7f61d09b5bbec4d64824a7adfcaab2279e1c61442f4735e",
+      "size": 192985,
+      "mode": "0o444"
+    },
+    "main/en/privacy/index.html": {
+      "sha256": "ee721a78ca11926cb7834a51a9fe0415187006e708f2a748269b0d0089226542",
+      "size": 116201,
+      "mode": "0o444"
+    },
+    "main/index.html": {
+      "sha256": "7c00a304932f9932317e8b804665df756dbc458b64d70e87ca7c81fa0e9fd0f6",
+      "size": 198268,
+      "mode": "0o444"
+    },
+    "main/lead.php": {
+      "sha256": "9f0946f175ba7e270179fa4ae9b4b4d2a1a051bcbd7f99cd551bd69abcefb77f",
+      "size": 5695,
+      "mode": "0o444"
+    },
+    "main/privacy/index.html": {
+      "sha256": "e941486275b6ae46aafd98ae08384807a21a079a09a67d777f1c0cbfb3191130",
+      "size": 124498,
+      "mode": "0o444"
+    },
+    "main/vinext-client-entry-manifest.json": {
+      "sha256": "ab48e6cdb637a542ef3909c767b16dec32dcf34ff9962262539bff214de8eb4c",
+      "size": 65,
+      "mode": "0o444"
+    },
+    "relief-motion-literal-p8m4k2x7/en/index.html": {
+      "sha256": "96a5f0ad72947c18ec7e0a486fb9b379364c14f31db86c89360dc354b1e73411",
+      "size": 72332,
+      "mode": "0o444"
+    },
+    "relief-motion-literal-p8m4k2x7/en/vazuri-case-dock.js": {
+      "sha256": "8292289568d12f61130c1e293f825dee7419b3bd85085a52aa200b62ff3dc95f",
+      "size": 34620,
+      "mode": "0o444"
+    },
+    "relief-motion-literal-p8m4k2x7/ru/index.html": {
+      "sha256": "688f0ff075b4f6cad165e93a00fd64b69caf552651223cd3be583e0f4a2826fc",
+      "size": 73517,
+      "mode": "0o444"
+    },
+    "relief-motion-literal-p8m4k2x7/ru/vazuri-case-dock.js": {
+      "sha256": "8292289568d12f61130c1e293f825dee7419b3bd85085a52aa200b62ff3dc95f",
+      "size": 34620,
+      "mode": "0o444"
+    },
+    "revive-cosmetics-r8q4m7x2/assets/vazuri-case-dock.js": {
+      "sha256": "69b68fb00ffb6485d89d01185ec4267b04bd9e1e654a78a1b161402edcaa1b9d",
+      "size": 35021,
+      "mode": "0o444"
+    },
+    "revive-cosmetics-r8q4m7x2/index.html": {
+      "sha256": "a5c0a1b13f94e928320318885eef0272e00ef2bf6e5da7f7bbf8b8d9c3165939",
+      "size": 1192100,
+      "mode": "0o444"
+    },
+    "revive-cosmetics-r8q4m7x2/ru/assets/vazuri-case-dock.js": {
+      "sha256": "69b68fb00ffb6485d89d01185ec4267b04bd9e1e654a78a1b161402edcaa1b9d",
+      "size": 35021,
+      "mode": "0o444"
+    },
+    "revive-cosmetics-r8q4m7x2/ru/index.html": {
+      "sha256": "0f4b228c75b80c325d4cb723b44eafc6b3c841c74bb88160c94c893890589ba0",
+      "size": 1194888,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/en/index.html": {
+      "sha256": "094888c75a8360501ff515ab96fd8be859bc291bd8acf66e6c58ad9b3ad8dbc1",
+      "size": 60848,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/en/vazuri-case-dock.js": {
+      "sha256": "8d02cda66d07ae6cfef5e5cbd14310032202b80fba83272ed36ae0f9d1b36658",
+      "size": 33993,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/index.html": {
+      "sha256": "68139d6bf2294bdf543374439b4aded99cfb55470f4448b6b7680e92e99cf53a",
+      "size": 59929,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/ru/index.html": {
+      "sha256": "6aca9baf0c7e9ca7e555cf493a98c9ff6d3aba7b58d873f51d6d8b2f37f7c4d4",
+      "size": 61438,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/ru/vazuri-case-dock.js": {
+      "sha256": "8d02cda66d07ae6cfef5e5cbd14310032202b80fba83272ed36ae0f9d1b36658",
+      "size": 33993,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/vazuri-case-dock.js": {
+      "sha256": "8d02cda66d07ae6cfef5e5cbd14310032202b80fba83272ed36ae0f9d1b36658",
+      "size": 33993,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/en/index.html": {
+      "sha256": "3d34c026de33280169ba3b7b5b9ab2b62ee866de62972ee2d2df4de9a32c9289",
+      "size": 3574,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/en/vazuri-case-dock.js": {
+      "sha256": "38319762e9aa74370bc45c0759abe56608faef36035277e52efe6ea62037d665",
+      "size": 34501,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/index.html": {
+      "sha256": "3d34c026de33280169ba3b7b5b9ab2b62ee866de62972ee2d2df4de9a32c9289",
+      "size": 3574,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/ru/index.html": {
+      "sha256": "d3ee060898b8293e4028db689cbb22178a67c407521b3f3d6fb087ac20e54149",
+      "size": 4075,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/ru/vazuri-case-dock.js": {
+      "sha256": "38319762e9aa74370bc45c0759abe56608faef36035277e52efe6ea62037d665",
+      "size": 34501,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/vazuri-case-dock.js": {
+      "sha256": "38319762e9aa74370bc45c0759abe56608faef36035277e52efe6ea62037d665",
+      "size": 34501,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/assets/vazuri/vazuri-case-dock.js": {
+      "sha256": "69b68fb00ffb6485d89d01185ec4267b04bd9e1e654a78a1b161402edcaa1b9d",
+      "size": 35021,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/404.html": {
+      "sha256": "0e62cef2485a052ed052444d934b0d1e67305ffff0cbad4af37126b1c1980094",
+      "size": 78159,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/about.html": {
+      "sha256": "9e4ff62ba27eb55aa69aa078567fb12b47f632dbdf0029e13b674b52b1ae032c",
+      "size": 150812,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/blog-single.html": {
+      "sha256": "f0e6965183a3e0e8b8b4ee7037ec7fce0b213fee8e61dc1ace1c9ef808454b4c",
+      "size": 83954,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/blog.html": {
+      "sha256": "3ea6b93fb51c6343e439d6e2f40c2f7f5d23052632481ecb68e740c67173e524",
+      "size": 87874,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/contact.html": {
+      "sha256": "7a0f885efc8f27bb1ce65b263e5095051cdaf70d3e405ad1d1c7fdf182aca8cb",
+      "size": 84117,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/faqs.html": {
+      "sha256": "009d56d702fda234b0eff42529749a471e2c9b2d1deaa0740fe518573d4676bb",
+      "size": 123923,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/image-gallery.html": {
+      "sha256": "cc45a9862aec44296be98e0cfe075e21a844a3fe4be90084fe38157370d286ea",
+      "size": 82927,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/index.html": {
+      "sha256": "b20cbc3452c7f0a29e29afeb56518946b04cf0f700a5396a9d594404719b4aad",
+      "size": 196249,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/pricing.html": {
+      "sha256": "7f6f84e2128ed5553d8fa9ff6d56ad78aa5259382728460ea078c24b170fa416",
+      "size": 110364,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/project-single.html": {
+      "sha256": "ad86d559be6b537011369a35cadcb294e6dc1ae706755e1620a0a3f24dac56e6",
+      "size": 103941,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/projects.html": {
+      "sha256": "133938357020076f17a728ad28a7d3654c0229e2c3355525143d572ff47b0fc9",
+      "size": 87044,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/service-single.html": {
+      "sha256": "fb3d7d52489dc90c80aff0b0fd4c7f6aa22e36fe14ad7548819d225ce3bc62fe",
+      "size": 101298,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/services.html": {
+      "sha256": "1cdcdefb4f880ce3800169123e76453ed25d52842995a4e3890fb00a01a2c509",
+      "size": 147326,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/team-single.html": {
+      "sha256": "c0d7d844d81863b6404e6b1501f27936e793597611cec5dd4042a6fda19999be",
+      "size": 96630,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/team.html": {
+      "sha256": "ef20fe21bb4017b358568b55d1d6cb41f6bffac5470c9ff50f27f31ceb9b46b1",
+      "size": 90809,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/testimonials.html": {
+      "sha256": "1a6e29524a767633a7fdfba5fe301bb55e837dd7449689ec36a5a57b2abcb4dd",
+      "size": 120261,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/video-gallery.html": {
+      "sha256": "14af844b3d699e47189389c748f76d114168e698a0ef697fe82fddf3c0bfe75c",
+      "size": 82918,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/404.html": {
+      "sha256": "9f6e020e64f202f51df940cbf8dc9cee08fd5fbed8ac5f77fb55bd51638692dc",
+      "size": 79226,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/about.html": {
+      "sha256": "39401b9e0bfd793e66faf8abc6cc66d3d3cf60d3acba32c458cccb1d73037cf5",
+      "size": 156413,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/blog-single.html": {
+      "sha256": "fc8be0639e4c481547aa74cbc9aebbb9f4f34761132ebb27116dda53bd0fc533",
+      "size": 85813,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/blog.html": {
+      "sha256": "7c49e92ebd067029ecb8a7e02e49688def0219e62de530fdd2b364d7585a45de",
+      "size": 89302,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/contact.html": {
+      "sha256": "47caea5a6fc1e4739b91fb4e04e00ef9b4ca5589bd91c6115a21401668ddd8f8",
+      "size": 85407,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/faqs.html": {
+      "sha256": "ff4cd1068e164be4e9529ceffe5e03472a87c8127614b8d3501d7cddc279994c",
+      "size": 129813,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/image-gallery.html": {
+      "sha256": "f722e4b501ef70009eeada88f4563f142b036497974153a59353719b588393dd",
+      "size": 84051,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/index.html": {
+      "sha256": "c3967594fe2f2da28fb70144157a6bfbf3bb1e2c355a6d3bc7750743cfd5be8c",
+      "size": 204182,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/pricing.html": {
+      "sha256": "870190c2176af2525aee08365a584e607212df889b6a8303243a0ca3a5455f55",
+      "size": 114887,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/project-single.html": {
+      "sha256": "d9b4074fa080cfe5c13df48501794706af8ae8829dabff4d063982b2db162b09",
+      "size": 107355,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/projects.html": {
+      "sha256": "e8dd3335ee50e6836a4f23f1ce90331f7f70e2a446782f23ca6520bd87c07a34",
+      "size": 88299,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/service-single.html": {
+      "sha256": "102d86c699decba8594078857e46493859049ff82085bc02f840d18d8917b87a",
+      "size": 104769,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/services.html": {
+      "sha256": "ab3f5e2294b597f3b560eb7533b5f77295d9a49c8f4e99ef5474608405f6de8d",
+      "size": 151769,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/team-single.html": {
+      "sha256": "03e03492e9f033ff448a194cc1211514824274459a2973191ebb08b999f7281a",
+      "size": 99389,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/team.html": {
+      "sha256": "eb007bc26700b26741aeabc4b7c2b2d943c8ac7a72426711335bf627a091e4d9",
+      "size": 92649,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/testimonials.html": {
+      "sha256": "1214e0cca0bfa20adb649ed77bd95bf686d4880293f48b076d3b50ee7a65e1f7",
+      "size": 125027,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/video-gallery.html": {
+      "sha256": "a283aa2363fcb69ffc506796414f93c7f1edc0e9bd63df4f501547bb946179f9",
+      "size": 84126,
+      "mode": "0o444"
+    },
+    "urban-pulse-exhibitions-k7m3p9x4/assets/vazuri-case-dock.js": {
+      "sha256": "8d02cda66d07ae6cfef5e5cbd14310032202b80fba83272ed36ae0f9d1b36658",
+      "size": 33993,
+      "mode": "0o444"
+    },
+    "urban-pulse-exhibitions-k7m3p9x4/index.html": {
+      "sha256": "b9307596633afeb92539a65b17574ec3dd0310579c22a49abef219e710e64438",
+      "size": 2752929,
+      "mode": "0o444"
+    },
+    "urban-pulse-exhibitions-k7m3p9x4/ru/assets/vazuri-case-dock.js": {
+      "sha256": "8d02cda66d07ae6cfef5e5cbd14310032202b80fba83272ed36ae0f9d1b36658",
+      "size": 33993,
+      "mode": "0o444"
+    },
+    "urban-pulse-exhibitions-k7m3p9x4/ru/index.html": {
+      "sha256": "2ffc76f18b23cefc19bd64d720aea935d3559f1dd6564c754a6770ffe26caed1",
+      "size": 2762685,
+      "mode": "0o444"
+    },
+    "vazuri-1099af950ba0e8f8/index.html": {
+      "sha256": "dd49fc378819c79411b97933c5bdc4c63a6a473fcae4b5491f9c129ebdc39030",
+      "size": 2386037,
+      "mode": "0o444"
+    },
+    "vazuri-1099af950ba0e8f8/ru/index.html": {
+      "sha256": "ad150ca46a87f43956f9ff0786aa6daa4760770446f0ef2dc0ad5fc44edcaaa1",
+      "size": 2394431,
+      "mode": "0o444"
+    },
+    "vazuri-1099af950ba0e8f8/vazuri-case-dock.js": {
+      "sha256": "69b68fb00ffb6485d89d01185ec4267b04bd9e1e654a78a1b161402edcaa1b9d",
+      "size": 35021,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": {
+      "sha256": "022f703af203a6e9d06aaed73d50fc461a203bea8ac35267ed056ee7e854eba0",
+      "size": 1750,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/8df73e16-49fa-4832-8f4a-485d264cd912/_buildManifest.js": {
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "size": 159,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/8df73e16-49fa-4832-8f4a-485d264cd912/_ssgManifest.js": {
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "size": 76,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-D-4-piGv.js": {
+      "sha256": "28a360661def89d3eb892c26ea2b8e6d0a3d54e7e819ed93094c9aa52120c40b",
+      "size": 176767,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-CQ0eSNZO.js": {
+      "sha256": "876553fb24fb0b57efa48a03548355430261762b13c2d2dd19e71179719666ef",
+      "size": 489,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-BcQsqhWN.js": {
+      "sha256": "e176fe499a2b00917f90e76fb0afb6a4448a35a77325b279d0a86c2699d76973",
+      "size": 65311,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/index.html": {
+      "sha256": "b48d028ff72f4dd0231fe272be572f3c6144a34b5c103e0ea59f3a8424ddbf1b",
+      "size": 33373,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json": {
+      "sha256": "a96e9b67e1c5b13dbe35610e9cbe74917b21effb7c244ef891ba696a8b7a4f48",
+      "size": 76,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-fashion-studio-public/index.html": {
+      "sha256": "97045fa1cf04c10ddfa6db56c21f55c2c19cc6126e2863f88b6d234f0fe32a5b",
+      "size": 19296,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-fashion-studio-public/vazuri-case-dock.js": {
+      "sha256": "8d02cda66d07ae6cfef5e5cbd14310032202b80fba83272ed36ae0f9d1b36658",
+      "size": 33993,
+      "mode": "0o444"
+    }
+  },
+  "deletedFiles": [],
+  "archiveSHA256": "b7dd64ce5cf2413e83d775cdf567beade5ce30c68fcdbcb2e3bbb74959d37994",
+  "baselineReportSHA256": "1b44b155e12df517ad94830989e5dcb86e540ac0e399c6024dd07355649392e4",
+  "publicVerificationFiles": [
+    {
+      "file": "main/_next/static/4547e4bc-c19b-4914-9228-83fd89fa9c0d/_buildManifest.js",
+      "url": "https://vazuri.io/_next/static/4547e4bc-c19b-4914-9228-83fd89fa9c0d/_buildManifest.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/4547e4bc-c19b-4914-9228-83fd89fa9c0d/_ssgManifest.js",
+      "url": "https://vazuri.io/_next/static/4547e4bc-c19b-4914-9228-83fd89fa9c0d/_ssgManifest.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/AboutTeaser-SfAFSFYB.js",
+      "url": "https://vazuri.io/_next/static/chunks/AboutTeaser-SfAFSFYB.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ApprovedBrief-DtdeJzkR.js",
+      "url": "https://vazuri.io/_next/static/chunks/ApprovedBrief-DtdeJzkR.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/AutoplayLoopVideo-CJ9QbE0O.js",
+      "url": "https://vazuri.io/_next/static/chunks/AutoplayLoopVideo-CJ9QbE0O.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/Blog-BW8BAL3V.js",
+      "url": "https://vazuri.io/_next/static/chunks/Blog-BW8BAL3V.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/BlogArticle-DLWCLUDa.js",
+      "url": "https://vazuri.io/_next/static/chunks/BlogArticle-DLWCLUDa.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/BlogPreview-BFP1HKXN.js",
+      "url": "https://vazuri.io/_next/static/chunks/BlogPreview-BFP1HKXN.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/BlogPreview-BZHTwiVb.js",
+      "url": "https://vazuri.io/_next/static/chunks/BlogPreview-BZHTwiVb.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/BlogPreview-BjKBcJ44.js",
+      "url": "https://vazuri.io/_next/static/chunks/BlogPreview-BjKBcJ44.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/BlogPreview-BrKSaBqr.js",
+      "url": "https://vazuri.io/_next/static/chunks/BlogPreview-BrKSaBqr.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/BlogPreview-CpmUbh1K.js",
+      "url": "https://vazuri.io/_next/static/chunks/BlogPreview-CpmUbh1K.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/BlogPreview-CtYxGaKt.js",
+      "url": "https://vazuri.io/_next/static/chunks/BlogPreview-CtYxGaKt.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/BlogPreview-DMBLAWxR.js",
+      "url": "https://vazuri.io/_next/static/chunks/BlogPreview-DMBLAWxR.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/BlogPreview-DY9YajT6.js",
+      "url": "https://vazuri.io/_next/static/chunks/BlogPreview-DY9YajT6.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/BlogPreview-DzGPtvX7.js",
+      "url": "https://vazuri.io/_next/static/chunks/BlogPreview-DzGPtvX7.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/BlogPreview-lz2XwI1I.js",
+      "url": "https://vazuri.io/_next/static/chunks/BlogPreview-lz2XwI1I.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/BlogPreview-rzzMVuY9.js",
+      "url": "https://vazuri.io/_next/static/chunks/BlogPreview-rzzMVuY9.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/BlogPreviewEn-CtNcOaoQ.js",
+      "url": "https://vazuri.io/_next/static/chunks/BlogPreviewEn-CtNcOaoQ.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/BulkyDivider-BZdrSSMD.js",
+      "url": "https://vazuri.io/_next/static/chunks/BulkyDivider-BZdrSSMD.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-1KrHHMxt.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-1KrHHMxt.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-1hefNEW2.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-1hefNEW2.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-B1hwS1m8.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-B1hwS1m8.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-BFkZUcyj.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-BFkZUcyj.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-BfWKSORj.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-BfWKSORj.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-CCJZ_h-M.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-CCJZ_h-M.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-CYn4Xmx6.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-CYn4Xmx6.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-CZcYYbh5.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-CZcYYbh5.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-CtkVWuzo.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-CtkVWuzo.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-DpGbsX7l.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-DpGbsX7l.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-DvQNU7kZ.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-DvQNU7kZ.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-DxAfm58Q.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-DxAfm58Q.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-GQxU-bvk.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-GQxU-bvk.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-d3MtdEzz.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-d3MtdEzz.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CTAWithMarquee-i-wbLYTu.js",
+      "url": "https://vazuri.io/_next/static/chunks/CTAWithMarquee-i-wbLYTu.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CommonAnimatedText-D1wXMXl1.js",
+      "url": "https://vazuri.io/_next/static/chunks/CommonAnimatedText-D1wXMXl1.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CommonHeroVideoScale-CMyVI9C7.js",
+      "url": "https://vazuri.io/_next/static/chunks/CommonHeroVideoScale-CMyVI9C7.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CommonProjectsClip-DMd--1vt.js",
+      "url": "https://vazuri.io/_next/static/chunks/CommonProjectsClip-DMd--1vt.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/CommonScrollAnimated-DoL3WYAH.js",
+      "url": "https://vazuri.io/_next/static/chunks/CommonScrollAnimated-DoL3WYAH.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/Components-BR2eaDZr.js",
+      "url": "https://vazuri.io/_next/static/chunks/Components-BR2eaDZr.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ContactLeadForm-BnALt85c.js",
+      "url": "https://vazuri.io/_next/static/chunks/ContactLeadForm-BnALt85c.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ContentPagesStack-DTEpt9YF.js",
+      "url": "https://vazuri.io/_next/static/chunks/ContentPagesStack-DTEpt9YF.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/DemoGrid-Du5MFo-O.js",
+      "url": "https://vazuri.io/_next/static/chunks/DemoGrid-Du5MFo-O.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/DividerStickyCaption-CHVSneiV.js",
+      "url": "https://vazuri.io/_next/static/chunks/DividerStickyCaption-CHVSneiV.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/DividerStickyImages-DUuCk4fL.js",
+      "url": "https://vazuri.io/_next/static/chunks/DividerStickyImages-DUuCk4fL.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/DoubleMarqueeDivider-CHESTzjP.js",
+      "url": "https://vazuri.io/_next/static/chunks/DoubleMarqueeDivider-CHESTzjP.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/DoubleMarqueeDivider-CrZMRSWE.js",
+      "url": "https://vazuri.io/_next/static/chunks/DoubleMarqueeDivider-CrZMRSWE.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/FooterBackToTop-Cc38EK5a.js",
+      "url": "https://vazuri.io/_next/static/chunks/FooterBackToTop-Cc38EK5a.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/GravityCTAContent-Bd6KJVC0.js",
+      "url": "https://vazuri.io/_next/static/chunks/GravityCTAContent-Bd6KJVC0.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/Hero-B5UTeCYf.js",
+      "url": "https://vazuri.io/_next/static/chunks/Hero-B5UTeCYf.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/Hero-BGFsp4uZ.js",
+      "url": "https://vazuri.io/_next/static/chunks/Hero-BGFsp4uZ.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/Hero-CGb-tb6w2.js",
+      "url": "https://vazuri.io/_next/static/chunks/Hero-CGb-tb6w2.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/Hero-CfCJ0FjN.js",
+      "url": "https://vazuri.io/_next/static/chunks/Hero-CfCJ0FjN.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/Hero-DFVwWBq6.js",
+      "url": "https://vazuri.io/_next/static/chunks/Hero-DFVwWBq6.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/Hero-DQD5356E.js",
+      "url": "https://vazuri.io/_next/static/chunks/Hero-DQD5356E.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/Hero-IN_2WzjQ.js",
+      "url": "https://vazuri.io/_next/static/chunks/Hero-IN_2WzjQ.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/Hero-W4brfYk1.js",
+      "url": "https://vazuri.io/_next/static/chunks/Hero-W4brfYk1.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/Hero-da77h_My.js",
+      "url": "https://vazuri.io/_next/static/chunks/Hero-da77h_My.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/HeroEn-C0_1Iw1C.js",
+      "url": "https://vazuri.io/_next/static/chunks/HeroEn-C0_1Iw1C.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/InnerHeadline-CFpvNP7G.js",
+      "url": "https://vazuri.io/_next/static/chunks/InnerHeadline-CFpvNP7G.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/InnerHeadline-CTxwA_-q.js",
+      "url": "https://vazuri.io/_next/static/chunks/InnerHeadline-CTxwA_-q.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/InnerHeadline-CdItmG_t.js",
+      "url": "https://vazuri.io/_next/static/chunks/InnerHeadline-CdItmG_t.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/InnerHeadline-D7TjAFHS.js",
+      "url": "https://vazuri.io/_next/static/chunks/InnerHeadline-D7TjAFHS.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/InnerHeadline-D91mw3zH.js",
+      "url": "https://vazuri.io/_next/static/chunks/InnerHeadline-D91mw3zH.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/InnerHeadline-Djv3w7Li.js",
+      "url": "https://vazuri.io/_next/static/chunks/InnerHeadline-Djv3w7Li.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/InnerHeadline-DkUxTDbU.js",
+      "url": "https://vazuri.io/_next/static/chunks/InnerHeadline-DkUxTDbU.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/InnerHeadline-YZmem5Wo.js",
+      "url": "https://vazuri.io/_next/static/chunks/InnerHeadline-YZmem5Wo.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/InnerHeadline-iSn6b3ru.js",
+      "url": "https://vazuri.io/_next/static/chunks/InnerHeadline-iSn6b3ru.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/InnerPagesSlider-CLHmwr12.js",
+      "url": "https://vazuri.io/_next/static/chunks/InnerPagesSlider-CLHmwr12.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/LazyGravityCTA-DHAjx6VI.js",
+      "url": "https://vazuri.io/_next/static/chunks/LazyGravityCTA-DHAjx6VI.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/LegalLinks-DDnZfeAI.js",
+      "url": "https://vazuri.io/_next/static/chunks/LegalLinks-DDnZfeAI.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/MarqueeDivider-BMaXpHNE.js",
+      "url": "https://vazuri.io/_next/static/chunks/MarqueeDivider-BMaXpHNE.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/MoreOnTopic-BG5XHSzD.js",
+      "url": "https://vazuri.io/_next/static/chunks/MoreOnTopic-BG5XHSzD.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/MyExpertise-BDfWcAai.js",
+      "url": "https://vazuri.io/_next/static/chunks/MyExpertise-BDfWcAai.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/NotFound-Cae_WfiI.js",
+      "url": "https://vazuri.io/_next/static/chunks/NotFound-Cae_WfiI.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/OurCapabilities-k-qP_Wbf.js",
+      "url": "https://vazuri.io/_next/static/chunks/OurCapabilities-k-qP_Wbf.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/OurCapabilitiesEn-CW_pmPtn.js",
+      "url": "https://vazuri.io/_next/static/chunks/OurCapabilitiesEn-CW_pmPtn.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ParallaxDivider-cia_BjeJ.js",
+      "url": "https://vazuri.io/_next/static/chunks/ParallaxDivider-cia_BjeJ.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ProjectsGrid-BVhjzW3b.js",
+      "url": "https://vazuri.io/_next/static/chunks/ProjectsGrid-BVhjzW3b.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ProjectsGrid-BzjF_cvo.js",
+      "url": "https://vazuri.io/_next/static/chunks/ProjectsGrid-BzjF_cvo.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ProjectsGrid-CegAQ1sa.js",
+      "url": "https://vazuri.io/_next/static/chunks/ProjectsGrid-CegAQ1sa.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ProjectsGrid-UXdFLIkd.js",
+      "url": "https://vazuri.io/_next/static/chunks/ProjectsGrid-UXdFLIkd.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ProjectsGridEn-hjR5c5u-.js",
+      "url": "https://vazuri.io/_next/static/chunks/ProjectsGridEn-hjR5c5u-.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ProjectsGridX3Showcase-Dis1rDy4.js",
+      "url": "https://vazuri.io/_next/static/chunks/ProjectsGridX3Showcase-Dis1rDy4.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ProjectsList-BnRIUgto.js",
+      "url": "https://vazuri.io/_next/static/chunks/ProjectsList-BnRIUgto.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ProjectsList-CSWp4esF.js",
+      "url": "https://vazuri.io/_next/static/chunks/ProjectsList-CSWp4esF.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ProjectsList-CzJygzNt.js",
+      "url": "https://vazuri.io/_next/static/chunks/ProjectsList-CzJygzNt.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ProjectsList-DB68wypU.js",
+      "url": "https://vazuri.io/_next/static/chunks/ProjectsList-DB68wypU.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ProjectsShowcase-C0rRlDzz.js",
+      "url": "https://vazuri.io/_next/static/chunks/ProjectsShowcase-C0rRlDzz.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ProjectsShowcase-qsFIgyw8.js",
+      "url": "https://vazuri.io/_next/static/chunks/ProjectsShowcase-qsFIgyw8.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ProjectsStack-CiM9vBaP.js",
+      "url": "https://vazuri.io/_next/static/chunks/ProjectsStack-CiM9vBaP.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ProtectsStack-BEZ00uGQ.js",
+      "url": "https://vazuri.io/_next/static/chunks/ProtectsStack-BEZ00uGQ.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ResponsivePromo-CHogELyC.js",
+      "url": "https://vazuri.io/_next/static/chunks/ResponsivePromo-CHogELyC.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/Resume-DGFxWK3h.js",
+      "url": "https://vazuri.io/_next/static/chunks/Resume-DGFxWK3h.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/Resume-Dhnv1NOu.js",
+      "url": "https://vazuri.io/_next/static/chunks/Resume-Dhnv1NOu.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/SelectedWork-BXb9HntE.js",
+      "url": "https://vazuri.io/_next/static/chunks/SelectedWork-BXb9HntE.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ServicesDescriptionStack-B3SoCTO8.js",
+      "url": "https://vazuri.io/_next/static/chunks/ServicesDescriptionStack-B3SoCTO8.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ServicesList-C8Znwyz6.js",
+      "url": "https://vazuri.io/_next/static/chunks/ServicesList-C8Znwyz6.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ServicesList-Ef5WR3fB.js",
+      "url": "https://vazuri.io/_next/static/chunks/ServicesList-Ef5WR3fB.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ServicesStack-qcLuP1z3.js",
+      "url": "https://vazuri.io/_next/static/chunks/ServicesStack-qcLuP1z3.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ServicesStackVideo-CwRmm1w-.js",
+      "url": "https://vazuri.io/_next/static/chunks/ServicesStackVideo-CwRmm1w-.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/SiteAnalytics-DhLGDMmq.js",
+      "url": "https://vazuri.io/_next/static/chunks/SiteAnalytics-DhLGDMmq.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/SiteChrome-Bll1iYDn.js",
+      "url": "https://vazuri.io/_next/static/chunks/SiteChrome-Bll1iYDn.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/StatisticsLines-BEtUYUTe.js",
+      "url": "https://vazuri.io/_next/static/chunks/StatisticsLines-BEtUYUTe.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/StatisticsLines-BF1cEzI6.js",
+      "url": "https://vazuri.io/_next/static/chunks/StatisticsLines-BF1cEzI6.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/StatisticsLines-DmAdSpZ8.js",
+      "url": "https://vazuri.io/_next/static/chunks/StatisticsLines-DmAdSpZ8.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/StatisticsLinesEn-DEXFVIGB.js",
+      "url": "https://vazuri.io/_next/static/chunks/StatisticsLinesEn-DEXFVIGB.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/TeamList-BRakQ9Kc.js",
+      "url": "https://vazuri.io/_next/static/chunks/TeamList-BRakQ9Kc.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/TemplateRuntimeProvider-DNK3vFN2.js",
+      "url": "https://vazuri.io/_next/static/chunks/TemplateRuntimeProvider-DNK3vFN2.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/TestimonialSliderIcons-BQmUwbTL.js",
+      "url": "https://vazuri.io/_next/static/chunks/TestimonialSliderIcons-BQmUwbTL.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/TestimonialsSlider-BghZM7X6.js",
+      "url": "https://vazuri.io/_next/static/chunks/TestimonialsSlider-BghZM7X6.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/TestimonialsSlider-Cuomb-Lv.js",
+      "url": "https://vazuri.io/_next/static/chunks/TestimonialsSlider-Cuomb-Lv.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/UkiyoParallax-CriyZmif.js",
+      "url": "https://vazuri.io/_next/static/chunks/UkiyoParallax-CriyZmif.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/app-rsc-cache-busting-B0D0LJtM.js",
+      "url": "https://vazuri.io/_next/static/chunks/app-rsc-cache-busting-B0D0LJtM.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/facts-Bi4WQpms.js",
+      "url": "https://vazuri.io/_next/static/chunks/facts-Bi4WQpms.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/hybrid-client-route-owner-DB08HIhg.js",
+      "url": "https://vazuri.io/_next/static/chunks/hybrid-client-route-owner-DB08HIhg.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/index-Bw5puN7J.js",
+      "url": "https://vazuri.io/_next/static/chunks/index-Bw5puN7J.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/layout-segment-context-l-s_K60f.js",
+      "url": "https://vazuri.io/_next/static/chunks/layout-segment-context-l-s_K60f.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/link-B8lZeIRS.js",
+      "url": "https://vazuri.io/_next/static/chunks/link-B8lZeIRS.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/projects-BOSGw1zB.js",
+      "url": "https://vazuri.io/_next/static/chunks/projects-BOSGw1zB.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/services-CJFaW7rC.js",
+      "url": "https://vazuri.io/_next/static/chunks/services-CJFaW7rC.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/stackCardsEffects-CRy54oY-.js",
+      "url": "https://vazuri.io/_next/static/chunks/stackCardsEffects-CRy54oY-.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/testimonials-D8Lu9iut.js",
+      "url": "https://vazuri.io/_next/static/chunks/testimonials-D8Lu9iut.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/ukiyo.esm.min-i24cqig7.js",
+      "url": "https://vazuri.io/_next/static/chunks/ukiyo.esm.min-i24cqig7.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/chunks/vazuri-events-BdOofYl6.js",
+      "url": "https://vazuri.io/_next/static/chunks/vazuri-events-BdOofYl6.js",
+      "group": "main",
+      "role": "js"
+    },
+    {
+      "file": "main/_next/static/css/index.9xAYx9JL.css",
+      "url": "https://vazuri.io/_next/static/css/index.9xAYx9JL.css",
+      "group": "main",
+      "role": "css"
+    },
+    {
+      "file": "main/consent/index.html",
+      "url": "https://vazuri.io/consent",
+      "group": "main",
+      "role": "html",
+      "language": "ru"
+    },
+    {
+      "file": "main/contact/index.html",
+      "url": "https://vazuri.io/contact",
+      "group": "main",
+      "role": "html",
+      "language": "ru"
+    },
+    {
+      "file": "main/documents/personal-data-consent-2026-10-27.pdf",
+      "url": "https://vazuri.io/documents/personal-data-consent-2026-10-27.pdf",
+      "group": "main",
+      "role": "pdf"
+    },
+    {
+      "file": "main/documents/privacy-policy-2026-10-27.pdf",
+      "url": "https://vazuri.io/documents/privacy-policy-2026-10-27.pdf",
+      "group": "main",
+      "role": "pdf"
+    },
+    {
+      "file": "main/en/consent/index.html",
+      "url": "https://vazuri.io/en/consent",
+      "group": "main",
+      "role": "html",
+      "language": "en"
+    },
+    {
+      "file": "main/en/contact/index.html",
+      "url": "https://vazuri.io/en/contact",
+      "group": "main",
+      "role": "html",
+      "language": "en"
+    },
+    {
+      "file": "main/en/index.html",
+      "url": "https://vazuri.io/en",
+      "group": "main",
+      "role": "html",
+      "language": "en"
+    },
+    {
+      "file": "main/en/privacy/index.html",
+      "url": "https://vazuri.io/en/privacy",
+      "group": "main",
+      "role": "html",
+      "language": "en"
+    },
+    {
+      "file": "main/index.html",
+      "url": "https://vazuri.io/",
+      "group": "main",
+      "role": "html",
+      "language": "ru"
+    },
+    {
+      "file": "main/privacy/index.html",
+      "url": "https://vazuri.io/privacy",
+      "group": "main",
+      "role": "html",
+      "language": "ru"
+    },
+    {
+      "file": "main/vinext-client-entry-manifest.json",
+      "url": "https://vazuri.io/vinext-client-entry-manifest.json",
+      "group": "main",
+      "role": "json"
+    },
+    {
+      "file": "relief-motion-literal-p8m4k2x7/en/index.html",
+      "url": "https://vazuri.io/relief/en/",
+      "group": "case",
+      "role": "html",
+      "language": "en",
+      "caseKey": "relief"
+    },
+    {
+      "file": "relief-motion-literal-p8m4k2x7/en/vazuri-case-dock.js",
+      "url": "https://vazuri.io/relief-motion-literal-p8m4k2x7/en/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "relief"
+    },
+    {
+      "file": "relief-motion-literal-p8m4k2x7/ru/index.html",
+      "url": "https://vazuri.io/relief/ru/",
+      "group": "case",
+      "role": "html",
+      "language": "ru",
+      "caseKey": "relief"
+    },
+    {
+      "file": "relief-motion-literal-p8m4k2x7/ru/vazuri-case-dock.js",
+      "url": "https://vazuri.io/relief-motion-literal-p8m4k2x7/ru/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "relief"
+    },
+    {
+      "file": "revive-cosmetics-r8q4m7x2/assets/vazuri-case-dock.js",
+      "url": "https://vazuri.io/revive-cosmetics-r8q4m7x2/assets/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "revive"
+    },
+    {
+      "file": "revive-cosmetics-r8q4m7x2/index.html",
+      "url": "https://vazuri.io/revive-cosmetics-r8q4m7x2/",
+      "group": "case",
+      "role": "html",
+      "language": "en",
+      "caseKey": "revive"
+    },
+    {
+      "file": "revive-cosmetics-r8q4m7x2/ru/assets/vazuri-case-dock.js",
+      "url": "https://vazuri.io/revive-cosmetics-r8q4m7x2/ru/assets/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "revive"
+    },
+    {
+      "file": "revive-cosmetics-r8q4m7x2/ru/index.html",
+      "url": "https://vazuri.io/revive/ru/",
+      "group": "case",
+      "role": "html",
+      "language": "ru",
+      "caseKey": "revive"
+    },
+    {
+      "file": "scroll-slides-kinetic-x8q4m7v2/en/index.html",
+      "url": "https://vazuri.io/scroll-slides/en/",
+      "group": "case",
+      "role": "html",
+      "language": "en",
+      "caseKey": "slides"
+    },
+    {
+      "file": "scroll-slides-kinetic-x8q4m7v2/en/vazuri-case-dock.js",
+      "url": "https://vazuri.io/scroll-slides-kinetic-x8q4m7v2/en/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "slides"
+    },
+    {
+      "file": "scroll-slides-kinetic-x8q4m7v2/index.html",
+      "url": "https://vazuri.io/scroll-slides-kinetic-x8q4m7v2/",
+      "group": "case",
+      "role": "html",
+      "caseKey": "slides"
+    },
+    {
+      "file": "scroll-slides-kinetic-x8q4m7v2/ru/index.html",
+      "url": "https://vazuri.io/scroll-slides/ru/",
+      "group": "case",
+      "role": "html",
+      "language": "ru",
+      "caseKey": "slides"
+    },
+    {
+      "file": "scroll-slides-kinetic-x8q4m7v2/ru/vazuri-case-dock.js",
+      "url": "https://vazuri.io/scroll-slides-kinetic-x8q4m7v2/ru/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "slides"
+    },
+    {
+      "file": "scroll-slides-kinetic-x8q4m7v2/vazuri-case-dock.js",
+      "url": "https://vazuri.io/scroll-slides-kinetic-x8q4m7v2/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "slides"
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/en/index.html",
+      "url": "https://vazuri.io/scrollsync/en/",
+      "group": "case",
+      "role": "html",
+      "language": "en",
+      "caseKey": "sync"
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/en/vazuri-case-dock.js",
+      "url": "https://vazuri.io/scrollsync-video-v7q4m9x2/en/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "sync"
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/index.html",
+      "url": "https://vazuri.io/scrollsync-video-v7q4m9x2/",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sync"
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/ru/index.html",
+      "url": "https://vazuri.io/scrollsync/ru/",
+      "group": "case",
+      "role": "html",
+      "language": "ru",
+      "caseKey": "sync"
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/ru/vazuri-case-dock.js",
+      "url": "https://vazuri.io/scrollsync-video-v7q4m9x2/ru/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "sync"
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/vazuri-case-dock.js",
+      "url": "https://vazuri.io/scrollsync-video-v7q4m9x2/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "sync"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/assets/vazuri/vazuri-case-dock.js",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/assets/vazuri/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/404.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/404.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/about.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/about.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/blog-single.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/blog-single.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/blog.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/blog.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/contact.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/contact.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/faqs.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/faqs.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/image-gallery.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/image-gallery.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/index.html",
+      "url": "https://vazuri.io/skyvilla/en/",
+      "group": "case",
+      "role": "html",
+      "language": "en",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/pricing.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/pricing.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/project-single.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/project-single.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/projects.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/projects.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/service-single.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/service-single.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/services.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/services.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/team-single.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/team-single.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/team.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/team.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/testimonials.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/testimonials.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/video-gallery.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/en/video-gallery.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/404.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/404.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/about.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/about.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/blog-single.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/blog-single.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/blog.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/blog.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/contact.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/contact.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/faqs.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/faqs.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/image-gallery.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/image-gallery.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/index.html",
+      "url": "https://vazuri.io/skyvilla/ru/",
+      "group": "case",
+      "role": "html",
+      "language": "ru",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/pricing.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/pricing.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/project-single.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/project-single.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/projects.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/projects.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/service-single.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/service-single.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/services.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/services.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/team-single.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/team-single.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/team.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/team.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/testimonials.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/testimonials.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/video-gallery.html",
+      "url": "https://vazuri.io/skyvilla-estate-k8m4p2x7/ru/video-gallery.html",
+      "group": "case",
+      "role": "html",
+      "caseKey": "sky"
+    },
+    {
+      "file": "urban-pulse-exhibitions-k7m3p9x4/assets/vazuri-case-dock.js",
+      "url": "https://vazuri.io/urban-pulse-exhibitions-k7m3p9x4/assets/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "urban"
+    },
+    {
+      "file": "urban-pulse-exhibitions-k7m3p9x4/index.html",
+      "url": "https://vazuri.io/urban-pulse-exhibitions-k7m3p9x4/",
+      "group": "case",
+      "role": "html",
+      "language": "en",
+      "caseKey": "urban"
+    },
+    {
+      "file": "urban-pulse-exhibitions-k7m3p9x4/ru/assets/vazuri-case-dock.js",
+      "url": "https://vazuri.io/urban-pulse-exhibitions-k7m3p9x4/ru/assets/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "urban"
+    },
+    {
+      "file": "urban-pulse-exhibitions-k7m3p9x4/ru/index.html",
+      "url": "https://vazuri.io/urban-pulse/ru/",
+      "group": "case",
+      "role": "html",
+      "language": "ru",
+      "caseKey": "urban"
+    },
+    {
+      "file": "vazuri-1099af950ba0e8f8/index.html",
+      "url": "https://vazuri.io/vazuri-1099af950ba0e8f8/",
+      "group": "case",
+      "role": "html",
+      "language": "en",
+      "caseKey": "hotel"
+    },
+    {
+      "file": "vazuri-1099af950ba0e8f8/ru/index.html",
+      "url": "https://vazuri.io/hotel/ru/",
+      "group": "case",
+      "role": "html",
+      "language": "ru",
+      "caseKey": "hotel"
+    },
+    {
+      "file": "vazuri-1099af950ba0e8f8/vazuri-case-dock.js",
+      "url": "https://vazuri.io/vazuri-1099af950ba0e8f8/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "hotel"
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/_next/static/8df73e16-49fa-4832-8f4a-485d264cd912/_buildManifest.js",
+      "url": "https://vazuri.io/vazuri-preview-liko-dark-shop-public/_next/static/8df73e16-49fa-4832-8f4a-485d264cd912/_buildManifest.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "night"
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/_next/static/8df73e16-49fa-4832-8f4a-485d264cd912/_ssgManifest.js",
+      "url": "https://vazuri.io/vazuri-preview-liko-dark-shop-public/_next/static/8df73e16-49fa-4832-8f4a-485d264cd912/_ssgManifest.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "night"
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-D-4-piGv.js",
+      "url": "https://vazuri.io/vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-D-4-piGv.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "night"
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-CQ0eSNZO.js",
+      "url": "https://vazuri.io/vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-CQ0eSNZO.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "night"
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-BcQsqhWN.js",
+      "url": "https://vazuri.io/vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-BcQsqhWN.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "night"
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/index.html",
+      "url": "https://vazuri.io/nightshift/",
+      "group": "case",
+      "role": "html",
+      "language": "en",
+      "caseKey": "night"
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json",
+      "url": "https://vazuri.io/vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json",
+      "group": "case",
+      "role": "json",
+      "caseKey": "night"
+    },
+    {
+      "file": "vazuri-preview-liko-fashion-studio-public/index.html",
+      "url": "https://vazuri.io/altera/",
+      "group": "case",
+      "role": "html",
+      "language": "en",
+      "caseKey": "altera"
+    },
+    {
+      "file": "vazuri-preview-liko-fashion-studio-public/vazuri-case-dock.js",
+      "url": "https://vazuri.io/vazuri-preview-liko-fashion-studio-public/vazuri-case-dock.js",
+      "group": "case",
+      "role": "js",
+      "caseKey": "altera"
+    }
+  ],
+  "serverOnly": {
+    "main/.vite/manifest.json": "internal-build-manifest",
+    "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": "internal-build-manifest",
+    "main/lead.php": "server-executable-backend-no-HTTP-probe"
+  },
+  "routes": [
+    {
+      "file": "main/index.html",
+      "url": "https://vazuri.io/",
+      "language": "ru",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": true,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": false
+    },
+    {
+      "file": "main/en/index.html",
+      "url": "https://vazuri.io/en",
+      "language": "en",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": true,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": false
+    },
+    {
+      "file": "main/contact/index.html",
+      "url": "https://vazuri.io/contact",
+      "language": "ru",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": true,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": false
+    },
+    {
+      "file": "main/en/contact/index.html",
+      "url": "https://vazuri.io/en/contact",
+      "language": "en",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": true,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": false
+    },
+    {
+      "file": "main/privacy/index.html",
+      "url": "https://vazuri.io/privacy",
+      "language": "ru",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": true,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": true
+    },
+    {
+      "file": "main/en/privacy/index.html",
+      "url": "https://vazuri.io/en/privacy",
+      "language": "en",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": true,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": true
+    },
+    {
+      "file": "main/consent/index.html",
+      "url": "https://vazuri.io/consent",
+      "language": "ru",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": false,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": true
+    },
+    {
+      "file": "main/en/consent/index.html",
+      "url": "https://vazuri.io/en/consent",
+      "language": "en",
+      "oldNonAssetHeadPreservedExceptExactDownloadBypass": false,
+      "nonLegalBodyBytesPreserved": true,
+      "legalBodyRewrite": true
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/index.html",
+      "language": "en",
+      "overlayLanguage": "ru",
+      "caseKey": "night",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "vazuri-1099af950ba0e8f8/index.html",
+      "language": null,
+      "overlayLanguage": "en",
+      "caseKey": "hotel",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "vazuri-1099af950ba0e8f8/ru/index.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "hotel",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "vazuri-preview-liko-fashion-studio-public/index.html",
+      "language": "en",
+      "overlayLanguage": "ru",
+      "caseKey": "altera",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "scroll-slides-kinetic-x8q4m7v2/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "slides",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "scroll-slides-kinetic-x8q4m7v2/ru/index.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "slides",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "scroll-slides-kinetic-x8q4m7v2/en/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "slides",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "urban-pulse-exhibitions-k7m3p9x4/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "urban",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "urban-pulse-exhibitions-k7m3p9x4/ru/index.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "urban",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "revive-cosmetics-r8q4m7x2/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "revive",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "revive-cosmetics-r8q4m7x2/ru/index.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "revive",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/404.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/about.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/blog-single.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/blog.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/contact.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/faqs.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/image-gallery.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/index.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/pricing.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/project-single.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/projects.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/service-single.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/services.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/team-single.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/team.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/testimonials.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/ru/video-gallery.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/404.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/about.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/blog-single.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/blog.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/contact.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/faqs.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/image-gallery.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/pricing.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/project-single.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/projects.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/service-single.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/services.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/team-single.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/team.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/testimonials.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "skyvilla-estate-k8m4p2x7/en/video-gallery.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sky",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sync",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/ru/index.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "sync",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/en/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "sync",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "relief-motion-literal-p8m4k2x7/ru/index.html",
+      "language": "ru",
+      "overlayLanguage": "ru",
+      "caseKey": "relief",
+      "nonDockHTMLExact": true
+    },
+    {
+      "file": "relief-motion-literal-p8m4k2x7/en/index.html",
+      "language": "en",
+      "overlayLanguage": "en",
+      "caseKey": "relief",
+      "nonDockHTMLExact": true
+    }
+  ],
+  "protectedCases": 9,
+  "nineCaseLegalOverlaysOnly": true,
+  "mediaAndBulkyAndNginxUnchanged": true,
+  "expectedCoreFiles": 3793,
+  "expectedMainFiles": 1657,
+  "expectedRootFiles": {
+    "main": 1657,
+    "relief-motion-literal-p8m4k2x7": 54,
+    "revive-cosmetics-r8q4m7x2": 229,
+    "scroll-slides-kinetic-x8q4m7v2": 51,
+    "scrollsync-video-v7q4m9x2": 36,
+    "skyvilla-estate-k8m4p2x7": 315,
+    "urban-pulse-exhibitions-k7m3p9x4": 479,
+    "vazuri-1099af950ba0e8f8": 105,
+    "vazuri-preview-liko-dark-shop-public": 107,
+    "vazuri-preview-liko-fashion-studio-public": 47
+  },
+  "frozenScopeSHA256": "dc721af8b29b651246f801970ea4c3b4ff212c4cf315659868935d272f51268b",
+  "stageProofSHA256": "cc61d635b1585fa576c914c8f5259a0b046f3639f7f4bc6f40cebe63c603df36",
+  "PHPCLIProofSHA256": "a2676e4108e04bc899b45822e4858e6934c0c9bcf80a2e13f6008d8f8c08d4b6",
+  "PDFBuildProofSHA256": "96d4fd3c05ca368e5d21f0d565c3935fe79bd3f8886d6485ea9f7928a055cd11",
+  "PDFRenderProofSHA256": "acf148ee31315d42630d37e96d857c2138f04ba1f8bebd5fd820796cb9f9e3dc"
+}

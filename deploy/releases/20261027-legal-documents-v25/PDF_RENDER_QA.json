@@ -1,0 +1,24 @@
+{
+  "valid": true,
+  "documents": {
+    "privacy": {
+      "sha256": "4e3609f3bc3115f48b396ae54c592abde4c6d8937fe34c7f84a94217f51e5a40",
+      "pages": 2,
+      "images": [
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\legal-documents-20261027\\pdf-preview\\privacy-1.png",
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\legal-documents-20261027\\pdf-preview\\privacy-2.png"
+      ],
+      "embeddedFontCount": 3,
+      "unnecessaryContractFieldsAbsent": true
+    },
+    "consent": {
+      "sha256": "a397b8c2d952dcca4f52913c872dc46efc4154384c0c7200833a81e017adf2fe",
+      "pages": 1,
+      "images": [
+        "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\legal-documents-20261027\\pdf-preview\\consent-1.png"
+      ],
+      "embeddedFontCount": 3,
+      "unnecessaryContractFieldsAbsent": true
+    }
+  }
+}

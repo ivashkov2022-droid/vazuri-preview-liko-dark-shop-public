@@ -1,0 +1,93 @@
+{
+  "valid": true,
+  "candidateSHA256": "dbe2714bae543f3e8a2b23855cfd8ef71e6c34af5f117bee5a618871f64a42b9",
+  "sourceParent": "d8562bf4e22dfe4587add990d5aa2516b50b634b",
+  "stylesheet": "styles/vazuri-legal.css",
+  "stylesheetSourceSHA256": "e8f2dfd89b9c202c212ce1aece17f4692698aa94f5d565dffa40477e667315b5",
+  "oldSourceLFHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "approvedRulesSHA256": "e8f2dfd89b9c202c212ce1aece17f4692698aa94f5d565dffa40477e667315b5",
+  "approvedPlatformSources": [
+    "legal"
+  ],
+  "approvedScopedSelectors": [
+    ".vz-legal-arrow",
+    ".vz-legal-links",
+    ".vz-legal-links a.vz-legal-links__item",
+    ".vz-legal-links a.vz-legal-links__item:hover",
+    ".vz-legal-links a.vz-legal-links__item:focus-visible",
+    ".vz-legal-links .vz-legal-arrow",
+    ".vz-legal-links--menu",
+    ".vz-legal-menu-caption",
+    ".vz-legal-footer",
+    ".vz-legal-page",
+    ".vz-legal-page__inner",
+    ".vz-legal-page__eyebrow",
+    ".vz-legal-page__meta",
+    ".vz-legal-page__eyebrow",
+    ".vz-legal-page__title",
+    ".vz-legal-page__summary",
+    ".vz-legal-page__operator",
+    ".vz-legal-page__download",
+    ".vz-legal-page__email",
+    ".vz-legal-page__content",
+    ".vz-legal-page__section",
+    ".vz-legal-page__section-title",
+    ".vz-legal-page__paragraph",
+    ".vz-legal-page__list",
+    ".vz-legal-page__list li",
+    ".vz-legal-page__paragraph + .vz-legal-page__paragraph",
+    ".vz-legal-page__list",
+    ".vz-legal-page__list",
+    ".vz-legal-page__list li + li",
+    ".vz-legal-page__actions",
+    ".vz-legal-page__link",
+    ".vz-legal-links__item:focus-visible",
+    ".vz-legal-page__link:focus-visible",
+    ".vz-legal-links",
+    ".vz-legal-page__actions"
+  ],
+  "newScopedSourceFileExactApprovedRules": true,
+  "compiledOldCSSPlusExactApprovedAddition": true,
+  "permittedCanonicalization": "Sort only new legal comma-list selectors and unwrap only the two recorded whole-list :is wrappers whose arms have equal specificity; old selectors, all rule order and every declaration remain strictly compared.",
+  "installedVitePackageSHA256": "5d084b8d09cedc0206adeea4096e9aaa5f9489efb919b4dc55486c5ee790a7d2",
+  "targets": {
+    "chrome": 7274496,
+    "edge": 7274496,
+    "firefox": 7471104,
+    "safari": 1049600,
+    "ios_saf": 1049600
+  },
+  "minifier": "installed Vite LightningCSS",
+  "compiledProofs": [
+    {
+      "old": "main/_next/static/css/index.D9rNuAKr.css",
+      "new": "main/_next/static/css/index.9xAYx9JL.css",
+      "unchanged": false,
+      "oldSHA256": "c8490262d68b04404f42dc88e62ec3d9873820b25d7b814d235ac02c023b67a6",
+      "newSHA256": "bc64bcf1dcf0bd08e733b9805ffb5953b780f3b6f7b8acbfde7cc27448ed0548",
+      "canonicalBeforeSelectorListNormalizationExpectedSHA256": "833a70599f03ecb9208c53109d1909e8bae3146b7c68374eaa58098606ff3ea2",
+      "canonicalBeforeSelectorListNormalizationActualSHA256": "28d4cb20fcf0fa0fbf6570da222ef79db4a5a8331f71ce36ea95ed1be4602f19",
+      "canonicalApprovedExpectedSHA256": "96cabcf92e01f27f346a1a625e3b6a6ef5c5cc816fa7a92888cc2629c750a4ef",
+      "canonicalActualSHA256": "96cabcf92e01f27f346a1a625e3b6a6ef5c5cc816fa7a92888cc2629c750a4ef",
+      "onlyNewLegalCommaListOrderAndTwoEqualSpecificityIsWrappersNormalized": true,
+      "equivalentLegalIsLists": [
+        ".vz-legal-links a.vz-legal-links__item:focus-visible,.vz-legal-links a.vz-legal-links__item:hover",
+        ".vz-legal-links__item:focus-visible,.vz-legal-page__link:focus-visible"
+      ],
+      "normalizedExpectedGroups": 5,
+      "normalizedActualGroups": 5,
+      "normalizedExpectedIsWrappers": 0,
+      "normalizedActualIsWrappers": 2,
+      "allRuleOrderOldSelectorsAndDeclarationBytesStrictlyCompared": true
+    },
+    {
+      "old": "main/_next/static/css/TemplateRuntimeProvider.fOJvfYOR.css",
+      "new": "main/_next/static/css/TemplateRuntimeProvider.fOJvfYOR.css",
+      "unchanged": true,
+      "sha256": "7156473bac2d1c3c3900b28d2d3bb052ca2d7291fec03288970a8d57405ab5a9"
+    }
+  ],
+  "allOtherStylesheetsByteEqual": true,
+  "networkActions": false,
+  "productWrites": false
+}

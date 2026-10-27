@@ -131,6 +131,7 @@ export default function Home() {
           company: "",
           message: `NIGHTSHIFT. Запрос: ${data.get("interest") || "Сайт или цифровой продукт"}.${phone ? `\nТелефон: ${phone}` : ""}`,
           consent: data.get("consent") || "",
+          consent_version: "2026-10-27",
         }),
       });
       const payload = await response.json().catch(() => ({ ok: false }));
@@ -335,6 +336,7 @@ export default function Home() {
                     onInput={updateFormProgress}
                     style={{ "--v2-form-progress": formProgress } as CSSProperties}
                   >
+                    <input name="consent_version" type="hidden" value="2026-10-27" />
                     <input className="v2-brief__trap" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
                     <label className="v2-brief__field">
                       <input name="name" autoComplete="off" autoCapitalize="words" data-1p-ignore data-lpignore="true" aria-label="Ваше имя" placeholder="Ваше имя" maxLength={120} required />
@@ -363,7 +365,7 @@ export default function Home() {
                     </fieldset>
                     <label className="v2-brief__consent">
                       <input name="consent" type="checkbox" value="yes" required />
-                      <span>Соглашаюсь на обработку персональных данных</span>
+                      <span><a href="https://vazuri.io/consent" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", font: "inherit", letterSpacing: "inherit", textTransform: "inherit", textDecoration: "underline", textDecorationThickness: "1px", textUnderlineOffset: "2px" }}>Соглашаюсь на обработку персональных данных</a></span>
                     </label>
                     <button className="v2-brief__submit" type="submit" disabled={formStatus === "sending"}>
                       <span>{formStatus === "sending" ? "Отправляем…" : "Отправить запрос"}</span><PixelArrow direction="up-right" className="v2-brief__submit-arrow" style={{ display: "block", flex: "0 0 20px", width: 20, height: 20, fill: "currentColor", shapeRendering: "geometricPrecision", pointerEvents: "none" }} />

@@ -1,0 +1,102 @@
+{
+  "schema": "vazuri/legal-project-source-package/v1",
+  "id": "night",
+  "project": "projects/nightshift-concept-public/vazuri-preview-liko-dark-shop-public-main",
+  "sourceParent": "b5b51a322bd629fd516b64437cfe27db77f0d640",
+  "ref": "refs/heads/codex/legal-documents-20261027",
+  "baselineRelease": "/srv/www/vazuri.io/releases/20261026T190000Z-social-form-profiles-v24",
+  "expectedRelease": "/srv/www/vazuri.io/releases/20261027T120000Z-legal-documents-v25",
+  "candidateSHA256": "dbe2714bae543f3e8a2b23855cfd8ef71e6c34af5f117bee5a618871f64a42b9",
+  "qaSHA256": "7ed00d8dc0992be55b608d4d6c07a885a79ce60ca890d4ddef80ae2c23b26f8d",
+  "sourceSHA256": {
+    "app/page.tsx": "359410ac6f3ddd9bd20f42eb6ea549e9acd105d3d6b34df9f42eb67446194422"
+  },
+  "ownedRuntimePaths": [
+    "vazuri-preview-liko-dark-shop-public/.vite/manifest.json",
+    "vazuri-preview-liko-dark-shop-public/_next/static/8df73e16-49fa-4832-8f4a-485d264cd912/_buildManifest.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/8df73e16-49fa-4832-8f4a-485d264cd912/_ssgManifest.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-D-4-piGv.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-CQ0eSNZO.js",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-BcQsqhWN.js",
+    "vazuri-preview-liko-dark-shop-public/index.html",
+    "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json"
+  ],
+  "runtimeOwnership": "Owned subset only; the ten disjoint subsets union to the shared candidate.",
+  "protectedTrackedCount": 0,
+  "originalSnapshotTrackedCount": 10,
+  "cleanWindowsLongpathRows": {
+    "deploy/releases/20261025-nightshift-arrow-rotation-v12/runtime/vazuri-preview-liko-dark-shop-public/_next/static/f108f653-bf4d-4688-ba5b-13a132f8e14a/_buildManifest.js": {
+      "snapshotSHA256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "currentHEADAndIndexSHA256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "absolutePathLength": 288,
+      "snapshotAndLongpathsFalseStatus": " D",
+      "longpathsTrueStatus": "clean"
+    },
+    "deploy/releases/20261025-nightshift-arrow-rotation-v12/runtime/vazuri-preview-liko-dark-shop-public/_next/static/f108f653-bf4d-4688-ba5b-13a132f8e14a/_ssgManifest.js": {
+      "snapshotSHA256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "currentHEADAndIndexSHA256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "absolutePathLength": 286,
+      "snapshotAndLongpathsFalseStatus": " D",
+      "longpathsTrueStatus": "clean"
+    },
+    "deploy/releases/20261025-nightshift-square-wings-v11/runtime/vazuri-preview-liko-dark-shop-public/_next/static/73de8152-5141-4474-882a-555658d93c2e/_buildManifest.js": {
+      "snapshotSHA256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "currentHEADAndIndexSHA256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "absolutePathLength": 286,
+      "snapshotAndLongpathsFalseStatus": " D",
+      "longpathsTrueStatus": "clean"
+    },
+    "deploy/releases/20261025-nightshift-square-wings-v11/runtime/vazuri-preview-liko-dark-shop-public/_next/static/73de8152-5141-4474-882a-555658d93c2e/_ssgManifest.js": {
+      "snapshotSHA256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "currentHEADAndIndexSHA256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "absolutePathLength": 284,
+      "snapshotAndLongpathsFalseStatus": " D",
+      "longpathsTrueStatus": "clean"
+    },
+    "deploy/releases/20261026-case-phone-required-v16/runtime/vazuri-preview-liko-dark-shop-public/_next/static/60d7c632-14b4-4972-94fd-c865351fd4bd/_buildManifest.js": {
+      "snapshotSHA256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "currentHEADAndIndexSHA256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "absolutePathLength": 282,
+      "snapshotAndLongpathsFalseStatus": " D",
+      "longpathsTrueStatus": "clean"
+    },
+    "deploy/releases/20261026-case-phone-required-v16/runtime/vazuri-preview-liko-dark-shop-public/_next/static/60d7c632-14b4-4972-94fd-c865351fd4bd/_ssgManifest.js": {
+      "snapshotSHA256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "currentHEADAndIndexSHA256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "absolutePathLength": 280,
+      "snapshotAndLongpathsFalseStatus": " D",
+      "longpathsTrueStatus": "clean"
+    },
+    "deploy/releases/20261026-form-submit-arrow-v17/runtime/vazuri-preview-liko-dark-shop-public/_next/static/82ceeab9-67e9-4494-9abd-840fb4e4db4a/_buildManifest.js": {
+      "snapshotSHA256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "currentHEADAndIndexSHA256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "absolutePathLength": 280,
+      "snapshotAndLongpathsFalseStatus": " D",
+      "longpathsTrueStatus": "clean"
+    },
+    "deploy/releases/20261026-form-submit-arrow-v17/runtime/vazuri-preview-liko-dark-shop-public/_next/static/82ceeab9-67e9-4494-9abd-840fb4e4db4a/_ssgManifest.js": {
+      "snapshotSHA256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "currentHEADAndIndexSHA256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "absolutePathLength": 278,
+      "snapshotAndLongpathsFalseStatus": " D",
+      "longpathsTrueStatus": "clean"
+    },
+    "deploy/releases/20261026-nightshift-phone-field-v15/runtime/vazuri-preview-liko-dark-shop-public/_next/static/73277b6b-7577-408b-9ac2-be7fd6e7dd01/_buildManifest.js": {
+      "snapshotSHA256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "currentHEADAndIndexSHA256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "absolutePathLength": 285,
+      "snapshotAndLongpathsFalseStatus": " D",
+      "longpathsTrueStatus": "clean"
+    },
+    "deploy/releases/20261026-nightshift-phone-field-v15/runtime/vazuri-preview-liko-dark-shop-public/_next/static/73277b6b-7577-408b-9ac2-be7fd6e7dd01/_ssgManifest.js": {
+      "snapshotSHA256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "currentHEADAndIndexSHA256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "absolutePathLength": 283,
+      "snapshotAndLongpathsFalseStatus": " D",
+      "longpathsTrueStatus": "clean"
+    }
+  },
+  "allOriginalRowsRetainByteGuards": true,
+  "protectedUntrackedCount": 443,
+  "privateOriginalContractIncluded": false
+}
