@@ -1,0 +1,296 @@
+{
+  "schema": "vazuri/form-token-client-source/v1",
+  "valid": true,
+  "snapshotSHA256": "4da81f72cf7e8af988b89d9e915423498c02b8e98388d720c4710c92853e4e34",
+  "controllers": 10,
+  "handlers": 11,
+  "transport": "Fresh cookie-free GET ?action=form-token&source before every POST; token only top-level JSON form_token",
+  "tokenBounds": [
+    32,
+    2048
+  ],
+  "tokenResponseRequiresOKTrue": true,
+  "sources": [
+    {
+      "id": "main",
+      "project": "projects/vazuri-main-integration",
+      "sourceFile": "components/common/ApprovedBrief.tsx",
+      "beforeSHA256": "962470d5c1a25986f4480ff63d17155abbd076e7c2b91bab8085a721145b8a5e",
+      "afterSHA256": "2b0b4003f76ef9f4418c812c023ec3790665d7110215bfaa5a9367ea15fe3f11",
+      "beforeBytes": 11800,
+      "afterBytes": 12491,
+      "handlers": 1,
+      "backup": "frontend/before/main/components/common/ApprovedBrief.tsx",
+      "patches": [
+        {
+          "before": "const emptyFields = { name: \"\", phone: \"\", contact: \"\", website: \"\" };\n\n",
+          "after": "const emptyFields = { name: \"\", phone: \"\", contact: \"\", website: \"\" };\n\nasync function requestFormToken(source: string): Promise<string> {\n  const response = await fetch(\"https://vazuri.io/lead.php?action=form-token&source=\" + encodeURIComponent(source), {\n    method: \"GET\",\n    headers: { Accept: \"application/json\" },\n    cache: \"no-store\",\n    credentials: \"omit\",\n  });\n  const payload = await response.json() as { ok?: boolean; token?: unknown };\n  if (!response.ok || !payload || payload.ok !== true || typeof payload.token !== \"string\" || payload.token.length < 32 || payload.token.length > 2048) {\n    throw new Error(\"send_failed\");\n  }\n  return payload.token;\n}\n\n"
+        },
+        {
+          "before": "    try {\n      const response = await fetch(\"https://vazuri.io/lead.php\", {",
+          "after": "    try {\n      const formToken = await requestFormToken(source);\n      const response = await fetch(\"https://vazuri.io/lead.php\", {"
+        },
+        {
+          "before": "        body: JSON.stringify({\n",
+          "after": "        body: JSON.stringify({\n          form_token: formToken,\n"
+        }
+      ],
+      "inverseRestoresEveryOriginalByte": true,
+      "formDOMAndExistingSubmitStatesUnchanged": true
+    },
+    {
+      "id": "night",
+      "project": "projects/nightshift-concept-public/vazuri-preview-liko-dark-shop-public-main",
+      "sourceFile": "app/page.tsx",
+      "beforeSHA256": "e5e1703a7cde468a21b444dd67841c81972df399bd1b1967bf689062995bd110",
+      "afterSHA256": "8795a7fa3020a8652f54f7edcfd5228620d911cd30e4073ea6379706713765b7",
+      "beforeBytes": 16282,
+      "afterBytes": 16978,
+      "handlers": 1,
+      "backup": "frontend/before/night/app/page.tsx",
+      "patches": [
+        {
+          "before": "const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? \"\";\r\n\r\n",
+          "after": "const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? \"\";\r\n\r\nasync function requestFormToken(source: string): Promise<string> {\r\n  const response = await fetch(\"/lead.php?action=form-token&source=\" + encodeURIComponent(source), {\r\n    method: \"GET\",\r\n    headers: { Accept: \"application/json\" },\r\n    cache: \"no-store\",\r\n    credentials: \"omit\",\r\n  });\r\n  const payload = await response.json() as { ok?: boolean; token?: unknown };\r\n  if (!response.ok || !payload || payload.ok !== true || typeof payload.token !== \"string\" || payload.token.length < 32 || payload.token.length > 2048) {\r\n    throw new Error(\"send_failed\");\r\n  }\r\n  return payload.token;\r\n}\r\n\r\n"
+        },
+        {
+          "before": "    try {\r\n      const response = await fetch(\"/lead.php\", {",
+          "after": "    try {\r\n      const formToken = await requestFormToken(\"nightshift\");\r\n      const response = await fetch(\"/lead.php\", {"
+        },
+        {
+          "before": "        body: JSON.stringify({\r\n",
+          "after": "        body: JSON.stringify({\r\n          form_token: formToken,\r\n"
+        }
+      ],
+      "inverseRestoresEveryOriginalByte": true,
+      "formDOMAndExistingSubmitStatesUnchanged": true
+    },
+    {
+      "id": "hotel",
+      "project": "projects/vazuri-hotel-site",
+      "sourceFile": "public/vazuri-case-dock.js",
+      "beforeSHA256": "f68c367ef4880d906ed4f3bf441fcf6b9a4ab8db87d5b63cdd5b1801a7705b12",
+      "afterSHA256": "26cc356cd6fcd3b9638dec9632fa2755b3ec4d6e7e9ef38c3f0d75276704bddb",
+      "beforeBytes": 35027,
+      "afterBytes": 35669,
+      "handlers": 1,
+      "backup": "frontend/before/hotel/public/vazuri-case-dock.js",
+      "patches": [
+        {
+          "before": "  'use strict';\n\n",
+          "after": "  'use strict';\n\n  async function requestFormToken(source) {\n    const response = await fetch('/lead.php?action=form-token&source=' + encodeURIComponent(source), {\n      method: 'GET',\n      headers: { Accept: 'application/json' },\n      cache: 'no-store',\n      credentials: 'omit',\n    });\n    const payload = await response.json();\n    if (!response.ok || !payload || payload.ok !== true || typeof payload.token !== 'string' || payload.token.length < 32 || payload.token.length > 2048) {\n      throw new Error('send_failed');\n    }\n    return payload.token;\n  }\n\n"
+        },
+        {
+          "before": "      try {\n        const response = await fetch('/lead.php', {",
+          "after": "      try {\n        const formToken = await requestFormToken(source);\n        const response = await fetch('/lead.php', {"
+        },
+        {
+          "before": "          body: JSON.stringify({\n            source,",
+          "after": "          body: JSON.stringify({\n            form_token: formToken,\n            source,"
+        }
+      ],
+      "inverseRestoresEveryOriginalByte": true,
+      "formDOMAndExistingSubmitStatesUnchanged": true
+    },
+    {
+      "id": "altera",
+      "project": "projects/altera-concept-public/vazuri-preview-liko-fashion-studio-public-main",
+      "sourceFile": "public/vazuri-case-dock.js",
+      "beforeSHA256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "afterSHA256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "beforeBytes": 33999,
+      "afterBytes": 34641,
+      "handlers": 1,
+      "backup": "frontend/before/altera/public/vazuri-case-dock.js",
+      "patches": [
+        {
+          "before": "  'use strict';\n\n",
+          "after": "  'use strict';\n\n  async function requestFormToken(source) {\n    const response = await fetch('/lead.php?action=form-token&source=' + encodeURIComponent(source), {\n      method: 'GET',\n      headers: { Accept: 'application/json' },\n      cache: 'no-store',\n      credentials: 'omit',\n    });\n    const payload = await response.json();\n    if (!response.ok || !payload || payload.ok !== true || typeof payload.token !== 'string' || payload.token.length < 32 || payload.token.length > 2048) {\n      throw new Error('send_failed');\n    }\n    return payload.token;\n  }\n\n"
+        },
+        {
+          "before": "      try {\n        const response = await fetch('/lead.php', {",
+          "after": "      try {\n        const formToken = await requestFormToken(source);\n        const response = await fetch('/lead.php', {"
+        },
+        {
+          "before": "          body: JSON.stringify({\n            source,",
+          "after": "          body: JSON.stringify({\n            form_token: formToken,\n            source,"
+        }
+      ],
+      "inverseRestoresEveryOriginalByte": true,
+      "formDOMAndExistingSubmitStatesUnchanged": true
+    },
+    {
+      "id": "slides",
+      "project": "projects/scrollslides-block",
+      "sourceFile": "src/vazuri-case-dock.js",
+      "beforeSHA256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "afterSHA256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "beforeBytes": 33999,
+      "afterBytes": 34641,
+      "handlers": 1,
+      "backup": "frontend/before/slides/src/vazuri-case-dock.js",
+      "patches": [
+        {
+          "before": "  'use strict';\n\n",
+          "after": "  'use strict';\n\n  async function requestFormToken(source) {\n    const response = await fetch('/lead.php?action=form-token&source=' + encodeURIComponent(source), {\n      method: 'GET',\n      headers: { Accept: 'application/json' },\n      cache: 'no-store',\n      credentials: 'omit',\n    });\n    const payload = await response.json();\n    if (!response.ok || !payload || payload.ok !== true || typeof payload.token !== 'string' || payload.token.length < 32 || payload.token.length > 2048) {\n      throw new Error('send_failed');\n    }\n    return payload.token;\n  }\n\n"
+        },
+        {
+          "before": "      try {\n        const response = await fetch('/lead.php', {",
+          "after": "      try {\n        const formToken = await requestFormToken(source);\n        const response = await fetch('/lead.php', {"
+        },
+        {
+          "before": "          body: JSON.stringify({\n            source,",
+          "after": "          body: JSON.stringify({\n            form_token: formToken,\n            source,"
+        }
+      ],
+      "inverseRestoresEveryOriginalByte": true,
+      "formDOMAndExistingSubmitStatesUnchanged": true
+    },
+    {
+      "id": "urban",
+      "project": "projects/urban-pulse-site",
+      "sourceFile": "overrides/vazuri-case-dock.js",
+      "beforeSHA256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "afterSHA256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "beforeBytes": 33999,
+      "afterBytes": 34641,
+      "handlers": 1,
+      "backup": "frontend/before/urban/overrides/vazuri-case-dock.js",
+      "patches": [
+        {
+          "before": "  'use strict';\n\n",
+          "after": "  'use strict';\n\n  async function requestFormToken(source) {\n    const response = await fetch('/lead.php?action=form-token&source=' + encodeURIComponent(source), {\n      method: 'GET',\n      headers: { Accept: 'application/json' },\n      cache: 'no-store',\n      credentials: 'omit',\n    });\n    const payload = await response.json();\n    if (!response.ok || !payload || payload.ok !== true || typeof payload.token !== 'string' || payload.token.length < 32 || payload.token.length > 2048) {\n      throw new Error('send_failed');\n    }\n    return payload.token;\n  }\n\n"
+        },
+        {
+          "before": "      try {\n        const response = await fetch('/lead.php', {",
+          "after": "      try {\n        const formToken = await requestFormToken(source);\n        const response = await fetch('/lead.php', {"
+        },
+        {
+          "before": "          body: JSON.stringify({\n            source,",
+          "after": "          body: JSON.stringify({\n            form_token: formToken,\n            source,"
+        }
+      ],
+      "inverseRestoresEveryOriginalByte": true,
+      "formDOMAndExistingSubmitStatesUnchanged": true
+    },
+    {
+      "id": "revive",
+      "project": "projects/revive-cosmetics-site",
+      "sourceFile": "overrides/vazuri-case-dock.js",
+      "beforeSHA256": "f68c367ef4880d906ed4f3bf441fcf6b9a4ab8db87d5b63cdd5b1801a7705b12",
+      "afterSHA256": "26cc356cd6fcd3b9638dec9632fa2755b3ec4d6e7e9ef38c3f0d75276704bddb",
+      "beforeBytes": 35027,
+      "afterBytes": 35669,
+      "handlers": 1,
+      "backup": "frontend/before/revive/overrides/vazuri-case-dock.js",
+      "patches": [
+        {
+          "before": "  'use strict';\n\n",
+          "after": "  'use strict';\n\n  async function requestFormToken(source) {\n    const response = await fetch('/lead.php?action=form-token&source=' + encodeURIComponent(source), {\n      method: 'GET',\n      headers: { Accept: 'application/json' },\n      cache: 'no-store',\n      credentials: 'omit',\n    });\n    const payload = await response.json();\n    if (!response.ok || !payload || payload.ok !== true || typeof payload.token !== 'string' || payload.token.length < 32 || payload.token.length > 2048) {\n      throw new Error('send_failed');\n    }\n    return payload.token;\n  }\n\n"
+        },
+        {
+          "before": "      try {\n        const response = await fetch('/lead.php', {",
+          "after": "      try {\n        const formToken = await requestFormToken(source);\n        const response = await fetch('/lead.php', {"
+        },
+        {
+          "before": "          body: JSON.stringify({\n            source,",
+          "after": "          body: JSON.stringify({\n            form_token: formToken,\n            source,"
+        }
+      ],
+      "inverseRestoresEveryOriginalByte": true,
+      "formDOMAndExistingSubmitStatesUnchanged": true
+    },
+    {
+      "id": "sky",
+      "project": "projects/skyvilla",
+      "sourceFile": "assets/vazuri/vazuri-case-dock.js",
+      "beforeSHA256": "7c3b8d28477d948fcb34089c5707ccf1f1cfe0df2e9ea234dd2ca92e98124b71",
+      "afterSHA256": "b4b4e146c30f4821686127ee12e20e22c68b0a1b1e3afa4d8dbf192c9ff3868c",
+      "beforeBytes": 37954,
+      "afterBytes": 38702,
+      "handlers": 2,
+      "backup": "frontend/before/sky/assets/vazuri/vazuri-case-dock.js",
+      "patches": [
+        {
+          "before": "  'use strict';\n\n",
+          "after": "  'use strict';\n\n  async function requestFormToken(source) {\n    const response = await fetch('/lead.php?action=form-token&source=' + encodeURIComponent(source), {\n      method: 'GET',\n      headers: { Accept: 'application/json' },\n      cache: 'no-store',\n      credentials: 'omit',\n    });\n    const payload = await response.json();\n    if (!response.ok || !payload || payload.ok !== true || typeof payload.token !== 'string' || payload.token.length < 32 || payload.token.length > 2048) {\n      throw new Error('send_failed');\n    }\n    return payload.token;\n  }\n\n"
+        },
+        {
+          "before": "      try {\n        const response = await fetch('/lead.php', {",
+          "after": "      try {\n        const formToken = await requestFormToken(source);\n        const response = await fetch('/lead.php', {"
+        },
+        {
+          "before": "          body: JSON.stringify({\n            source,",
+          "after": "          body: JSON.stringify({\n            form_token: formToken,\n            source,"
+        },
+        {
+          "before": "        try {\n          const response = await fetch('/lead.php', {",
+          "after": "        try {\n          const formToken = await requestFormToken('case-skyvilla');\n          const response = await fetch('/lead.php', {"
+        },
+        {
+          "before": "            body: JSON.stringify({\n              source: 'case-skyvilla',",
+          "after": "            body: JSON.stringify({\n              form_token: formToken,\n              source: 'case-skyvilla',"
+        }
+      ],
+      "inverseRestoresEveryOriginalByte": true,
+      "formDOMAndExistingSubmitStatesUnchanged": true
+    },
+    {
+      "id": "sync",
+      "project": "projects/scrollsyncvideo-block",
+      "sourceFile": "src/vazuri-case-dock.js",
+      "beforeSHA256": "53e22ba02061f2adb9ea8fd6324e5e9b2b79ce376cde3acc06bd7bb83937e521",
+      "afterSHA256": "5e21aabe7b4c40745bbe39cc02d60bed5742eef0588ef0fbdbe7c5dd5863cfce",
+      "beforeBytes": 34507,
+      "afterBytes": 35149,
+      "handlers": 1,
+      "backup": "frontend/before/sync/src/vazuri-case-dock.js",
+      "patches": [
+        {
+          "before": "  'use strict';\n\n",
+          "after": "  'use strict';\n\n  async function requestFormToken(source) {\n    const response = await fetch('/lead.php?action=form-token&source=' + encodeURIComponent(source), {\n      method: 'GET',\n      headers: { Accept: 'application/json' },\n      cache: 'no-store',\n      credentials: 'omit',\n    });\n    const payload = await response.json();\n    if (!response.ok || !payload || payload.ok !== true || typeof payload.token !== 'string' || payload.token.length < 32 || payload.token.length > 2048) {\n      throw new Error('send_failed');\n    }\n    return payload.token;\n  }\n\n"
+        },
+        {
+          "before": "      try {\n        const response = await fetch('/lead.php', {",
+          "after": "      try {\n        const formToken = await requestFormToken(source);\n        const response = await fetch('/lead.php', {"
+        },
+        {
+          "before": "          body: JSON.stringify({\n            source,",
+          "after": "          body: JSON.stringify({\n            form_token: formToken,\n            source,"
+        }
+      ],
+      "inverseRestoresEveryOriginalByte": true,
+      "formDOMAndExistingSubmitStatesUnchanged": true
+    },
+    {
+      "id": "relief",
+      "project": "projects/relief-motion-literal",
+      "sourceFile": "src/vazuri-case-dock.js",
+      "beforeSHA256": "89775364ef8243153a2415dbd18440c006f630b8556d88462c1007e2c59ab9eb",
+      "afterSHA256": "2caad9b39a2b9fb0aca93b6c1210d77b90f5781e44966eeca2f0a00ffc527841",
+      "beforeBytes": 34626,
+      "afterBytes": 35268,
+      "handlers": 1,
+      "backup": "frontend/before/relief/src/vazuri-case-dock.js",
+      "patches": [
+        {
+          "before": "  'use strict';\n\n",
+          "after": "  'use strict';\n\n  async function requestFormToken(source) {\n    const response = await fetch('/lead.php?action=form-token&source=' + encodeURIComponent(source), {\n      method: 'GET',\n      headers: { Accept: 'application/json' },\n      cache: 'no-store',\n      credentials: 'omit',\n    });\n    const payload = await response.json();\n    if (!response.ok || !payload || payload.ok !== true || typeof payload.token !== 'string' || payload.token.length < 32 || payload.token.length > 2048) {\n      throw new Error('send_failed');\n    }\n    return payload.token;\n  }\n\n"
+        },
+        {
+          "before": "      try {\n        const response = await fetch('/lead.php', {",
+          "after": "      try {\n        const formToken = await requestFormToken(source);\n        const response = await fetch('/lead.php', {"
+        },
+        {
+          "before": "          body: JSON.stringify({\n            source,",
+          "after": "          body: JSON.stringify({\n            form_token: formToken,\n            source,"
+        }
+      ],
+      "inverseRestoresEveryOriginalByte": true,
+      "formDOMAndExistingSubmitStatesUnchanged": true
+    }
+  ],
+  "serverActions": false,
+  "GitMutations": false,
+  "productDOMChanges": false
+}

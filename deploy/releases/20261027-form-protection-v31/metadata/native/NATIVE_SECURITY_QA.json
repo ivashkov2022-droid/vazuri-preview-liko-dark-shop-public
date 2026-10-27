@@ -1,0 +1,947 @@
+{
+  "schema": "vazuri/native-sky-form-token-qa/v1",
+  "base": "http://127.0.0.1:4496",
+  "runtime": "audit/forms-protection-20261027/release/candidate",
+  "candidateSHA256": "dc262256d04bfa4f8ff86431014b449f426425916077c6aadc0bdb7f464d9e3d",
+  "startedAt": "2026-10-27T11:58:44.001Z",
+  "scriptSHA256": "3ef855ff53a123cb0847496e68d839d5236c45aec50a78a2897367939c0e31a6",
+  "baselineManifestSHA256": "6fd7b4b71077da8bf5ac4f8aa512000bfbf388e1845df2acb3e46df83f78b54e",
+  "overlayManifestSHA256": "1b0254ed754266302f7822b8f8c68563153389b793fca5d48d8111c5bd124998",
+  "measurementPolicy": "Literal native form HTML is byte-identical; computed control styles and all attributes remain strict. Only WOW-owned outer-form animated class and visibility/animation-delay/animation-name runtime states are ignored.",
+  "actualSubmissions": 0,
+  "mockedTokenGETs": 27,
+  "mockedPOSTs": 18,
+  "unexpectedWrites": [],
+  "cases": [
+    {
+      "lang": "ru",
+      "slug": "about",
+      "width": 1440,
+      "height": 900,
+      "path": "/skyvilla/ru/about.html",
+      "finalHTMLSHA256": "de5d5a5f344a064233a9f985a045497f133d41622feb362c2401ef4c1aad2911",
+      "nativeFormLiteralBytesUnchanged": true,
+      "unchangedDOMAndFieldStyles": true,
+      "onlyKnownOuterWOWAnimationStatesIgnored": true,
+      "emptyBlockedBeforeTokenRequest": true,
+      "tokenEndpointErrorPreservesFieldsWithoutPOST": true,
+      "deliveryErrorPreservesFields": true,
+      "freshTokenGETEveryAttempt": true,
+      "cookieFreeTokenGET": true,
+      "fullPayloadPlusTokenOnly": true,
+      "noFakeConsent": true,
+      "pendingDuplicateBlocked": true,
+      "retrySuccess": true,
+      "oldVendorPostCount": 0,
+      "legacyNewsletterBlankBriefUnchanged": true,
+      "mockedTokenGETCount": 3,
+      "mockedPOSTCount": 2,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 1,
+          "tokenIssued": false,
+          "token": null
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 2,
+          "tokenIssued": true,
+          "token": "v31-native-ru-about-1440-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 3,
+          "tokenIssued": true,
+          "token": "v31-native-ru-about-1440-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+      ],
+      "posts": [
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-ru-about-1440-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "ru",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        },
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-ru-about-1440-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "ru",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "slug": "contact",
+      "width": 1440,
+      "height": 900,
+      "path": "/skyvilla/ru/contact.html",
+      "finalHTMLSHA256": "2d3c940f5d315b68cec9ee4cf5509b049f3f3de6b2fd4d3ea3108cb24fcc30d2",
+      "nativeFormLiteralBytesUnchanged": true,
+      "unchangedDOMAndFieldStyles": true,
+      "onlyKnownOuterWOWAnimationStatesIgnored": true,
+      "emptyBlockedBeforeTokenRequest": true,
+      "tokenEndpointErrorPreservesFieldsWithoutPOST": true,
+      "deliveryErrorPreservesFields": true,
+      "freshTokenGETEveryAttempt": true,
+      "cookieFreeTokenGET": true,
+      "fullPayloadPlusTokenOnly": true,
+      "noFakeConsent": true,
+      "pendingDuplicateBlocked": true,
+      "retrySuccess": true,
+      "oldVendorPostCount": 0,
+      "legacyNewsletterBlankBriefUnchanged": true,
+      "mockedTokenGETCount": 3,
+      "mockedPOSTCount": 2,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 1,
+          "tokenIssued": false,
+          "token": null
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 2,
+          "tokenIssued": true,
+          "token": "v31-native-ru-contact-1440-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 3,
+          "tokenIssued": true,
+          "token": "v31-native-ru-contact-1440-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+      ],
+      "posts": [
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-ru-contact-1440-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "ru",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        },
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-ru-contact-1440-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "ru",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "slug": "team-single",
+      "width": 1440,
+      "height": 900,
+      "path": "/skyvilla/ru/team-single.html",
+      "finalHTMLSHA256": "cb90ce56bd733b4f901593eab7119d213afabebc5f4eb4e269bbeebd4b8d10f4",
+      "nativeFormLiteralBytesUnchanged": true,
+      "unchangedDOMAndFieldStyles": true,
+      "onlyKnownOuterWOWAnimationStatesIgnored": true,
+      "emptyBlockedBeforeTokenRequest": true,
+      "tokenEndpointErrorPreservesFieldsWithoutPOST": true,
+      "deliveryErrorPreservesFields": true,
+      "freshTokenGETEveryAttempt": true,
+      "cookieFreeTokenGET": true,
+      "fullPayloadPlusTokenOnly": true,
+      "noFakeConsent": true,
+      "pendingDuplicateBlocked": true,
+      "retrySuccess": true,
+      "oldVendorPostCount": 0,
+      "legacyNewsletterBlankBriefUnchanged": true,
+      "mockedTokenGETCount": 3,
+      "mockedPOSTCount": 2,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 1,
+          "tokenIssued": false,
+          "token": null
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 2,
+          "tokenIssued": true,
+          "token": "v31-native-ru-team-single-1440-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 3,
+          "tokenIssued": true,
+          "token": "v31-native-ru-team-single-1440-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+      ],
+      "posts": [
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-ru-team-single-1440-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "ru",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        },
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-ru-team-single-1440-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "ru",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "slug": "about",
+      "width": 1440,
+      "height": 900,
+      "path": "/skyvilla/en/about.html",
+      "finalHTMLSHA256": "c2b342be24314fb88c0c023d56942abec94b105591f5d93aea889bffad2e6015",
+      "nativeFormLiteralBytesUnchanged": true,
+      "unchangedDOMAndFieldStyles": true,
+      "onlyKnownOuterWOWAnimationStatesIgnored": true,
+      "emptyBlockedBeforeTokenRequest": true,
+      "tokenEndpointErrorPreservesFieldsWithoutPOST": true,
+      "deliveryErrorPreservesFields": true,
+      "freshTokenGETEveryAttempt": true,
+      "cookieFreeTokenGET": true,
+      "fullPayloadPlusTokenOnly": true,
+      "noFakeConsent": true,
+      "pendingDuplicateBlocked": true,
+      "retrySuccess": true,
+      "oldVendorPostCount": 0,
+      "legacyNewsletterBlankBriefUnchanged": true,
+      "mockedTokenGETCount": 3,
+      "mockedPOSTCount": 2,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 1,
+          "tokenIssued": false,
+          "token": null
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 2,
+          "tokenIssued": true,
+          "token": "v31-native-en-about-1440-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 3,
+          "tokenIssued": true,
+          "token": "v31-native-en-about-1440-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+      ],
+      "posts": [
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-en-about-1440-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "en",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        },
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-en-about-1440-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "en",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "slug": "contact",
+      "width": 1440,
+      "height": 900,
+      "path": "/skyvilla/en/contact.html",
+      "finalHTMLSHA256": "899f7e88d9be9732decd6a086a9affca41d5aeba187637d84f956733b3057193",
+      "nativeFormLiteralBytesUnchanged": true,
+      "unchangedDOMAndFieldStyles": true,
+      "onlyKnownOuterWOWAnimationStatesIgnored": true,
+      "emptyBlockedBeforeTokenRequest": true,
+      "tokenEndpointErrorPreservesFieldsWithoutPOST": true,
+      "deliveryErrorPreservesFields": true,
+      "freshTokenGETEveryAttempt": true,
+      "cookieFreeTokenGET": true,
+      "fullPayloadPlusTokenOnly": true,
+      "noFakeConsent": true,
+      "pendingDuplicateBlocked": true,
+      "retrySuccess": true,
+      "oldVendorPostCount": 0,
+      "legacyNewsletterBlankBriefUnchanged": true,
+      "mockedTokenGETCount": 3,
+      "mockedPOSTCount": 2,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 1,
+          "tokenIssued": false,
+          "token": null
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 2,
+          "tokenIssued": true,
+          "token": "v31-native-en-contact-1440-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 3,
+          "tokenIssued": true,
+          "token": "v31-native-en-contact-1440-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+      ],
+      "posts": [
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-en-contact-1440-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "en",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        },
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-en-contact-1440-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "en",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "slug": "team-single",
+      "width": 1440,
+      "height": 900,
+      "path": "/skyvilla/en/team-single.html",
+      "finalHTMLSHA256": "230cf72e0955a66d5ad73a668513e658226291029e75df77e4c758b1bb5d4b77",
+      "nativeFormLiteralBytesUnchanged": true,
+      "unchangedDOMAndFieldStyles": true,
+      "onlyKnownOuterWOWAnimationStatesIgnored": true,
+      "emptyBlockedBeforeTokenRequest": true,
+      "tokenEndpointErrorPreservesFieldsWithoutPOST": true,
+      "deliveryErrorPreservesFields": true,
+      "freshTokenGETEveryAttempt": true,
+      "cookieFreeTokenGET": true,
+      "fullPayloadPlusTokenOnly": true,
+      "noFakeConsent": true,
+      "pendingDuplicateBlocked": true,
+      "retrySuccess": true,
+      "oldVendorPostCount": 0,
+      "legacyNewsletterBlankBriefUnchanged": true,
+      "mockedTokenGETCount": 3,
+      "mockedPOSTCount": 2,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 1,
+          "tokenIssued": false,
+          "token": null
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 2,
+          "tokenIssued": true,
+          "token": "v31-native-en-team-single-1440-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 3,
+          "tokenIssued": true,
+          "token": "v31-native-en-team-single-1440-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+      ],
+      "posts": [
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-en-team-single-1440-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "en",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        },
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-en-team-single-1440-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "en",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "slug": "contact",
+      "width": 390,
+      "height": 844,
+      "path": "/skyvilla/ru/contact.html",
+      "finalHTMLSHA256": "2d3c940f5d315b68cec9ee4cf5509b049f3f3de6b2fd4d3ea3108cb24fcc30d2",
+      "nativeFormLiteralBytesUnchanged": true,
+      "unchangedDOMAndFieldStyles": true,
+      "onlyKnownOuterWOWAnimationStatesIgnored": true,
+      "emptyBlockedBeforeTokenRequest": true,
+      "tokenEndpointErrorPreservesFieldsWithoutPOST": true,
+      "deliveryErrorPreservesFields": true,
+      "freshTokenGETEveryAttempt": true,
+      "cookieFreeTokenGET": true,
+      "fullPayloadPlusTokenOnly": true,
+      "noFakeConsent": true,
+      "pendingDuplicateBlocked": true,
+      "retrySuccess": true,
+      "oldVendorPostCount": 0,
+      "legacyNewsletterBlankBriefUnchanged": true,
+      "mockedTokenGETCount": 3,
+      "mockedPOSTCount": 2,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 1,
+          "tokenIssued": false,
+          "token": null
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 2,
+          "tokenIssued": true,
+          "token": "v31-native-ru-contact-390-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 3,
+          "tokenIssued": true,
+          "token": "v31-native-ru-contact-390-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+      ],
+      "posts": [
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-ru-contact-390-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "ru",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        },
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-ru-contact-390-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "ru",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "slug": "contact",
+      "width": 390,
+      "height": 844,
+      "path": "/skyvilla/en/contact.html",
+      "finalHTMLSHA256": "899f7e88d9be9732decd6a086a9affca41d5aeba187637d84f956733b3057193",
+      "nativeFormLiteralBytesUnchanged": true,
+      "unchangedDOMAndFieldStyles": true,
+      "onlyKnownOuterWOWAnimationStatesIgnored": true,
+      "emptyBlockedBeforeTokenRequest": true,
+      "tokenEndpointErrorPreservesFieldsWithoutPOST": true,
+      "deliveryErrorPreservesFields": true,
+      "freshTokenGETEveryAttempt": true,
+      "cookieFreeTokenGET": true,
+      "fullPayloadPlusTokenOnly": true,
+      "noFakeConsent": true,
+      "pendingDuplicateBlocked": true,
+      "retrySuccess": true,
+      "oldVendorPostCount": 0,
+      "legacyNewsletterBlankBriefUnchanged": true,
+      "mockedTokenGETCount": 3,
+      "mockedPOSTCount": 2,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 1,
+          "tokenIssued": false,
+          "token": null
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 2,
+          "tokenIssued": true,
+          "token": "v31-native-en-contact-390-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 3,
+          "tokenIssued": true,
+          "token": "v31-native-en-contact-390-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+      ],
+      "posts": [
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-en-contact-390-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "en",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        },
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-en-contact-390-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "en",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        }
+      ]
+    },
+    {
+      "lang": "ru",
+      "slug": "contact",
+      "width": 768,
+      "height": 900,
+      "path": "/skyvilla/ru/contact.html",
+      "finalHTMLSHA256": "2d3c940f5d315b68cec9ee4cf5509b049f3f3de6b2fd4d3ea3108cb24fcc30d2",
+      "nativeFormLiteralBytesUnchanged": true,
+      "unchangedDOMAndFieldStyles": true,
+      "onlyKnownOuterWOWAnimationStatesIgnored": true,
+      "emptyBlockedBeforeTokenRequest": true,
+      "tokenEndpointErrorPreservesFieldsWithoutPOST": true,
+      "deliveryErrorPreservesFields": true,
+      "freshTokenGETEveryAttempt": true,
+      "cookieFreeTokenGET": true,
+      "fullPayloadPlusTokenOnly": true,
+      "noFakeConsent": true,
+      "pendingDuplicateBlocked": true,
+      "retrySuccess": true,
+      "oldVendorPostCount": 0,
+      "legacyNewsletterBlankBriefUnchanged": true,
+      "mockedTokenGETCount": 3,
+      "mockedPOSTCount": 2,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 1,
+          "tokenIssued": false,
+          "token": null
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 2,
+          "tokenIssued": true,
+          "token": "v31-native-ru-contact-768-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "source": "case-skyvilla",
+          "method": "GET",
+          "cookieOmitted": true,
+          "number": 3,
+          "tokenIssued": true,
+          "token": "v31-native-ru-contact-768-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+      ],
+      "posts": [
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-ru-contact-768-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "ru",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        },
+        {
+          "url": "/lead.php",
+          "method": "POST",
+          "payload": {
+            "form_token": "v31-native-ru-contact-768-3-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "ru",
+            "form_kind": "sky-native-contact",
+            "name": "Иван Проверочный",
+            "contact": "sky-security@example.invalid",
+            "phone": "+7 (900) 123-45-67",
+            "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»",
+            "original_fields": {
+              "fname": "Иван",
+              "lname": "Проверочный",
+              "email": "sky-security@example.invalid",
+              "phone": "+7 (900) 123-45-67",
+              "message": "Полное сообщение: проверка защиты.\nSecond line: < & > «текст»"
+            },
+            "website": "",
+            "consent": "",
+            "consent_version": ""
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "pass": true,
+  "completedAt": "2026-10-27T11:59:37.664Z"
+}

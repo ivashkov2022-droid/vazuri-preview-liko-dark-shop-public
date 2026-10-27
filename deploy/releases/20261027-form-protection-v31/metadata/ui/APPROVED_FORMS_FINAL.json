@@ -1,0 +1,2914 @@
+{
+  "schema": "vazuri/protected-approved30-ui-qa/v1",
+  "label": "final",
+  "base": "http://127.0.0.1:4496",
+  "runtime": "audit/forms-protection-20261027/release/candidate",
+  "startedAt": "2026-10-27T11:55:40.521Z",
+  "scriptSHA256": "40d6c25b102759949cae7ff5a56c528cb7eb69dedcba7da0c6cb07fb0868b8f3",
+  "inventorySHA256": "c167d013f1a0ff4ee391a759ef5e437ebca48be5ef8319690d473f775916e624",
+  "actualSubmissions": 0,
+  "mockedPosts": 60,
+  "mockedTokenRequests": 90,
+  "blockedWrites": [],
+  "blockedKnownTelemetry": [
+    {
+      "scenario": "hotel-en",
+      "url": "https://stat.tildaapi.com/event/",
+      "method": "POST"
+    },
+    {
+      "scenario": "hotel-ru",
+      "url": "https://stat.tildaapi.com/event/",
+      "method": "POST"
+    }
+  ],
+  "cases": [
+    {
+      "scenario": "contact-ru",
+      "source": "contact",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/contact",
+      "runtimeFile": "main/contact/index.html",
+      "HTMLSHA256": "3dc97480a656f957d922660cff4134d055e4bc68cc78d3beea3138ed4b98129e",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Разбор проекта",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=contact",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=contact",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=contact",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-contact-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "contact",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Разбор проекта\nТелефон: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        },
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-contact-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "contact",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Разбор проекта\nТелефон: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "contact-en",
+      "source": "contact",
+      "language": "en",
+      "URL": "http://127.0.0.1:4496/en/contact",
+      "runtimeFile": "main/en/contact/index.html",
+      "HTMLSHA256": "5d00147ac51bdda40e96785871175761b004c7e88631e3f653e0705ce5b58f9e",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Project review",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=contact",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=contact",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=contact",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-contact-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "contact",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Project review\nPhone: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        },
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-contact-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "contact",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Project review\nPhone: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "github-ru",
+      "source": "github",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/contact?source=github",
+      "runtimeFile": "main/contact/index.html",
+      "HTMLSHA256": "3dc97480a656f957d922660cff4134d055e4bc68cc78d3beea3138ed4b98129e",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Подборка GitHub: интеграции",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=github",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=github",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=github",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-github-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "github",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Подборка GitHub: интеграции\nТелефон: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        },
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-github-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "github",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Подборка GitHub: интеграции\nТелефон: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "github-en",
+      "source": "github",
+      "language": "en",
+      "URL": "http://127.0.0.1:4496/en/contact?source=github",
+      "runtimeFile": "main/en/contact/index.html",
+      "HTMLSHA256": "5d00147ac51bdda40e96785871175761b004c7e88631e3f653e0705ce5b58f9e",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "GitHub selection: integrations",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=github",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=github",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=github",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-github-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "github",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "GitHub selection: integrations\nPhone: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        },
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-github-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "github",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "GitHub selection: integrations\nPhone: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "behance-ru",
+      "source": "behance",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/contact?source=behance",
+      "runtimeFile": "main/contact/index.html",
+      "HTMLSHA256": "3dc97480a656f957d922660cff4134d055e4bc68cc78d3beea3138ed4b98129e",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Подборка Behance: визуальные концепции",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=behance",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=behance",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=behance",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-behance-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "behance",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Подборка Behance: визуальные концепции\nТелефон: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        },
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-behance-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "behance",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Подборка Behance: визуальные концепции\nТелефон: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "behance-en",
+      "source": "behance",
+      "language": "en",
+      "URL": "http://127.0.0.1:4496/en/contact?source=behance",
+      "runtimeFile": "main/en/contact/index.html",
+      "HTMLSHA256": "5d00147ac51bdda40e96785871175761b004c7e88631e3f653e0705ce5b58f9e",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Behance selection: visual concepts",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=behance",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=behance",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=behance",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-behance-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "behance",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Behance selection: visual concepts\nPhone: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        },
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-behance-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "behance",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Behance selection: visual concepts\nPhone: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "dribbble-ru",
+      "source": "dribbble",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/contact?source=dribbble",
+      "runtimeFile": "main/contact/index.html",
+      "HTMLSHA256": "3dc97480a656f957d922660cff4134d055e4bc68cc78d3beea3138ed4b98129e",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Подборка Dribbble: концепции",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=dribbble",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=dribbble",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=dribbble",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-dribbble-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "dribbble",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Подборка Dribbble: концепции\nТелефон: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        },
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-dribbble-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "dribbble",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Подборка Dribbble: концепции\nТелефон: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "dribbble-en",
+      "source": "dribbble",
+      "language": "en",
+      "URL": "http://127.0.0.1:4496/en/contact?source=dribbble",
+      "runtimeFile": "main/en/contact/index.html",
+      "HTMLSHA256": "5d00147ac51bdda40e96785871175761b004c7e88631e3f653e0705ce5b58f9e",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Dribbble selection: concepts",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=dribbble",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=dribbble",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=dribbble",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-dribbble-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "dribbble",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Dribbble selection: concepts\nPhone: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        },
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-dribbble-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "dribbble",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Dribbble selection: concepts\nPhone: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "figma-ru",
+      "source": "figma",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/contact?source=figma",
+      "runtimeFile": "main/contact/index.html",
+      "HTMLSHA256": "3dc97480a656f957d922660cff4134d055e4bc68cc78d3beea3138ed4b98129e",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Подборка Figma: прототипы",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=figma",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=figma",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=figma",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-figma-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "figma",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Подборка Figma: прототипы\nТелефон: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        },
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-figma-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "figma",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Подборка Figma: прототипы\nТелефон: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "figma-en",
+      "source": "figma",
+      "language": "en",
+      "URL": "http://127.0.0.1:4496/en/contact?source=figma",
+      "runtimeFile": "main/en/contact/index.html",
+      "HTMLSHA256": "5d00147ac51bdda40e96785871175761b004c7e88631e3f653e0705ce5b58f9e",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Figma selection: prototypes",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=figma",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=figma",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=figma",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-figma-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "figma",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Figma selection: prototypes\nPhone: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        },
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-figma-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "figma",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Figma selection: prototypes\nPhone: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "codepen-ru",
+      "source": "codepen",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/contact?source=codepen",
+      "runtimeFile": "main/contact/index.html",
+      "HTMLSHA256": "3dc97480a656f957d922660cff4134d055e4bc68cc78d3beea3138ed4b98129e",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Подборка CodePen: эксперименты",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=codepen",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=codepen",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=codepen",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-codepen-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "codepen",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Подборка CodePen: эксперименты\nТелефон: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        },
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-codepen-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "codepen",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Подборка CodePen: эксперименты\nТелефон: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "codepen-en",
+      "source": "codepen",
+      "language": "en",
+      "URL": "http://127.0.0.1:4496/en/contact?source=codepen",
+      "runtimeFile": "main/en/contact/index.html",
+      "HTMLSHA256": "5d00147ac51bdda40e96785871175761b004c7e88631e3f653e0705ce5b58f9e",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "CodePen selection: experiments",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=codepen",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=codepen",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=codepen",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-codepen-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "codepen",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "CodePen selection: experiments\nPhone: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        },
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-codepen-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "codepen",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "CodePen selection: experiments\nPhone: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "all-projects-ru",
+      "source": "all-projects",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/contact?source=all-projects",
+      "runtimeFile": "main/contact/index.html",
+      "HTMLSHA256": "3dc97480a656f957d922660cff4134d055e4bc68cc78d3beea3138ed4b98129e",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Разбор проекта",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=all-projects",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=all-projects",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=all-projects",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-all-projects-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "all-projects",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Разбор проекта\nТелефон: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        },
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-all-projects-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "all-projects",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Разбор проекта\nТелефон: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "all-projects-en",
+      "source": "all-projects",
+      "language": "en",
+      "URL": "http://127.0.0.1:4496/en/contact?source=all-projects",
+      "runtimeFile": "main/en/contact/index.html",
+      "HTMLSHA256": "5d00147ac51bdda40e96785871175761b004c7e88631e3f653e0705ce5b58f9e",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Project review",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=all-projects",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=all-projects",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "https://vazuri.io/lead.php?action=form-token&source=all-projects",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-all-projects-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "all-projects",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Project review\nPhone: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        },
+        {
+          "url": "https://vazuri.io/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-all-projects-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "all-projects",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "consent_version": "2026-10-27-r2",
+            "message": "Project review\nPhone: +7 999 123-45-67",
+            "consent": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "night-ru",
+      "source": "nightshift",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/nightshift/",
+      "runtimeFile": "vazuri-preview-liko-dark-shop-public/index.html",
+      "HTMLSHA256": "066e37881b6e42dbcc47aaa3c7ec31ae36beb8461f9478788bd776ca3a882598",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Разбор проекта",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=nightshift",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=nightshift",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=nightshift",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/nightshift/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-nightshift-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "nightshift",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "NIGHTSHIFT. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/nightshift/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-nightshift-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "nightshift",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "NIGHTSHIFT. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "hotel-en",
+      "source": "case-vazuri-hotel",
+      "language": "en",
+      "URL": "http://127.0.0.1:4496/hotel/",
+      "runtimeFile": "vazuri-1099af950ba0e8f8/index.html",
+      "HTMLSHA256": "cf3e4200c7e6045516133a9c922e78ca3fb5bb921dbba361e64e71807c369ba2",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Project review",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-vazuri-hotel",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-vazuri-hotel",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-vazuri-hotel",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "cookie": "tildauid=1793102178496.530255; tildasid=1793102178496.815794; previousUrl=127.0.0.1%2Fhotel%2F",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/hotel/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-vazuri-hotel-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-vazuri-hotel",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "VAZURI Hotel. Request: Project review.\nPhone: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "cookie": "tildauid=1793102178496.530255; tildasid=1793102178496.815794; previousUrl=127.0.0.1%2Fhotel%2F",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/hotel/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-vazuri-hotel-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-vazuri-hotel",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "VAZURI Hotel. Request: Project review.\nPhone: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "hotel-ru",
+      "source": "case-vazuri-hotel",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/hotel/ru/",
+      "runtimeFile": "vazuri-1099af950ba0e8f8/ru/index.html",
+      "HTMLSHA256": "ec604eaa1848322cd9fb38d6db90e9fcffd3c55f24f82e331d520b3725cdddaa",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Разбор проекта",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-vazuri-hotel",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-vazuri-hotel",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-vazuri-hotel",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "cookie": "tildauid=1793102182547.300457; tildasid=1793102182547.831266; previousUrl=127.0.0.1%2Fhotel%2Fru%2F",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/hotel/ru/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-vazuri-hotel-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-vazuri-hotel",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "VAZURI Hotel. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "cookie": "tildauid=1793102182547.300457; tildasid=1793102182547.831266; previousUrl=127.0.0.1%2Fhotel%2Fru%2F",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/hotel/ru/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-vazuri-hotel-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-vazuri-hotel",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "VAZURI Hotel. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "altera-ru",
+      "source": "case-altera",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/altera/",
+      "runtimeFile": "vazuri-preview-liko-fashion-studio-public/index.html",
+      "HTMLSHA256": "64df4b1123b37e807f1f5ad992d2f0729f1810b1503130ba7668e434731027cd",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Разбор проекта",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-altera",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-altera",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-altera",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/altera/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-altera-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-altera",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "ALTERA. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/altera/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-altera-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-altera",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "ALTERA. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "slides-en",
+      "source": "contact",
+      "language": "en",
+      "URL": "http://127.0.0.1:4496/scroll-slides/en/",
+      "runtimeFile": "scroll-slides-kinetic-x8q4m7v2/en/index.html",
+      "HTMLSHA256": "3e5fd05b68ba3cd228c3cf55562856775e8e7760c27a15451645b42271aac7e9",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Project review",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=contact",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=contact",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=contact",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/scroll-slides/en/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-contact-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "contact",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Scroll Slides. Request: Project review.\nPhone: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/scroll-slides/en/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-contact-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "contact",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Scroll Slides. Request: Project review.\nPhone: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "slides-ru",
+      "source": "contact",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/scroll-slides/ru/",
+      "runtimeFile": "scroll-slides-kinetic-x8q4m7v2/ru/index.html",
+      "HTMLSHA256": "63f54472d9b2d48a687e5e5a7a3d01fd3e356827e0914fcc70cb12ec7bf45b15",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Разбор проекта",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=contact",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=contact",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=contact",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/scroll-slides/ru/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-contact-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "contact",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Scroll Slides. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/scroll-slides/ru/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-contact-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "contact",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Scroll Slides. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "urban-en",
+      "source": "case-urban-pulse",
+      "language": "en",
+      "URL": "http://127.0.0.1:4496/urban-pulse/",
+      "runtimeFile": "urban-pulse-exhibitions-k7m3p9x4/index.html",
+      "HTMLSHA256": "997a79c0cba7f3ea694a08375ab39334704156ba64e726bb12ded3b9a0aae286",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Project review",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-urban-pulse",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-urban-pulse",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-urban-pulse",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/urban-pulse/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-urban-pulse-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-urban-pulse",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Urban Pulse. Request: Project review.\nPhone: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/urban-pulse/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-urban-pulse-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-urban-pulse",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Urban Pulse. Request: Project review.\nPhone: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "urban-ru",
+      "source": "case-urban-pulse",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/urban-pulse/ru/",
+      "runtimeFile": "urban-pulse-exhibitions-k7m3p9x4/ru/index.html",
+      "HTMLSHA256": "6e03fe5b430491b15d34f2b03873eb5dba6286f2b228bb6e4539e6922acc6788",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Разбор проекта",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-urban-pulse",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-urban-pulse",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-urban-pulse",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/urban-pulse/ru/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-urban-pulse-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-urban-pulse",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Urban Pulse. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/urban-pulse/ru/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-urban-pulse-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-urban-pulse",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Urban Pulse. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "revive-en",
+      "source": "case-revive-cosmetics",
+      "language": "en",
+      "URL": "http://127.0.0.1:4496/revive/",
+      "runtimeFile": "revive-cosmetics-r8q4m7x2/index.html",
+      "HTMLSHA256": "f28bca0e9023b981d703816c0530b206631feae5a5859dea40fb6827c4dd5037",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Project review",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-revive-cosmetics",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-revive-cosmetics",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-revive-cosmetics",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/revive/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-revive-cosmetics-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-revive-cosmetics",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Revive Cosmetics. Request: Project review.\nPhone: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/revive/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-revive-cosmetics-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-revive-cosmetics",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Revive Cosmetics. Request: Project review.\nPhone: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "revive-ru",
+      "source": "case-revive-cosmetics",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/revive/ru/",
+      "runtimeFile": "revive-cosmetics-r8q4m7x2/ru/index.html",
+      "HTMLSHA256": "b78d5a15a7530f3d9295bea69858350ad65d12fa60ecf9947ee13fcdc5de16d9",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Разбор проекта",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-revive-cosmetics",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-revive-cosmetics",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-revive-cosmetics",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/revive/ru/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-revive-cosmetics-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-revive-cosmetics",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Revive Cosmetics. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/revive/ru/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-revive-cosmetics-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-revive-cosmetics",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Revive Cosmetics. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "sky-en",
+      "source": "case-skyvilla",
+      "language": "en",
+      "URL": "http://127.0.0.1:4496/skyvilla/en/",
+      "runtimeFile": "skyvilla-estate-k8m4p2x7/en/index.html",
+      "HTMLSHA256": "83ca96f467263f95d331f39cda609d67e16bbc8ea6d1718e4baf4d7d440898cd",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Project review",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/skyvilla/en/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-skyvilla-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "SkyVilla. Request: Project review.\nPhone: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/skyvilla/en/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-skyvilla-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "SkyVilla. Request: Project review.\nPhone: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "sky-ru",
+      "source": "case-skyvilla",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/skyvilla/ru/",
+      "runtimeFile": "skyvilla-estate-k8m4p2x7/ru/index.html",
+      "HTMLSHA256": "ff48969b9f7c58ba2d11e383ee198bdbdd22b9ebed827513d196b575c726fac8",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Разбор проекта",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-skyvilla",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/skyvilla/ru/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-skyvilla-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "SkyVilla. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/skyvilla/ru/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-skyvilla-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-skyvilla",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "SkyVilla. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "sync-en",
+      "source": "case-scrollsync",
+      "language": "en",
+      "URL": "http://127.0.0.1:4496/scrollsync/en/",
+      "runtimeFile": "scrollsync-video-v7q4m9x2/en/index.html",
+      "HTMLSHA256": "6feee5ae77a96a343a34a004fbe6781a8c661eb4bed8c673c049e695d780df90",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Project review",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-scrollsync",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-scrollsync",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-scrollsync",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/scrollsync/en/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-scrollsync-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-scrollsync",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Scroll Sync Video. Request: Project review.\nPhone: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/scrollsync/en/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-scrollsync-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-scrollsync",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Scroll Sync Video. Request: Project review.\nPhone: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "sync-ru",
+      "source": "case-scrollsync",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/scrollsync/ru/",
+      "runtimeFile": "scrollsync-video-v7q4m9x2/ru/index.html",
+      "HTMLSHA256": "e2d6c5d7c297cc6edde9e58652f685a6ceb6040d174933d830bc1d0973215727",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Разбор проекта",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-scrollsync",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-scrollsync",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-scrollsync",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/scrollsync/ru/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-scrollsync-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-scrollsync",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Scroll Sync Video. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/scrollsync/ru/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-scrollsync-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-scrollsync",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Scroll Sync Video. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "relief-en",
+      "source": "case-relief-motion",
+      "language": "en",
+      "URL": "http://127.0.0.1:4496/relief/en/",
+      "runtimeFile": "relief-motion-literal-p8m4k2x7/en/index.html",
+      "HTMLSHA256": "874dd3aef8b40ea69509074974338d8d093a453d6217a5ed9632119ec654bf10",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Project review",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-relief-motion",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-relief-motion",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-relief-motion",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/relief/en/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-relief-motion-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-relief-motion",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Relief Motion. Request: Project review.\nPhone: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/relief/en/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-relief-motion-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-relief-motion",
+            "language": "en",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Relief Motion. Request: Project review.\nPhone: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "relief-ru",
+      "source": "case-relief-motion",
+      "language": "ru",
+      "URL": "http://127.0.0.1:4496/relief/ru/",
+      "runtimeFile": "relief-motion-literal-p8m4k2x7/ru/index.html",
+      "HTMLSHA256": "c208d03330c5d7739e94e5d291322a12fd828787b20783bc216e5a67f8566bd9",
+      "blankInitialState": true,
+      "noAutoKeyboardFocus": true,
+      "requiredFieldsBlocked": [
+        "name",
+        "phone",
+        "contact",
+        "consent"
+      ],
+      "chosenService": "Разбор проекта",
+      "allFieldPayloadDelivered": true,
+      "tokenFailurePreventsPOSTAndKeepsFields": true,
+      "freshTokenPerRetry": true,
+      "tokenRequests": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-relief-motion",
+          "method": "GET",
+          "mode": "token-error",
+          "tokenIssued": false
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-relief-motion",
+          "method": "GET",
+          "mode": "post-error",
+          "tokenIssued": true
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php?action=form-token&source=case-relief-motion",
+          "method": "GET",
+          "mode": "success",
+          "tokenIssued": true
+        }
+      ],
+      "errorPreservesFieldsAndSelection": true,
+      "retrySuccess": true,
+      "mockedPosts": [
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/relief/ru/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-relief-motion-1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-relief-motion",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Relief Motion. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4496/lead.php",
+          "method": "POST",
+          "headers": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "origin": "http://127.0.0.1:4496",
+            "referer": "http://127.0.0.1:4496/relief/ru/",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "payload": {
+            "form_token": "vazuri-qa-case-relief-motion-2-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "source": "case-relief-motion",
+            "language": "ru",
+            "website": "",
+            "name": "Ирина VAZURI QA",
+            "contact": "approved-forms-qa@example.invalid",
+            "company": "",
+            "message": "Relief Motion. Запрос: Разбор проекта.\nТелефон: +7 999 123-45-67",
+            "consent": "yes",
+            "consent_version": "2026-10-27-r2"
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "pass": true,
+  "completedAt": "2026-10-27T11:57:14.497Z"
+}

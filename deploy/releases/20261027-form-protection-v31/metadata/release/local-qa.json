@@ -1,0 +1,64 @@
+{
+  "schema": "vazuri/form-protection-local-qa/v1",
+  "valid": true,
+  "localQAPassed": true,
+  "mode": "local",
+  "candidateSHA256": "dc262256d04bfa4f8ff86431014b449f426425916077c6aadc0bdb7f464d9e3d",
+  "summary": {
+    "approvedVariants": 30,
+    "nativeSkyScenarios": 9,
+    "PHPScenarios": 110,
+    "PHPChecks": 835,
+    "mockedTokenGETs": 117,
+    "mockedLeadPOSTs": 78,
+    "realSubmissions": 0,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "30 approved variants retain fields and retry after marker and delivery errors",
+      "passed": true
+    },
+    {
+      "name": "9 native Sky profiles retain exact fields, honest consent and duplicate-submit handling",
+      "passed": true
+    },
+    {
+      "name": "110 real-PDO PHP cases include atomic concurrent replay and zero queue writes on security denials",
+      "passed": true
+    },
+    {
+      "name": "Private project-only key/state work as the PHP user without exposing credentials",
+      "passed": true
+    },
+    {
+      "name": "All ten frontend source changes are transport-only",
+      "passed": true
+    },
+    {
+      "name": "Sixteen existing notification backend files remain byte-identical",
+      "passed": true
+    },
+    {
+      "name": "Exact staged SSR bodies, form markup, CSS/media and versioned transport URLs preserve the interface",
+      "passed": true
+    },
+    {
+      "name": "Donor source inspected read-only; its private keys and address lists are not reused",
+      "passed": true
+    }
+  ],
+  "proofSHA256": {
+    "ui/APPROVED_FORMS_FINAL.json": "4402fc3524fad119a3774c4e2d457fcfeecbe5313c86a458e5c6dfa5f68ec4d1",
+    "native/NATIVE_SECURITY_QA.json": "37c99a859640aea3721ec168b6a3d949f91bd75a423c8dcd12b32891bf4355b5",
+    "backend/SECURITY_PHP_QA.json": "6acf96e71907aaaf7ec0ed358f13402feb875ec8f80b255c13e96cea02295051",
+    "backend/BACKEND_FREEZE.json": "ea67d3c6ef468611ca295e1c5224cdefc9fc820763dae1091b3bdd6774873849",
+    "backend/PRIVATE_STATE_PROOF.json": "46d6db2f147b8434dfc514e39a6cd23371c7249ceed802a90d4f6ed5c37c433d",
+    "frontend/FRONTEND_FREEZE.json": "822b77e981e27e6a37961861bb6b8a0a4e7177e8c4e74b5b8d6890c12931eddf",
+    "frontend/TOKEN_HELPER_QA.json": "9a34cbcdd49133740d22c0237cbc7fc6cde41158cfb7cefbc48b21fe4fa3caeb",
+    "frontend/SOURCE_MANIFEST.json": "ccc51001644c7efe3069efc4a885211f528e0548d392fa90ced024e7f7b45a45",
+    "frontend/RUNTIME_OVERLAY_MANIFEST.json": "1b0254ed754266302f7822b8f8c68563153389b793fca5d48d8111c5bd124998",
+    "release/STAGED_MAIN.json": "d9ddaaa72bd991a37094a66d88eb43866f2a03256b32069509ec9ef49af88579",
+    "DONOR_SOURCE_MANIFEST.json": "eba470f9b16d780395f599c2839606639086c2b3843fdd0ad5ce5c7df549f819"
+  }
+}

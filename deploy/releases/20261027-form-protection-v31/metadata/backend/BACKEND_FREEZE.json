@@ -1,0 +1,51 @@
+{
+  "schema": "vazuri/form-protection-backend-freeze/v1",
+  "valid": true,
+  "noSecretsIncluded": true,
+  "productUIFieldsChanged": false,
+  "sourceBeforeSHA256": "4da81f72cf7e8af988b89d9e915423498c02b8e98388d720c4710c92853e4e34",
+  "files": {
+    "projects/vazuri-main-integration/public/lead.php": {
+      "sha256": "18e12e15feb33795b6250cb89d30d431bf15f941714741962f62bd3630439a8d",
+      "size": 10558
+    },
+    "projects/vazuri-main-integration/public/vazuri-form-security.php": {
+      "sha256": "a65f899c7376e13657f25a2eb7c6fb2da046ed5ea9916259ae4a3dbee454d158",
+      "size": 8400
+    },
+    "projects/vazuri-main-integration/deploy/form-security/install-private-state.py": {
+      "sha256": "ce4c0ac4dc74ab14e4addc621a9ac038596e7cf5e5832c06ed0c0cbc42940945",
+      "size": 4717
+    },
+    "projects/vazuri-main-integration/deploy/form-security/test_form_security.py": {
+      "sha256": "31616ef01f982d8f8138dfc250965c66be69a3b3476476312d2b5d0be8a9f1fa",
+      "size": 17720
+    },
+    "projects/vazuri-main-integration/deploy/form-security/README.md": {
+      "sha256": "e1651ed890693b91961b7a3ff5e3723ebbab0f29fea7a61bdd866982308c55e9",
+      "size": 2405
+    }
+  },
+  "unchangedNotificationBackendFiles": {
+    "projects/vazuri-main-integration/deploy/vazuri-leads/confirm_owner.py": "b9eeb760b92ce890fbce131ad952106b5f28dd4b420e8072fdaf4a45655368a7",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/install_proxy.py": "fc7f61b636f402c4e11829e613d406c265a9285265691b434227803d23cc1db0",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/install_runtime.py": "02382574db74e314fa48c2eca589d1af380275ad31608a950b2f4b0d25ba20c4",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/notifications.env.example": "287719a4cbe55cb3524cd7800f54957af91e863a4d95d18ecfec859bec933eea",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/test_php_protocol.py": "0b8fd770fd724fef97f286add028b61438123ef4512408f257c68cf467f76f07",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/test_vazuri_leads.py": "a6267ffbb9b3c1a9e721b14bcc4410d1339b5d2773d29d7599b3c87a5473ae44",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/vazuri-leads-email-sendmail.conf": "c850bd36e5b40eeb06488956920f678f76bac55c73b702c3849dc0bd6466d4bb",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/vazuri-leads-intake.service": "ad2920f9f960acb2a890147d914e68637547cb019ff24caf38f7fa07e7f09fbe",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/vazuri-leads-privoxy.conf": "3c109d60531fd1ad273fbe94f628a223f78e4ac190e9e931a664f364353a5eb5",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/vazuri-leads-proxy.service": "4118a638d4f245eec7d489b11e4b2f4e52cbca4afdf125bec6f30920497fb957",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/vazuri-leads-tor.service": "5d2d2a80b21dbbb06e43a69aa1f6ff5c421b8198a2f0665829a97e840c210a1c",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/vazuri-leads-torrc.conf": "8caedbd491f06fe019cb2e156cf18fa1f18bd9325358d90540e0f42681645d70",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/vazuri-leads-worker@.service": "92497a1a108b18aa16b7cb9b2bd1867c815c9ba2bc5769bc2322a47a5cbaf73f",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/vazuri_leads.py": "47bcc33beedcf7702e8268c8b93b07de19e1f02321a9b0c5aca4e1b6f608fc62",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/write_private_config.py": "b78b6bb0ffee7a3a50801e6b041cfe4f2eb0a3914f4aab1051c0fa5cc1a26bd9",
+    "projects/vazuri-main-integration/deploy/vazuri-leads/control_smoke.py": "2dd795ad5f6000d5546ab4ee260b0c7e27f4a93c6d26f1a4c51758359506d64f"
+  },
+  "privateStorageIncluded": false,
+  "donorPrivateKeysOrListsCopied": false,
+  "testsRequireExistingLinuxPHPRuntime": true,
+  "fixtureRevision": "Align the long-message assertion with the existing pre-protection trim semantics; product PHP and all other files byte-identical."
+}

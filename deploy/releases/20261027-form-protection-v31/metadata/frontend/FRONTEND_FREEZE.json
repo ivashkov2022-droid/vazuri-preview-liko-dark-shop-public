@@ -1,0 +1,773 @@
+{
+  "schema": "vazuri/form-token-frontend-freeze/v1",
+  "valid": true,
+  "sourceManifestSHA256": "ccc51001644c7efe3069efc4a885211f528e0548d392fa90ced024e7f7b45a45",
+  "projects": {
+    "main": {
+      "project": "projects/vazuri-main-integration",
+      "sourceFiles": {
+        "components/common/ApprovedBrief.tsx": {
+          "sha256": "2b0b4003f76ef9f4418c812c023ec3790665d7110215bfaa5a9367ea15fe3f11",
+          "size": 12491
+        }
+      },
+      "sourceBefore": {
+        "components/common/ApprovedBrief.tsx": {
+          "sha256": "962470d5c1a25986f4480ff63d17155abbd076e7c2b91bab8085a721145b8a5e",
+          "size": 11800
+        }
+      },
+      "inverseRestoresEveryOriginalByte": true
+    },
+    "night": {
+      "project": "projects/nightshift-concept-public/vazuri-preview-liko-dark-shop-public-main",
+      "sourceFiles": {
+        "app/page.tsx": {
+          "sha256": "8795a7fa3020a8652f54f7edcfd5228620d911cd30e4073ea6379706713765b7",
+          "size": 16978
+        }
+      },
+      "sourceBefore": {
+        "app/page.tsx": {
+          "sha256": "e5e1703a7cde468a21b444dd67841c81972df399bd1b1967bf689062995bd110",
+          "size": 16282
+        }
+      },
+      "inverseRestoresEveryOriginalByte": true
+    },
+    "hotel": {
+      "project": "projects/vazuri-hotel-site",
+      "sourceFiles": {
+        "public/vazuri-case-dock.js": {
+          "sha256": "26cc356cd6fcd3b9638dec9632fa2755b3ec4d6e7e9ef38c3f0d75276704bddb",
+          "size": 35669
+        }
+      },
+      "sourceBefore": {
+        "public/vazuri-case-dock.js": {
+          "sha256": "f68c367ef4880d906ed4f3bf441fcf6b9a4ab8db87d5b63cdd5b1801a7705b12",
+          "size": 35027
+        }
+      },
+      "inverseRestoresEveryOriginalByte": true
+    },
+    "altera": {
+      "project": "projects/altera-concept-public/vazuri-preview-liko-fashion-studio-public-main",
+      "sourceFiles": {
+        "public/vazuri-case-dock.js": {
+          "sha256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+          "size": 34641
+        }
+      },
+      "sourceBefore": {
+        "public/vazuri-case-dock.js": {
+          "sha256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+          "size": 33999
+        }
+      },
+      "inverseRestoresEveryOriginalByte": true
+    },
+    "slides": {
+      "project": "projects/scrollslides-block",
+      "sourceFiles": {
+        "src/vazuri-case-dock.js": {
+          "sha256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+          "size": 34641
+        }
+      },
+      "sourceBefore": {
+        "src/vazuri-case-dock.js": {
+          "sha256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+          "size": 33999
+        }
+      },
+      "inverseRestoresEveryOriginalByte": true
+    },
+    "urban": {
+      "project": "projects/urban-pulse-site",
+      "sourceFiles": {
+        "overrides/vazuri-case-dock.js": {
+          "sha256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+          "size": 34641
+        }
+      },
+      "sourceBefore": {
+        "overrides/vazuri-case-dock.js": {
+          "sha256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+          "size": 33999
+        }
+      },
+      "inverseRestoresEveryOriginalByte": true
+    },
+    "revive": {
+      "project": "projects/revive-cosmetics-site",
+      "sourceFiles": {
+        "overrides/vazuri-case-dock.js": {
+          "sha256": "26cc356cd6fcd3b9638dec9632fa2755b3ec4d6e7e9ef38c3f0d75276704bddb",
+          "size": 35669
+        }
+      },
+      "sourceBefore": {
+        "overrides/vazuri-case-dock.js": {
+          "sha256": "f68c367ef4880d906ed4f3bf441fcf6b9a4ab8db87d5b63cdd5b1801a7705b12",
+          "size": 35027
+        }
+      },
+      "inverseRestoresEveryOriginalByte": true
+    },
+    "sky": {
+      "project": "projects/skyvilla",
+      "sourceFiles": {
+        "assets/vazuri/vazuri-case-dock.js": {
+          "sha256": "b4b4e146c30f4821686127ee12e20e22c68b0a1b1e3afa4d8dbf192c9ff3868c",
+          "size": 38702
+        }
+      },
+      "sourceBefore": {
+        "assets/vazuri/vazuri-case-dock.js": {
+          "sha256": "7c3b8d28477d948fcb34089c5707ccf1f1cfe0df2e9ea234dd2ca92e98124b71",
+          "size": 37954
+        }
+      },
+      "inverseRestoresEveryOriginalByte": true
+    },
+    "sync": {
+      "project": "projects/scrollsyncvideo-block",
+      "sourceFiles": {
+        "src/vazuri-case-dock.js": {
+          "sha256": "5e21aabe7b4c40745bbe39cc02d60bed5742eef0588ef0fbdbe7c5dd5863cfce",
+          "size": 35149
+        }
+      },
+      "sourceBefore": {
+        "src/vazuri-case-dock.js": {
+          "sha256": "53e22ba02061f2adb9ea8fd6324e5e9b2b79ce376cde3acc06bd7bb83937e521",
+          "size": 34507
+        }
+      },
+      "inverseRestoresEveryOriginalByte": true
+    },
+    "relief": {
+      "project": "projects/relief-motion-literal",
+      "sourceFiles": {
+        "src/vazuri-case-dock.js": {
+          "sha256": "2caad9b39a2b9fb0aca93b6c1210d77b90f5781e44966eeca2f0a00ffc527841",
+          "size": 35268
+        }
+      },
+      "sourceBefore": {
+        "src/vazuri-case-dock.js": {
+          "sha256": "89775364ef8243153a2415dbd18440c006f630b8556d88462c1007e2c59ab9eb",
+          "size": 34626
+        }
+      },
+      "inverseRestoresEveryOriginalByte": true
+    }
+  },
+  "runtimeOverlayManifestSHA256": "1b0254ed754266302f7822b8f8c68563153389b793fca5d48d8111c5bd124998",
+  "runtimeOverlayDirectory": "C:\\Users\\Степная\\Documents\\ChatGPT\\сайтодел\\audit\\forms-protection-20261027\\frontend\\runtime",
+  "runtimeOverlayFiles": [
+    {
+      "projectId": "hotel",
+      "path": "vazuri-1099af950ba0e8f8/index.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "a24851056699c650a8358b6a3a5fa65c4b8c150666974ac7bf3a153e9c2f0917",
+      "afterSHA256": "cf3e4200c7e6045516133a9c922e78ca3fb5bb921dbba361e64e71807c369ba2",
+      "size": 2386685,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "hotel",
+      "path": "vazuri-1099af950ba0e8f8/ru/index.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "1fa9b3c3c88548f5212dbdfb06757f5124aaf9641d8a3abf33bda212dd5c899d",
+      "afterSHA256": "ec604eaa1848322cd9fb38d6db90e9fcffd3c55f24f82e331d520b3725cdddaa",
+      "size": 2395079,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "hotel",
+      "path": "vazuri-1099af950ba0e8f8/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "f68c367ef4880d906ed4f3bf441fcf6b9a4ab8db87d5b63cdd5b1801a7705b12",
+      "afterSHA256": "26cc356cd6fcd3b9638dec9632fa2755b3ec4d6e7e9ef38c3f0d75276704bddb",
+      "size": 35669,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "altera",
+      "path": "vazuri-preview-liko-fashion-studio-public/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "afterSHA256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "size": 34641,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "slides",
+      "path": "scroll-slides-kinetic-x8q4m7v2/en/index.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "c48b12f03f896e342b6e3eadfd2874b3914e94c06760fd9786a04777caf0b9c8",
+      "afterSHA256": "3e5fd05b68ba3cd228c3cf55562856775e8e7760c27a15451645b42271aac7e9",
+      "size": 61496,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "slides",
+      "path": "scroll-slides-kinetic-x8q4m7v2/en/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "afterSHA256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "size": 34641,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "slides",
+      "path": "scroll-slides-kinetic-x8q4m7v2/index.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "118b2a4ea30a1a3efd125e8a38273cc67e2d2c3f396d00d3396fdd6fac447838",
+      "afterSHA256": "c67f75d907580fb32a2ce4cafcc9af3267b9e6b12e9859d191fe6754c1c82659",
+      "size": 60577,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "slides",
+      "path": "scroll-slides-kinetic-x8q4m7v2/ru/index.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "2eaaf8ce50a6a71a091968718dd9c547d420b71e8498296f04270121a133819f",
+      "afterSHA256": "63f54472d9b2d48a687e5e5a7a3d01fd3e356827e0914fcc70cb12ec7bf45b15",
+      "size": 62086,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "slides",
+      "path": "scroll-slides-kinetic-x8q4m7v2/ru/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "afterSHA256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "size": 34641,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "slides",
+      "path": "scroll-slides-kinetic-x8q4m7v2/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "afterSHA256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "size": 34641,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "urban",
+      "path": "urban-pulse-exhibitions-k7m3p9x4/assets/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "afterSHA256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "size": 34641,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "urban",
+      "path": "urban-pulse-exhibitions-k7m3p9x4/index.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "7b4e1f4e7848acf21de9e83e6245f902e28d44217dbff73a90a22b0b760a69b6",
+      "afterSHA256": "997a79c0cba7f3ea694a08375ab39334704156ba64e726bb12ded3b9a0aae286",
+      "size": 2753577,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "urban",
+      "path": "urban-pulse-exhibitions-k7m3p9x4/ru/assets/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "7b5d6296b5f2d61f8642dfab580eba685fccdd3ce00f07139d1ccd2a24cce3da",
+      "afterSHA256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "size": 34641,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "urban",
+      "path": "urban-pulse-exhibitions-k7m3p9x4/ru/index.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "840fceee58ea22faae5d15dd819a9aa75567e8f838457c355bf970349452e4d7",
+      "afterSHA256": "6e03fe5b430491b15d34f2b03873eb5dba6286f2b228bb6e4539e6922acc6788",
+      "size": 2763333,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "revive",
+      "path": "revive-cosmetics-r8q4m7x2/assets/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "f68c367ef4880d906ed4f3bf441fcf6b9a4ab8db87d5b63cdd5b1801a7705b12",
+      "afterSHA256": "26cc356cd6fcd3b9638dec9632fa2755b3ec4d6e7e9ef38c3f0d75276704bddb",
+      "size": 35669,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "revive",
+      "path": "revive-cosmetics-r8q4m7x2/index.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "984ede6988c2f7f70a4072eb1abb55ed60e78a85a8407d03866e8abf650cc93a",
+      "afterSHA256": "f28bca0e9023b981d703816c0530b206631feae5a5859dea40fb6827c4dd5037",
+      "size": 1192748,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "revive",
+      "path": "revive-cosmetics-r8q4m7x2/ru/assets/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "f68c367ef4880d906ed4f3bf441fcf6b9a4ab8db87d5b63cdd5b1801a7705b12",
+      "afterSHA256": "26cc356cd6fcd3b9638dec9632fa2755b3ec4d6e7e9ef38c3f0d75276704bddb",
+      "size": 35669,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "revive",
+      "path": "revive-cosmetics-r8q4m7x2/ru/index.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "abea69dac2a36285fcfa8d0d4e3e0c255b97ec36529644010df5f26d86fbaa7d",
+      "afterSHA256": "b78d5a15a7530f3d9295bea69858350ad65d12fa60ecf9947ee13fcdc5de16d9",
+      "size": 1195536,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/assets/vazuri/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "7c3b8d28477d948fcb34089c5707ccf1f1cfe0df2e9ea234dd2ca92e98124b71",
+      "afterSHA256": "b4b4e146c30f4821686127ee12e20e22c68b0a1b1e3afa4d8dbf192c9ff3868c",
+      "size": 38702,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/404.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "3ca78b4db0d2f78fe07483adcb03a3b83636ae666b9b46dd8a3b1d385883d5b9",
+      "afterSHA256": "826f8a3ebbfde3ddc4f78b6a05d6ecca13ccbd8122e65a3747f9b04ad156c8f8",
+      "size": 81840,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/about.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "c728fe67f49072f4865146ff7693038c85ab5615a5af52bf7b65209cadeaa771",
+      "afterSHA256": "c2b342be24314fb88c0c023d56942abec94b105591f5d93aea889bffad2e6015",
+      "size": 154493,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/blog-single.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "127a7deff409155430be58017b2090c8d95ee6bea43b4a965df59e94585f479c",
+      "afterSHA256": "708d6a49fbc6de03cb80d62de53caeec9bbe77681c51afb648213c123d505235",
+      "size": 87635,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/blog.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "ecaa8739db33a7d1168a3d2c42618e673fc6255096d611a72e932d4816097276",
+      "afterSHA256": "310e4450d814ff1051096050a24ff9d644860c8a0f6b6a082ff0ef0a8c171a4b",
+      "size": 91555,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/contact.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "e341e5077f3b83537917b2ebb96f6c3330058d1573a13218ac425d3b51d0bc0e",
+      "afterSHA256": "899f7e88d9be9732decd6a086a9affca41d5aeba187637d84f956733b3057193",
+      "size": 87798,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/faqs.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "dbcb13829d60591eafde2c46d4a68fe2c2f887d53bf11bab6366362f031dc625",
+      "afterSHA256": "2e7d78c54328b1dec407373db73d66d25d206f0a988a0ff3f0d955e1ba0c9e5e",
+      "size": 127604,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/image-gallery.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "b00268ddfb941b167ab743409637f38d75ef8759ffc4693c4552d8c02704c98b",
+      "afterSHA256": "da661c4d999f7460af3d961f069cdcb8b80b54b86277e6fceecbd633c56dc43b",
+      "size": 86608,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/index.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "58d3810ece1d46d1f7b04681f4d0faf69e42327428592ab3b717c001d14c1623",
+      "afterSHA256": "83ca96f467263f95d331f39cda609d67e16bbc8ea6d1718e4baf4d7d440898cd",
+      "size": 199930,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/pricing.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "af810ad4df83a5d2eaadf3fcd18d23b389d3cb1df331764db0eeed4863db1e8b",
+      "afterSHA256": "8d619e9f8b827586e7ef380dd509c7c6a6eb5206337976fe830cbd4b485c9cf1",
+      "size": 114045,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/project-single.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "c0bbde3d8276554136d7f2da91927033f302dc72c56761849f6157189ce97ffa",
+      "afterSHA256": "8b5411e3cab36df99bc2d564a64173533d932b4aeed8bcffede975a9e5d509b4",
+      "size": 107622,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/projects.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "acaccfe24808843e5f0e1bca949e7dbd5ce0867e91e76a21531f5ca3cd3afd1b",
+      "afterSHA256": "3c4dd8009a18022fb9f5004f26512314593325ba1cc7f63c3ad3b6723bf0d15c",
+      "size": 90725,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/service-single.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "ebe473698138f7823bb7f8908ab6b4495ad0e34927529ecafa522dc58dfdaab3",
+      "afterSHA256": "ed15dd0d39ba3e89c305006dba5ef5e3403ddc5acecbf6be1e7ce39a135a5276",
+      "size": 104979,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/services.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "cd4d92ebca87f216f38685e549648b5fbb71a8e0abc0ece6e95d6be86c6c8776",
+      "afterSHA256": "6dd050963467d9474c1dde932e9a99424faf5220ad1c49858fe5cd8d262b8d8d",
+      "size": 151007,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/team-single.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "bbf8e8ba309eac1da338a8e8c3e4251f5770a5bc71605b1f74d3d36dbbc6a10d",
+      "afterSHA256": "230cf72e0955a66d5ad73a668513e658226291029e75df77e4c758b1bb5d4b77",
+      "size": 100311,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/team.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "786d127bf660dc192da682b2377dbaf6e9435bd9f53905c7ec2b6c03a1736708",
+      "afterSHA256": "2cd2fa64b8794812434b756d9e563821d842ed0f705b16f6c7373bbcd7b2ec59",
+      "size": 94490,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/testimonials.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "218c53e8834a4693e1e803ccedf56236243041617dee169da898e9f3ddce9efb",
+      "afterSHA256": "705de95b23ad0470a499ca1d3dc49c18e52ab80e8572f33ac5d5a37b148755a2",
+      "size": 123942,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/en/video-gallery.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "2f4eea8829450975e3db60ff599adac93a5a74c005bca02b42add2cfdc0bb8d5",
+      "afterSHA256": "ad5d9593cfeff4c6662020d4ebd1648c3d973f3c3e963897466277a8a22f4fe4",
+      "size": 86599,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/404.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "701dfc495240405ac6d014bf78bc86585da4996ead856dd489b211d32996667b",
+      "afterSHA256": "07d239e1927b490d7c2f1316615dd911bc9cd776470828466127317de27e673e",
+      "size": 82907,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/about.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "d6adda1eba79e28ea1dc7011b1d7623b962f3440179ee5046a113f1751622e26",
+      "afterSHA256": "de5d5a5f344a064233a9f985a045497f133d41622feb362c2401ef4c1aad2911",
+      "size": 160094,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/blog-single.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "cdd9b481f464694d707025da2e62e25f87c484827fc62a8e8b11d3a71b171b75",
+      "afterSHA256": "504efe8fa29537ac7cae1e903a71aa80d64465877ee35bc7091f62dbfe1800f9",
+      "size": 89494,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/blog.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "4e5eb17b4af24ba3caa9881190156ae760940663ceaf062fa513ac4ba34c6638",
+      "afterSHA256": "11a7aadd73d5e0502934d958f49b5bbc3eee4c3ab4b5c38ea12ec68e2f873fd1",
+      "size": 92983,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/contact.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "8a592153e318fa7ae8452cbc1f74c51101b95757357a1b4413723917200b7345",
+      "afterSHA256": "2d3c940f5d315b68cec9ee4cf5509b049f3f3de6b2fd4d3ea3108cb24fcc30d2",
+      "size": 89088,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/faqs.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "9625d7cb8798562c67a23d09bff15550244ac15a96f8827ca9ee8bedf43ccb9d",
+      "afterSHA256": "ebf7a5f84f87ffa07b29cbbafab59f628538b9c5890aabb3c64b4f64809c3a89",
+      "size": 133494,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/image-gallery.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "28784e0abc51361196934c982016d9a90b2a3edbea424c91d424a590b61f1637",
+      "afterSHA256": "00b2278137d65be8bf034309469aa9b0c40a7348fee89de4aac5cfef1af4885f",
+      "size": 87732,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/index.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "3e64cdbce1aa4f62266da665f6a60a59c639b67c19fe8d2fd18ab631e397858e",
+      "afterSHA256": "ff48969b9f7c58ba2d11e383ee198bdbdd22b9ebed827513d196b575c726fac8",
+      "size": 207863,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/pricing.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "a0f5c123e2090ca0adc4efba188a7b3df6bd4a2bdc58bad0b75304ebf7337bef",
+      "afterSHA256": "675c6dc388273c9bf111e1dc2aab6c1e4d8f84ea4abed44fb5438fdbf793f649",
+      "size": 118568,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/project-single.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "622fe91207e1593f446f9b8c7c6a2b9957a900b16c4e0a60f2b3d1d3e12df13c",
+      "afterSHA256": "d967152a6ac52a3550b54270ea907bd5f1bd3d0ccc57b9b011748a3ea7b38cde",
+      "size": 111036,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/projects.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "0e44b1023b836224b787f5df9d6115afdf8e18f0e121ea67b6fd034ba37231d7",
+      "afterSHA256": "25934acf6f60117a686704e2c8efeb1e80e03a27e494eab883b8ce29ad458bf0",
+      "size": 91980,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/service-single.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "e185b329c936530a059b39a2fefaa98c02cf63c350a67d994e9499cf9708f2f9",
+      "afterSHA256": "898f4c4f1a2e09f758604cd934e5311972ab09344ba0f3141f0cc6cdbac4a793",
+      "size": 108450,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/services.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "365eee039acb83cc2583206d30ff7bb1fe8547fd15f4522904b96e6c8dd9e815",
+      "afterSHA256": "e72805e77f0d2b952d47b735eafb3a4f1bf334f8e36c834916666a8e18476c19",
+      "size": 155450,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/team-single.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "cc252027cc5a18e45b93f410dfc74c80af5fb1a007a71e5970b8fe625520989e",
+      "afterSHA256": "cb90ce56bd733b4f901593eab7119d213afabebc5f4eb4e269bbeebd4b8d10f4",
+      "size": 103070,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/team.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "21f61b47628bc1fa7c9f02dfd5784014770d9aa798fb908c140535a176b62566",
+      "afterSHA256": "d942c6e0aee2976a0b186e5291e3ea91b1ca3b61d3684d3263c4181917de9b12",
+      "size": 96330,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/testimonials.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "d1aaf6c24829f1ff42a2dd1083baac93ae4cb4c94ef98f4ff5b59455e69aba14",
+      "afterSHA256": "80642d3df8e75809f5d25cced9dff146e8d7c6d68e7ce0ba5fde8c126801865a",
+      "size": 128708,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sky",
+      "path": "skyvilla-estate-k8m4p2x7/ru/video-gallery.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "2475a992781b1eef3b5113ad35e7071c7492a84c1e7d6446a19910a325768c11",
+      "afterSHA256": "6e7a42d37b157e6610d841316d532ebd2c6e91b75d51524b61f32804d3eb47bf",
+      "size": 87807,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sync",
+      "path": "scrollsync-video-v7q4m9x2/en/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "53e22ba02061f2adb9ea8fd6324e5e9b2b79ce376cde3acc06bd7bb83937e521",
+      "afterSHA256": "5e21aabe7b4c40745bbe39cc02d60bed5742eef0588ef0fbdbe7c5dd5863cfce",
+      "size": 35149,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sync",
+      "path": "scrollsync-video-v7q4m9x2/ru/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "53e22ba02061f2adb9ea8fd6324e5e9b2b79ce376cde3acc06bd7bb83937e521",
+      "afterSHA256": "5e21aabe7b4c40745bbe39cc02d60bed5742eef0588ef0fbdbe7c5dd5863cfce",
+      "size": 35149,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "sync",
+      "path": "scrollsync-video-v7q4m9x2/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "53e22ba02061f2adb9ea8fd6324e5e9b2b79ce376cde3acc06bd7bb83937e521",
+      "afterSHA256": "5e21aabe7b4c40745bbe39cc02d60bed5742eef0588ef0fbdbe7c5dd5863cfce",
+      "size": 35149,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "relief",
+      "path": "relief-motion-literal-p8m4k2x7/en/index.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "fe0102233ed0d69e65df659623cc423499a33b3c6238afa047e951c6b05b5c82",
+      "afterSHA256": "874dd3aef8b40ea69509074974338d8d093a453d6217a5ed9632119ec654bf10",
+      "size": 72980,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "relief",
+      "path": "relief-motion-literal-p8m4k2x7/en/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "89775364ef8243153a2415dbd18440c006f630b8556d88462c1007e2c59ab9eb",
+      "afterSHA256": "2caad9b39a2b9fb0aca93b6c1210d77b90f5781e44966eeca2f0a00ffc527841",
+      "size": 35268,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "relief",
+      "path": "relief-motion-literal-p8m4k2x7/ru/index.html",
+      "kind": "inline-dock-script",
+      "beforeSHA256": "aa438735e8c430eb9648f1dc20c7e66afa8031f08995cb62b30c22479b991433",
+      "afterSHA256": "c208d03330c5d7739e94e5d291322a12fd828787b20783bc216e5a67f8566bd9",
+      "size": 74165,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    },
+    {
+      "projectId": "relief",
+      "path": "relief-motion-literal-p8m4k2x7/ru/vazuri-case-dock.js",
+      "kind": "shared-dock-script",
+      "beforeSHA256": "89775364ef8243153a2415dbd18440c006f630b8556d88462c1007e2c59ab9eb",
+      "afterSHA256": "2caad9b39a2b9fb0aca93b6c1210d77b90f5781e44966eeca2f0a00ffc527841",
+      "size": 35268,
+      "allOutsideDockScriptBytesPreserved": true,
+      "allFormLiteralBytesPreserved": true
+    }
+  ],
+  "mainNightBuildRequired": true,
+  "productDOMAndBehaviorUnchanged": true
+}

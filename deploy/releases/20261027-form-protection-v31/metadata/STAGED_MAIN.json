@@ -1,0 +1,1696 @@
+{
+  "schema": "vazuri/form-protection-stage/v1",
+  "valid": true,
+  "baselineReportSHA256": "1d40d79c42e3e35d7c8539bfdc15902fa20e89ea03204f908e06ff7c355efaf8",
+  "intendedDelta": {
+    "main/.vite/manifest.json": {
+      "sha256": "e9da8052a49f8a1fdd4d228e2ae96ba833698f333593ced5c7a5d2f57b421132",
+      "size": 79866,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/AboutTeaser-xsOoWDvP.js": {
+      "sha256": "4c4a0e2941b21f2768ec8d6e66587eec86c136979fae6f8a8a99974ad4c2f1f4",
+      "size": 4554,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ApprovedBrief-B-6XUB0L.js": {
+      "sha256": "e086de7dbf0e48ffc6d51f57c9947ca21b8f0f2e872beb5a3feb178ec0f57ff8",
+      "size": 27782,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/AutoplayLoopVideo-C5dxW7ok.js": {
+      "sha256": "a44c586e27ebd5f076160e87538d2c852b5a174c1a5d9a9ef6d4e795c520c7d0",
+      "size": 2487,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Blog-DkMpLwnL.js": {
+      "sha256": "7aa8226434afd8dd8ed4fce465c79a3cb8c6f96d00df1b2b4edc0655ed09055a",
+      "size": 22753,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogArticle-DDq01se7.js": {
+      "sha256": "c8b811b17d70be78b0d96c1a7ea00a6788a09334b778ebb02d3894394dda93df",
+      "size": 20232,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-4-tZjTnk.js": {
+      "sha256": "732e71ff0aaafd6f6f33e87f613d112d9d0aae824e9f93ef67848890ca9fdb16",
+      "size": 4888,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-B2Z0nQlA.js": {
+      "sha256": "0c46350601d93b6bab36073497a19f51c85a5be3e6de9728d55b6e55010f3286",
+      "size": 4768,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-Be7dJV3f.js": {
+      "sha256": "e01f81df6f26e6dda367506ced0468738b3bf282d059292f4338d368a4918ab1",
+      "size": 5282,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-Bk-wKTkz.js": {
+      "sha256": "4fb0a1857cdbfde3ccf57c91793942c2673e7d214a48763416153f17b5e45ca6",
+      "size": 4809,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-BzGljRPZ.js": {
+      "sha256": "d9bfeb5e2a23c8865258242094f76273d5741ec3c65918966673f154bfe29c3d",
+      "size": 6288,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-C6XO70yP.js": {
+      "sha256": "29c16eb3a3180df5b2cbf66bafac0370e1634cc9428e4daad99842042684fd6c",
+      "size": 4778,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-CIzIyMZb.js": {
+      "sha256": "4c944b490cc6022f4ac530ab34bc6d4b2c2a7e81c43614bcf9132683e75b27d2",
+      "size": 5282,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-D0-fowkk.js": {
+      "sha256": "d02bccd2fc9556cd5706c52096275df634f1fccac92a714d5b31977a955ba3e3",
+      "size": 5087,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-D02x5WQ_.js": {
+      "sha256": "d56bb4d9cf3e32302fc00a6d28e500bbece10e9a94bbf4d28230db5b26d935fa",
+      "size": 4766,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-D04ZAP0V.js": {
+      "sha256": "25248533c7fb4631aec55aa5dd12fb3d283b6d457b380f009b39ef2997c1a75b",
+      "size": 4989,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreview-DKgcArfn.js": {
+      "sha256": "f39fac878575fe6bb5c433039750e28d3f5f965331e23c63501c6442f468273a",
+      "size": 5263,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/BlogPreviewEn-BeQLSg7h.js": {
+      "sha256": "1ab2f759826c3e3c30eaed448615ade38595184ed9695be3e680444e75ed3552",
+      "size": 5863,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-B7dSuVrb.js": {
+      "sha256": "bcc9bc72e7bbcbb72231e60fbd97bd2825a7b9952f5c2a70db1288268a28e22d",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-BE5CNkpZ.js": {
+      "sha256": "1ff5d0e319e09fb6fa558586f0b644d4508ba278c2dd4d77562d0a3210ea25d5",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-BGhjWveT.js": {
+      "sha256": "4237d7bf41f52e2bc5275e11405cdd6667d556b79ecf1b6aebf86d351c8f74ae",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-BHp38bYw.js": {
+      "sha256": "bcc9bc72e7bbcbb72231e60fbd97bd2825a7b9952f5c2a70db1288268a28e22d",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-BRUjZs9Q.js": {
+      "sha256": "8f78acddbe410e3af3c6aa670e17ca1ba339f74f0f9f717d081d430854d855de",
+      "size": 6789,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-Bbfr-IoI.js": {
+      "sha256": "bcc9bc72e7bbcbb72231e60fbd97bd2825a7b9952f5c2a70db1288268a28e22d",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-Bl4NA_Gn.js": {
+      "sha256": "4237d7bf41f52e2bc5275e11405cdd6667d556b79ecf1b6aebf86d351c8f74ae",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-Bzje2Ou7.js": {
+      "sha256": "4237d7bf41f52e2bc5275e11405cdd6667d556b79ecf1b6aebf86d351c8f74ae",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-C4M9eFv2.js": {
+      "sha256": "4237d7bf41f52e2bc5275e11405cdd6667d556b79ecf1b6aebf86d351c8f74ae",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-Cbc378bh.js": {
+      "sha256": "8dc5f3400bd6bebaea3617aa63bbe8f4520f485e590667701dcf4b06ff36817d",
+      "size": 6924,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-CyyAtt5I.js": {
+      "sha256": "8f78acddbe410e3af3c6aa670e17ca1ba339f74f0f9f717d081d430854d855de",
+      "size": 6789,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-D-JxfnLb.js": {
+      "sha256": "bcc9bc72e7bbcbb72231e60fbd97bd2825a7b9952f5c2a70db1288268a28e22d",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-TKGxDarY.js": {
+      "sha256": "b64e3e9d950ac93241ff5f87c4eb87186287d7b521cf23f80240b36d76d0cd1d",
+      "size": 6789,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-a6XMox3r.js": {
+      "sha256": "4237d7bf41f52e2bc5275e11405cdd6667d556b79ecf1b6aebf86d351c8f74ae",
+      "size": 6920,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CTAWithMarquee-gx3BeEsO.js": {
+      "sha256": "bcc9bc72e7bbcbb72231e60fbd97bd2825a7b9952f5c2a70db1288268a28e22d",
+      "size": 6785,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CommonAnimatedText-DqJopwyw.js": {
+      "sha256": "978d6712160a3dcd42eafe2356b355893cd0b0d10c69c13b45ffd4594f263378",
+      "size": 13582,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CommonHeroVideoScale-BKeVp9by.js": {
+      "sha256": "b55109f3c236f92ff11e3f685dc7eb6fac0be1d6a1348c41d26cd3a7643dc059",
+      "size": 2121,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/CommonScrollAnimated-CMTTgAOD.js": {
+      "sha256": "f06408fdde9802f7727b112ec51b16e3075dc5ad20206b286b3d963b29245545",
+      "size": 3865,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Components-DMgjT8EC.js": {
+      "sha256": "70112e9b95da0e4588a25c5f9f9c7e6d2bb29ba9e85895f0f4299af3127c2865",
+      "size": 7246,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ContactLeadForm-CJWq_pgB.js": {
+      "sha256": "6dab3898cf52d4406bb70691bd2896c21b7d44d4eae78fa4b1440b3b70dd528f",
+      "size": 490,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ContentPagesStack-BYoFS3K_.js": {
+      "sha256": "82aa142b3d6716bf76f552e7064290c1ad549c2504942db6cd03b2215fd10f79",
+      "size": 10129,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/DemoGrid-fWeT6Jtw.js": {
+      "sha256": "544c7335d6e273aae7179c0252a6d8d8c3dceb137751c8d1e49c7aa3b4318cc5",
+      "size": 12160,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/DividerStickyCaption-DMTT1K5Q.js": {
+      "sha256": "fc55caec3780311329ca0a58f3d8fc0ccb088009eba095b68825d796a752c141",
+      "size": 6775,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/DividerStickyImages-CNi5V9va.js": {
+      "sha256": "3ca07e4512850cf6fb2cc7cc31597e87b9aa1fc775899df65d83876d4ca4c5ca",
+      "size": 5862,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/FooterBackToTop-Bp8B8Q7-.js": {
+      "sha256": "d891fff0aadfb92378ce8ab5c3476730406ccadb64275b5b5b0edca1e8380c13",
+      "size": 4691,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/GravityCTAContent-DmxBoVE2.js": {
+      "sha256": "8c9b268cf7b6f109b910bbe6eb26af2f71b82e9c31bc4daf5a845d43659da53c",
+      "size": 1582,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-B4ufnAQe.js": {
+      "sha256": "2cb5aab45f60e3b7cfe4d20ddc1faacffae1026e485c5338239b41348b976bbe",
+      "size": 4294,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-BF28uh1b.js": {
+      "sha256": "d4ff1eeb55d23121b57ca67be389565bf718fa458deaf90dac18de26f5b5f95f",
+      "size": 5077,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-D1egsQmP2.js": {
+      "sha256": "8fda2d82777d1ccdff905d6c59fd99009ef0830c8dfe9129042da4f8b7ef9e8c",
+      "size": 6849,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-DKV-0ZyS.js": {
+      "sha256": "fa9d7d05b0710db4f5e96ae604051013ccbf63c8d9dac227f29ac36f07234596",
+      "size": 29382,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-Dh680I1Z.js": {
+      "sha256": "bb5d91b2218fdd56cab309e0a09a33d00d3ac53764feaea7bb08d0093b20bfde",
+      "size": 10367,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-IKAuATaW.js": {
+      "sha256": "32a564355386a217850bd90e133e2ea451195eec7fa42623c7fe29fbbe12f7d2",
+      "size": 4576,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-cJmXWx92.js": {
+      "sha256": "6d6282c908af6535d7fb3280b2ff957133af5c63d08a9a46c8d395b50095bc5d",
+      "size": 5650,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-g4ZiVU3F.js": {
+      "sha256": "0ecf2b8c5c249f5323f4e565fbe9dd42e198e9c567d1a290e4789477a9cb7e57",
+      "size": 3539,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Hero-rbJL7H7z.js": {
+      "sha256": "0ded0bceaa653fe3851301107585c4ae59a2a0e9d404ead47f81dc461688f0bb",
+      "size": 5478,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/HeroEn-DLGrxble.js": {
+      "sha256": "a415431fd0b27ee3bfda5170d8ffc56ffadc0f6bbd25e3b7d7b34f0dc98aeed2",
+      "size": 4248,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-C8ByJ8Xv.js": {
+      "sha256": "b08c87ef9d544defa9cc01e768573f0a6fdf7a84a8da47c68f39471562146806",
+      "size": 7437,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-CY5LYDnt.js": {
+      "sha256": "111c0fb85bd28481da57365dd2f20905b7c6bf7ebace9587ccf73c223d2fb275",
+      "size": 2636,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-CnnTVvpq.js": {
+      "sha256": "325a427124a33f1f42c59b1bba2184927a2c89d1f166cb84c664fe7e33c34caa",
+      "size": 3373,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-CobOBh-1.js": {
+      "sha256": "57c3c989b6a9029bd18ffb8e0e970cebbf1c2786f156cf31ad1568d94ea7ad4d",
+      "size": 14666,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-CuPw9Xfm.js": {
+      "sha256": "5be53814c47b0ca40c6e2583daf594b6d2538cbea6035f1f71a2678b21ac8834",
+      "size": 3668,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-D2XRAREY.js": {
+      "sha256": "a6a0ee337c1d3e2d623126a41df05ae98fc583af1179f5eacaf389b9e064ac40",
+      "size": 2840,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-D_K6EKtn.js": {
+      "sha256": "e478c328e1f62689f0291d2eb1ee97e29609fa03bf949ab524ad51b51437a40b",
+      "size": 3590,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-Dpun96t1.js": {
+      "sha256": "f35a66cd40d3d4a2e1a4b30bce2d5a1b8402e914fbf885f3555bfaedc388f5bb",
+      "size": 7133,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerHeadline-DqEJuXcY.js": {
+      "sha256": "a0d7cb825cce8b400a3a3464115bfd8b5fb2d2e3e96b25fe7d27dcaed8469572",
+      "size": 3368,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/InnerPagesSlider-XeuWtEde.js": {
+      "sha256": "23cef6048b5a90adc24ffde363030b90e13bf86654e60d65b29e8da3f26bd12e",
+      "size": 4028,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/LazyGravityCTA-2AW4lcmj.js": {
+      "sha256": "7268e346629ca2bab36da5faae2ea4835de876af8a5ef81f5efe058643f7423b",
+      "size": 2942,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/MoreOnTopic-D8d-Yjei.js": {
+      "sha256": "6ca88d24ccfe166408bec64ad775230db1b6dd0b56e4f6d7d38feef3c5efe5e5",
+      "size": 4963,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/MyExpertise-DJBGyDdG.js": {
+      "sha256": "11e62d69f879d24c4a5b2d4cb5d55cd5e8e49d7ed5803300d999ff397ef07c4d",
+      "size": 3612,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/NotFound-DdJRCAVl.js": {
+      "sha256": "7663424c455a72eb1ca758e5beb4c665641838a258afe7a620ba2aa5efb89b03",
+      "size": 7612,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/OurCapabilities-DOELjmwc.js": {
+      "sha256": "b3b17f241e36ff7e4ad0710fb46da2219ef77ac7ed6f038551b6c6f745bdd554",
+      "size": 3637,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/OurCapabilitiesEn-Sxepwo8q.js": {
+      "sha256": "5517b8ba78ef0cbe6309128a6b95f6dfc0edd4a5ed033e684e63ffc8133b7488",
+      "size": 3579,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ParallaxDivider-BtMEChw6.js": {
+      "sha256": "61ceb232a912292e83e80aec5fe4aaa1c7b2a2933734995414a7734f6c20cff4",
+      "size": 1363,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGrid-CsDQxPUO.js": {
+      "sha256": "4af2a3f60d1fd092d71fc03d712c9163b7ecdcce4f246740faf5ee6f8bd18b3d",
+      "size": 12715,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGrid-DWcP7yQJ.js": {
+      "sha256": "46deaa6bfaa3fd2e6a612d54e5cea25a1c2f1149e8d6787108cee6ee59a05d65",
+      "size": 13904,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGrid-DWdfGaJJ.js": {
+      "sha256": "53e58058e833ba7659a338a5430742c5015b10aa3a112ba3e906af73d5c052d7",
+      "size": 9952,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGrid-D_Rntrra.js": {
+      "sha256": "6698177addb7b29196a080335dd13e5090e15d8b35cec6c1bc40b86c5f207192",
+      "size": 11131,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGridEn-D8D_5D4u.js": {
+      "sha256": "dc3b07e8d4536269f1d5d98d693dfcedb75934fc05fb86ff56c3d81ae6740bf0",
+      "size": 12142,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsGridX3Showcase-DNJ5VWUn.js": {
+      "sha256": "87134b71d61b45d9a6322cda27e2d65e073d1ba034d15ac8b096a46c7ffdb4cf",
+      "size": 10357,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsList-CDfZlsNc.js": {
+      "sha256": "85ec0db2e5f1fea57a3a51c1de3ec0b5417f1c1aa498de4515bcf1992ac6bfe0",
+      "size": 9547,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsList-CSPzpZbC.js": {
+      "sha256": "45f7cbd0a6d6670883609d831de2ca08888446265fe0d2694af94bd2ef82a9a8",
+      "size": 7762,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsList-DXXblkE3.js": {
+      "sha256": "b3673cf69b3ce71c3e24483dbbc44b9253f01a7370a72ad14239696720e11f6b",
+      "size": 9699,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsList-plsw14RR.js": {
+      "sha256": "04b7cfcf0432ee1e8946c3b8579b5010fb625a6e88942196692add9be7c9ff12",
+      "size": 8745,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsShowcase-CkEbvC0m.js": {
+      "sha256": "fed6a9d28d962569a5f4914830e60c4ddc04329196b8914353d268322cd46473",
+      "size": 1541,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsShowcase-D60oyu_C.js": {
+      "sha256": "5e4a5666737bdeb66dbcd0fd7b5c822fd90269c4202f22bc076e1b3495f6f011",
+      "size": 1530,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProjectsStack-DCQ55uEW.js": {
+      "sha256": "312442400fc903a587428d00e0744de570c407877647f41eee31d2a7da7b9265",
+      "size": 4557,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ProtectsStack-CmGDq4Zz.js": {
+      "sha256": "e05c3a1d6594a54ed522c1d0aa79acc9ad08ed53867faac0f68b0ed94100338a",
+      "size": 3636,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ResponsivePromo-ian00XMn.js": {
+      "sha256": "a7018586a706fce5de8717ae91512f009077a42886c1067a40d7db6300da3f2c",
+      "size": 4198,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Resume-BWwby__b.js": {
+      "sha256": "2fcf62ed1b4f3dc85a98a8e9823dd4605471b886d269f7ec1afc44850f02fcc8",
+      "size": 17682,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/Resume-Lg9xDMV7.js": {
+      "sha256": "39bd8bed3a87324ba8249f84e772da558df0839e15f95990d70c4b3168e2f1a3",
+      "size": 18505,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/SelectedWork-CH_yziVs.js": {
+      "sha256": "95e889cdfff29ce56c036a6eccf44c411dee93000009781f00430f45c233fd02",
+      "size": 8643,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ServicesList-BPXHa2vi.js": {
+      "sha256": "dfecec02b16ab1fca7c339bebe8e72e2dba6df3c9d0efb50ed0da10ade675405",
+      "size": 6237,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ServicesList-BocJ3Bbh.js": {
+      "sha256": "2cfc94caad059c544b19c30b13f9246f38c4fb1179e820e34076c77e3a5c8205",
+      "size": 7351,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ServicesStack-DiW_Zqm1.js": {
+      "sha256": "b8186e37b957eba246c5fdf13c32f8a408cd5f0ef4426b200e31d44d64b7dba3",
+      "size": 4752,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/ServicesStackVideo-B7lgs5zi.js": {
+      "sha256": "71d3298d48f423b37236587ac2d5df88d343c5ce6f28d06c1375b7f25a5a6f0d",
+      "size": 5059,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/SiteAnalytics-CScvIMb3.js": {
+      "sha256": "f1b79c6c85af93cdc394985a88ab263783c1487f04b9ab0b308c46ab6f06e244",
+      "size": 890,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/SiteChrome-BXRhRyk8.js": {
+      "sha256": "f1b7988d8ffd7abe9dd13a3544d04dbb618cfe30cfba88e4a5461b78f2a0e4d4",
+      "size": 44419,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/StatisticsLines-BxZP3fHO.js": {
+      "sha256": "a7c3261c84f86b42cf60217a745b0e118e71e3b7f718533f188506f0b5b4837c",
+      "size": 2892,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/StatisticsLines-CM3Be4gz.js": {
+      "sha256": "a1aef0a52bc6477d029258dc34a984e55cd7f6753ccc4345e77a2ca5fa66a681",
+      "size": 2079,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/StatisticsLines-CXr1E-90.js": {
+      "sha256": "77877b0f423cfc12a0061087e970aa6f357b2b695ef77b9ed767f13d6da9a73f",
+      "size": 3010,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/StatisticsLinesEn-BzTOtltK.js": {
+      "sha256": "56b19da5f135a43193021ce57fb007462c766593383a014fba1ad38b13f3baca",
+      "size": 2011,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/TeamList-CK3UJJvn.js": {
+      "sha256": "2e82f4e7b9b34301d4241edc8b756842213ea37627f433727c5eddd988d12d66",
+      "size": 7666,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/TemplateRuntimeProvider-CNMhrlKE.js": {
+      "sha256": "bb9bb95e0a396977d4627d4c635555edfa14ae1a679a6be42304c20f6b44a35d",
+      "size": 33535,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/TestimonialsSlider-Cj0_HRQz.js": {
+      "sha256": "07f163d4b9c5aaed27f7773b7701bb91d5664e9ec548a90f917f8c40f407315b",
+      "size": 5838,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/TestimonialsSlider-wbnWijcM.js": {
+      "sha256": "e87409c88c06cfed7ce2f28a7f1db46bdd5a47f138c4f32ce8fb2e6c2c6cb0e8",
+      "size": 1831,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/UkiyoParallax-2B6-0Qp3.js": {
+      "sha256": "33806794435f323f4fbb39ccf1d3c03f4eb15ed62c8af6b4ce09a4c453e0301e",
+      "size": 2183,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/app-rsc-cache-busting-SI-HFqDu.js": {
+      "sha256": "4691189c18e9e619f89f59cd8937c56cd4ee1464bb92d45cd56c9394060d3db7",
+      "size": 4802,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/hybrid-client-route-owner-LccZSx6U.js": {
+      "sha256": "475a033427b6a1db91cd6ffb91528921dc79ce8a4e65d0c1b8b53e94dac19e41",
+      "size": 19265,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/index-B9kGgP1J.js": {
+      "sha256": "85cb2aa58ffbe03bbb4a6d1d7e47e6914deaceb4a76c7bdac1f28045c57f5d4d",
+      "size": 212943,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/layout-segment-context-zdTn1fQu.js": {
+      "sha256": "877f22c261cb8468d680d5993e7f310bfa4c89a350be0d7dbc5528c9106367af",
+      "size": 534,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/link-B_jHEJ5n.js": {
+      "sha256": "7aae91790ab73fe49ca006fea9d89845422e3125de4e8c1c7af3be07b636406f",
+      "size": 14248,
+      "mode": "0o444"
+    },
+    "main/_next/static/chunks/testimonials-D246zdVc.js": {
+      "sha256": "0af12e228eebe3a1a7bab2788182edea89eaedd036164c7fa5ff604e08e615a7",
+      "size": 5706,
+      "mode": "0o444"
+    },
+    "main/_next/static/e607d6e2-c001-4688-b79d-df8d7b529896/_buildManifest.js": {
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "size": 159,
+      "mode": "0o444"
+    },
+    "main/_next/static/e607d6e2-c001-4688-b79d-df8d7b529896/_ssgManifest.js": {
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "size": 76,
+      "mode": "0o444"
+    },
+    "main/company/card/index.html": {
+      "sha256": "7da70aedde92972dcd3f22e66bb0f230f47c91876bc1d544c56b151133950380",
+      "size": 70864,
+      "mode": "0o444"
+    },
+    "main/company/index.html": {
+      "sha256": "108559dad4e339ac9fb4d5e5c334221f9ed4acbf910cd98f3b1f38763657131c",
+      "size": 100473,
+      "mode": "0o444"
+    },
+    "main/consent/index.html": {
+      "sha256": "15df6c64a6a4f5a41efedd4c575449ee847ea30def9127831bf222ada6e3b601",
+      "size": 108785,
+      "mode": "0o444"
+    },
+    "main/contact/index.html": {
+      "sha256": "3dc97480a656f957d922660cff4134d055e4bc68cc78d3beea3138ed4b98129e",
+      "size": 103050,
+      "mode": "0o444"
+    },
+    "main/en/company/card/index.html": {
+      "sha256": "5f99369dc27bb12862ff4ab0f978841c36b1d6fad0e1b966faa32eae6d7dd2cf",
+      "size": 70129,
+      "mode": "0o444"
+    },
+    "main/en/company/index.html": {
+      "sha256": "58f2a074a4a7112d1a2a7fc8b61c71acdb3171cb2de8f7f53bc2e03e6ff2a3ef",
+      "size": 99539,
+      "mode": "0o444"
+    },
+    "main/en/consent/index.html": {
+      "sha256": "9a7deb96040cf8a0e18a55f6ed33e275605e6b4571cc0ec03e724c68c6a47ed4",
+      "size": 105541,
+      "mode": "0o444"
+    },
+    "main/en/contact/index.html": {
+      "sha256": "5d00147ac51bdda40e96785871175761b004c7e88631e3f653e0705ce5b58f9e",
+      "size": 100273,
+      "mode": "0o444"
+    },
+    "main/en/index.html": {
+      "sha256": "e698437e7448ecadfbe65f7ef4539ddb0c0820e66f2ab724f2d6671d23e5fabc",
+      "size": 192175,
+      "mode": "0o444"
+    },
+    "main/en/privacy/index.html": {
+      "sha256": "9e20fe7bfbb3547c654ffdcc9668f06c0353a6b2b8fbc987a40299539e78f2be",
+      "size": 109277,
+      "mode": "0o444"
+    },
+    "main/index.html": {
+      "sha256": "7d6721fb4e512744abb569d363c0d89816a52d443fb540b5d2aca42603214302",
+      "size": 197435,
+      "mode": "0o444"
+    },
+    "main/lead.php": {
+      "sha256": "18e12e15feb33795b6250cb89d30d431bf15f941714741962f62bd3630439a8d",
+      "size": 10558,
+      "mode": "0o444"
+    },
+    "main/privacy/index.html": {
+      "sha256": "bc5e6e6f122e46446107f9108e10358ed47d9882938fc5772c0de37d169e1eb0",
+      "size": 113947,
+      "mode": "0o444"
+    },
+    "main/vazuri-form-security.php": {
+      "sha256": "a65f899c7376e13657f25a2eb7c6fb2da046ed5ea9916259ae4a3dbee454d158",
+      "size": 8400,
+      "mode": "0o444"
+    },
+    "main/vinext-client-entry-manifest.json": {
+      "sha256": "ec905d928ccb662192baef3e364a3879bbd9089930d70c5bbfafb46eb62e7f8b",
+      "size": 65,
+      "mode": "0o444"
+    },
+    "relief-motion-literal-p8m4k2x7/en/index.html": {
+      "sha256": "874dd3aef8b40ea69509074974338d8d093a453d6217a5ed9632119ec654bf10",
+      "size": 72980,
+      "mode": "0o444"
+    },
+    "relief-motion-literal-p8m4k2x7/en/vazuri-case-dock.js": {
+      "sha256": "2caad9b39a2b9fb0aca93b6c1210d77b90f5781e44966eeca2f0a00ffc527841",
+      "size": 35268,
+      "mode": "0o444"
+    },
+    "relief-motion-literal-p8m4k2x7/ru/index.html": {
+      "sha256": "c208d03330c5d7739e94e5d291322a12fd828787b20783bc216e5a67f8566bd9",
+      "size": 74165,
+      "mode": "0o444"
+    },
+    "relief-motion-literal-p8m4k2x7/ru/vazuri-case-dock.js": {
+      "sha256": "2caad9b39a2b9fb0aca93b6c1210d77b90f5781e44966eeca2f0a00ffc527841",
+      "size": 35268,
+      "mode": "0o444"
+    },
+    "revive-cosmetics-r8q4m7x2/assets/vazuri-case-dock.js": {
+      "sha256": "26cc356cd6fcd3b9638dec9632fa2755b3ec4d6e7e9ef38c3f0d75276704bddb",
+      "size": 35669,
+      "mode": "0o444"
+    },
+    "revive-cosmetics-r8q4m7x2/index.html": {
+      "sha256": "f28bca0e9023b981d703816c0530b206631feae5a5859dea40fb6827c4dd5037",
+      "size": 1192748,
+      "mode": "0o444"
+    },
+    "revive-cosmetics-r8q4m7x2/ru/assets/vazuri-case-dock.js": {
+      "sha256": "26cc356cd6fcd3b9638dec9632fa2755b3ec4d6e7e9ef38c3f0d75276704bddb",
+      "size": 35669,
+      "mode": "0o444"
+    },
+    "revive-cosmetics-r8q4m7x2/ru/index.html": {
+      "sha256": "b78d5a15a7530f3d9295bea69858350ad65d12fa60ecf9947ee13fcdc5de16d9",
+      "size": 1195536,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/en/index.html": {
+      "sha256": "3e5fd05b68ba3cd228c3cf55562856775e8e7760c27a15451645b42271aac7e9",
+      "size": 61496,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/en/vazuri-case-dock.js": {
+      "sha256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "size": 34641,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/index.html": {
+      "sha256": "c67f75d907580fb32a2ce4cafcc9af3267b9e6b12e9859d191fe6754c1c82659",
+      "size": 60577,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/ru/index.html": {
+      "sha256": "63f54472d9b2d48a687e5e5a7a3d01fd3e356827e0914fcc70cb12ec7bf45b15",
+      "size": 62086,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/ru/vazuri-case-dock.js": {
+      "sha256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "size": 34641,
+      "mode": "0o444"
+    },
+    "scroll-slides-kinetic-x8q4m7v2/vazuri-case-dock.js": {
+      "sha256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "size": 34641,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/en/index.html": {
+      "sha256": "6feee5ae77a96a343a34a004fbe6781a8c661eb4bed8c673c049e695d780df90",
+      "size": 3599,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/en/vazuri-case-dock.js": {
+      "sha256": "5e21aabe7b4c40745bbe39cc02d60bed5742eef0588ef0fbdbe7c5dd5863cfce",
+      "size": 35149,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/index.html": {
+      "sha256": "6feee5ae77a96a343a34a004fbe6781a8c661eb4bed8c673c049e695d780df90",
+      "size": 3599,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/ru/index.html": {
+      "sha256": "e2d6c5d7c297cc6edde9e58652f685a6ceb6040d174933d830bc1d0973215727",
+      "size": 4100,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/ru/vazuri-case-dock.js": {
+      "sha256": "5e21aabe7b4c40745bbe39cc02d60bed5742eef0588ef0fbdbe7c5dd5863cfce",
+      "size": 35149,
+      "mode": "0o444"
+    },
+    "scrollsync-video-v7q4m9x2/vazuri-case-dock.js": {
+      "sha256": "5e21aabe7b4c40745bbe39cc02d60bed5742eef0588ef0fbdbe7c5dd5863cfce",
+      "size": 35149,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/assets/vazuri/vazuri-case-dock.js": {
+      "sha256": "b4b4e146c30f4821686127ee12e20e22c68b0a1b1e3afa4d8dbf192c9ff3868c",
+      "size": 38702,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/404.html": {
+      "sha256": "826f8a3ebbfde3ddc4f78b6a05d6ecca13ccbd8122e65a3747f9b04ad156c8f8",
+      "size": 81840,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/about.html": {
+      "sha256": "c2b342be24314fb88c0c023d56942abec94b105591f5d93aea889bffad2e6015",
+      "size": 154493,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/blog-single.html": {
+      "sha256": "708d6a49fbc6de03cb80d62de53caeec9bbe77681c51afb648213c123d505235",
+      "size": 87635,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/blog.html": {
+      "sha256": "310e4450d814ff1051096050a24ff9d644860c8a0f6b6a082ff0ef0a8c171a4b",
+      "size": 91555,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/contact.html": {
+      "sha256": "899f7e88d9be9732decd6a086a9affca41d5aeba187637d84f956733b3057193",
+      "size": 87798,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/faqs.html": {
+      "sha256": "2e7d78c54328b1dec407373db73d66d25d206f0a988a0ff3f0d955e1ba0c9e5e",
+      "size": 127604,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/image-gallery.html": {
+      "sha256": "da661c4d999f7460af3d961f069cdcb8b80b54b86277e6fceecbd633c56dc43b",
+      "size": 86608,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/index.html": {
+      "sha256": "83ca96f467263f95d331f39cda609d67e16bbc8ea6d1718e4baf4d7d440898cd",
+      "size": 199930,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/pricing.html": {
+      "sha256": "8d619e9f8b827586e7ef380dd509c7c6a6eb5206337976fe830cbd4b485c9cf1",
+      "size": 114045,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/project-single.html": {
+      "sha256": "8b5411e3cab36df99bc2d564a64173533d932b4aeed8bcffede975a9e5d509b4",
+      "size": 107622,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/projects.html": {
+      "sha256": "3c4dd8009a18022fb9f5004f26512314593325ba1cc7f63c3ad3b6723bf0d15c",
+      "size": 90725,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/service-single.html": {
+      "sha256": "ed15dd0d39ba3e89c305006dba5ef5e3403ddc5acecbf6be1e7ce39a135a5276",
+      "size": 104979,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/services.html": {
+      "sha256": "6dd050963467d9474c1dde932e9a99424faf5220ad1c49858fe5cd8d262b8d8d",
+      "size": 151007,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/team-single.html": {
+      "sha256": "230cf72e0955a66d5ad73a668513e658226291029e75df77e4c758b1bb5d4b77",
+      "size": 100311,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/team.html": {
+      "sha256": "2cd2fa64b8794812434b756d9e563821d842ed0f705b16f6c7373bbcd7b2ec59",
+      "size": 94490,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/testimonials.html": {
+      "sha256": "705de95b23ad0470a499ca1d3dc49c18e52ab80e8572f33ac5d5a37b148755a2",
+      "size": 123942,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/en/video-gallery.html": {
+      "sha256": "ad5d9593cfeff4c6662020d4ebd1648c3d973f3c3e963897466277a8a22f4fe4",
+      "size": 86599,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/404.html": {
+      "sha256": "07d239e1927b490d7c2f1316615dd911bc9cd776470828466127317de27e673e",
+      "size": 82907,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/about.html": {
+      "sha256": "de5d5a5f344a064233a9f985a045497f133d41622feb362c2401ef4c1aad2911",
+      "size": 160094,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/blog-single.html": {
+      "sha256": "504efe8fa29537ac7cae1e903a71aa80d64465877ee35bc7091f62dbfe1800f9",
+      "size": 89494,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/blog.html": {
+      "sha256": "11a7aadd73d5e0502934d958f49b5bbc3eee4c3ab4b5c38ea12ec68e2f873fd1",
+      "size": 92983,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/contact.html": {
+      "sha256": "2d3c940f5d315b68cec9ee4cf5509b049f3f3de6b2fd4d3ea3108cb24fcc30d2",
+      "size": 89088,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/faqs.html": {
+      "sha256": "ebf7a5f84f87ffa07b29cbbafab59f628538b9c5890aabb3c64b4f64809c3a89",
+      "size": 133494,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/image-gallery.html": {
+      "sha256": "00b2278137d65be8bf034309469aa9b0c40a7348fee89de4aac5cfef1af4885f",
+      "size": 87732,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/index.html": {
+      "sha256": "ff48969b9f7c58ba2d11e383ee198bdbdd22b9ebed827513d196b575c726fac8",
+      "size": 207863,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/pricing.html": {
+      "sha256": "675c6dc388273c9bf111e1dc2aab6c1e4d8f84ea4abed44fb5438fdbf793f649",
+      "size": 118568,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/project-single.html": {
+      "sha256": "d967152a6ac52a3550b54270ea907bd5f1bd3d0ccc57b9b011748a3ea7b38cde",
+      "size": 111036,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/projects.html": {
+      "sha256": "25934acf6f60117a686704e2c8efeb1e80e03a27e494eab883b8ce29ad458bf0",
+      "size": 91980,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/service-single.html": {
+      "sha256": "898f4c4f1a2e09f758604cd934e5311972ab09344ba0f3141f0cc6cdbac4a793",
+      "size": 108450,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/services.html": {
+      "sha256": "e72805e77f0d2b952d47b735eafb3a4f1bf334f8e36c834916666a8e18476c19",
+      "size": 155450,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/team-single.html": {
+      "sha256": "cb90ce56bd733b4f901593eab7119d213afabebc5f4eb4e269bbeebd4b8d10f4",
+      "size": 103070,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/team.html": {
+      "sha256": "d942c6e0aee2976a0b186e5291e3ea91b1ca3b61d3684d3263c4181917de9b12",
+      "size": 96330,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/testimonials.html": {
+      "sha256": "80642d3df8e75809f5d25cced9dff146e8d7c6d68e7ce0ba5fde8c126801865a",
+      "size": 128708,
+      "mode": "0o444"
+    },
+    "skyvilla-estate-k8m4p2x7/ru/video-gallery.html": {
+      "sha256": "6e7a42d37b157e6610d841316d532ebd2c6e91b75d51524b61f32804d3eb47bf",
+      "size": 87807,
+      "mode": "0o444"
+    },
+    "urban-pulse-exhibitions-k7m3p9x4/assets/vazuri-case-dock.js": {
+      "sha256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "size": 34641,
+      "mode": "0o444"
+    },
+    "urban-pulse-exhibitions-k7m3p9x4/index.html": {
+      "sha256": "997a79c0cba7f3ea694a08375ab39334704156ba64e726bb12ded3b9a0aae286",
+      "size": 2753577,
+      "mode": "0o444"
+    },
+    "urban-pulse-exhibitions-k7m3p9x4/ru/assets/vazuri-case-dock.js": {
+      "sha256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "size": 34641,
+      "mode": "0o444"
+    },
+    "urban-pulse-exhibitions-k7m3p9x4/ru/index.html": {
+      "sha256": "6e03fe5b430491b15d34f2b03873eb5dba6286f2b228bb6e4539e6922acc6788",
+      "size": 2763333,
+      "mode": "0o444"
+    },
+    "vazuri-1099af950ba0e8f8/index.html": {
+      "sha256": "cf3e4200c7e6045516133a9c922e78ca3fb5bb921dbba361e64e71807c369ba2",
+      "size": 2386685,
+      "mode": "0o444"
+    },
+    "vazuri-1099af950ba0e8f8/ru/index.html": {
+      "sha256": "ec604eaa1848322cd9fb38d6db90e9fcffd3c55f24f82e331d520b3725cdddaa",
+      "size": 2395079,
+      "mode": "0o444"
+    },
+    "vazuri-1099af950ba0e8f8/vazuri-case-dock.js": {
+      "sha256": "26cc356cd6fcd3b9638dec9632fa2755b3ec4d6e7e9ef38c3f0d75276704bddb",
+      "size": 35669,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": {
+      "sha256": "840899ae66143824b8c6aa9657180fb1da4c8c601da93f59ca91050e1eefeb5d",
+      "size": 1750,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/b3d89d21-41b7-423a-a5c4-f05d84111e20/_buildManifest.js": {
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb",
+      "size": 159,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/b3d89d21-41b7-423a-a5c4-f05d84111e20/_ssgManifest.js": {
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479",
+      "size": 76,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-D21HNi1o.js": {
+      "sha256": "dfae5f0b81eeb9fa2ebf8212fc93e32fffe51ed9e8eeef2e9c76f07e6113ba49",
+      "size": 176767,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-COPhrDdg.js": {
+      "sha256": "77674326c82c3d9e14ac2cb0eb9dfad51f346f287294ed156f305f6653fe9539",
+      "size": 489,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-CU11evy3.js": {
+      "sha256": "d971130ba122b61dfa6fdaace31d00f0e681cc5fe89b0f43ec0d9765f99049b7",
+      "size": 65695,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/index.html": {
+      "sha256": "066e37881b6e42dbcc47aaa3c7ec31ae36beb8461f9478788bd776ca3a882598",
+      "size": 33373,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json": {
+      "sha256": "914478ee3a6ad22d690ac4b59568e42faca236067029c13a296b00cd6028df5c",
+      "size": 76,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-fashion-studio-public/index.html": {
+      "sha256": "64df4b1123b37e807f1f5ad992d2f0729f1810b1503130ba7668e434731027cd",
+      "size": 19321,
+      "mode": "0o444"
+    },
+    "vazuri-preview-liko-fashion-studio-public/vazuri-case-dock.js": {
+      "sha256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "size": 34641,
+      "mode": "0o444"
+    }
+  },
+  "owners": {
+    "main/.vite/manifest.json": "main",
+    "main/_next/static/chunks/AboutTeaser-xsOoWDvP.js": "main",
+    "main/_next/static/chunks/ApprovedBrief-B-6XUB0L.js": "main",
+    "main/_next/static/chunks/AutoplayLoopVideo-C5dxW7ok.js": "main",
+    "main/_next/static/chunks/Blog-DkMpLwnL.js": "main",
+    "main/_next/static/chunks/BlogArticle-DDq01se7.js": "main",
+    "main/_next/static/chunks/BlogPreview-4-tZjTnk.js": "main",
+    "main/_next/static/chunks/BlogPreview-B2Z0nQlA.js": "main",
+    "main/_next/static/chunks/BlogPreview-Be7dJV3f.js": "main",
+    "main/_next/static/chunks/BlogPreview-Bk-wKTkz.js": "main",
+    "main/_next/static/chunks/BlogPreview-BzGljRPZ.js": "main",
+    "main/_next/static/chunks/BlogPreview-C6XO70yP.js": "main",
+    "main/_next/static/chunks/BlogPreview-CIzIyMZb.js": "main",
+    "main/_next/static/chunks/BlogPreview-D0-fowkk.js": "main",
+    "main/_next/static/chunks/BlogPreview-D02x5WQ_.js": "main",
+    "main/_next/static/chunks/BlogPreview-D04ZAP0V.js": "main",
+    "main/_next/static/chunks/BlogPreview-DKgcArfn.js": "main",
+    "main/_next/static/chunks/BlogPreviewEn-BeQLSg7h.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-B7dSuVrb.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-BE5CNkpZ.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-BGhjWveT.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-BHp38bYw.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-BRUjZs9Q.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-Bbfr-IoI.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-Bl4NA_Gn.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-Bzje2Ou7.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-C4M9eFv2.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-Cbc378bh.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-CyyAtt5I.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-D-JxfnLb.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-TKGxDarY.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-a6XMox3r.js": "main",
+    "main/_next/static/chunks/CTAWithMarquee-gx3BeEsO.js": "main",
+    "main/_next/static/chunks/CommonAnimatedText-DqJopwyw.js": "main",
+    "main/_next/static/chunks/CommonHeroVideoScale-BKeVp9by.js": "main",
+    "main/_next/static/chunks/CommonScrollAnimated-CMTTgAOD.js": "main",
+    "main/_next/static/chunks/Components-DMgjT8EC.js": "main",
+    "main/_next/static/chunks/ContactLeadForm-CJWq_pgB.js": "main",
+    "main/_next/static/chunks/ContentPagesStack-BYoFS3K_.js": "main",
+    "main/_next/static/chunks/DemoGrid-fWeT6Jtw.js": "main",
+    "main/_next/static/chunks/DividerStickyCaption-DMTT1K5Q.js": "main",
+    "main/_next/static/chunks/DividerStickyImages-CNi5V9va.js": "main",
+    "main/_next/static/chunks/FooterBackToTop-Bp8B8Q7-.js": "main",
+    "main/_next/static/chunks/GravityCTAContent-DmxBoVE2.js": "main",
+    "main/_next/static/chunks/Hero-B4ufnAQe.js": "main",
+    "main/_next/static/chunks/Hero-BF28uh1b.js": "main",
+    "main/_next/static/chunks/Hero-D1egsQmP2.js": "main",
+    "main/_next/static/chunks/Hero-DKV-0ZyS.js": "main",
+    "main/_next/static/chunks/Hero-Dh680I1Z.js": "main",
+    "main/_next/static/chunks/Hero-IKAuATaW.js": "main",
+    "main/_next/static/chunks/Hero-cJmXWx92.js": "main",
+    "main/_next/static/chunks/Hero-g4ZiVU3F.js": "main",
+    "main/_next/static/chunks/Hero-rbJL7H7z.js": "main",
+    "main/_next/static/chunks/HeroEn-DLGrxble.js": "main",
+    "main/_next/static/chunks/InnerHeadline-C8ByJ8Xv.js": "main",
+    "main/_next/static/chunks/InnerHeadline-CY5LYDnt.js": "main",
+    "main/_next/static/chunks/InnerHeadline-CnnTVvpq.js": "main",
+    "main/_next/static/chunks/InnerHeadline-CobOBh-1.js": "main",
+    "main/_next/static/chunks/InnerHeadline-CuPw9Xfm.js": "main",
+    "main/_next/static/chunks/InnerHeadline-D2XRAREY.js": "main",
+    "main/_next/static/chunks/InnerHeadline-D_K6EKtn.js": "main",
+    "main/_next/static/chunks/InnerHeadline-Dpun96t1.js": "main",
+    "main/_next/static/chunks/InnerHeadline-DqEJuXcY.js": "main",
+    "main/_next/static/chunks/InnerPagesSlider-XeuWtEde.js": "main",
+    "main/_next/static/chunks/LazyGravityCTA-2AW4lcmj.js": "main",
+    "main/_next/static/chunks/MoreOnTopic-D8d-Yjei.js": "main",
+    "main/_next/static/chunks/MyExpertise-DJBGyDdG.js": "main",
+    "main/_next/static/chunks/NotFound-DdJRCAVl.js": "main",
+    "main/_next/static/chunks/OurCapabilities-DOELjmwc.js": "main",
+    "main/_next/static/chunks/OurCapabilitiesEn-Sxepwo8q.js": "main",
+    "main/_next/static/chunks/ParallaxDivider-BtMEChw6.js": "main",
+    "main/_next/static/chunks/ProjectsGrid-CsDQxPUO.js": "main",
+    "main/_next/static/chunks/ProjectsGrid-DWcP7yQJ.js": "main",
+    "main/_next/static/chunks/ProjectsGrid-DWdfGaJJ.js": "main",
+    "main/_next/static/chunks/ProjectsGrid-D_Rntrra.js": "main",
+    "main/_next/static/chunks/ProjectsGridEn-D8D_5D4u.js": "main",
+    "main/_next/static/chunks/ProjectsGridX3Showcase-DNJ5VWUn.js": "main",
+    "main/_next/static/chunks/ProjectsList-CDfZlsNc.js": "main",
+    "main/_next/static/chunks/ProjectsList-CSPzpZbC.js": "main",
+    "main/_next/static/chunks/ProjectsList-DXXblkE3.js": "main",
+    "main/_next/static/chunks/ProjectsList-plsw14RR.js": "main",
+    "main/_next/static/chunks/ProjectsShowcase-CkEbvC0m.js": "main",
+    "main/_next/static/chunks/ProjectsShowcase-D60oyu_C.js": "main",
+    "main/_next/static/chunks/ProjectsStack-DCQ55uEW.js": "main",
+    "main/_next/static/chunks/ProtectsStack-CmGDq4Zz.js": "main",
+    "main/_next/static/chunks/ResponsivePromo-ian00XMn.js": "main",
+    "main/_next/static/chunks/Resume-BWwby__b.js": "main",
+    "main/_next/static/chunks/Resume-Lg9xDMV7.js": "main",
+    "main/_next/static/chunks/SelectedWork-CH_yziVs.js": "main",
+    "main/_next/static/chunks/ServicesList-BPXHa2vi.js": "main",
+    "main/_next/static/chunks/ServicesList-BocJ3Bbh.js": "main",
+    "main/_next/static/chunks/ServicesStack-DiW_Zqm1.js": "main",
+    "main/_next/static/chunks/ServicesStackVideo-B7lgs5zi.js": "main",
+    "main/_next/static/chunks/SiteAnalytics-CScvIMb3.js": "main",
+    "main/_next/static/chunks/SiteChrome-BXRhRyk8.js": "main",
+    "main/_next/static/chunks/StatisticsLines-BxZP3fHO.js": "main",
+    "main/_next/static/chunks/StatisticsLines-CM3Be4gz.js": "main",
+    "main/_next/static/chunks/StatisticsLines-CXr1E-90.js": "main",
+    "main/_next/static/chunks/StatisticsLinesEn-BzTOtltK.js": "main",
+    "main/_next/static/chunks/TeamList-CK3UJJvn.js": "main",
+    "main/_next/static/chunks/TemplateRuntimeProvider-CNMhrlKE.js": "main",
+    "main/_next/static/chunks/TestimonialsSlider-Cj0_HRQz.js": "main",
+    "main/_next/static/chunks/TestimonialsSlider-wbnWijcM.js": "main",
+    "main/_next/static/chunks/UkiyoParallax-2B6-0Qp3.js": "main",
+    "main/_next/static/chunks/app-rsc-cache-busting-SI-HFqDu.js": "main",
+    "main/_next/static/chunks/hybrid-client-route-owner-LccZSx6U.js": "main",
+    "main/_next/static/chunks/index-B9kGgP1J.js": "main",
+    "main/_next/static/chunks/layout-segment-context-zdTn1fQu.js": "main",
+    "main/_next/static/chunks/link-B_jHEJ5n.js": "main",
+    "main/_next/static/chunks/testimonials-D246zdVc.js": "main",
+    "main/_next/static/e607d6e2-c001-4688-b79d-df8d7b529896/_buildManifest.js": "main",
+    "main/_next/static/e607d6e2-c001-4688-b79d-df8d7b529896/_ssgManifest.js": "main",
+    "main/company/card/index.html": "main",
+    "main/company/index.html": "main",
+    "main/consent/index.html": "main",
+    "main/contact/index.html": "main",
+    "main/en/company/card/index.html": "main",
+    "main/en/company/index.html": "main",
+    "main/en/consent/index.html": "main",
+    "main/en/contact/index.html": "main",
+    "main/en/index.html": "main",
+    "main/en/privacy/index.html": "main",
+    "main/index.html": "main",
+    "main/lead.php": "main",
+    "main/privacy/index.html": "main",
+    "main/vazuri-form-security.php": "main",
+    "main/vinext-client-entry-manifest.json": "main",
+    "relief-motion-literal-p8m4k2x7/en/index.html": "relief",
+    "relief-motion-literal-p8m4k2x7/en/vazuri-case-dock.js": "relief",
+    "relief-motion-literal-p8m4k2x7/ru/index.html": "relief",
+    "relief-motion-literal-p8m4k2x7/ru/vazuri-case-dock.js": "relief",
+    "revive-cosmetics-r8q4m7x2/assets/vazuri-case-dock.js": "revive",
+    "revive-cosmetics-r8q4m7x2/index.html": "revive",
+    "revive-cosmetics-r8q4m7x2/ru/assets/vazuri-case-dock.js": "revive",
+    "revive-cosmetics-r8q4m7x2/ru/index.html": "revive",
+    "scroll-slides-kinetic-x8q4m7v2/en/index.html": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/en/vazuri-case-dock.js": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/index.html": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/ru/index.html": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/ru/vazuri-case-dock.js": "slides",
+    "scroll-slides-kinetic-x8q4m7v2/vazuri-case-dock.js": "slides",
+    "scrollsync-video-v7q4m9x2/en/index.html": "sync",
+    "scrollsync-video-v7q4m9x2/en/vazuri-case-dock.js": "sync",
+    "scrollsync-video-v7q4m9x2/index.html": "sync",
+    "scrollsync-video-v7q4m9x2/ru/index.html": "sync",
+    "scrollsync-video-v7q4m9x2/ru/vazuri-case-dock.js": "sync",
+    "scrollsync-video-v7q4m9x2/vazuri-case-dock.js": "sync",
+    "skyvilla-estate-k8m4p2x7/assets/vazuri/vazuri-case-dock.js": "sky",
+    "skyvilla-estate-k8m4p2x7/en/404.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/about.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/blog-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/blog.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/contact.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/faqs.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/image-gallery.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/index.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/pricing.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/project-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/projects.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/service-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/services.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/team-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/team.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/testimonials.html": "sky",
+    "skyvilla-estate-k8m4p2x7/en/video-gallery.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/404.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/about.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/blog-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/blog.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/contact.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/faqs.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/image-gallery.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/index.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/pricing.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/project-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/projects.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/service-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/services.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/team-single.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/team.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/testimonials.html": "sky",
+    "skyvilla-estate-k8m4p2x7/ru/video-gallery.html": "sky",
+    "urban-pulse-exhibitions-k7m3p9x4/assets/vazuri-case-dock.js": "urban",
+    "urban-pulse-exhibitions-k7m3p9x4/index.html": "urban",
+    "urban-pulse-exhibitions-k7m3p9x4/ru/assets/vazuri-case-dock.js": "urban",
+    "urban-pulse-exhibitions-k7m3p9x4/ru/index.html": "urban",
+    "vazuri-1099af950ba0e8f8/index.html": "hotel",
+    "vazuri-1099af950ba0e8f8/ru/index.html": "hotel",
+    "vazuri-1099af950ba0e8f8/vazuri-case-dock.js": "hotel",
+    "vazuri-preview-liko-dark-shop-public/.vite/manifest.json": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/b3d89d21-41b7-423a-a5c4-f05d84111e20/_buildManifest.js": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/b3d89d21-41b7-423a-a5c4-f05d84111e20/_ssgManifest.js": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-D21HNi1o.js": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-COPhrDdg.js": "night",
+    "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-CU11evy3.js": "night",
+    "vazuri-preview-liko-dark-shop-public/index.html": "night",
+    "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json": "night",
+    "vazuri-preview-liko-fashion-studio-public/index.html": "altera",
+    "vazuri-preview-liko-fashion-studio-public/vazuri-case-dock.js": "altera"
+  },
+  "sourceProjects": [
+    {
+      "id": "altera",
+      "project": "projects/altera-concept-public/vazuri-preview-liko-fashion-studio-public-main",
+      "origin": "https://github.com/ivashkov2022-droid/vazuri-preview-liko-fashion-studio-public.git",
+      "remote": "origin",
+      "sourceParent": "851b0b9e4bf221789376567bf982e14dc6f0f204",
+      "ref": "refs/heads/codex/form-protection-20261027",
+      "sourceSHA256": {
+        "public/vazuri-case-dock.js": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b"
+      },
+      "runtimePaths": [
+        "vazuri-preview-liko-fashion-studio-public/index.html",
+        "vazuri-preview-liko-fashion-studio-public/vazuri-case-dock.js"
+      ]
+    },
+    {
+      "id": "hotel",
+      "project": "projects/vazuri-hotel-site",
+      "origin": "https://github.com/ivashkov2022-droid/vazuri-hotel-site.git",
+      "remote": "origin",
+      "sourceParent": "300ef65cae7e7643c6d3bf6ec43de88ab97ab6fa",
+      "ref": "refs/heads/codex/form-protection-20261027",
+      "sourceSHA256": {
+        "public/vazuri-case-dock.js": "26cc356cd6fcd3b9638dec9632fa2755b3ec4d6e7e9ef38c3f0d75276704bddb"
+      },
+      "runtimePaths": [
+        "vazuri-1099af950ba0e8f8/index.html",
+        "vazuri-1099af950ba0e8f8/ru/index.html",
+        "vazuri-1099af950ba0e8f8/vazuri-case-dock.js"
+      ]
+    },
+    {
+      "id": "main",
+      "project": "projects/vazuri-main-integration",
+      "origin": "https://github.com/ivashkov2022-droid/vazuri-site.git",
+      "remote": "github",
+      "sourceParent": "c3a1bdae7e969ad52349576c05994596922b8dc5",
+      "ref": "refs/heads/codex/form-protection-20261027",
+      "sourceSHA256": {
+        "components/common/ApprovedBrief.tsx": "2b0b4003f76ef9f4418c812c023ec3790665d7110215bfaa5a9367ea15fe3f11",
+        "public/lead.php": "18e12e15feb33795b6250cb89d30d431bf15f941714741962f62bd3630439a8d",
+        "public/vazuri-form-security.php": "a65f899c7376e13657f25a2eb7c6fb2da046ed5ea9916259ae4a3dbee454d158",
+        "deploy/form-security/install-private-state.py": "ce4c0ac4dc74ab14e4addc621a9ac038596e7cf5e5832c06ed0c0cbc42940945",
+        "deploy/form-security/test_form_security.py": "31616ef01f982d8f8138dfc250965c66be69a3b3476476312d2b5d0be8a9f1fa",
+        "deploy/form-security/README.md": "e1651ed890693b91961b7a3ff5e3723ebbab0f29fea7a61bdd866982308c55e9"
+      },
+      "runtimePaths": [
+        "main/.vite/manifest.json",
+        "main/_next/static/chunks/AboutTeaser-xsOoWDvP.js",
+        "main/_next/static/chunks/ApprovedBrief-B-6XUB0L.js",
+        "main/_next/static/chunks/AutoplayLoopVideo-C5dxW7ok.js",
+        "main/_next/static/chunks/Blog-DkMpLwnL.js",
+        "main/_next/static/chunks/BlogArticle-DDq01se7.js",
+        "main/_next/static/chunks/BlogPreview-4-tZjTnk.js",
+        "main/_next/static/chunks/BlogPreview-B2Z0nQlA.js",
+        "main/_next/static/chunks/BlogPreview-Be7dJV3f.js",
+        "main/_next/static/chunks/BlogPreview-Bk-wKTkz.js",
+        "main/_next/static/chunks/BlogPreview-BzGljRPZ.js",
+        "main/_next/static/chunks/BlogPreview-C6XO70yP.js",
+        "main/_next/static/chunks/BlogPreview-CIzIyMZb.js",
+        "main/_next/static/chunks/BlogPreview-D0-fowkk.js",
+        "main/_next/static/chunks/BlogPreview-D02x5WQ_.js",
+        "main/_next/static/chunks/BlogPreview-D04ZAP0V.js",
+        "main/_next/static/chunks/BlogPreview-DKgcArfn.js",
+        "main/_next/static/chunks/BlogPreviewEn-BeQLSg7h.js",
+        "main/_next/static/chunks/CTAWithMarquee-B7dSuVrb.js",
+        "main/_next/static/chunks/CTAWithMarquee-BE5CNkpZ.js",
+        "main/_next/static/chunks/CTAWithMarquee-BGhjWveT.js",
+        "main/_next/static/chunks/CTAWithMarquee-BHp38bYw.js",
+        "main/_next/static/chunks/CTAWithMarquee-BRUjZs9Q.js",
+        "main/_next/static/chunks/CTAWithMarquee-Bbfr-IoI.js",
+        "main/_next/static/chunks/CTAWithMarquee-Bl4NA_Gn.js",
+        "main/_next/static/chunks/CTAWithMarquee-Bzje2Ou7.js",
+        "main/_next/static/chunks/CTAWithMarquee-C4M9eFv2.js",
+        "main/_next/static/chunks/CTAWithMarquee-Cbc378bh.js",
+        "main/_next/static/chunks/CTAWithMarquee-CyyAtt5I.js",
+        "main/_next/static/chunks/CTAWithMarquee-D-JxfnLb.js",
+        "main/_next/static/chunks/CTAWithMarquee-TKGxDarY.js",
+        "main/_next/static/chunks/CTAWithMarquee-a6XMox3r.js",
+        "main/_next/static/chunks/CTAWithMarquee-gx3BeEsO.js",
+        "main/_next/static/chunks/CommonAnimatedText-DqJopwyw.js",
+        "main/_next/static/chunks/CommonHeroVideoScale-BKeVp9by.js",
+        "main/_next/static/chunks/CommonScrollAnimated-CMTTgAOD.js",
+        "main/_next/static/chunks/Components-DMgjT8EC.js",
+        "main/_next/static/chunks/ContactLeadForm-CJWq_pgB.js",
+        "main/_next/static/chunks/ContentPagesStack-BYoFS3K_.js",
+        "main/_next/static/chunks/DemoGrid-fWeT6Jtw.js",
+        "main/_next/static/chunks/DividerStickyCaption-DMTT1K5Q.js",
+        "main/_next/static/chunks/DividerStickyImages-CNi5V9va.js",
+        "main/_next/static/chunks/FooterBackToTop-Bp8B8Q7-.js",
+        "main/_next/static/chunks/GravityCTAContent-DmxBoVE2.js",
+        "main/_next/static/chunks/Hero-B4ufnAQe.js",
+        "main/_next/static/chunks/Hero-BF28uh1b.js",
+        "main/_next/static/chunks/Hero-D1egsQmP2.js",
+        "main/_next/static/chunks/Hero-DKV-0ZyS.js",
+        "main/_next/static/chunks/Hero-Dh680I1Z.js",
+        "main/_next/static/chunks/Hero-IKAuATaW.js",
+        "main/_next/static/chunks/Hero-cJmXWx92.js",
+        "main/_next/static/chunks/Hero-g4ZiVU3F.js",
+        "main/_next/static/chunks/Hero-rbJL7H7z.js",
+        "main/_next/static/chunks/HeroEn-DLGrxble.js",
+        "main/_next/static/chunks/InnerHeadline-C8ByJ8Xv.js",
+        "main/_next/static/chunks/InnerHeadline-CY5LYDnt.js",
+        "main/_next/static/chunks/InnerHeadline-CnnTVvpq.js",
+        "main/_next/static/chunks/InnerHeadline-CobOBh-1.js",
+        "main/_next/static/chunks/InnerHeadline-CuPw9Xfm.js",
+        "main/_next/static/chunks/InnerHeadline-D2XRAREY.js",
+        "main/_next/static/chunks/InnerHeadline-D_K6EKtn.js",
+        "main/_next/static/chunks/InnerHeadline-Dpun96t1.js",
+        "main/_next/static/chunks/InnerHeadline-DqEJuXcY.js",
+        "main/_next/static/chunks/InnerPagesSlider-XeuWtEde.js",
+        "main/_next/static/chunks/LazyGravityCTA-2AW4lcmj.js",
+        "main/_next/static/chunks/MoreOnTopic-D8d-Yjei.js",
+        "main/_next/static/chunks/MyExpertise-DJBGyDdG.js",
+        "main/_next/static/chunks/NotFound-DdJRCAVl.js",
+        "main/_next/static/chunks/OurCapabilities-DOELjmwc.js",
+        "main/_next/static/chunks/OurCapabilitiesEn-Sxepwo8q.js",
+        "main/_next/static/chunks/ParallaxDivider-BtMEChw6.js",
+        "main/_next/static/chunks/ProjectsGrid-CsDQxPUO.js",
+        "main/_next/static/chunks/ProjectsGrid-DWcP7yQJ.js",
+        "main/_next/static/chunks/ProjectsGrid-DWdfGaJJ.js",
+        "main/_next/static/chunks/ProjectsGrid-D_Rntrra.js",
+        "main/_next/static/chunks/ProjectsGridEn-D8D_5D4u.js",
+        "main/_next/static/chunks/ProjectsGridX3Showcase-DNJ5VWUn.js",
+        "main/_next/static/chunks/ProjectsList-CDfZlsNc.js",
+        "main/_next/static/chunks/ProjectsList-CSPzpZbC.js",
+        "main/_next/static/chunks/ProjectsList-DXXblkE3.js",
+        "main/_next/static/chunks/ProjectsList-plsw14RR.js",
+        "main/_next/static/chunks/ProjectsShowcase-CkEbvC0m.js",
+        "main/_next/static/chunks/ProjectsShowcase-D60oyu_C.js",
+        "main/_next/static/chunks/ProjectsStack-DCQ55uEW.js",
+        "main/_next/static/chunks/ProtectsStack-CmGDq4Zz.js",
+        "main/_next/static/chunks/ResponsivePromo-ian00XMn.js",
+        "main/_next/static/chunks/Resume-BWwby__b.js",
+        "main/_next/static/chunks/Resume-Lg9xDMV7.js",
+        "main/_next/static/chunks/SelectedWork-CH_yziVs.js",
+        "main/_next/static/chunks/ServicesList-BPXHa2vi.js",
+        "main/_next/static/chunks/ServicesList-BocJ3Bbh.js",
+        "main/_next/static/chunks/ServicesStack-DiW_Zqm1.js",
+        "main/_next/static/chunks/ServicesStackVideo-B7lgs5zi.js",
+        "main/_next/static/chunks/SiteAnalytics-CScvIMb3.js",
+        "main/_next/static/chunks/SiteChrome-BXRhRyk8.js",
+        "main/_next/static/chunks/StatisticsLines-BxZP3fHO.js",
+        "main/_next/static/chunks/StatisticsLines-CM3Be4gz.js",
+        "main/_next/static/chunks/StatisticsLines-CXr1E-90.js",
+        "main/_next/static/chunks/StatisticsLinesEn-BzTOtltK.js",
+        "main/_next/static/chunks/TeamList-CK3UJJvn.js",
+        "main/_next/static/chunks/TemplateRuntimeProvider-CNMhrlKE.js",
+        "main/_next/static/chunks/TestimonialsSlider-Cj0_HRQz.js",
+        "main/_next/static/chunks/TestimonialsSlider-wbnWijcM.js",
+        "main/_next/static/chunks/UkiyoParallax-2B6-0Qp3.js",
+        "main/_next/static/chunks/app-rsc-cache-busting-SI-HFqDu.js",
+        "main/_next/static/chunks/hybrid-client-route-owner-LccZSx6U.js",
+        "main/_next/static/chunks/index-B9kGgP1J.js",
+        "main/_next/static/chunks/layout-segment-context-zdTn1fQu.js",
+        "main/_next/static/chunks/link-B_jHEJ5n.js",
+        "main/_next/static/chunks/testimonials-D246zdVc.js",
+        "main/_next/static/e607d6e2-c001-4688-b79d-df8d7b529896/_buildManifest.js",
+        "main/_next/static/e607d6e2-c001-4688-b79d-df8d7b529896/_ssgManifest.js",
+        "main/company/card/index.html",
+        "main/company/index.html",
+        "main/consent/index.html",
+        "main/contact/index.html",
+        "main/en/company/card/index.html",
+        "main/en/company/index.html",
+        "main/en/consent/index.html",
+        "main/en/contact/index.html",
+        "main/en/index.html",
+        "main/en/privacy/index.html",
+        "main/index.html",
+        "main/lead.php",
+        "main/privacy/index.html",
+        "main/vazuri-form-security.php",
+        "main/vinext-client-entry-manifest.json"
+      ]
+    },
+    {
+      "id": "night",
+      "project": "projects/nightshift-concept-public/vazuri-preview-liko-dark-shop-public-main",
+      "origin": "https://github.com/ivashkov2022-droid/vazuri-preview-liko-dark-shop-public.git",
+      "remote": "origin",
+      "sourceParent": "dd1a75e0826077777644c3ca48599a60b6acb0ba",
+      "ref": "refs/heads/codex/form-protection-20261027",
+      "sourceSHA256": {
+        "app/page.tsx": "8795a7fa3020a8652f54f7edcfd5228620d911cd30e4073ea6379706713765b7"
+      },
+      "runtimePaths": [
+        "vazuri-preview-liko-dark-shop-public/.vite/manifest.json",
+        "vazuri-preview-liko-dark-shop-public/_next/static/b3d89d21-41b7-423a-a5c4-f05d84111e20/_buildManifest.js",
+        "vazuri-preview-liko-dark-shop-public/_next/static/b3d89d21-41b7-423a-a5c4-f05d84111e20/_ssgManifest.js",
+        "vazuri-preview-liko-dark-shop-public/_next/static/chunks/index-D21HNi1o.js",
+        "vazuri-preview-liko-dark-shop-public/_next/static/chunks/layout-segment-context-COPhrDdg.js",
+        "vazuri-preview-liko-dark-shop-public/_next/static/chunks/page-CU11evy3.js",
+        "vazuri-preview-liko-dark-shop-public/index.html",
+        "vazuri-preview-liko-dark-shop-public/vinext-client-entry-manifest.json"
+      ]
+    },
+    {
+      "id": "relief",
+      "project": "projects/relief-motion-literal",
+      "origin": "https://github.com/ivashkov2022-droid/relief-motion-literal.git",
+      "remote": "origin",
+      "sourceParent": "37b7c4578717e4d366d538c928ca15a8fe98c100",
+      "ref": "refs/heads/codex/form-protection-20261027",
+      "sourceSHA256": {
+        "src/vazuri-case-dock.js": "2caad9b39a2b9fb0aca93b6c1210d77b90f5781e44966eeca2f0a00ffc527841"
+      },
+      "runtimePaths": [
+        "relief-motion-literal-p8m4k2x7/en/index.html",
+        "relief-motion-literal-p8m4k2x7/en/vazuri-case-dock.js",
+        "relief-motion-literal-p8m4k2x7/ru/index.html",
+        "relief-motion-literal-p8m4k2x7/ru/vazuri-case-dock.js"
+      ]
+    },
+    {
+      "id": "revive",
+      "project": "projects/revive-cosmetics-site",
+      "origin": "https://github.com/ivashkov2022-droid/revive-cosmetics-site.git",
+      "remote": "origin",
+      "sourceParent": "384368ba9baa5e10035fe2f0f06ad19ce49ae62b",
+      "ref": "refs/heads/codex/form-protection-20261027",
+      "sourceSHA256": {
+        "overrides/vazuri-case-dock.js": "26cc356cd6fcd3b9638dec9632fa2755b3ec4d6e7e9ef38c3f0d75276704bddb"
+      },
+      "runtimePaths": [
+        "revive-cosmetics-r8q4m7x2/assets/vazuri-case-dock.js",
+        "revive-cosmetics-r8q4m7x2/index.html",
+        "revive-cosmetics-r8q4m7x2/ru/assets/vazuri-case-dock.js",
+        "revive-cosmetics-r8q4m7x2/ru/index.html"
+      ]
+    },
+    {
+      "id": "sky",
+      "project": "projects/skyvilla",
+      "origin": "https://github.com/ivashkov2022-droid/skyvilla-estate.git",
+      "remote": "origin",
+      "sourceParent": "c1cfedbbbc984ced35f545055b754dc7496b6c6b",
+      "ref": "refs/heads/codex/form-protection-20261027",
+      "sourceSHA256": {
+        "assets/vazuri/vazuri-case-dock.js": "b4b4e146c30f4821686127ee12e20e22c68b0a1b1e3afa4d8dbf192c9ff3868c"
+      },
+      "runtimePaths": [
+        "skyvilla-estate-k8m4p2x7/assets/vazuri/vazuri-case-dock.js",
+        "skyvilla-estate-k8m4p2x7/en/404.html",
+        "skyvilla-estate-k8m4p2x7/en/about.html",
+        "skyvilla-estate-k8m4p2x7/en/blog-single.html",
+        "skyvilla-estate-k8m4p2x7/en/blog.html",
+        "skyvilla-estate-k8m4p2x7/en/contact.html",
+        "skyvilla-estate-k8m4p2x7/en/faqs.html",
+        "skyvilla-estate-k8m4p2x7/en/image-gallery.html",
+        "skyvilla-estate-k8m4p2x7/en/index.html",
+        "skyvilla-estate-k8m4p2x7/en/pricing.html",
+        "skyvilla-estate-k8m4p2x7/en/project-single.html",
+        "skyvilla-estate-k8m4p2x7/en/projects.html",
+        "skyvilla-estate-k8m4p2x7/en/service-single.html",
+        "skyvilla-estate-k8m4p2x7/en/services.html",
+        "skyvilla-estate-k8m4p2x7/en/team-single.html",
+        "skyvilla-estate-k8m4p2x7/en/team.html",
+        "skyvilla-estate-k8m4p2x7/en/testimonials.html",
+        "skyvilla-estate-k8m4p2x7/en/video-gallery.html",
+        "skyvilla-estate-k8m4p2x7/ru/404.html",
+        "skyvilla-estate-k8m4p2x7/ru/about.html",
+        "skyvilla-estate-k8m4p2x7/ru/blog-single.html",
+        "skyvilla-estate-k8m4p2x7/ru/blog.html",
+        "skyvilla-estate-k8m4p2x7/ru/contact.html",
+        "skyvilla-estate-k8m4p2x7/ru/faqs.html",
+        "skyvilla-estate-k8m4p2x7/ru/image-gallery.html",
+        "skyvilla-estate-k8m4p2x7/ru/index.html",
+        "skyvilla-estate-k8m4p2x7/ru/pricing.html",
+        "skyvilla-estate-k8m4p2x7/ru/project-single.html",
+        "skyvilla-estate-k8m4p2x7/ru/projects.html",
+        "skyvilla-estate-k8m4p2x7/ru/service-single.html",
+        "skyvilla-estate-k8m4p2x7/ru/services.html",
+        "skyvilla-estate-k8m4p2x7/ru/team-single.html",
+        "skyvilla-estate-k8m4p2x7/ru/team.html",
+        "skyvilla-estate-k8m4p2x7/ru/testimonials.html",
+        "skyvilla-estate-k8m4p2x7/ru/video-gallery.html"
+      ]
+    },
+    {
+      "id": "slides",
+      "project": "projects/scrollslides-block",
+      "origin": "https://github.com/ivashkov2022-droid/scrollslides-block.git",
+      "remote": "origin",
+      "sourceParent": "d3f160078631709c7542d112492ce36319aad2e0",
+      "ref": "refs/heads/codex/form-protection-20261027",
+      "sourceSHA256": {
+        "src/vazuri-case-dock.js": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b"
+      },
+      "runtimePaths": [
+        "scroll-slides-kinetic-x8q4m7v2/en/index.html",
+        "scroll-slides-kinetic-x8q4m7v2/en/vazuri-case-dock.js",
+        "scroll-slides-kinetic-x8q4m7v2/index.html",
+        "scroll-slides-kinetic-x8q4m7v2/ru/index.html",
+        "scroll-slides-kinetic-x8q4m7v2/ru/vazuri-case-dock.js",
+        "scroll-slides-kinetic-x8q4m7v2/vazuri-case-dock.js"
+      ]
+    },
+    {
+      "id": "sync",
+      "project": "projects/scrollsyncvideo-block",
+      "origin": "https://github.com/ivashkov2022-droid/scrollsyncvideo-block.git",
+      "remote": "origin",
+      "sourceParent": "36d0282d1ba316c3d1612bff73784d433444eaa8",
+      "ref": "refs/heads/codex/form-protection-20261027",
+      "sourceSHA256": {
+        "src/vazuri-case-dock.js": "5e21aabe7b4c40745bbe39cc02d60bed5742eef0588ef0fbdbe7c5dd5863cfce"
+      },
+      "runtimePaths": [
+        "scrollsync-video-v7q4m9x2/en/index.html",
+        "scrollsync-video-v7q4m9x2/en/vazuri-case-dock.js",
+        "scrollsync-video-v7q4m9x2/index.html",
+        "scrollsync-video-v7q4m9x2/ru/index.html",
+        "scrollsync-video-v7q4m9x2/ru/vazuri-case-dock.js",
+        "scrollsync-video-v7q4m9x2/vazuri-case-dock.js"
+      ]
+    },
+    {
+      "id": "urban",
+      "project": "projects/urban-pulse-site",
+      "origin": "https://github.com/ivashkov2022-droid/urban-pulse-site.git",
+      "remote": "origin",
+      "sourceParent": "deee6b54d6fe8aaa5bcbecd6685c3bbc5bee4a72",
+      "ref": "refs/heads/codex/form-protection-20261027",
+      "sourceSHA256": {
+        "overrides/vazuri-case-dock.js": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b"
+      },
+      "runtimePaths": [
+        "urban-pulse-exhibitions-k7m3p9x4/assets/vazuri-case-dock.js",
+        "urban-pulse-exhibitions-k7m3p9x4/index.html",
+        "urban-pulse-exhibitions-k7m3p9x4/ru/assets/vazuri-case-dock.js",
+        "urban-pulse-exhibitions-k7m3p9x4/ru/index.html"
+      ]
+    }
+  ],
+  "deletedFiles": [],
+  "SSRGuards": [
+    {
+      "file": "main/index.html",
+      "owner": "main",
+      "bodyAfterScriptsByteIdentical": true,
+      "nonassetHeadByteIdentical": true
+    },
+    {
+      "file": "main/en/index.html",
+      "owner": "main",
+      "bodyAfterScriptsByteIdentical": true,
+      "nonassetHeadByteIdentical": true
+    },
+    {
+      "file": "main/contact/index.html",
+      "owner": "main",
+      "bodyAfterScriptsByteIdentical": true,
+      "nonassetHeadByteIdentical": true
+    },
+    {
+      "file": "main/en/contact/index.html",
+      "owner": "main",
+      "bodyAfterScriptsByteIdentical": true,
+      "nonassetHeadByteIdentical": true
+    },
+    {
+      "file": "main/privacy/index.html",
+      "owner": "main",
+      "bodyAfterScriptsByteIdentical": true,
+      "nonassetHeadByteIdentical": true
+    },
+    {
+      "file": "main/en/privacy/index.html",
+      "owner": "main",
+      "bodyAfterScriptsByteIdentical": true,
+      "nonassetHeadByteIdentical": true
+    },
+    {
+      "file": "main/consent/index.html",
+      "owner": "main",
+      "bodyAfterScriptsByteIdentical": true,
+      "nonassetHeadByteIdentical": true
+    },
+    {
+      "file": "main/en/consent/index.html",
+      "owner": "main",
+      "bodyAfterScriptsByteIdentical": true,
+      "nonassetHeadByteIdentical": true
+    },
+    {
+      "file": "main/company/index.html",
+      "owner": "main",
+      "bodyAfterScriptsByteIdentical": true,
+      "nonassetHeadByteIdentical": true
+    },
+    {
+      "file": "main/en/company/index.html",
+      "owner": "main",
+      "bodyAfterScriptsByteIdentical": true,
+      "nonassetHeadByteIdentical": true
+    },
+    {
+      "file": "main/company/card/index.html",
+      "owner": "main",
+      "bodyAfterScriptsByteIdentical": true,
+      "nonassetHeadByteIdentical": true
+    },
+    {
+      "file": "main/en/company/card/index.html",
+      "owner": "main",
+      "bodyAfterScriptsByteIdentical": true,
+      "nonassetHeadByteIdentical": true
+    },
+    {
+      "file": "vazuri-preview-liko-dark-shop-public/index.html",
+      "owner": "night",
+      "bodyAfterScriptsByteIdentical": true,
+      "nonassetHeadByteIdentical": true
+    }
+  ],
+  "sameByteMediaAliases": [
+    {
+      "owner": "main",
+      "from": "/_next/static/media/04.DRm1ROsz.webp",
+      "to": "/_next/static/media/04-d.DRm1ROsz.webp",
+      "sameByteSHA256": "161a8c42ccd4b59748aa6a40d2fd920fb90dc22af0300e51ebed63e0e632f9ba"
+    },
+    {
+      "owner": "main",
+      "from": "/_next/static/media/04.DRm1ROsz.webp",
+      "to": "/_next/static/media/04-d.DRm1ROsz.webp",
+      "sameByteSHA256": "161a8c42ccd4b59748aa6a40d2fd920fb90dc22af0300e51ebed63e0e632f9ba"
+    }
+  ],
+  "externalScriptVersionEdits": [
+    {
+      "file": "vazuri-preview-liko-fashion-studio-public/index.html",
+      "script": "vazuri-preview-liko-fashion-studio-public/vazuri-case-dock.js",
+      "before": "/altera/vazuri-case-dock.js?v=legal-v26-7b5d6296b5f2",
+      "after": "/altera/vazuri-case-dock.js?v=legal-v26-7b5d6296b5f2&vz-security=06c06ac5afce",
+      "sourceSHA256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "allExistingQueryBytesPreserved": true
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/index.html",
+      "script": "scrollsync-video-v7q4m9x2/vazuri-case-dock.js",
+      "before": "./vazuri-case-dock.js?v=legal-v26-53e22ba02061",
+      "after": "./vazuri-case-dock.js?v=legal-v26-53e22ba02061&vz-security=5e21aabe7b4c",
+      "sourceSHA256": "5e21aabe7b4c40745bbe39cc02d60bed5742eef0588ef0fbdbe7c5dd5863cfce",
+      "allExistingQueryBytesPreserved": true
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/ru/index.html",
+      "script": "scrollsync-video-v7q4m9x2/ru/vazuri-case-dock.js",
+      "before": "./vazuri-case-dock.js?v=legal-v26-53e22ba02061",
+      "after": "./vazuri-case-dock.js?v=legal-v26-53e22ba02061&vz-security=5e21aabe7b4c",
+      "sourceSHA256": "5e21aabe7b4c40745bbe39cc02d60bed5742eef0588ef0fbdbe7c5dd5863cfce",
+      "allExistingQueryBytesPreserved": true
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/en/index.html",
+      "script": "scrollsync-video-v7q4m9x2/en/vazuri-case-dock.js",
+      "before": "./vazuri-case-dock.js?v=legal-v26-53e22ba02061",
+      "after": "./vazuri-case-dock.js?v=legal-v26-53e22ba02061&vz-security=5e21aabe7b4c",
+      "sourceSHA256": "5e21aabe7b4c40745bbe39cc02d60bed5742eef0588ef0fbdbe7c5dd5863cfce",
+      "allExistingQueryBytesPreserved": true
+    }
+  ],
+  "externalScriptVersionGuards": [
+    {
+      "file": "vazuri-preview-liko-fashion-studio-public/index.html",
+      "inverseRestoresEveryOriginalByte": true,
+      "onlyActiveControllerScriptSrcChanged": true
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/index.html",
+      "inverseRestoresEveryOriginalByte": true,
+      "onlyActiveControllerScriptSrcChanged": true
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/ru/index.html",
+      "inverseRestoresEveryOriginalByte": true,
+      "onlyActiveControllerScriptSrcChanged": true
+    },
+    {
+      "file": "scrollsync-video-v7q4m9x2/en/index.html",
+      "inverseRestoresEveryOriginalByte": true,
+      "onlyActiveControllerScriptSrcChanged": true
+    }
+  ],
+  "frontendFreezeSHA256": "822b77e981e27e6a37961861bb6b8a0a4e7177e8c4e74b5b8d6890c12931eddf",
+  "backendFreezePath": "backend/BACKEND_FREEZE.json",
+  "backendFreezeSHA256": "ea67d3c6ef468611ca295e1c5224cdefc9fc820763dae1091b3bdd6774873849",
+  "sourceSnapshotSHA256": "4da81f72cf7e8af988b89d9e915423498c02b8e98388d720c4710c92853e4e34",
+  "privateStateIncluded": false,
+  "externalActions": false
+}

@@ -1,0 +1,31 @@
+{
+  "readOnly": true,
+  "root": "/srv/www/uwinbeverage.com/releases/20261018-form-abuse-block-01",
+  "files": {
+    "form-security.js": {
+      "originalSHA256": "02be99254669f4443afad1667722de254ed4fc6f4ffa2f383e1c16bb3037e87f",
+      "safeSHA256": "02be99254669f4443afad1667722de254ed4fc6f4ffa2f383e1c16bb3037e87f",
+      "redactions": 0
+    },
+    "api/form-security.php": {
+      "originalSHA256": "64bd1ab8325e886c988634594d754da3acebcce34671c1760c9a4c2d129aca50",
+      "safeSHA256": "64bd1ab8325e886c988634594d754da3acebcce34671c1760c9a4c2d129aca50",
+      "redactions": 0
+    },
+    "api/form-token.php": {
+      "originalSHA256": "669f5a89fc3e151ab2d1ab13d5dced5582210ad37809f0b61e10fb85f3b63b8a",
+      "safeSHA256": "669f5a89fc3e151ab2d1ab13d5dced5582210ad37809f0b61e10fb85f3b63b8a",
+      "redactions": 0
+    },
+    "api/form-session.php": {
+      "originalSHA256": "9255f7694ee8b068ecc43e961fb96c14f0e2286bc0b4b98a16f388614671119e",
+      "safeSHA256": "9255f7694ee8b068ecc43e961fb96c14f0e2286bc0b4b98a16f388614671119e",
+      "redactions": 0
+    },
+    "api/documents-request.php": {
+      "originalSHA256": "341fda9668a09d4398d0f7175e277c0912689c65ac5f0db442d5bf0dc66acc59",
+      "safeSHA256": "341fda9668a09d4398d0f7175e277c0912689c65ac5f0db442d5bf0dc66acc59",
+      "redactions": 0
+    }
+  }
+}

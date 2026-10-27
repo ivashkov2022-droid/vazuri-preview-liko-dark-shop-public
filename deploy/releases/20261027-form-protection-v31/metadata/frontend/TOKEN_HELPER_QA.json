@@ -1,0 +1,90 @@
+{
+  "schema": "vazuri/form-token-helper-unit-qa/v1",
+  "valid": true,
+  "controllers": [
+    {
+      "id": "main",
+      "sourceSHA256": "2b0b4003f76ef9f4418c812c023ec3790665d7110215bfaa5a9367ea15fe3f11",
+      "checks": 14,
+      "passed": true,
+      "JavaScriptSyntaxChecked": false,
+      "freshTokenEachInvocation": true
+    },
+    {
+      "id": "night",
+      "sourceSHA256": "8795a7fa3020a8652f54f7edcfd5228620d911cd30e4073ea6379706713765b7",
+      "checks": 14,
+      "passed": true,
+      "JavaScriptSyntaxChecked": false,
+      "freshTokenEachInvocation": true
+    },
+    {
+      "id": "hotel",
+      "sourceSHA256": "26cc356cd6fcd3b9638dec9632fa2755b3ec4d6e7e9ef38c3f0d75276704bddb",
+      "checks": 14,
+      "passed": true,
+      "JavaScriptSyntaxChecked": true,
+      "freshTokenEachInvocation": true
+    },
+    {
+      "id": "altera",
+      "sourceSHA256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "checks": 14,
+      "passed": true,
+      "JavaScriptSyntaxChecked": true,
+      "freshTokenEachInvocation": true
+    },
+    {
+      "id": "slides",
+      "sourceSHA256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "checks": 14,
+      "passed": true,
+      "JavaScriptSyntaxChecked": true,
+      "freshTokenEachInvocation": true
+    },
+    {
+      "id": "urban",
+      "sourceSHA256": "06c06ac5afcebf29e33f4bb2c76d2a8ab291a089e47d6aacf59abacb8b0a165b",
+      "checks": 14,
+      "passed": true,
+      "JavaScriptSyntaxChecked": true,
+      "freshTokenEachInvocation": true
+    },
+    {
+      "id": "revive",
+      "sourceSHA256": "26cc356cd6fcd3b9638dec9632fa2755b3ec4d6e7e9ef38c3f0d75276704bddb",
+      "checks": 14,
+      "passed": true,
+      "JavaScriptSyntaxChecked": true,
+      "freshTokenEachInvocation": true
+    },
+    {
+      "id": "sky",
+      "sourceSHA256": "b4b4e146c30f4821686127ee12e20e22c68b0a1b1e3afa4d8dbf192c9ff3868c",
+      "checks": 14,
+      "passed": true,
+      "JavaScriptSyntaxChecked": true,
+      "freshTokenEachInvocation": true
+    },
+    {
+      "id": "sync",
+      "sourceSHA256": "5e21aabe7b4c40745bbe39cc02d60bed5742eef0588ef0fbdbe7c5dd5863cfce",
+      "checks": 14,
+      "passed": true,
+      "JavaScriptSyntaxChecked": true,
+      "freshTokenEachInvocation": true
+    },
+    {
+      "id": "relief",
+      "sourceSHA256": "2caad9b39a2b9fb0aca93b6c1210d77b90f5781e44966eeca2f0a00ffc527841",
+      "checks": 14,
+      "passed": true,
+      "JavaScriptSyntaxChecked": true,
+      "freshTokenEachInvocation": true
+    }
+  ],
+  "actualNetworkRequests": 0,
+  "actualPOSTs": 0,
+  "sourceManifestSHA256": "ccc51001644c7efe3069efc4a885211f528e0548d392fa90ced024e7f7b45a45",
+  "checks": 140
+}

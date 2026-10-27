@@ -7,6 +7,20 @@ import { PixelArrow } from "./CasePanelArtwork";
 
 const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
+async function requestFormToken(source: string): Promise<string> {
+  const response = await fetch("/lead.php?action=form-token&source=" + encodeURIComponent(source), {
+    method: "GET",
+    headers: { Accept: "application/json" },
+    cache: "no-store",
+    credentials: "omit",
+  });
+  const payload = await response.json() as { ok?: boolean; token?: unknown };
+  if (!response.ok || !payload || payload.ok !== true || typeof payload.token !== "string" || payload.token.length < 32 || payload.token.length > 2048) {
+    throw new Error("send_failed");
+  }
+  return payload.token;
+}
+
 const products = [
   {
     code: "01",
@@ -116,6 +130,7 @@ export default function Home() {
     setFormStatus("sending");
 
     try {
+      const formToken = await requestFormToken("nightshift");
       const response = await fetch("/lead.php", {
         method: "POST",
         headers: {
@@ -123,6 +138,7 @@ export default function Home() {
           Accept: "application/json",
         },
         body: JSON.stringify({
+          form_token: formToken,
           source: "nightshift",
           language: "ru",
           website: data.get("website") || "",
